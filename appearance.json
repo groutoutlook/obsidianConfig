@@ -1,0 +1,10 @@
+{
+  "accentColor": "#ff004c",
+  "cssTheme": "Things",
+  "showViewHeader": false,
+  "nativeMenus": false,
+  "textFontFamily": "",
+  "monospaceFontFamily": "Iosevka Nerd Font,Iosevka Nerd Font Mono",
+  "baseFontSize": 15,
+  "theme": "obsidian"
+}

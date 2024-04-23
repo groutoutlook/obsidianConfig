@@ -1,0 +1,14 @@
+{
+  "promptDelete": false,
+  "spellcheck": false,
+  "showLineNumber": false,
+  "vimMode": true,
+  "tabSize": 2,
+  "showInlineTitle": true,
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false,
+  "userIgnoreFilters": [
+    "*sync-conflict*",
+    "sync-conflict"
+  ]
+}

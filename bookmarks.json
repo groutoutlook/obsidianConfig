@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1706845643818,
+      "items": [
+        {
+          "type": "group",
+          "ctime": 1706845643818,
+          "items": [],
+          "title": "_resources"
+        },
+        {
+          "type": "group",
+          "ctime": 1706845643818,
+          "items": [],
+          "title": "1_Markdown"
+        },
+        {
+          "type": "group",
+          "ctime": 1706845643818,
+          "items": [],
+          "title": "RGB_Projects"
+        },
+        {
+          "type": "file",
+          "ctime": 1706845643818,
+          "path": "Home.md",
+          "subpath": "#^-"
+        }
+      ],
+      "title": "sortspec"
+    }
+  ]
+}
