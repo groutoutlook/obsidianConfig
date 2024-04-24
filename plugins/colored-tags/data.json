@@ -575,7 +575,12 @@
     "activelyused/software/windows/manager": 2,
     "recording": 536,
     "midi": 537,
-    "dell": 538
+    "dell": 538,
+    "gps": 539,
+    "timeserver": 540,
+    "ntp": 541,
+    "scrap": 542,
+    "blog": 543
   },
   "_version": 3
 }

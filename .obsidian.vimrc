@@ -5,9 +5,6 @@ imap jk <Esc>
 imap kj <Esc>
 imap jj <Esc>
 
-imap ;u <C-o>u
-imap ;r <C-o><C-r>
-
 
 " Cycle between tabs
 exmap tabprev obcommand workspace:previous-tab
@@ -32,7 +29,9 @@ nmap ;wq :closeall
 
 " NOTE: Paste as plain text? In pure Vim, this is no need.
 " But in Obsidian, there is a plugin which interfere with that.
-imap ;p <Esc>p 
+imap ;p <Esc>pi
+imap ;u <Esc>ui
+imap ;r <Esc><C-r>i
 
 " Insert templates
 exmap ins_temp obcommand templater-obsidian:insert-templater

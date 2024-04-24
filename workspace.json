@@ -23,35 +23,8 @@
                     "source": false
                   }
                 }
-              },
-              {
-                "id": "1e4df0e051acdb94",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_Business/WorkflowJournal.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "2604aa8962f677c7",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
               }
-            ],
-            "currentTab": 2
+            ]
           },
           {
             "id": "12f2e3180bd9cd68",
@@ -230,7 +203,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md"
+                "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md"
               }
             }
           },
@@ -240,7 +213,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
+                "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -257,7 +230,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
+                "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -301,54 +274,54 @@
       "random-note:Open random note": true
     }
   },
-  "active": "2604aa8962f677c7",
+  "active": "f533e4c7ba463e50",
   "lastOpenFiles": [
-    "1_Markdown/note_software/300000_Espanso.md",
-    "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
-    "1_Markdown/note_Business/WorkflowJournal.md",
-    "1_Markdown/note_software/Neovim/100101_Neovim Plugins.md",
-    "1_Markdown/note_algo_lang/0_LongJournal/OtherKnowledgeJournal.md",
-    "Pasted image 20240423215516.png",
-    "1_Markdown/note_software/Neovim/160001_Lua API in Neovim.md",
-    "1_Markdown/note_software/Neovim/100001_Neovim.md",
-    "1_Markdown/note_software/Neovim/110001_Motion in Neovim.md",
+    "Pasted image 20240424235652.png",
+    "310000_Syntax in ahk.md",
+    "1_Markdown/note_software/Obsidian/412000_Advanced URI.md",
     "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+    "1_Markdown/note_software/Neovim/160001_Lua API in Neovim.md",
+    "1_Markdown/note_algo_lang/0_LongJournal/OtherKnowledgeJournal.md",
+    "1_Markdown/note_software/Neovim/100101_Neovim Plugins.md",
+    "1_Markdown/note_algo_lang/note_AHK/300000_AutoHotKey.md",
+    "1_Markdown/note_algo_lang/note_AHK/300100_Keys in AHK.md",
+    "1_Markdown/note_algo_lang/note_AHK",
+    "1_Markdown/note_Embedded/RGB_Projects/note_LED/100000_LED supplier.md",
+    "8b865070e7fbc5de636e1e583763e58.jpg",
+    "d34bde710e54e4adb3a7d81a3083705.jpg",
+    "a5befadd5f1d3c5a85a50f71bc42dc8.jpg",
+    "Pasted image 20240416155849.png",
+    "1_Markdown/note_Business/WorkflowJournal.md",
+    "1_Markdown/note_entertainment/note_discography/300001_ Videos and Music (USUK).md",
+    "1_Markdown/note_Knowledge/100000_ Accounts.md",
+    "20240105104145166_Air510U定位模块使用手册V1.0.4.pdf",
+    "20240105104145166_Air510U定位模块使用手册V1.0.4.pdf.crdownload",
+    "1_Markdown/note_Business/600000_Partners.md",
+    "Pasted image 20240423231258.png",
+    "Pasted image 20240423231240.png",
+    "1_Markdown/note_software/Neovim/100001_Neovim.md",
+    "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
+    "1_Markdown/note_software/300000_Espanso.md",
+    "Pasted image 20240423215516.png",
+    "1_Markdown/note_software/Neovim/110001_Motion in Neovim.md",
     "1_Markdown/note_software/Obsidian/410000_Obsidian Plugins.md",
     "1_Markdown/note_software/Obsidian/413001_Obsidian.vimrc.md",
     "1_Markdown/note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
     "1_Markdown/note_entertainment/note_discography/300000_Videos and Music.md",
-    "1_Markdown/note_entertainment/note_discography/300001_ Videos and Music (USUK).md",
     "1_Markdown/note_software/Neovim/100102_Neovim Personal Change.md",
     "1_Markdown/note_software/400005_ Hledger.md",
     "1_Markdown/note_algo_lang/note_Powershell/800000_ Windows Powershell Administration.md",
     "dcpp-2-7-2-ref-guide-en-us.pdf",
     "1_Markdown/note_algo_lang/note_Powershell/800001_Powershell Admin.md",
-    "1_Markdown/note_algo_lang/note_Powershell/000006_Object in Powershell.md",
-    "1_Markdown/note_software/Obsidian/411000_Keyshots.md",
-    "1_Markdown/note_software/Obsidian/412000_Advanced URI.md",
-    "1_Markdown/note_Embedded/RGB_Projects/RGB_MCU/000005_STM32.md",
-    "1_Markdown/note_Embedded/HardwareJournal.md",
     "dcpp-2-7-2-ref-guide-en-us.pdf.crdownload",
-    "130001_Editting in Neovim.md",
-    "1_Markdown/note_software/Neovim/120001_Windows in Neovim.md",
-    "120001_Windows in Neovim.md",
     "Pasted image 20240422141801.png",
     "Pasted image 20240422141227.png",
     "Pasted image 20240422115336.png",
-    "Pasted image 20240422113750.png",
-    "Pasted image 20240422105755.png",
-    "Pasted image 20240422010300.png",
     "1_Markdown/note_software/0_LongJournal/~syncthing~SoftwareJournal.sync-conflict-20240421-154514-I6X5N4E.md.tmp",
     "1_Markdown/note_software/0_LongJournal/~syncthing~SoftwareJournal.sync-conflict-20240421-154446-I6X5N4E.md.tmp",
-    "Pasted image 20240421151601.png",
-    "Pasted image 20240421151559.png",
     "1_Markdown/note_software/~syncthing~100101_Neovim Plugins.md.tmp",
     "1_Markdown/note_algo_lang/0_LongJournal/~syncthing~LangJournal.md.tmp",
     "just",
-    "1_Markdown/note_software/CLI",
-    "1_Markdown/note_software/0_LongJournal/~syncthing~SoftwareJournal.md.tmp",
-    "1_Markdown/note_software/~syncthing~SoftwareJournal.md.tmp",
-    "Pasted image 20240418214200.png",
     "Untitled.canvas"
   ]
 }

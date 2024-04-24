@@ -25,22 +25,8 @@
                         "source": false
                       }
                     }
-                  },
-                  {
-                    "id": "1e4df0e051acdb94",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "1_Markdown/note_Business/WorkflowJournal.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": false
-                      }
-                    }
                   }
-                ],
-                "currentTab": 1
+                ]
               },
               {
                 "id": "12f2e3180bd9cd68",
@@ -219,7 +205,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "1_Markdown/note_Business/WorkflowJournal.md"
+                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md"
                   }
                 }
               },
@@ -229,7 +215,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "1_Markdown/note_Business/WorkflowJournal.md",
+                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -246,7 +232,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "1_Markdown/note_Business/WorkflowJournal.md",
+                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -290,8 +276,8 @@
           "random-note:Open random note": true
         }
       },
-      "active": "1e4df0e051acdb94",
-      "mtime": "2024-04-23T22:17:50+07:00"
+      "active": "f533e4c7ba463e50",
+      "mtime": "2024-04-23T22:40:08+07:00"
     },
     "Journal-code-eda": {
       "main": {
@@ -584,7 +570,7 @@
         }
       },
       "active": "df6102b0faf16465",
-      "mtime": "2024-04-23T22:18:01+07:00"
+      "mtime": "2024-04-23T22:40:09+07:00"
     }
   },
   "active": "Obs-Nvim"

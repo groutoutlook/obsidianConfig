@@ -270,5 +270,15 @@
       ],
       "key": "="
     }
-  ]
+  ],
+  "obsidian-advanced-uri:copy-uri-block": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "keyshots:multi-toggle-code": []
 }
