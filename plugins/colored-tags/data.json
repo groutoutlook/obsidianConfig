@@ -593,7 +593,9 @@
     "richtext": 553,
     "keybase": 554,
     "security": 555,
-    "fedora": 556
+    "fedora": 556,
+    "medication": 557,
+    "manifest": 558
   },
   "_version": 3
 }

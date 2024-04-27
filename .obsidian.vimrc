@@ -25,8 +25,8 @@ exmap follow obcommand editor:open-link-in-new-leaf
 nmap gx :follow
 
 " Open the link at the end of line.
-nmap ;gx $gx
-imap ;gx <Esc><End>gxi
+nmap ;gx %wgx
+imap ;gx <Esc>%wgxi
 
 exmap closeall obcommand workspace:close-window
 nmap ;wq :closeall
@@ -34,8 +34,8 @@ nmap ;wq :closeall
 " NOTE: Paste as plain text? In pure Vim, this is no need.
 " But in Obsidian, there is a plugin which interfere with that.
 imap ;p <Esc>pi
-imap ;u <Esc>ui
-imap ;r <Esc><C-r>i
+imap ;u <Esc>2ui
+imap ;r <Esc>2<C-r>i
 
 " Insert templates
 exmap ins_temp obcommand templater-obsidian:insert-templater
