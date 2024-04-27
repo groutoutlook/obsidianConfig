@@ -280,5 +280,23 @@
       "key": "C"
     }
   ],
-  "keyshots:multi-toggle-code": []
+  "keyshots:multi-toggle-code": [],
+  "editor:focus-right": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "ArrowRight"
+    }
+  ],
+  "editor:focus-left": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "ArrowLeft"
+    }
+  ]
 }
