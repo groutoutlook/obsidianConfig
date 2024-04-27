@@ -580,7 +580,20 @@
     "timeserver": 540,
     "ntp": 541,
     "scrap": 542,
-    "blog": 543
+    "blog": 543,
+    "emacs": 544,
+    "lisp": 545,
+    "foss": 546,
+    "nyxt": 547,
+    "freecad": 548,
+    "DAW": 549,
+    "libraries": 550,
+    "build": 551,
+    "voxel": 552,
+    "richtext": 553,
+    "keybase": 554,
+    "security": 555,
+    "fedora": 556
   },
   "_version": 3
 }

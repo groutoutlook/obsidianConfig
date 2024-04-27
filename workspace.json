@@ -59,60 +59,20 @@
                         "source": false
                       }
                     }
-                  },
-                  {
-                    "id": "f5eb0096ed873a85",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "1_Markdown/note_algo_lang/0_LongJournal/OtherKnowledgeJournal.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": false
-                      }
-                    }
-                  },
-                  {
-                    "id": "7e96d88e7e3d6eda",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "1_Markdown/note_software/Neovim/100101_Neovim Plugins.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": false
-                      }
-                    }
-                  },
-                  {
-                    "id": "1d764084b1478de9",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "1_Markdown/note_software/Neovim/100101_Neovim Plugins.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": false
-                      }
-                    }
                   }
-                ],
-                "currentTab": 4
+                ]
               },
               {
                 "id": "b8522bbc1c5d3519",
                 "type": "tabs",
                 "children": [
                   {
-                    "id": "11b2391f305baed7",
+                    "id": "3329983838a38c34",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "1_Markdown/note_software/300000_Espanso.md",
+                        "file": "1_Markdown/note_software/Espanso/300000_Espanso.md",
                         "mode": "source",
                         "backlinks": false,
                         "source": false
@@ -176,7 +136,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5
+    "width": 233.5,
+    "collapsed": true
   },
   "right": {
     "id": "3d18e10a2c3023dd",
@@ -203,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md"
+                "file": "1_Markdown/note_software/Neovim/100001_Neovim.md"
               }
             }
           },
@@ -213,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+                "file": "1_Markdown/note_software/Neovim/100001_Neovim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,7 +191,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+                "file": "1_Markdown/note_software/Neovim/100001_Neovim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -274,15 +235,39 @@
       "random-note:Open random note": true
     }
   },
-  "active": "f533e4c7ba463e50",
+  "active": "b0e2239b1bc7a22a",
   "lastOpenFiles": [
-    "Pasted image 20240424235652.png",
-    "310000_Syntax in ahk.md",
-    "1_Markdown/note_software/Obsidian/412000_Advanced URI.md",
-    "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+    "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
+    "1_Markdown/note_software/Neovim/100001_Neovim.md",
     "1_Markdown/note_software/Neovim/160001_Lua API in Neovim.md",
     "1_Markdown/note_algo_lang/0_LongJournal/OtherKnowledgeJournal.md",
     "1_Markdown/note_software/Neovim/100101_Neovim Plugins.md",
+    "1_Markdown/note_software/Espanso/300000_Espanso.md",
+    "1_Markdown/note_software/Espanso/310000_Match Basic.md",
+    "1_Markdown/note_software/Espanso/314000_Variables in espanso.md",
+    "1_Markdown/note_software/Espanso/313000_Regex in Espanso.md",
+    "1_Markdown/note_software/Espanso/312000_Forms.md",
+    "1_Markdown/note_software/Espanso/311000_Extension in espanso.md",
+    "Pasted image 20240427110640.png",
+    "().md",
+    "Pasted image 20240427110316.png",
+    "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+    "1_Markdown/note_software/Espanso",
+    "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
+    "1_Markdown/note_algo_lang/note_C++/cmake/300000_Cmake.md",
+    "1_Markdown/note_algo_lang/note_C++/100009_ Include and Dependency.md",
+    "1_Markdown/note_algo_lang/note_C++/cmake",
+    "1_Markdown/note_algo_lang/note_C++/vcpkg",
+    "1_Markdown/note_Embedded/RGB_Projects/RGB_IDE/100102_VSCode Keybinding and Plugins.md",
+    "1_Markdown/note_Embedded/RGB_Projects/RGB_IDE/100101_VSCode.md",
+    "1_Markdown/note_software/Emacs/Emacs.md",
+    "1_Markdown/note_software/Emacs/200000_Emacs.md",
+    "1_Markdown/note_software/Emacs",
+    "1_Markdown/note_software/note_software.md",
+    "Untitled",
+    "Pasted image 20240424235652.png",
+    "310000_Syntax in ahk.md",
+    "1_Markdown/note_software/Obsidian/412000_Advanced URI.md",
     "1_Markdown/note_algo_lang/note_AHK/300000_AutoHotKey.md",
     "1_Markdown/note_algo_lang/note_AHK/300100_Keys in AHK.md",
     "1_Markdown/note_algo_lang/note_AHK",
@@ -291,37 +276,13 @@
     "d34bde710e54e4adb3a7d81a3083705.jpg",
     "a5befadd5f1d3c5a85a50f71bc42dc8.jpg",
     "Pasted image 20240416155849.png",
-    "1_Markdown/note_Business/WorkflowJournal.md",
-    "1_Markdown/note_entertainment/note_discography/300001_ Videos and Music (USUK).md",
-    "1_Markdown/note_Knowledge/100000_ Accounts.md",
     "20240105104145166_Air510U定位模块使用手册V1.0.4.pdf",
     "20240105104145166_Air510U定位模块使用手册V1.0.4.pdf.crdownload",
-    "1_Markdown/note_Business/600000_Partners.md",
     "Pasted image 20240423231258.png",
     "Pasted image 20240423231240.png",
-    "1_Markdown/note_software/Neovim/100001_Neovim.md",
-    "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
-    "1_Markdown/note_software/300000_Espanso.md",
     "Pasted image 20240423215516.png",
-    "1_Markdown/note_software/Neovim/110001_Motion in Neovim.md",
-    "1_Markdown/note_software/Obsidian/410000_Obsidian Plugins.md",
-    "1_Markdown/note_software/Obsidian/413001_Obsidian.vimrc.md",
-    "1_Markdown/note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
-    "1_Markdown/note_entertainment/note_discography/300000_Videos and Music.md",
-    "1_Markdown/note_software/Neovim/100102_Neovim Personal Change.md",
-    "1_Markdown/note_software/400005_ Hledger.md",
-    "1_Markdown/note_algo_lang/note_Powershell/800000_ Windows Powershell Administration.md",
     "dcpp-2-7-2-ref-guide-en-us.pdf",
-    "1_Markdown/note_algo_lang/note_Powershell/800001_Powershell Admin.md",
     "dcpp-2-7-2-ref-guide-en-us.pdf.crdownload",
-    "Pasted image 20240422141801.png",
-    "Pasted image 20240422141227.png",
-    "Pasted image 20240422115336.png",
-    "1_Markdown/note_software/0_LongJournal/~syncthing~SoftwareJournal.sync-conflict-20240421-154514-I6X5N4E.md.tmp",
-    "1_Markdown/note_software/0_LongJournal/~syncthing~SoftwareJournal.sync-conflict-20240421-154446-I6X5N4E.md.tmp",
-    "1_Markdown/note_software/~syncthing~100101_Neovim Plugins.md.tmp",
-    "1_Markdown/note_algo_lang/0_LongJournal/~syncthing~LangJournal.md.tmp",
-    "just",
     "Untitled.canvas"
   ]
 }

@@ -4,23 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "da07870be4db2d47",
+        "id": "071cc97a2e712f5b",
         "type": "tabs",
         "children": [
           {
-            "id": "261810f2a3d08363",
+            "id": "6cf46c1256ffaf17",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_Markdown/note_software/100101_Neovim Plugins.md",
+                "file": "1_Markdown/note_software/000001_ Useful Website.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2c38f6d2089ff9f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_Markdown/note_software/note_DeveloperSoftware/300004_ Github.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,7 +112,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "1_Markdown/note_software/100101_Neovim Plugins.md",
+            "file": "1_Markdown/note_software/note_DeveloperSoftware/300004_ Github.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -115,7 +129,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "1_Markdown/note_software/100101_Neovim Plugins.md",
+            "file": "1_Markdown/note_software/note_DeveloperSoftware/300004_ Github.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -127,7 +141,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "1_Markdown/note_software/100101_Neovim Plugins.md"
+            "file": "1_Markdown/note_software/note_DeveloperSoftware/300004_ Github.md"
           }
         }
       }
@@ -151,54 +165,54 @@
       "darlal-switcher-plus:Open Symbols for the active editor": false
     }
   },
-  "active": "261810f2a3d08363",
+  "active": "e2c38f6d2089ff9f",
   "lastOpenFiles": [
-    "1_Markdown/note_software/400002_Obsidian.md",
-    "1_Markdown/note_software/100101_Neovim Plugins.md",
-    "templates/CommandInterface.md",
-    "310000_Espanso CLI.md",
-    "110000_Profile Powershell Modules..md",
-    "Pasted image 20240418214200.png",
-    "120001_Windows in Neovim.md",
-    "1_Markdown/note_software/Neovim/110001_Motion in Neovim.md",
-    "1_Markdown/note_algo_lang/note_Powershell/000006_Object in Powershell.md",
-    "1_Markdown/note_algo_lang/note_Powershell/000011_Class.md",
-    "1_Markdown/note_algo_lang/note_Powershell/001107_Item in PowerShell.md",
-    "1_Markdown/note_algo_lang/note_Powershell/001103_Regular Expression in Powershell.md",
-    "1_Markdown/note_algo_lang/note_Powershell/001003_String in powershell.md",
-    "1_Markdown/note_algo_lang/note_Powershell/001007_Path and Directory in powershell.md",
-    "1_Markdown/note_algo_lang/note_Powershell/400000_Networking.md",
-    "1_Markdown/note_algo_lang/note_Powershell/100001_Alias in Powershell.md",
-    "1_Markdown/note_algo_lang/note_Powershell/000009_Measure in Powershell.md",
-    "Pasted image 20240418164833.png",
-    "1_Markdown/note_software/Obsidian/400102_Keyshots.md",
-    "Pasted image 20240418155639.png",
+    "1_Markdown/note_software/000001_ Useful Website.md",
     "Home.md",
-    "1_Markdown/note_software/0_LongJournal/AccountJournal.md",
+    "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
+    "1_Markdown/note_Business/WorkJournal.md",
+    "IMG_20240413_141921.jpg",
+    "1_Markdown/note_Embedded/HardwareJournal.md",
+    "1_Markdown/note_software/400004_Jrnl.md",
     "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md",
-    "1_Markdown/note_software/SoftwareJournal.md",
-    "MainJournal.sync-conflict-20240417-125922-OJBZEUE.md",
-    "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.sync-conflict-20240417-125921-I6X5N4E.md",
-    "100010_Motion.md",
-    "1_Markdown/note_algo_lang/0_LongJournal/ProgrammingJournal.sync-conflict-20240417-125921-I6X5N4E.md",
-    "1_Markdown/note_software/note_software.md",
-    "Pasted image 20240416222958.png",
-    "Pasted image 20240416222903.png",
-    "1_Markdown/note_software/Obsidian",
-    "Untitled",
-    "1_Markdown/note_software/Neovim",
-    "d34bde710e54e4adb3a7d81a3083705.jpg",
-    "13cc4b00066c1127761602d9775b034.jpg",
-    "c359a3430d7530b61b62f84fa040321 1.jpg",
-    "a5befadd5f1d3c5a85a50f71bc42dc8.jpg",
-    "c359a3430d7530b61b62f84fa040321.jpg",
+    "1_Markdown/note_algo_lang/0_LongJournal/ProgrammingJournal.sync-conflict-20240412-224939-OJBZEUE.md",
     "templates",
+    "Pasted image 20240411164550.png",
+    "1_Markdown/note_software/100102_Neovim Personal Change.md",
+    "Pasted image 20240411234129.png",
+    "1_Markdown/note_algo_lang/note_Powershell/200001_Process and Jobs in Powershell.md",
+    "1_Markdown/note_entertainment/note_discography/300001_Videos and Music (USUK).md",
+    "1_Markdown/note_entertainment/note_discography/300000_Videos and Music.md",
+    "20240412_110306.jpg",
+    "1_Markdown/note_algo_lang/note_Powershell/000003_ Data type.sync-conflict-20240411-222344-I6X5N4E.md",
+    "1_Markdown/note_Knowledge/100000_ Accounts.sync-conflict-20240411-222342-I6X5N4E.md",
+    "1_Markdown/note_software/100001_Neovim.sync-conflict-20240411-222344-I6X5N4E.md",
+    "1_Markdown/note_algo_lang/note_Powershell/000001_Powershell Core.sync-conflict-20240411-222344-I6X5N4E.md",
+    "1_Markdown/note_algo_lang/note_Powershell/000008_ Redirect, Pipeline and File Content.sync-conflict-20240411-222344-I6X5N4E.md",
+    "1_Markdown/note_Embedded/000002_Embedded C and C++ lib.sync-conflict-20240411-222342-I6X5N4E.md",
+    "1_Markdown/note_Embedded/note_Instruments/100001_DSView.sync-conflict-20240411-222348-I6X5N4E.md",
+    "1_Markdown/note_software/400004_Jrnl.sync-conflict-20240411-222348-OJBZEUE.md",
+    "Home.sync-conflict-20240411-222346-I6X5N4E.md",
+    "1_Markdown/note_linux/000005_Systemd.sync-conflict-20240411-222342-I6X5N4E.md",
+    "1_Markdown/note_Embedded/note_EDA/300001_ KiCad Model.sync-conflict-20240411-222345-I6X5N4E.md",
+    "1_Markdown/note_Embedded/note_Modules/100000_RF Modules.sync-conflict-20240411-222344-I6X5N4E.md",
+    "1_Markdown/note_software/400005_ Hledger.sync-conflict-20240411-222346-I6X5N4E.md",
+    "1_Markdown/note_Knowledge/note_Knowledge.sync-conflict-20240411-222343-I6X5N4E.md",
+    "Pasted image 20240410221517.png",
+    "Pasted image 20240410221243.png",
     "notes/dailies",
     "notes",
     "stm32-gui-silicon-portfolio.pdf",
+    "20240404_204539.jpg",
+    "IMG_20240404_144021.jpg",
+    "IMG_20240404_144038.jpg",
+    "mmexport1712036990143.jpg",
     "WeChat_20240329104315.mp4",
     "_Markdown/note_Items",
     "_Markdown",
+    "1_Markdown/note_Embedded/note_Instruments",
+    "keys/First_gpg.txt",
+    "keys/gh_cli.txt",
     "Untitled.canvas"
   ]
 }

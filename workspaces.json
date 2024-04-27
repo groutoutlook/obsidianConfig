@@ -61,60 +61,20 @@
                             "source": false
                           }
                         }
-                      },
-                      {
-                        "id": "f5eb0096ed873a85",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_algo_lang/0_LongJournal/OtherKnowledgeJournal.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
-                      },
-                      {
-                        "id": "7e96d88e7e3d6eda",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_software/Neovim/100101_Neovim Plugins.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
-                      },
-                      {
-                        "id": "1d764084b1478de9",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_software/Neovim/100101_Neovim Plugins.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
                       }
-                    ],
-                    "currentTab": 4
+                    ]
                   },
                   {
                     "id": "b8522bbc1c5d3519",
                     "type": "tabs",
                     "children": [
                       {
-                        "id": "11b2391f305baed7",
+                        "id": "3329983838a38c34",
                         "type": "leaf",
                         "state": {
                           "type": "markdown",
                           "state": {
-                            "file": "1_Markdown/note_software/300000_Espanso.md",
+                            "file": "1_Markdown/note_software/Espanso/300000_Espanso.md",
                             "mode": "source",
                             "backlinks": false,
                             "source": false
@@ -178,7 +138,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 233.5
+        "width": 233.5,
+        "collapsed": true
       },
       "right": {
         "id": "3d18e10a2c3023dd",
@@ -205,7 +166,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md"
+                    "file": "1_Markdown/note_software/Neovim/100001_Neovim.md"
                   }
                 }
               },
@@ -215,7 +176,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+                    "file": "1_Markdown/note_software/Neovim/100001_Neovim.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -232,7 +193,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+                    "file": "1_Markdown/note_software/Neovim/100001_Neovim.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -276,8 +237,8 @@
           "random-note:Open random note": true
         }
       },
-      "active": "f533e4c7ba463e50",
-      "mtime": "2024-04-23T22:40:08+07:00"
+      "active": "b0e2239b1bc7a22a",
+      "mtime": "2024-04-27T11:41:49+07:00"
     },
     "Journal-code-eda": {
       "main": {
@@ -471,7 +432,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 222.51240158081055
+        "width": 222.51240158081055,
+        "collapsed": true
       },
       "right": {
         "id": "3d18e10a2c3023dd",
@@ -570,7 +532,7 @@
         }
       },
       "active": "df6102b0faf16465",
-      "mtime": "2024-04-23T22:40:09+07:00"
+      "mtime": "2024-04-27T11:41:51+07:00"
     }
   },
   "active": "Obs-Nvim"

@@ -12,6 +12,7 @@
   "colored-tags",
   "codestats",
   "templater-obsidian",
-  "obsidian-vimrc-support",
-  "obsidian-front-matter-title-plugin"
+  "dataview",
+  "obsidian-front-matter-title-plugin",
+  "obsidian-vimrc-support"
 ]

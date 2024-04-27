@@ -6,7 +6,7 @@ imap kj <Esc>
 imap jj <Esc>
 
 
-" Cycle between tabs
+" Cycle betwe.6.6.1.en tabs
 exmap tabprev obcommand workspace:previous-tab
 nmap H :tabprev
 exmap tabnext obcommand workspace:next-tab
@@ -23,6 +23,10 @@ unmap ;
 " exmap follow obcommand editor:open-link-in-new-window
 exmap follow obcommand editor:open-link-in-new-leaf
 nmap gx :follow
+
+" Open the link at the end of line.
+nmap ;gx $gx
+imap ;gx <Esc><End>gxi
 
 exmap closeall obcommand workspace:close-window
 nmap ;wq :closeall
