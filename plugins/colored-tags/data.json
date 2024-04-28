@@ -597,7 +597,15 @@
     "medication": 557,
     "manifest": 558,
     "unreal": 559,
-    "epicgames": 560
+    "epicgames": 560,
+    "junction": 561,
+    "zoxide": 562,
+    "prompt": 563,
+    "microsoft": 564,
+    "namespace": 565,
+    "modules": 566,
+    "dll": 567,
+    "dotnet": 568
   },
   "_version": 3
 }

@@ -25,66 +25,66 @@
                         "source": false
                       }
                     }
+                  },
+                  {
+                    "id": "3329983838a38c34",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "1_Markdown/note_software/Espanso/300000_Espanso.md",
+                        "mode": "source",
+                        "backlinks": false,
+                        "source": false
+                      }
+                    }
                   }
                 ]
               },
               {
-                "id": "12f2e3180bd9cd68",
-                "type": "split",
+                "id": "941e663df094be35",
+                "type": "tabs",
                 "children": [
                   {
-                    "id": "941e663df094be35",
-                    "type": "tabs",
-                    "children": [
-                      {
-                        "id": "b0e2239b1bc7a22a",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_IDE/Neovim/100001_Neovim.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
-                      },
-                      {
-                        "id": "98b8639af372ed2d",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_IDE/Neovim/160001_Lua API in Neovim.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
+                    "id": "b0e2239b1bc7a22a",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "1_Markdown/note_IDEAndTools/Neovim/100001_Neovim.md",
+                        "mode": "source",
+                        "backlinks": false,
+                        "source": false
                       }
-                    ]
+                    }
                   },
                   {
-                    "id": "b8522bbc1c5d3519",
-                    "type": "tabs",
-                    "children": [
-                      {
-                        "id": "3329983838a38c34",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_software/Espanso/300000_Espanso.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
+                    "id": "62a1d82c699f709f",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
+                        "mode": "source",
+                        "backlinks": false,
+                        "source": false
                       }
-                    ]
+                    }
+                  },
+                  {
+                    "id": "2ba96c704de5dde1",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "1_Markdown/note_software/CLI/015004_yazi.md",
+                        "mode": "source",
+                        "backlinks": false,
+                        "source": false
+                      }
+                    }
                   }
-                ],
-                "direction": "horizontal"
+                ]
               }
             ],
             "direction": "vertical"
@@ -138,8 +138,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 233.5,
-        "collapsed": true
+        "width": 233.5
       },
       "right": {
         "id": "3d18e10a2c3023dd",
@@ -166,7 +165,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "1_Markdown/note_IDE/Neovim/100001_Neovim.md"
+                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md"
                   }
                 }
               },
@@ -176,7 +175,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "1_Markdown/note_IDE/Neovim/100001_Neovim.md",
+                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -193,7 +192,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "1_Markdown/note_IDE/Neovim/100001_Neovim.md",
+                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -237,8 +236,8 @@
           "random-note:Open random note": true
         }
       },
-      "active": "b0e2239b1bc7a22a",
-      "mtime": "2024-04-27T20:43:01+07:00"
+      "active": "f533e4c7ba463e50",
+      "mtime": "2024-04-28T21:24:00+07:00"
     },
     "Journal-code-eda": {
       "main": {
@@ -532,7 +531,7 @@
         }
       },
       "active": "df6102b0faf16465",
-      "mtime": "2024-04-27T20:40:31+07:00"
+      "mtime": "2024-04-28T21:23:40+07:00"
     },
     "IDE": {
       "main": {
@@ -540,88 +539,68 @@
         "type": "split",
         "children": [
           {
-            "id": "492f38704c0bb844",
-            "type": "split",
+            "id": "941e663df094be35",
+            "type": "tabs",
             "children": [
               {
-                "id": "d27f6344b8e6b5e3",
-                "type": "tabs",
-                "children": [
-                  {
-                    "id": "f533e4c7ba463e50",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": false
-                      }
-                    }
+                "id": "6d8c39ceb31b22aa",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
                   }
-                ]
+                }
               },
               {
-                "id": "12f2e3180bd9cd68",
-                "type": "split",
-                "children": [
-                  {
-                    "id": "941e663df094be35",
-                    "type": "tabs",
-                    "children": [
-                      {
-                        "id": "b0e2239b1bc7a22a",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_IDE/Neovim/100001_Neovim.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
-                      },
-                      {
-                        "id": "98b8639af372ed2d",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_IDE/Neovim/160001_Lua API in Neovim.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "id": "b8522bbc1c5d3519",
-                    "type": "tabs",
-                    "children": [
-                      {
-                        "id": "3329983838a38c34",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_software/Espanso/300000_Espanso.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
-                      }
-                    ]
+                "id": "1364da9919e55064",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1_Markdown/note_algo_lang/note_C++/200001_Libraries, Packages and Tools for CPP.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
                   }
-                ],
-                "direction": "horizontal"
+                }
               }
-            ],
-            "direction": "vertical"
+            ]
+          },
+          {
+            "id": "d27f6344b8e6b5e3",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "2c1f5a8cbd6669ef",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1_Markdown/note_algo_lang/note_Powershell/000001_Powershell Core.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "f2a23d60a758478c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1_Markdown/note_Embedded/note_EDA/300000_ KiCad.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ]
           }
         ],
         "direction": "vertical"
@@ -672,8 +651,7 @@
           }
         ],
         "direction": "horizontal",
-        "width": 233.5,
-        "collapsed": true
+        "width": 233.5
       },
       "right": {
         "id": "3d18e10a2c3023dd",
@@ -700,7 +678,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md"
+                    "file": "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md"
                   }
                 }
               },
@@ -710,7 +688,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+                    "file": "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -727,7 +705,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+                    "file": "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -771,9 +749,9 @@
           "random-note:Open random note": true
         }
       },
-      "active": "f533e4c7ba463e50",
-      "mtime": "2024-04-27T20:42:59+07:00"
+      "active": "6d8c39ceb31b22aa",
+      "mtime": "2024-04-28T21:23:56+07:00"
     }
   },
-  "active": "IDE"
+  "active": "Obs-Nvim"
 }

@@ -33,6 +33,7 @@ nmap ;wq :closeall
 
 " NOTE: Paste as plain text? In pure Vim, this is no need.
 " But in Obsidian, there is a plugin which interfere with that.
+nmap <C-v> p
 imap ;p <Esc>pi
 imap ;u <Esc>2ui
 imap ;r <Esc>2<C-r>i
