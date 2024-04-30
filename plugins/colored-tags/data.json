@@ -605,7 +605,27 @@
     "namespace": 565,
     "modules": 566,
     "dll": 567,
-    "dotnet": 568
+    "dotnet": 568,
+    "emulator": 569,
+    "visualization": 570,
+    "com": 571,
+    "serial": 572,
+    "ports": 573,
+    "powershell-": 574,
+    "cpp-": 575,
+    "android-": 576,
+    "PnP": 577,
+    "HID": 578,
+    "datetime": 579,
+    "qemu": 580,
+    "arm": 581,
+    "archive": 582,
+    "display": 583,
+    "screen": 584,
+    "webserver": 585,
+    "sql": 586,
+    "sqlite": 587,
+    "postgresql": 588
   },
   "_version": 3
 }

@@ -20,6 +20,7 @@
   "highlight": true,
   "showPreviousQueryResults": true,
   "simpleSearch": false,
+  "tokenizeUrls": false,
   "fuzziness": "2",
   "weightBasename": 3,
   "weightDirectory": 2.2,

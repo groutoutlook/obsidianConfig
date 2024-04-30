@@ -25,19 +25,85 @@
                 }
               },
               {
-                "id": "3329983838a38c34",
+                "id": "9d96a3e95a2e731a",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "1_Markdown/note_software/Espanso/300000_Espanso.md",
+                    "file": "1_Markdown/note_software/600000_Microsoft Edge.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "c3e1e7d377bf770d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "610000_vimium_c.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "995010fb0201d34c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1_Markdown/note_IDEAndTools/DeveloperSoftware/TaskRunner/100000_Just.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "be7b1f7b583453ed",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1_Markdown/note_algo_lang/note_SQL/100000_SQL.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "73f4b61e0ffd38e0",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1_Markdown/note_IDEAndTools/SQLandNoSQL/110000_SQlite.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "356d4d0333d01a2d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "1_Markdown/note_IDEAndTools/SQLandNoSQL/120000_Redis.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 6
           },
           {
             "id": "941e663df094be35",
@@ -82,7 +148,8 @@
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -163,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md"
+                "file": "1_Markdown/note_IDEAndTools/SQLandNoSQL/120000_Redis.md"
               }
             }
           },
@@ -173,7 +240,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+                "file": "1_Markdown/note_IDEAndTools/SQLandNoSQL/120000_Redis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,7 +257,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+                "file": "1_Markdown/note_IDEAndTools/SQLandNoSQL/120000_Redis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,10 +286,8 @@
   "left-ribbon": {
     "hiddenItems": {
       "homepage:Open homepage": false,
-      "omnisearch:Omnisearch": false,
       "darlal-switcher-plus:Open in Headings Mode": false,
       "darlal-switcher-plus:Open Symbols for the active editor": false,
-      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
       "canvas:Create new canvas": false,
@@ -231,57 +296,59 @@
       "command-palette:Open command palette": true,
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": true,
-      "random-note:Open random note": true
+      "random-note:Open random note": true,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "f533e4c7ba463e50",
+  "active": "356d4d0333d01a2d",
   "lastOpenFiles": [
+    "1_Markdown/note_IDEAndTools/SQLandNoSQL/110000_SQlite.md",
+    "1_Markdown/note_IDEAndTools/SQLandNoSQL/120000_Redis.md",
+    "1_Markdown/note_IDEAndTools/SQLandNoSQL",
+    "1_Markdown/note_algo_lang/note_SQL/100000_SQL.md",
+    "1_Markdown/note_IDEAndTools/DeveloperSoftware/TaskRunner/100000_Just.md",
+    "1_Markdown/note_software/CLI/013004_Just.md",
+    "610000_vimium_c.md",
+    "1_Markdown/note_software/600000_Microsoft Edge.md",
     "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
-    "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
-    "1_Markdown/note_algo_lang/note_C++/200001_Libraries, Packages and Tools for CPP.md",
-    "1_Markdown/note_algo_lang/note_Powershell/000001_Powershell Core.md",
-    "1_Markdown/note_Embedded/note_EDA/300000_ KiCad.md",
+    "1_Markdown/note_algo_lang/note_C++/cmake/300000_Cmake.md",
+    "1_Markdown/note_IDEAndTools/DeveloperSoftware/TaskRunner",
     "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
     "1_Markdown/note_software/Espanso/300000_Espanso.md",
-    "1_Markdown/note_IDEAndTools/Neovim/100001_Neovim.md",
-    "1_Markdown/note_software/CLI/015004_yazi.md",
+    "1_Markdown/note_software/Espanso/313000_Regex in Espanso.md",
+    "1_Markdown/note_software/Emacs/200000_Emacs.md",
+    "1_Markdown/note_algo_lang/note_SQL",
+    "1_Markdown/note_software/Emacs/200001_Doom Emacs.md",
     "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
-    "1_Markdown/note_algo_lang/note_AHK/300001_AHK Scripts.md",
-    "1_Markdown/note_algo_lang/note_AHK/300002_Advanced Mapping in AHK.md",
-    "1_Markdown/note_algo_lang/note_AHK/300100_Keys in AHK.md",
-    "1_Markdown/note_algo_lang/note_Powershell/000014_Module in Powershell.md",
-    "1_Markdown/note_algo_lang/note_Powershell/100001_Alias in Powershell.md",
-    "1_Markdown/note_algo_lang/note_Powershell/100000_Main Powershell Profile Environment.md",
-    "1_Markdown/note_algo_lang/note_Powershell/110000_Profile Powershell Modules..md",
-    "1_Markdown/note_algo_lang/note_AHK/300000_AutoHotKey.md",
-    "1_Markdown/note_IDEAndTools/Neovim/160001_Lua API in Neovim.md",
-    "1_Markdown/note_software/600000_Microsoft Edge.md",
-    "1_Markdown/note_IDEAndTools/DeveloperSoftware/Terminal/100000_Windows Terminal.md",
-    "1_Markdown/note_IDEAndTools/DeveloperSoftware/Terminal/110000_Customized settings.md",
-    "1_Markdown/note_software/000004_ CLI Software.md",
-    "1_Markdown/note_software/CLI/010004_fzf.md",
+    "1_Markdown/note_IDEAndTools/Neovim/100001_Neovim.md",
+    "1_Markdown/note_algo_lang/note_Powershell/000001_Powershell Core.md",
+    "1_Markdown/note_algo_lang/note_Powershell/400004_Clipboard.md",
+    "1_Markdown/note_algo_lang/note_Powershell/400005_Archive in Powershell.md",
+    "1_Markdown/note_IDEAndTools/Neovim/120001_Windows in Neovim.md",
+    "1_Markdown/note_IDEAndTools/Neovim/100102_Remote in Neovim.md",
+    "1_Markdown/note_algo_lang/note_Powershell/000012_Command in Powershell.md",
+    "1_Markdown/note_algo_lang/note_Powershell/400003_DateTime.md",
     "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md",
-    "1_Markdown/note_software/CLI/011004_Zoxide.md",
+    "1_Markdown/note_algo_lang/note_Powershell/200005_PnP devices.md",
+    "1_Markdown/note_algo_lang/note_Powershell/200003_Service in Powershell.md",
+    "1_Markdown/note_IDEAndTools/Visualization",
+    "CanvasTemplate.canvas",
+    "Untitled.canvas",
+    "1_Markdown/note_software/0_LongJournal/~syncthing~SoftwareJournal.md.tmp",
+    "1_Markdown/note_algo_lang/0_LongJournal/~syncthing~LangJournal.md.tmp",
+    "~syncthing~CanvasTemplate.canvas.tmp",
+    "~syncthing~Untitled.canvas.tmp",
+    "1_Markdown/note_Embedded/~syncthing~HardwareJournal.md.tmp",
     "1_Markdown/note_IDEAndTools/DeveloperSoftware/Terminal",
     "Pasted image 20240428160446.png",
-    "1_Markdown/note_IDE/EDA",
-    "1_Markdown/note_IDEAndTools/VSCode",
-    "1_Markdown/note_IDEAndTools/Unity",
-    "1_Markdown/note_IDEAndTools/Unreal",
-    "1_Markdown/note_IDEAndTools/OtherIDE",
-    "1_Markdown/note_IDEAndTools/VisualStudio",
-    "1_Markdown/note_IDEAndTools",
     "Pasted image 20240427110640.png",
     "Pasted image 20240427110316.png",
-    "1_Markdown/note_software/Espanso",
-    "1_Markdown/note_algo_lang/note_C++/cmake",
     "Pasted image 20240424235652.png",
     "8b865070e7fbc5de636e1e583763e58.jpg",
     "d34bde710e54e4adb3a7d81a3083705.jpg",
     "a5befadd5f1d3c5a85a50f71bc42dc8.jpg",
     "Pasted image 20240416155849.png",
     "Pasted image 20240423231258.png",
-    "Pasted image 20240423231240.png",
-    "Untitled.canvas"
+    "Pasted image 20240423231240.png"
   ]
 }
