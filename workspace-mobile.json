@@ -93,13 +93,110 @@
   "left": {
     "id": "abad8d6e483f72d9",
     "type": "mobile-drawer",
-    "children": [],
+    "children": [
+      {
+        "id": "d0d7865847860892",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "de55933b0cdfc735",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "7a9bcac3af7bb25d",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "25c3aa73ad36a10b",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          }
+        }
+      },
+      {
+        "id": "ea4eacad40f77415",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
     "currentTab": 0
   },
   "right": {
     "id": "6ccaf3a2d8efa971",
     "type": "mobile-drawer",
-    "children": [],
+    "children": [
+      {
+        "id": "54f6c303615f08f0",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "563c3cf04d599141",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "0b07435bbb8c0108",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md"
+          }
+        }
+      }
+    ],
     "currentTab": 0
   },
   "left-ribbon": {
@@ -108,7 +205,6 @@
       "omnisearch:Omnisearch": false,
       "darlal-switcher-plus:Open in Headings Mode": false,
       "darlal-switcher-plus:Open Symbols for the active editor": false,
-      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
       "canvas:Create new canvas": false,
@@ -122,13 +218,14 @@
   },
   "active": "f533e4c7ba463e50",
   "lastOpenFiles": [
+    "1_Markdown/note_algo_lang/note_Powershell/000000_PowerShell_Instant_note_Sort_later.md",
+    "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
     "1_Markdown/note_algo_lang/note_Powershell/000008_Redirect, Pipeline and Content.md",
     "1_Markdown/note_algo_lang/note_Powershell/000012_Command in Powershell.md",
     "1_Markdown/note_algo_lang/note_Powershell/000015_History in Powershell.md",
     "1_Markdown/note_software/Espanso/300000_Espanso.md",
     "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
     "1_Markdown/note_Embedded/HardwareJournal.md",
-    "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
     "CanvasTemplate.canvas",
     "Untitled.canvas",
     "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
@@ -154,7 +251,6 @@
     "1_Markdown/note_Knowledge/100000_ Accounts.sync-conflict-20240411-222342-I6X5N4E.md",
     "1_Markdown/note_software/100001_Neovim.sync-conflict-20240411-222344-I6X5N4E.md",
     "1_Markdown/note_algo_lang/note_Powershell/000001_Powershell Core.sync-conflict-20240411-222344-I6X5N4E.md",
-    "1_Markdown/note_algo_lang/note_Powershell/000008_ Redirect, Pipeline and File Content.sync-conflict-20240411-222344-I6X5N4E.md",
     "Pasted image 20240410221517.png",
     "Pasted image 20240410221243.png",
     "notes/dailies",

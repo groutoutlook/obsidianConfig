@@ -4,155 +4,161 @@
     "type": "split",
     "children": [
       {
-        "id": "492f38704c0bb844",
-        "type": "split",
+        "id": "941e663df094be35",
+        "type": "tabs",
         "children": [
           {
-            "id": "d27f6344b8e6b5e3",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "f533e4c7ba463e50",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "9d96a3e95a2e731a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_software/600000_Microsoft Edge.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "c3e1e7d377bf770d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "610000_vimium_c.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "995010fb0201d34c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_IDEAndTools/DeveloperSoftware/TaskRunner/100000_Just.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "be7b1f7b583453ed",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_algo_lang/note_SQL/100000_SQL.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "73f4b61e0ffd38e0",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_IDEAndTools/SQLandNoSQL/110000_SQlite.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "356d4d0333d01a2d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_IDEAndTools/SQLandNoSQL/120000_Redis.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
+            "id": "6d8c39ceb31b22aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
-            ],
-            "currentTab": 6
+            }
           },
           {
-            "id": "941e663df094be35",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "b0e2239b1bc7a22a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_IDEAndTools/Neovim/100001_Neovim.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "62a1d82c699f709f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "2ba96c704de5dde1",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_software/CLI/015004_yazi.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
+            "id": "48286c65dc23af82",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_Markdown/note_algo_lang/note_C++/ninja/400000_ninja.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
-            ],
-            "currentTab": 1
+            }
+          },
+          {
+            "id": "05fa60bc13916fd3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9fb95e47b297da8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "direction": "vertical"
+        "currentTab": 3
+      },
+      {
+        "id": "d27f6344b8e6b5e3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2c1f5a8cbd6669ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_Markdown/note_algo_lang/note_Powershell/000001_Powershell Core.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e9e00232ad2dc822",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c18d0b08e45dc66f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_Markdown/note_IDEAndTools/DeveloperSoftware/CLI/010004_fzf.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "20de0ac298de2b1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_Markdown/note_IDEAndTools/VisualStudio/100001_Visual Studio.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ac4ccb31a5c127d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_Markdown/note_IDEAndTools/DeveloperSoftware/CLI/015004_yazi.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "31af953ef5ad8e24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_Markdown/note_IDEAndTools/Neovim/101101_Telescope.nvim.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "981a6e25b17325f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_Markdown/note_algo_lang/note_Powershell/400005_Archive in Powershell.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -171,7 +177,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#boilerplate",
+                "query": "tag:module",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -230,7 +236,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_Markdown/note_IDEAndTools/SQLandNoSQL/120000_Redis.md"
+                "file": "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md"
               }
             }
           },
@@ -240,7 +246,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_Markdown/note_IDEAndTools/SQLandNoSQL/120000_Redis.md",
+                "file": "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -257,7 +263,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_Markdown/note_IDEAndTools/SQLandNoSQL/120000_Redis.md",
+                "file": "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -286,6 +292,7 @@
   "left-ribbon": {
     "hiddenItems": {
       "homepage:Open homepage": false,
+      "omnisearch:Omnisearch": false,
       "darlal-switcher-plus:Open in Headings Mode": false,
       "darlal-switcher-plus:Open Symbols for the active editor": false,
       "switcher:Open quick switcher": true,
@@ -296,50 +303,50 @@
       "command-palette:Open command palette": true,
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": true,
-      "random-note:Open random note": true,
-      "omnisearch:Omnisearch": false
+      "random-note:Open random note": true
     }
   },
-  "active": "356d4d0333d01a2d",
+  "active": "9fb95e47b297da8d",
   "lastOpenFiles": [
-    "1_Markdown/note_IDEAndTools/SQLandNoSQL/110000_SQlite.md",
-    "1_Markdown/note_IDEAndTools/SQLandNoSQL/120000_Redis.md",
-    "1_Markdown/note_IDEAndTools/SQLandNoSQL",
-    "1_Markdown/note_algo_lang/note_SQL/100000_SQL.md",
-    "1_Markdown/note_IDEAndTools/DeveloperSoftware/TaskRunner/100000_Just.md",
-    "1_Markdown/note_software/CLI/013004_Just.md",
-    "610000_vimium_c.md",
-    "1_Markdown/note_software/600000_Microsoft Edge.md",
-    "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
-    "1_Markdown/note_algo_lang/note_C++/cmake/300000_Cmake.md",
-    "1_Markdown/note_IDEAndTools/DeveloperSoftware/TaskRunner",
-    "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
-    "1_Markdown/note_software/Espanso/300000_Espanso.md",
-    "1_Markdown/note_software/Espanso/313000_Regex in Espanso.md",
-    "1_Markdown/note_software/Emacs/200000_Emacs.md",
-    "1_Markdown/note_algo_lang/note_SQL",
-    "1_Markdown/note_software/Emacs/200001_Doom Emacs.md",
+    "1_Markdown/note_IDEAndTools/DeveloperSoftware/CLI/016004_ripgrep.md",
+    "1_Markdown/note_IDEAndTools/VisualStudio/100001_Visual Studio.md",
+    "1_Markdown/note_IDEAndTools/DeveloperSoftware/CLI/010004_fzf.md",
+    "1_Markdown/note_IDEAndTools/Neovim/101101_Telescope.nvim.md",
+    "1_Markdown/note_IDEAndTools/DeveloperSoftware/CLI/015004_yazi.md",
+    "1_Markdown/note_IDEAndTools/Neovim/100101_Neovim Plugins.md",
+    "1_Markdown/note_utils/200000_ Current assets.md",
+    "1_Markdown/note_Items/AssetJournal.md",
     "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
-    "1_Markdown/note_IDEAndTools/Neovim/100001_Neovim.md",
+    "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
     "1_Markdown/note_algo_lang/note_Powershell/000001_Powershell Core.md",
-    "1_Markdown/note_algo_lang/note_Powershell/400004_Clipboard.md",
     "1_Markdown/note_algo_lang/note_Powershell/400005_Archive in Powershell.md",
-    "1_Markdown/note_IDEAndTools/Neovim/120001_Windows in Neovim.md",
-    "1_Markdown/note_IDEAndTools/Neovim/100102_Remote in Neovim.md",
-    "1_Markdown/note_algo_lang/note_Powershell/000012_Command in Powershell.md",
-    "1_Markdown/note_algo_lang/note_Powershell/400003_DateTime.md",
+    "1_Markdown/note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+    "Pasted image 20240503075256.png",
     "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md",
-    "1_Markdown/note_algo_lang/note_Powershell/200005_PnP devices.md",
-    "1_Markdown/note_algo_lang/note_Powershell/200003_Service in Powershell.md",
+    "1_Markdown/note_algo_lang/note_C++/ninja/400000_ninja.md",
+    "1_Markdown/note_algo_lang/note_C++/200001_Libraries, Packages and Tools for CPP.md",
+    "1_Markdown/note_IDEAndTools/VisualStudio/100002_Personalize.md",
+    "1_Markdown/note_algo_lang/note_C++/topic_graphic/200001_Library Vulkan.md",
+    "1_Markdown/note_algo_lang/0_LongJournal/~syncthing~LangJournal.md.tmp",
+    "1_Markdown/note_software/casualCLI",
+    "1_Markdown/note_algo_lang/note_C++/topic_graphic",
+    "1_Markdown/note_algo_lang/note_C++/cmake/300000_Cmake.md",
+    "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
+    "1_Markdown/note_algo_lang/note_C++/ninja",
+    "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+    "1_Markdown/note_software/0_LongJournal/OSJournal.md",
+    "1_Markdown/note_algo_lang/note_Powershell/200004_Samples Scripts.md",
+    "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.sync-conflict-20240420-202411-OJBZEUE.md",
+    "1_Markdown/note_software/0_LongJournal/SoftwareJournal.sync-conflict-20240502-144533-OJBZEUE.md",
+    "1_Markdown/note_software/0_LongJournal/~syncthing~SoftwareJournal.sync-conflict-20240502-144533-OJBZEUE.md.tmp",
+    "1_Markdown/note_software/0_LongJournal/SoftwareJournal.sync-conflict-20240502-144233-OJBZEUE.md",
+    "1_Markdown/note_software/0_LongJournal/~syncthing~SoftwareJournal.md.tmp",
+    "1_Markdown/note_IDEAndTools/SQLandNoSQL",
+    "1_Markdown/note_IDEAndTools/DeveloperSoftware/TaskRunner",
+    "1_Markdown/note_algo_lang/note_SQL",
     "1_Markdown/note_IDEAndTools/Visualization",
     "CanvasTemplate.canvas",
     "Untitled.canvas",
-    "1_Markdown/note_software/0_LongJournal/~syncthing~SoftwareJournal.md.tmp",
-    "1_Markdown/note_algo_lang/0_LongJournal/~syncthing~LangJournal.md.tmp",
-    "~syncthing~CanvasTemplate.canvas.tmp",
-    "~syncthing~Untitled.canvas.tmp",
-    "1_Markdown/note_Embedded/~syncthing~HardwareJournal.md.tmp",
-    "1_Markdown/note_IDEAndTools/DeveloperSoftware/Terminal",
     "Pasted image 20240428160446.png",
     "Pasted image 20240427110640.png",
     "Pasted image 20240427110316.png",
@@ -348,7 +355,6 @@
     "d34bde710e54e4adb3a7d81a3083705.jpg",
     "a5befadd5f1d3c5a85a50f71bc42dc8.jpg",
     "Pasted image 20240416155849.png",
-    "Pasted image 20240423231258.png",
-    "Pasted image 20240423231240.png"
+    "Pasted image 20240423231258.png"
   ]
 }
