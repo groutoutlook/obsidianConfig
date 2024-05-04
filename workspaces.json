@@ -287,12 +287,11 @@
           "workspaces:Manage workspace layouts": true,
           "random-note:Open random note": true,
           "homepage:Open homepage": false,
-          "templater-obsidian:Templater": false,
           "omnisearch:Omnisearch": false
         }
       },
       "active": "df6102b0faf16465",
-      "mtime": "2024-04-29T07:38:55+07:00"
+      "mtime": "2024-05-05T00:29:36+07:00"
     },
     "Embedded-Hardware-EDA": {
       "main": {
@@ -535,12 +534,12 @@
             "type": "tabs",
             "children": [
               {
-                "id": "6d8c39ceb31b22aa",
+                "id": "85345af1a3a42c21",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
+                    "file": "1_Markdown/note_algo_lang/note_C++/cmake/300000_Cmake.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
@@ -560,8 +559,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "d27f6344b8e6b5e3",
@@ -579,22 +577,8 @@
                     "source": false
                   }
                 }
-              },
-              {
-                "id": "e9e00232ad2dc822",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -613,7 +597,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "tag:module",
+                    "query": "",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -672,7 +656,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md"
+                    "file": "1_Markdown/note_algo_lang/note_C++/cmake/300000_Cmake.md"
                   }
                 }
               },
@@ -682,7 +666,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
+                    "file": "1_Markdown/note_algo_lang/note_C++/cmake/300000_Cmake.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -699,7 +683,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
+                    "file": "1_Markdown/note_algo_lang/note_C++/cmake/300000_Cmake.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -742,8 +726,8 @@
           "random-note:Open random note": true
         }
       },
-      "active": "e9e00232ad2dc822",
-      "mtime": "2024-05-04T12:05:51+07:00"
+      "active": "85345af1a3a42c21",
+      "mtime": "2024-05-05T00:29:29+07:00"
     },
     "Obs-Nvim-Lua-Editor": {
       "main": {

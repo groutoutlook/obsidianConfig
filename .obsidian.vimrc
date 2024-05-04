@@ -24,6 +24,8 @@ exmap loadworkspace obcommand workspaces:save-and-load
 nmap ;ws :loadworkspace
 imap ;ws :loadworkspace
 
+nmap ;fs :loadworkspace
+imap ;fs :loadworkspace
 
 " Go to link or open note in new tab(leaf)
 " exmap follow obcommand editor:open-link-in-new-window
@@ -52,8 +54,8 @@ nmap <Space>t :ins_temp
 " Focus on global search input
 exmap globalSearch obcommand omnisearch:show-modal
 nmap <Space>f :globalSearch
-nmap ;f :globalSearch
-imap ;f :globalSearch
+nmap ;ff :globalSearch
+imap ;ff :globalSearch
 
 
 " Splits
