@@ -73,13 +73,8 @@
                 "id": "2ba96c704de5dde1",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_software/CLI/015004_yazi.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
+                  "type": "empty",
+                  "state": {}
                 }
               }
             ]
@@ -218,8 +213,9 @@
   },
   "active": "f533e4c7ba463e50",
   "lastOpenFiles": [
-    "1_Markdown/note_algo_lang/note_Powershell/000000_PowerShell_Instant_note_Sort_later.md",
+    "1_Markdown/note_IDEAndTools/Neovim/100001_Neovim.md",
     "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+    "1_Markdown/note_algo_lang/note_Powershell/000000_PowerShell_Instant_note_Sort_later.md",
     "1_Markdown/note_algo_lang/note_Powershell/000008_Redirect, Pipeline and Content.md",
     "1_Markdown/note_algo_lang/note_Powershell/000012_Command in Powershell.md",
     "1_Markdown/note_algo_lang/note_Powershell/000015_History in Powershell.md",
@@ -229,7 +225,6 @@
     "CanvasTemplate.canvas",
     "Untitled.canvas",
     "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
-    "1_Markdown/note_IDEAndTools/Neovim/100001_Neovim.md",
     "1_Markdown/note_software/CLI/015004_yazi.md",
     "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
     "1_Markdown/note_software/000001_ Useful Website.md",

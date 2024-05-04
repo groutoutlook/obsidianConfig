@@ -8,19 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6d8c39ceb31b22aa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "48286c65dc23af82",
             "type": "leaf",
             "state": {
@@ -32,35 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "05fa60bc13916fd3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9fb95e47b297da8d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "d27f6344b8e6b5e3",
@@ -78,87 +38,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "e9e00232ad2dc822",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c18d0b08e45dc66f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1_Markdown/note_IDEAndTools/DeveloperSoftware/CLI/010004_fzf.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "20de0ac298de2b1e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1_Markdown/note_IDEAndTools/VisualStudio/100001_Visual Studio.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ac4ccb31a5c127d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1_Markdown/note_IDEAndTools/DeveloperSoftware/CLI/015004_yazi.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "31af953ef5ad8e24",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1_Markdown/note_IDEAndTools/Neovim/101101_Telescope.nvim.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "981a6e25b17325f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1_Markdown/note_algo_lang/note_Powershell/400005_Archive in Powershell.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:module",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -236,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md"
+                "file": "1_Markdown/note_algo_lang/note_C++/ninja/400000_ninja.md"
               }
             }
           },
@@ -246,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md",
+                "file": "1_Markdown/note_algo_lang/note_C++/ninja/400000_ninja.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -263,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md",
+                "file": "1_Markdown/note_algo_lang/note_C++/ninja/400000_ninja.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -306,45 +187,45 @@
       "random-note:Open random note": true
     }
   },
-  "active": "9fb95e47b297da8d",
+  "active": "48286c65dc23af82",
   "lastOpenFiles": [
-    "1_Markdown/note_IDEAndTools/DeveloperSoftware/CLI/016004_ripgrep.md",
-    "1_Markdown/note_IDEAndTools/VisualStudio/100001_Visual Studio.md",
-    "1_Markdown/note_IDEAndTools/DeveloperSoftware/CLI/010004_fzf.md",
+    "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
+    "1_Markdown/note_algo_lang/note_C++/vcpkg/410000_vcpkg CLI.md",
+    "1_Markdown/note_algo_lang/note_C++/ninja/400000_ninja.md",
+    "1_Markdown/note_algo_lang/note_Powershell/000001_Powershell Core.md",
+    "1_Markdown/note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
+    "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
+    "1_Markdown/note_android/200003_ ADB input handling.md",
+    "1_Markdown/note_android/000001_Android_Basic_ADB_Utils.md",
+    "().md",
+    "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
+    "1_Markdown/note_algo_lang/note_Powershell/000005.001-Comparsion.md",
+    "1_Markdown/note_algo_lang/note_C++/namespace_std/003.003.000.000-Filesystem.md",
+    "1_Markdown/note_algo_lang/note_Powershell/000005_Operator in Powershell.md",
+    "003.003.001.000-Path.md",
+    "1_Markdown/note_algo_lang/note_C++/100006_ Bind, Lambda Template,.md",
+    "1_Markdown/note_algo_lang/note_C++/namespace_std/Untitled",
+    "1_Markdown/note_algo_lang/note_C++/namespace_std",
+    "1_Markdown/note_algo_lang/note_C++/200001_Libraries, Packages and Tools for CPP.md",
+    "1_Markdown/note_algo_lang/note_Powershell/400005_Archive in Powershell.md",
     "1_Markdown/note_IDEAndTools/Neovim/101101_Telescope.nvim.md",
     "1_Markdown/note_IDEAndTools/DeveloperSoftware/CLI/015004_yazi.md",
+    "1_Markdown/note_IDEAndTools/DeveloperSoftware/CLI/010004_fzf.md",
+    "1_Markdown/note_IDEAndTools/VisualStudio/100001_Visual Studio.md",
+    "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md",
+    "1_Markdown/note_IDEAndTools/DeveloperSoftware/CLI/016004_ripgrep.md",
     "1_Markdown/note_IDEAndTools/Neovim/100101_Neovim Plugins.md",
     "1_Markdown/note_utils/200000_ Current assets.md",
     "1_Markdown/note_Items/AssetJournal.md",
-    "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
-    "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
-    "1_Markdown/note_algo_lang/note_Powershell/000001_Powershell Core.md",
-    "1_Markdown/note_algo_lang/note_Powershell/400005_Archive in Powershell.md",
-    "1_Markdown/note_algo_lang/0_LongJournal/ProgrammingJournal.md",
     "Pasted image 20240503075256.png",
-    "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md",
-    "1_Markdown/note_algo_lang/note_C++/ninja/400000_ninja.md",
-    "1_Markdown/note_algo_lang/note_C++/200001_Libraries, Packages and Tools for CPP.md",
-    "1_Markdown/note_IDEAndTools/VisualStudio/100002_Personalize.md",
-    "1_Markdown/note_algo_lang/note_C++/topic_graphic/200001_Library Vulkan.md",
     "1_Markdown/note_algo_lang/0_LongJournal/~syncthing~LangJournal.md.tmp",
     "1_Markdown/note_software/casualCLI",
     "1_Markdown/note_algo_lang/note_C++/topic_graphic",
-    "1_Markdown/note_algo_lang/note_C++/cmake/300000_Cmake.md",
-    "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
     "1_Markdown/note_algo_lang/note_C++/ninja",
-    "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
-    "1_Markdown/note_software/0_LongJournal/OSJournal.md",
-    "1_Markdown/note_algo_lang/note_Powershell/200004_Samples Scripts.md",
-    "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.sync-conflict-20240420-202411-OJBZEUE.md",
-    "1_Markdown/note_software/0_LongJournal/SoftwareJournal.sync-conflict-20240502-144533-OJBZEUE.md",
     "1_Markdown/note_software/0_LongJournal/~syncthing~SoftwareJournal.sync-conflict-20240502-144533-OJBZEUE.md.tmp",
-    "1_Markdown/note_software/0_LongJournal/SoftwareJournal.sync-conflict-20240502-144233-OJBZEUE.md",
     "1_Markdown/note_software/0_LongJournal/~syncthing~SoftwareJournal.md.tmp",
     "1_Markdown/note_IDEAndTools/SQLandNoSQL",
     "1_Markdown/note_IDEAndTools/DeveloperSoftware/TaskRunner",
-    "1_Markdown/note_algo_lang/note_SQL",
-    "1_Markdown/note_IDEAndTools/Visualization",
     "CanvasTemplate.canvas",
     "Untitled.canvas",
     "Pasted image 20240428160446.png",

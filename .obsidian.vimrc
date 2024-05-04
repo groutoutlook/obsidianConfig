@@ -19,11 +19,18 @@ set clipboard=unnamed
 unmap <Space>
 unmap ;
 
+" map workspace
+exmap loadworkspace obcommand workspaces:save-and-load
+nmap ;ws :loadworkspace
+imap ;ws :loadworkspace
+
+
 " Go to link or open note in new tab(leaf)
 " exmap follow obcommand editor:open-link-in-new-window
 exmap follow obcommand editor:open-link-in-new-leaf
-nmap gx :follow
+nmap gfx :follow
 
+nmap gx $%gfx
 " Open the link at the end of line.
 nmap ;gx $%gx
 imap ;gx <Esc>%wgxi

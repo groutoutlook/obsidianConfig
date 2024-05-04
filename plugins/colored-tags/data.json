@@ -651,7 +651,8 @@
     "notcoverage": 611,
     "tips": 612,
     "argument": 613,
-    "nuget": 614
+    "nuget": 614,
+    "std": 615
   },
   "_version": 3
 }

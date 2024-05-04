@@ -548,19 +548,20 @@
                 }
               },
               {
-                "id": "1364da9919e55064",
+                "id": "48286c65dc23af82",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "1_Markdown/note_algo_lang/note_C++/200001_Libraries, Packages and Tools for CPP.md",
+                    "file": "1_Markdown/note_algo_lang/note_C++/ninja/400000_ninja.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           },
           {
             "id": "d27f6344b8e6b5e3",
@@ -580,19 +581,20 @@
                 }
               },
               {
-                "id": "981a6e25b17325f3",
+                "id": "e9e00232ad2dc822",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "1_Markdown/note_algo_lang/note_Powershell/400005_Archive in Powershell.md",
+                    "file": "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -670,7 +672,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "1_Markdown/note_algo_lang/note_Powershell/000001_Powershell Core.md"
+                    "file": "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md"
                   }
                 }
               },
@@ -680,7 +682,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "1_Markdown/note_algo_lang/note_Powershell/000001_Powershell Core.md",
+                    "file": "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -697,7 +699,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "1_Markdown/note_algo_lang/note_Powershell/000001_Powershell Core.md",
+                    "file": "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -740,8 +742,8 @@
           "random-note:Open random note": true
         }
       },
-      "active": "2c1f5a8cbd6669ef",
-      "mtime": "2024-05-01T20:23:05+07:00"
+      "active": "e9e00232ad2dc822",
+      "mtime": "2024-05-04T12:05:51+07:00"
     },
     "Obs-Nvim-Lua-Editor": {
       "main": {
