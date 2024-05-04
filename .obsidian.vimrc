@@ -18,15 +18,26 @@ set clipboard=unnamed
 " NOTE: In Normal Mode, have to unmap. In Insert mode then no need.
 unmap <Space>
 unmap ;
+unmap -
+
 
 " map workspace
 exmap loadworkspace obcommand workspaces:save-and-load
 nmap ;ws :loadworkspace
 imap ;ws :loadworkspace
 
+" This is due to my familiar keystroke in neovim to find last sessions.
+nmap <Space>fs :loadworkspace
 nmap ;fs :loadworkspace
 imap ;fs :loadworkspace
 
+" nmap vv v$
+imap vv <Esc>v$
+
+" Make a newline with a link.
+nmap ;p A<space>[](<Esc>pa)<Esc>%ba
+nmap -;p o-<Esc>;p
+imap -;p <Esc>-;p
 " Go to link or open note in new tab(leaf)
 " exmap follow obcommand editor:open-link-in-new-window
 exmap follow obcommand editor:open-link-in-new-leaf
@@ -43,7 +54,7 @@ nmap ;wq :closeall
 " NOTE: Paste as plain text? In pure Vim, this is no need.
 " But in Obsidian, there is a plugin which interfere with that.
 nmap <C-v> p
-imap ;p <Esc>pi
+imap ;p <Esc>pa
 imap ;u <Esc>2ui
 imap ;r <Esc>2<C-r>i
 
@@ -53,7 +64,7 @@ nmap <Space>t :ins_temp
 
 " Focus on global search input
 exmap globalSearch obcommand omnisearch:show-modal
-nmap <Space>f :globalSearch
+nmap <Space>ff :globalSearch
 nmap ;ff :globalSearch
 imap ;ff :globalSearch
 
