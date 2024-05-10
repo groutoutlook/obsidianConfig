@@ -47,6 +47,8 @@ nmap gx $%gfx
 " Open the link at the end of line.
 nmap ;gx $%gx
 imap ;gx <Esc>%wgxi
+imap gxx <Esc>%wgxi
+imap ggx <Esc>%wgxi
 
 exmap closeall obcommand workspace:close-window
 nmap ;wq :closeall

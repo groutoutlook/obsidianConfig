@@ -1,327 +1,21 @@
 {
   "workspaces": {
-    "Journal-code-eda": {
+    "powershell-windows": {
       "main": {
         "id": "263a29aef5415f61",
         "type": "split",
         "children": [
           {
-            "id": "492f38704c0bb844",
-            "type": "split",
-            "children": [
-              {
-                "id": "d27f6344b8e6b5e3",
-                "type": "tabs",
-                "children": [
-                  {
-                    "id": "0cdec43ba3527fad",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "MainJournal.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": false
-                      }
-                    }
-                  },
-                  {
-                    "id": "df6102b0faf16465",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": false
-                      }
-                    }
-                  }
-                ],
-                "currentTab": 1
-              },
-              {
-                "id": "83c50951e5759dad",
-                "type": "split",
-                "children": [
-                  {
-                    "id": "941e663df094be35",
-                    "type": "tabs",
-                    "children": [
-                      {
-                        "id": "d2fefa65bd70bdac",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_Embedded/HardwareJournal.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
-                      },
-                      {
-                        "id": "f67a29ef3a1d6c62",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_Embedded/note_EDA/EDAJournal.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
-                      },
-                      {
-                        "id": "4750b09495aa793f",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_software/0_LongJournal/AccountJournal.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
-                      }
-                    ],
-                    "currentTab": 2
-                  },
-                  {
-                    "id": "d03c6768063232d1",
-                    "type": "tabs",
-                    "children": [
-                      {
-                        "id": "bbeaeb403f898052",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_algo_lang/0_LongJournal/LangJournal.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
-                      },
-                      {
-                        "id": "a3ca522169b82cb6",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
-                      },
-                      {
-                        "id": "e72316c9829153fd",
-                        "type": "leaf",
-                        "state": {
-                          "type": "markdown",
-                          "state": {
-                            "file": "1_Markdown/note_algo_lang/0_LongJournal/ProgrammingJournal.md",
-                            "mode": "source",
-                            "backlinks": false,
-                            "source": false
-                          }
-                        }
-                      }
-                    ]
-                  }
-                ],
-                "direction": "horizontal"
-              }
-            ],
-            "direction": "vertical"
-          }
-        ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "9cff79e840a150af",
-        "type": "split",
-        "children": [
-          {
-            "id": "0a937267b42a4d0d",
+            "id": "68ffb2c6e926a4ec",
             "type": "tabs",
             "children": [
               {
-                "id": "1b478c7c12d83a3e",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "21e5c229a96d1944",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "ebd3d01a1d71d7f3",
-                "type": "leaf",
-                "state": {
-                  "type": "bookmarks",
-                  "state": {}
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "horizontal",
-        "width": 222.51240158081055,
-        "collapsed": true
-      },
-      "right": {
-        "id": "3d18e10a2c3023dd",
-        "type": "split",
-        "children": [
-          {
-            "id": "53b5d0cccdf15cdc",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "6050072cb4243420",
-                "type": "leaf",
-                "state": {
-                  "type": "tag",
-                  "state": {
-                    "sortOrder": "alphabetical",
-                    "useHierarchy": true
-                  }
-                }
-              },
-              {
-                "id": "23cf68db9e5ba694",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md"
-                  }
-                }
-              },
-              {
-                "id": "b1fb9d4743489d84",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": true,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  }
-                }
-              },
-              {
-                "id": "899dcf70e3b52309",
-                "type": "leaf",
-                "state": {
-                  "type": "outgoing-link",
-                  "state": {
-                    "file": "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
-                    "linksCollapsed": false,
-                    "unlinkedCollapsed": true
-                  }
-                }
-              },
-              {
-                "id": "6e2c7b0a8255e402",
-                "type": "leaf",
-                "state": {
-                  "type": "all-properties",
-                  "state": {
-                    "sortOrder": "frequency",
-                    "showSearch": false,
-                    "searchQuery": ""
-                  }
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "horizontal",
-        "width": 349.5,
-        "collapsed": true
-      },
-      "left-ribbon": {
-        "hiddenItems": {
-          "darlal-switcher-plus:Open in Headings Mode": false,
-          "darlal-switcher-plus:Open Symbols for the active editor": false,
-          "switcher:Open quick switcher": true,
-          "graph:Open graph view": true,
-          "canvas:Create new canvas": false,
-          "daily-notes:Open today's daily note": true,
-          "templates:Insert template": true,
-          "command-palette:Open command palette": true,
-          "markdown-importer:Open format converter": false,
-          "workspaces:Manage workspace layouts": true,
-          "random-note:Open random note": true,
-          "homepage:Open homepage": false,
-          "omnisearch:Omnisearch": false
-        }
-      },
-      "active": "df6102b0faf16465",
-      "mtime": "2024-05-05T00:29:36+07:00"
-    },
-    "Embedded-Hardware-EDA": {
-      "main": {
-        "id": "263a29aef5415f61",
-        "type": "split",
-        "children": [
-          {
-            "id": "941e663df094be35",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "f2a23d60a758478c",
+                "id": "344f86682bfda1a6",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "1_Markdown/note_Embedded/note_EDA/300000_ KiCad.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "4747729002eee2cf",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_Embedded/note_EDA/300010_ KiCad Resources.md",
+                    "file": "note_software/SysInternals/000.000.000.000-SysInternals.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
@@ -331,42 +25,16 @@
             ]
           },
           {
-            "id": "d27f6344b8e6b5e3",
+            "id": "acba744c83d6a220",
             "type": "tabs",
             "children": [
               {
-                "id": "3a50b4f807086cb3",
+                "id": "4621f7619c5ca9a5",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "1_Markdown/note_Embedded/000002_Embedded C and C++ lib.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "3a5020a055ea1faa",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_Embedded/HardwareJournal.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "625689ddd7a406bf",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
+                    "file": "note_software/SysInternals/000.002.000.000-SystemInfo.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
@@ -374,463 +42,6 @@
                 }
               }
             ]
-          }
-        ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "9cff79e840a150af",
-        "type": "split",
-        "children": [
-          {
-            "id": "0a937267b42a4d0d",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "1b478c7c12d83a3e",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "tag:#boilerplate",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "21e5c229a96d1944",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "ebd3d01a1d71d7f3",
-                "type": "leaf",
-                "state": {
-                  "type": "bookmarks",
-                  "state": {}
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "horizontal",
-        "width": 233.5
-      },
-      "right": {
-        "id": "3d18e10a2c3023dd",
-        "type": "split",
-        "children": [
-          {
-            "id": "53b5d0cccdf15cdc",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "6050072cb4243420",
-                "type": "leaf",
-                "state": {
-                  "type": "tag",
-                  "state": {
-                    "sortOrder": "alphabetical",
-                    "useHierarchy": true
-                  }
-                }
-              },
-              {
-                "id": "23cf68db9e5ba694",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "1_Markdown/note_Embedded/000002_Embedded C and C++ lib.md"
-                  }
-                }
-              },
-              {
-                "id": "b1fb9d4743489d84",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "1_Markdown/note_Embedded/000002_Embedded C and C++ lib.md",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": true,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  }
-                }
-              },
-              {
-                "id": "899dcf70e3b52309",
-                "type": "leaf",
-                "state": {
-                  "type": "outgoing-link",
-                  "state": {
-                    "file": "1_Markdown/note_Embedded/000002_Embedded C and C++ lib.md",
-                    "linksCollapsed": false,
-                    "unlinkedCollapsed": true
-                  }
-                }
-              },
-              {
-                "id": "6e2c7b0a8255e402",
-                "type": "leaf",
-                "state": {
-                  "type": "all-properties",
-                  "state": {
-                    "sortOrder": "frequency",
-                    "showSearch": false,
-                    "searchQuery": ""
-                  }
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "horizontal",
-        "width": 349.5,
-        "collapsed": true
-      },
-      "left-ribbon": {
-        "hiddenItems": {
-          "homepage:Open homepage": false,
-          "omnisearch:Omnisearch": false,
-          "darlal-switcher-plus:Open in Headings Mode": false,
-          "darlal-switcher-plus:Open Symbols for the active editor": false,
-          "switcher:Open quick switcher": true,
-          "graph:Open graph view": true,
-          "canvas:Create new canvas": false,
-          "daily-notes:Open today's daily note": true,
-          "templates:Insert template": true,
-          "command-palette:Open command palette": true,
-          "markdown-importer:Open format converter": false,
-          "workspaces:Manage workspace layouts": true,
-          "random-note:Open random note": true
-        }
-      },
-      "active": "3a50b4f807086cb3",
-      "mtime": "2024-04-29T12:12:21+07:00"
-    },
-    "CPP-Powershell-IDE": {
-      "main": {
-        "id": "263a29aef5415f61",
-        "type": "split",
-        "children": [
-          {
-            "id": "941e663df094be35",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "85345af1a3a42c21",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_algo_lang/note_C++/cmake/300000_Cmake.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "48286c65dc23af82",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_algo_lang/note_C++/ninja/400000_ninja.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "id": "d27f6344b8e6b5e3",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "2c1f5a8cbd6669ef",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "1_Markdown/note_algo_lang/note_Powershell/000001_Powershell Core.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "9cff79e840a150af",
-        "type": "split",
-        "children": [
-          {
-            "id": "0a937267b42a4d0d",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "1b478c7c12d83a3e",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "21e5c229a96d1944",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "ebd3d01a1d71d7f3",
-                "type": "leaf",
-                "state": {
-                  "type": "bookmarks",
-                  "state": {}
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "horizontal",
-        "width": 233.5
-      },
-      "right": {
-        "id": "3d18e10a2c3023dd",
-        "type": "split",
-        "children": [
-          {
-            "id": "53b5d0cccdf15cdc",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "6050072cb4243420",
-                "type": "leaf",
-                "state": {
-                  "type": "tag",
-                  "state": {
-                    "sortOrder": "alphabetical",
-                    "useHierarchy": true
-                  }
-                }
-              },
-              {
-                "id": "23cf68db9e5ba694",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "1_Markdown/note_algo_lang/note_C++/cmake/300000_Cmake.md"
-                  }
-                }
-              },
-              {
-                "id": "b1fb9d4743489d84",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "1_Markdown/note_algo_lang/note_C++/cmake/300000_Cmake.md",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": true,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  }
-                }
-              },
-              {
-                "id": "899dcf70e3b52309",
-                "type": "leaf",
-                "state": {
-                  "type": "outgoing-link",
-                  "state": {
-                    "file": "1_Markdown/note_algo_lang/note_C++/cmake/300000_Cmake.md",
-                    "linksCollapsed": false,
-                    "unlinkedCollapsed": true
-                  }
-                }
-              },
-              {
-                "id": "6e2c7b0a8255e402",
-                "type": "leaf",
-                "state": {
-                  "type": "all-properties",
-                  "state": {
-                    "sortOrder": "frequency",
-                    "showSearch": false,
-                    "searchQuery": ""
-                  }
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "horizontal",
-        "width": 349.5,
-        "collapsed": true
-      },
-      "left-ribbon": {
-        "hiddenItems": {
-          "homepage:Open homepage": false,
-          "omnisearch:Omnisearch": false,
-          "darlal-switcher-plus:Open in Headings Mode": false,
-          "darlal-switcher-plus:Open Symbols for the active editor": false,
-          "switcher:Open quick switcher": true,
-          "graph:Open graph view": true,
-          "canvas:Create new canvas": false,
-          "daily-notes:Open today's daily note": true,
-          "templates:Insert template": true,
-          "command-palette:Open command palette": true,
-          "markdown-importer:Open format converter": false,
-          "workspaces:Manage workspace layouts": true,
-          "random-note:Open random note": true
-        }
-      },
-      "active": "85345af1a3a42c21",
-      "mtime": "2024-05-05T00:29:29+07:00"
-    },
-    "Obs-Nvim-Lua-Editor": {
-      "main": {
-        "id": "263a29aef5415f61",
-        "type": "split",
-        "children": [
-          {
-            "id": "492f38704c0bb844",
-            "type": "split",
-            "children": [
-              {
-                "id": "d27f6344b8e6b5e3",
-                "type": "tabs",
-                "children": [
-                  {
-                    "id": "f47fd1d0492d9de5",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": false
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "941e663df094be35",
-                "type": "tabs",
-                "children": [
-                  {
-                    "id": "b0e2239b1bc7a22a",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "1_Markdown/note_IDEAndTools/Neovim/100001_Neovim.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": false
-                      }
-                    }
-                  },
-                  {
-                    "id": "62a1d82c699f709f",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": false
-                      }
-                    }
-                  },
-                  {
-                    "id": "72e908baa63caa2f",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "1_Markdown/note_IDEAndTools/Neovim/120001_Windows and Tab in Neovim.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": false
-                      }
-                    }
-                  },
-                  {
-                    "id": "e7c2f6f1e86eef40",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "1_Markdown/note_IDEAndTools/Neovim/101101_Telescope.nvim.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": false
-                      }
-                    }
-                  },
-                  {
-                    "id": "2ba96c704de5dde1",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "1_Markdown/note_software/CLI/015004_yazi.md",
-                        "mode": "source",
-                        "backlinks": false,
-                        "source": false
-                      }
-                    }
-                  }
-                ],
-                "currentTab": 2
-              }
-            ],
-            "direction": "vertical"
           }
         ],
         "direction": "vertical"
@@ -907,7 +118,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md"
+                    "file": "note_software/SysInternals/000.002.000.000-SystemInfo.md"
                   }
                 }
               },
@@ -917,7 +128,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+                    "file": "note_software/SysInternals/000.002.000.000-SystemInfo.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -934,7 +145,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "1_Markdown/note_software/Obsidian/400000_Obsidian.md",
+                    "file": "note_software/SysInternals/000.002.000.000-SystemInfo.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -977,9 +188,214 @@
           "darlal-switcher-plus:Open Symbols for the active editor": false
         }
       },
-      "active": "f47fd1d0492d9de5",
-      "mtime": "2024-05-02T16:53:36+07:00"
+      "active": "4621f7619c5ca9a5",
+      "mtime": "2024-05-06T13:44:09+07:00"
+    },
+    "obs-nvim": {
+      "main": {
+        "id": "263a29aef5415f61",
+        "type": "split",
+        "children": [
+          {
+            "id": "55225c8e17fa7212",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "2b45be933c700adc",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_software/Obsidian/400000_Obsidian.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "b498c7289a54253e",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b420ac09bc702476",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_IDEAndTools/Neovim/100001_Neovim.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "e7acf62aebf3ca40",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_software/0_LongJournal/OSJournal.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "9cff79e840a150af",
+        "type": "split",
+        "children": [
+          {
+            "id": "0a937267b42a4d0d",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "21e5c229a96d1944",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "1b478c7c12d83a3e",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:window",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "c17a40a03d252273",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 233.5
+      },
+      "right": {
+        "id": "3d18e10a2c3023dd",
+        "type": "split",
+        "children": [
+          {
+            "id": "53b5d0cccdf15cdc",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "6050072cb4243420",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "23cf68db9e5ba694",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "note_software/0_LongJournal/OSJournal.md"
+                  }
+                }
+              },
+              {
+                "id": "b1fb9d4743489d84",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "note_software/0_LongJournal/OSJournal.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": true,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "899dcf70e3b52309",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "note_software/0_LongJournal/OSJournal.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "6e2c7b0a8255e402",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 349.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Open quick switcher": true,
+          "graph:Open graph view": true,
+          "canvas:Create new canvas": false,
+          "daily-notes:Open today's daily note": true,
+          "templates:Insert template": true,
+          "command-palette:Open command palette": true,
+          "markdown-importer:Open format converter": false,
+          "workspaces:Manage workspace layouts": true,
+          "random-note:Open random note": true,
+          "homepage:Open homepage": false,
+          "omnisearch:Omnisearch": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false
+        }
+      },
+      "active": "e7acf62aebf3ca40",
+      "mtime": "2024-05-06T14:38:29+07:00"
     }
   },
-  "active": "CPP-Powershell-IDE"
+  "active": "powershell-windows"
 }

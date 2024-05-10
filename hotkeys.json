@@ -307,5 +307,14 @@
       ],
       "key": "O"
     }
+  ],
+  "editor:toggle-fold-properties": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": ";"
+    }
   ]
 }

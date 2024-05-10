@@ -2,7 +2,7 @@
   "version": 3,
   "homepages": {
     "Main Homepage": {
-      "value": "Obs-Nvim",
+      "value": "powershell-windows",
       "kind": "Workspace",
       "openOnStartup": true,
       "openMode": "Replace all open notes",
