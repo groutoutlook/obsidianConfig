@@ -15,7 +15,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "note_software/SysInternals/000.000.000.000-SysInternals.md",
+                    "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
@@ -40,8 +40,22 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "28633c477ba2e2d8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_Knowledge/100000_ Accounts.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -54,16 +68,6 @@
             "id": "0a937267b42a4d0d",
             "type": "tabs",
             "children": [
-              {
-                "id": "21e5c229a96d1944",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
               {
                 "id": "1b478c7c12d83a3e",
                 "type": "leaf",
@@ -91,7 +95,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 233.5
+        "width": 233.5,
+        "collapsed": true
       },
       "right": {
         "id": "3d18e10a2c3023dd",
@@ -118,7 +123,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "note_software/SysInternals/000.002.000.000-SystemInfo.md"
+                    "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md"
                   }
                 }
               },
@@ -128,7 +133,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "note_software/SysInternals/000.002.000.000-SystemInfo.md",
+                    "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -145,7 +150,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "note_software/SysInternals/000.002.000.000-SystemInfo.md",
+                    "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -162,14 +167,23 @@
                     "searchQuery": ""
                   }
                 }
+              },
+              {
+                "id": "21e5c229a96d1944",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
               }
             ],
-            "currentTab": 1
+            "currentTab": 5
           }
         ],
         "direction": "horizontal",
-        "width": 349.5,
-        "collapsed": true
+        "width": 349.5
       },
       "left-ribbon": {
         "hiddenItems": {
@@ -188,8 +202,8 @@
           "darlal-switcher-plus:Open Symbols for the active editor": false
         }
       },
-      "active": "4621f7619c5ca9a5",
-      "mtime": "2024-05-06T13:44:09+07:00"
+      "active": "344f86682bfda1a6",
+      "mtime": "2024-05-12T20:43:06+07:00"
     },
     "obs-nvim": {
       "main": {
@@ -397,5 +411,5 @@
       "mtime": "2024-05-06T14:38:29+07:00"
     }
   },
-  "active": "powershell-windows"
+  "active": "obs-nvim"
 }
