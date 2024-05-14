@@ -709,7 +709,14 @@
     "google": 669,
     "noip": 670,
     "konata": 671,
-    "kmonad": 672
+    "kmonad": 672,
+    "exif": 673,
+    "register": 674,
+    "api": 675,
+    "vimium": 676,
+    "christian": 677,
+    "autocmd": 678,
+    "cmd": 679
   },
   "_version": 3
 }

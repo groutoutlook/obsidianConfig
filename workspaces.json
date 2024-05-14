@@ -21,8 +21,35 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "5c025060408a5b91",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_IDEAndTools/Neovim/100001_Neovim.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "9f829867f0243805",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
               }
-            ]
+            ],
+            "currentTab": 2
           },
           {
             "id": "acba744c83d6a220",
@@ -123,7 +150,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md"
+                    "file": "note_IDEAndTools/Neovim/110001_Motion in Neovim.md"
                   }
                 }
               },
@@ -133,7 +160,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md",
+                    "file": "note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -150,7 +177,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md",
+                    "file": "note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -202,8 +229,8 @@
           "darlal-switcher-plus:Open Symbols for the active editor": false
         }
       },
-      "active": "344f86682bfda1a6",
-      "mtime": "2024-05-12T20:43:06+07:00"
+      "active": "9f829867f0243805",
+      "mtime": "2024-05-14T21:42:21+07:00"
     },
     "obs-nvim": {
       "main": {
@@ -274,16 +301,6 @@
             "type": "tabs",
             "children": [
               {
-                "id": "21e5c229a96d1944",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
                 "id": "1b478c7c12d83a3e",
                 "type": "leaf",
                 "state": {
@@ -310,7 +327,8 @@
           }
         ],
         "direction": "horizontal",
-        "width": 233.5
+        "width": 233.5,
+        "collapsed": true
       },
       "right": {
         "id": "3d18e10a2c3023dd",
@@ -337,7 +355,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "note_software/0_LongJournal/OSJournal.md"
+                    "file": "note_software/Obsidian/400000_Obsidian.md"
                   }
                 }
               },
@@ -347,7 +365,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "note_software/0_LongJournal/OSJournal.md",
+                    "file": "note_software/Obsidian/400000_Obsidian.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -364,7 +382,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "note_software/0_LongJournal/OSJournal.md",
+                    "file": "note_software/Obsidian/400000_Obsidian.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -379,6 +397,16 @@
                     "sortOrder": "frequency",
                     "showSearch": false,
                     "searchQuery": ""
+                  }
+                }
+              },
+              {
+                "id": "21e5c229a96d1944",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
                   }
                 }
               }
@@ -407,9 +435,9 @@
           "darlal-switcher-plus:Open Symbols for the active editor": false
         }
       },
-      "active": "e7acf62aebf3ca40",
-      "mtime": "2024-05-06T14:38:29+07:00"
+      "active": "2b45be933c700adc",
+      "mtime": "2024-05-14T21:42:42+07:00"
     }
   },
-  "active": "obs-nvim"
+  "active": "powershell-windows"
 }

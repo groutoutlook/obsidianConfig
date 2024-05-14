@@ -59,6 +59,7 @@ nmap <C-v> p
 imap ;p <Esc>pa
 imap ;u <Esc>2ui
 imap ;r <Esc>2<C-r>i
+nmap <C-BS> diwjk
 
 " Insert templates
 exmap ins_temp obcommand templater-obsidian:insert-templater
