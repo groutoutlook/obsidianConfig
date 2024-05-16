@@ -23,7 +23,7 @@
                 }
               },
               {
-                "id": "5c025060408a5b91",
+                "id": "612ee0e8277727d0",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -217,8 +217,8 @@
           "darlal-switcher-plus:Open Symbols for the active editor": false
         }
       },
-      "active": "5c025060408a5b91",
-      "mtime": "2024-05-16T13:41:03+07:00"
+      "active": "612ee0e8277727d0",
+      "mtime": "2024-05-16T14:42:22+07:00"
     },
     "obs-nvim": {
       "main": {
@@ -441,5 +441,5 @@
       "mtime": "2024-05-16T13:40:53+07:00"
     }
   },
-  "active": "obs-nvim"
+  "active": "powershell-windows"
 }

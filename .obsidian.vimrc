@@ -64,6 +64,13 @@ imap ;u <Esc>2ui
 imap ;r <Esc>2<C-r>i
 nmap <C-BS> diwjk
 
+imap ;lt <Esc><C-k> 
+
+" template
+exmap insertTemplate obcommand insert-template 
+nmap ;t :insertTemplate
+
+
 " Insert templates
 exmap ins_temp obcommand templater-obsidian:insert-templater
 nmap <Space>t :ins_temp
@@ -92,3 +99,14 @@ imap ;za :foldToggle
 exmap foldProp obcommand editor:toggle-fold-properties
 nmap zp :foldProp
 imap ;zp :foldProp
+
+
+" Maps pasteinto to Alt-p
+imap <A-p> <Esc>p
+
+
+" Copy current block's URI
+exmap makeLink obcommand obsidian-advanced-uri:copy-uri-block
+imap ;ml :makeLink
+nmap ;ml :makeLink
+
