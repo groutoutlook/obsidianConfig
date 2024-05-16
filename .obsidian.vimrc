@@ -37,15 +37,16 @@ imap vv <Esc>v$
 " Make a newline with a link.
 nmap ;p A<space>[](<Esc>pa)<Esc>%ba
 nmap -;p o-<Esc>;p
+imap ;;p <Esc>;p
 imap -;p <Esc>-;p
 " Go to link or open note in new tab(leaf)
 " exmap follow obcommand editor:open-link-in-new-window
 exmap follow obcommand editor:open-link-in-new-leaf
-nmap gfx :follow
+nmap glx :follow
 
-nmap gx $%gfx
+nmap gx f]wglx
 " Open the link at the end of line.
-nmap ;gx $%gx
+nmap ;gx gx
 imap ;gx <Esc>%wgxi
 imap gxx <Esc>%wgxi
 imap ggx <Esc>%wgxi
@@ -78,25 +79,14 @@ nmap <Space>v :vsplit
 exmap hsplit obcommand workspace:split-horizontal
 nmap <Space>V :hsplit
 
-" " Surround
-" exmap surround_wiki surround [[ ]]
-" exmap surround_double_quotes surround " "
-" exmap surround_single_quotes surround ' '
-" exmap surround_backticks surround ` `
-" exmap surround_brackets surround ( )
-" exmap surround_square_brackets surround [ ]
-" exmap surround_curly_brackets surround { }
-"
-" map [[ :surround_wiki
-" nunmap s
-" vunmap s
-" map s" :surround_double_quotes
-" map s' :surround_single_quotes
-" map s` :surround_backticks
-" map sb :surround_brackets
-" map s( :surround_brackets
-" map s) :surround_brackets
-" map s[ :surround_square_brackets
-" map s] :surround_square_brackets
-" map s{ :surround_curly_brackets
-" map s} :surround_curly_brackets
+
+" folding block
+exmap foldToggle obcommand editor:toggle-fold
+nmap za :foldToggle
+imap ;za :foldToggle
+
+
+" Folding frontmatter
+exmap foldProp obcommand editor:toggle-fold-properties
+nmap zp :foldProp
+imap ;zp :foldProp

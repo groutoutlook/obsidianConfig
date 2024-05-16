@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/SysInternals/000.000.000.000-SysInternals.md",
+                "file": "note_Embedded/HardwareJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -38,20 +38,34 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "28633c477ba2e2d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_Knowledge/100000_ Accounts.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "26f599a8d4456bd5",
+    "id": "7b70b3c8e9c1b8b6",
     "type": "mobile-drawer",
     "children": [],
     "currentTab": 0
   },
   "right": {
-    "id": "93738bbaec3ee981",
+    "id": "d177619f9147bb50",
     "type": "mobile-drawer",
     "children": [],
     "currentTab": 0
@@ -73,11 +87,15 @@
       "darlal-switcher-plus:Open Symbols for the active editor": false
     }
   },
-  "active": "4621f7619c5ca9a5",
+  "active": "344f86682bfda1a6",
   "lastOpenFiles": [
+    "610000_Vimium C.md",
+    "000.001.001.000-cmd.md",
+    "note_software/SysInternals/000.001.000.000-Process Utilities.md",
+    "note_Knowledge/VocabJournal.md",
+    "note_software/SysInternals/000.002.000.000-SystemInfo.md",
     "note_software/0_LongJournal/SoftwareJournal.md",
     "IMG_20240507_193230.jpg",
-    "note_software/SysInternals/000.002.000.000-SystemInfo.md",
     "note_software/SysInternals/000.003.000.000-Miscellaneous.md",
     "note_software/SysInternals/000.000.000.000-SysInternals.md",
     "1_Markdown/note_algo_lang/note_Powershell/000001_Powershell Core.md",
@@ -101,11 +119,7 @@
     "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
     "1_Markdown/note_software/CLI/015004_yazi.md",
     "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
-    "1_Markdown/note_software/000001_ Useful Website.md",
-    "Home.md",
-    "1_Markdown/note_Business/WorkJournal.md",
     "IMG_20240413_141921.jpg",
-    "1_Markdown/note_software/400004_Jrnl.md",
     "templates",
     "Pasted image 20240411164550.png",
     "Pasted image 20240411234129.png",

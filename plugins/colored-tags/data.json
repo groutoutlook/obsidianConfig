@@ -716,7 +716,15 @@
     "vimium": 676,
     "christian": 677,
     "autocmd": 678,
-    "cmd": 679
+    "cmd": 679,
+    "latin": 680,
+    "settings": 681,
+    "moniror": 682,
+    "readline": 683,
+    "sudo": 684,
+    "glass": 685,
+    "alternative": 686,
+    "log": 687
   },
   "_version": 3
 }
