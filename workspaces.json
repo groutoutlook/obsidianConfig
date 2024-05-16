@@ -137,7 +137,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "note_android/adb/000.001_ADB interaction.md"
+                    "file": "note_IDEAndTools/Neovim/100001_Neovim.md"
                   }
                 }
               },
@@ -147,7 +147,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "note_android/adb/000.001_ADB interaction.md",
+                    "file": "note_IDEAndTools/Neovim/100001_Neovim.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -164,7 +164,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "note_android/adb/000.001_ADB interaction.md",
+                    "file": "note_IDEAndTools/Neovim/100001_Neovim.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -217,8 +217,8 @@
           "darlal-switcher-plus:Open Symbols for the active editor": false
         }
       },
-      "active": "c2f8c22bf1ff58af",
-      "mtime": "2024-05-16T13:35:33+07:00"
+      "active": "5c025060408a5b91",
+      "mtime": "2024-05-16T13:41:03+07:00"
     },
     "obs-nvim": {
       "main": {
@@ -243,7 +243,7 @@
                 }
               },
               {
-                "id": "a3d8f7c36c31a0da",
+                "id": "72b649b30222ad91",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -357,7 +357,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "note_software/0_LongJournal/OSJournal.md"
+                    "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md"
                   }
                 }
               },
@@ -367,7 +367,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "note_software/0_LongJournal/OSJournal.md",
+                    "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -384,7 +384,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "note_software/0_LongJournal/OSJournal.md",
+                    "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -437,9 +437,9 @@
           "darlal-switcher-plus:Open Symbols for the active editor": false
         }
       },
-      "active": "e7acf62aebf3ca40",
-      "mtime": "2024-05-16T13:35:35+07:00"
+      "active": "72b649b30222ad91",
+      "mtime": "2024-05-16T13:40:53+07:00"
     }
   },
-  "active": "powershell-windows"
+  "active": "obs-nvim"
 }

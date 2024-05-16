@@ -51,8 +51,10 @@ imap ;gx <Esc>%wgxi
 imap gxx <Esc>%wgxi
 imap ggx <Esc>%wgxi
 
-exmap closeall obcommand workspace:close-window
-nmap ;wq :closeall
+exmap closeAll obcommand workspace:close-window
+nmap ;wq :closeAll
+exmap closeTab obcommand workspace:close
+nmap ;q :closeTab
 
 " NOTE: Paste as plain text? In pure Vim, this is no need.
 " But in Obsidian, there is a plugin which interfere with that.

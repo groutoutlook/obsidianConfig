@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "68ffb2c6e926a4ec",
+        "id": "55225c8e17fa7212",
         "type": "tabs",
         "children": [
           {
-            "id": "344f86682bfda1a6",
+            "id": "2b45be933c700adc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md",
+                "file": "note_software/Obsidian/400000_Obsidian.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,27 +21,26 @@
             }
           },
           {
-            "id": "5c025060408a5b91",
+            "id": "e048cde232bc4e20",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_IDEAndTools/Neovim/100001_Neovim.md",
+                "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
-        "id": "692aabec644967b3",
+        "id": "b498c7289a54253e",
         "type": "tabs",
         "children": [
           {
-            "id": "689cf92003dd4eca",
+            "id": "b420ac09bc702476",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,12 +53,12 @@
             }
           },
           {
-            "id": "c2f8c22bf1ff58af",
+            "id": "66e73cb5f1d7f2d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_android/adb/000.001_ADB interaction.md",
+                "file": "note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#keybind",
+                "query": "tag:window",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -135,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_android/adb/000.001_ADB interaction.md"
+                "file": "note_IDEAndTools/Neovim/110001_Motion in Neovim.md"
               }
             }
           },
@@ -145,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_android/adb/000.001_ADB interaction.md",
+                "file": "note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_android/adb/000.001_ADB interaction.md",
+                "file": "note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +190,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -215,16 +214,17 @@
       "darlal-switcher-plus:Open Symbols for the active editor": false
     }
   },
-  "active": "c2f8c22bf1ff58af",
+  "active": "66e73cb5f1d7f2d0",
   "lastOpenFiles": [
     "note_software/0_LongJournal/OSJournal.md",
-    "note_android/adb/000.001_ADB interaction.md",
+    "note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
+    "note_software/Obsidian/400000_Obsidian.md",
     "note_IDEAndTools/Neovim/100001_Neovim.md",
     "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
+    "note_software/Obsidian/413001_Obsidian.vimrc.md",
+    "note_android/adb/000.001_ADB interaction.md",
     "note_android/000.000-ADB For Android.md",
     "note_android/adb/000.000.002.000-dumpsys.md",
-    "note_software/Obsidian/400000_Obsidian.md",
-    "note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
     "note_software/700003_ Zalo.md",
     "note_software/casualCLI/mousemaster/003.000.000.000-Mousemaster.md",
     "note_android/adb/000.001.004.000-settings.md",
@@ -246,7 +246,6 @@
     "note_software/casualCLI/Espanso/300000_Espanso.md",
     "note_IDEAndTools/DeveloperSoftware/CLI/016004_ripgrep.md",
     "note_software/casualCLI/Espanso/310000_Espanso CLI.md",
-    "note_software/casualCLI/Espanso/311000_Extension in espanso.md",
     "note_algo_lang/0_LongJournal/~syncthing~LangJournal.md.tmp",
     "note_algo_lang/0_LongJournal/~syncthing~ProgrammingJournal.md.tmp",
     "Pasted image 20240509191954.png",
