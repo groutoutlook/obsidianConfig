@@ -21,34 +21,20 @@
                     "source": false
                   }
                 }
-              },
-              {
-                "id": "612ee0e8277727d0",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "note_IDEAndTools/Neovim/100001_Neovim.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "692aabec644967b3",
             "type": "tabs",
             "children": [
               {
-                "id": "689cf92003dd4eca",
+                "id": "3d694e3b99b5eea0",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "note_IDEAndTools/Neovim/100001_Neovim.md",
+                    "file": "note_software/casualCLI/mousemaster/003.000.000.000-Mousemaster.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
@@ -56,20 +42,19 @@
                 }
               },
               {
-                "id": "c2f8c22bf1ff58af",
+                "id": "9d48501bdc67b7df",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "note_android/adb/000.001_ADB interaction.md",
+                    "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -88,9 +73,9 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "tag:#keybind",
+                    "query": "tag:msedge",
                     "matchingCase": false,
-                    "explainSearch": false,
+                    "explainSearch": true,
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical"
@@ -137,7 +122,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "note_IDEAndTools/Neovim/100001_Neovim.md"
+                    "file": "note_software/casualCLI/mousemaster/003.000.000.000-Mousemaster.md"
                   }
                 }
               },
@@ -147,7 +132,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "note_IDEAndTools/Neovim/100001_Neovim.md",
+                    "file": "note_software/casualCLI/mousemaster/003.000.000.000-Mousemaster.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -164,7 +149,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "note_IDEAndTools/Neovim/100001_Neovim.md",
+                    "file": "note_software/casualCLI/mousemaster/003.000.000.000-Mousemaster.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -217,8 +202,8 @@
           "darlal-switcher-plus:Open Symbols for the active editor": false
         }
       },
-      "active": "612ee0e8277727d0",
-      "mtime": "2024-05-16T14:42:22+07:00"
+      "active": "3d694e3b99b5eea0",
+      "mtime": "2024-05-21T12:37:40+07:00"
     },
     "obs-nvim": {
       "main": {
@@ -263,19 +248,6 @@
             "type": "tabs",
             "children": [
               {
-                "id": "b420ac09bc702476",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "note_IDEAndTools/Neovim/100001_Neovim.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
                 "id": "e7acf62aebf3ca40",
                 "type": "leaf",
                 "state": {
@@ -288,8 +260,7 @@
                   }
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -357,7 +328,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md"
+                    "file": "note_software/0_LongJournal/OSJournal.md"
                   }
                 }
               },
@@ -367,7 +338,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
+                    "file": "note_software/0_LongJournal/OSJournal.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -384,7 +355,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
+                    "file": "note_software/0_LongJournal/OSJournal.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -437,8 +408,8 @@
           "darlal-switcher-plus:Open Symbols for the active editor": false
         }
       },
-      "active": "72b649b30222ad91",
-      "mtime": "2024-05-16T13:40:53+07:00"
+      "active": "e7acf62aebf3ca40",
+      "mtime": "2024-05-21T12:37:47+07:00"
     }
   },
   "active": "powershell-windows"

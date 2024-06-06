@@ -13,26 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_Embedded/HardwareJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "acba744c83d6a220",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4621f7619c5ca9a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/SysInternals/000.002.000.000-SystemInfo.md",
+                "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -40,12 +21,45 @@
             }
           },
           {
-            "id": "28633c477ba2e2d8",
+            "id": "612ee0e8277727d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_Knowledge/100000_ Accounts.md",
+                "file": "note_IDEAndTools/Neovim/100001_Neovim.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "692aabec644967b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b57dbb38e82b9d0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/casualCLI/mousemaster/003.000.000.000-Mousemaster.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a54f711856255c62",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -59,13 +73,13 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "7b70b3c8e9c1b8b6",
+    "id": "49906d5059fe98f6",
     "type": "mobile-drawer",
     "children": [],
     "currentTab": 0
   },
   "right": {
-    "id": "d177619f9147bb50",
+    "id": "1dfcc9397c7f283b",
     "type": "mobile-drawer",
     "children": [],
     "currentTab": 0
@@ -87,8 +101,11 @@
       "darlal-switcher-plus:Open Symbols for the active editor": false
     }
   },
-  "active": "344f86682bfda1a6",
+  "active": "612ee0e8277727d0",
   "lastOpenFiles": [
+    "note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
+    "note_software/casualCLI/mousemaster/003.000.000.000-Mousemaster.md",
+    "note_Embedded/HardwareJournal.md",
     "610000_Vimium C.md",
     "000.001.001.000-cmd.md",
     "note_software/SysInternals/000.001.000.000-Process Utilities.md",
@@ -116,9 +133,6 @@
     "1_Markdown/note_Embedded/HardwareJournal.md",
     "CanvasTemplate.canvas",
     "Untitled.canvas",
-    "1_Markdown/note_algo_lang/note_C++/vcpkg/400000_vcpkg.md",
-    "1_Markdown/note_software/CLI/015004_yazi.md",
-    "1_Markdown/note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
     "IMG_20240413_141921.jpg",
     "templates",
     "Pasted image 20240411164550.png",
