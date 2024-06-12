@@ -29,19 +29,6 @@
             "type": "tabs",
             "children": [
               {
-                "id": "3d694e3b99b5eea0",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "note_software/casualCLI/mousemaster/003.000.000.000-Mousemaster.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
                 "id": "9d48501bdc67b7df",
                 "type": "leaf",
                 "state": {
@@ -53,8 +40,35 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "0a3dda6985bfda94",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_Embedded/RGB_Projects/note_LED/100000_LED supplier.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "65f9c6b085a48e01",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_Business/000001_Chinese_Electronic.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
               }
-            ]
+            ],
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -122,7 +136,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "note_software/casualCLI/mousemaster/003.000.000.000-Mousemaster.md"
+                    "file": "note_Business/000001_Chinese_Electronic.md"
                   }
                 }
               },
@@ -132,7 +146,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "note_software/casualCLI/mousemaster/003.000.000.000-Mousemaster.md",
+                    "file": "note_Business/000001_Chinese_Electronic.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -149,7 +163,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "note_software/casualCLI/mousemaster/003.000.000.000-Mousemaster.md",
+                    "file": "note_Business/000001_Chinese_Electronic.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -202,8 +216,8 @@
           "darlal-switcher-plus:Open Symbols for the active editor": false
         }
       },
-      "active": "3d694e3b99b5eea0",
-      "mtime": "2024-05-21T12:37:40+07:00"
+      "active": "65f9c6b085a48e01",
+      "mtime": "2024-06-12T19:42:52+07:00"
     },
     "obs-nvim": {
       "main": {
@@ -409,7 +423,7 @@
         }
       },
       "active": "e7acf62aebf3ca40",
-      "mtime": "2024-05-21T12:37:47+07:00"
+      "mtime": "2024-06-12T19:42:55+07:00"
     }
   },
   "active": "powershell-windows"
