@@ -66,9 +66,61 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "5e15cd0187402a4a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_software/0_LongJournal/SoftwareJournal.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "18b7449b308e15a4",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_software/0_LongJournal/AccountJournal.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "57f1ac0322698f93",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_Embedded/RGB_Projects/RGB_MCU/100002_ LED note.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "52eb38eab3deff54",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 6
           }
         ],
         "direction": "vertical"
@@ -136,7 +188,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "note_Business/000001_Chinese_Electronic.md"
+                    "file": "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md"
                   }
                 }
               },
@@ -146,7 +198,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "note_Business/000001_Chinese_Electronic.md",
+                    "file": "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -163,7 +215,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "note_Business/000001_Chinese_Electronic.md",
+                    "file": "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -216,8 +268,8 @@
           "darlal-switcher-plus:Open Symbols for the active editor": false
         }
       },
-      "active": "65f9c6b085a48e01",
-      "mtime": "2024-06-12T19:42:52+07:00"
+      "active": "52eb38eab3deff54",
+      "mtime": "2024-06-14T14:57:52+07:00"
     },
     "obs-nvim": {
       "main": {
@@ -423,7 +475,7 @@
         }
       },
       "active": "e7acf62aebf3ca40",
-      "mtime": "2024-06-12T19:42:55+07:00"
+      "mtime": "2024-06-14T14:57:54+07:00"
     }
   },
   "active": "powershell-windows"

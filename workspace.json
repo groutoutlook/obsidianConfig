@@ -64,9 +64,61 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5e15cd0187402a4a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/0_LongJournal/SoftwareJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "18b7449b308e15a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/0_LongJournal/AccountJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "57f1ac0322698f93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_Embedded/RGB_Projects/RGB_MCU/100002_ LED note.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "52eb38eab3deff54",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -134,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_Business/000001_Chinese_Electronic.md"
+                "file": "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md"
               }
             }
           },
@@ -144,7 +196,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_Business/000001_Chinese_Electronic.md",
+                "file": "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +213,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_Business/000001_Chinese_Electronic.md",
+                "file": "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -214,13 +266,18 @@
       "darlal-switcher-plus:Open Symbols for the active editor": false
     }
   },
-  "active": "65f9c6b085a48e01",
+  "active": "52eb38eab3deff54",
   "lastOpenFiles": [
     "note_software/0_LongJournal/OSJournal.md",
-    "note_Business/000001_Chinese_Electronic.md",
+    "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md",
     "note_Embedded/RGB_Projects/note_LED/100000_LED supplier.md",
-    "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+    "note_Embedded/RGB_Projects/RGB_MCU/100002_ LED note.md",
     "note_software/0_LongJournal/AccountJournal.md",
+    "20231128_17bea48fddbe353d_439700582334_72106234260098_published_mp4_264_hd_taobao.mp4",
+    "note_software/20231128_17bea48fddbe353d_439700582334_72106234260098_published_mp4_264_hd_taobao.mp4",
+    "note_software/0_LongJournal/SoftwareJournal.md",
+    "note_Business/000001_Chinese_Electronic.md",
+    "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
     "note_algo_lang/note_C++/topic_graphic/001.001-SDF for basic primitive.md",
     "note_algo_lang/note_C++/topic_graphic/200001_Library Vulkan.md",
     "Pasted image 20240609143925.png",
@@ -228,7 +285,6 @@
     "note_software/Emacs/Emacs.md",
     "note_Knowledge/100000_ Accounts.md",
     "note_algo_lang/0_LongJournal/OtherKnowledgeJournal.md",
-    "note_software/0_LongJournal/SoftwareJournal.md",
     "note_Embedded/200000_Electrical Design Software.md",
     "note_Embedded/note_EDA/003.003-Kicad Utility.md",
     "note_Knowledge/000001_ Medical knowledge.md",
@@ -244,8 +300,6 @@
     "note_algo_lang/note_Shader/000.001-HLSL.md",
     "note_algo_lang/note_Shader",
     "note_software/casualCLI/mousemaster/003.000-Mousemaster.md",
-    "note_algo_lang/note_C++/100001_Super Fast Bit Fiddling tricks.md",
-    "note_software/000001_ Useful Website.md",
     "note_software/RecordAndRemote",
     "Pasted image 20240521130019.png",
     "note_algo_lang/0_LongJournal/~syncthing~OtherKnowledgeJournal.md.tmp",
@@ -254,8 +308,6 @@
     "Pasted image 20240515184319.png",
     "note_software/casualCLI/mousemaster",
     "note_Embedded/~syncthing~HardwareJournal.md.tmp",
-    "note_software/0_LongJournal/~syncthing~SoftwareJournal.md.tmp",
-    "note_algo_lang/0_LongJournal/~syncthing~LangJournal.md.tmp",
     "Pasted image 20240509191954.png",
     "Pasted image 20240509112651.png",
     "Pasted image 20240509112559.png",
