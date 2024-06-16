@@ -5,6 +5,9 @@
   "nativeMenus": false,
   "textFontFamily": "",
   "monospaceFontFamily": "Iosevka Nerd Font,Iosevka Nerd Font Mono",
-  "baseFontSize": 15,
-  "theme": "obsidian"
+  "baseFontSize": 14,
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "generated.explorer-hider"
+  ]
 }

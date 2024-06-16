@@ -4,35 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "68ffb2c6e926a4ec",
+        "id": "55225c8e17fa7212",
         "type": "tabs",
         "children": [
           {
-            "id": "344f86682bfda1a6",
+            "id": "2b45be933c700adc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "692aabec644967b3",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "9d48501bdc67b7df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+                "file": "note_software/Obsidian/400000_Obsidian.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -40,77 +21,12 @@
             }
           },
           {
-            "id": "0a3dda6985bfda94",
+            "id": "72b649b30222ad91",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_Embedded/RGB_Projects/note_LED/100000_LED supplier.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "65f9c6b085a48e01",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_Business/000001_Chinese_Electronic.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e15cd0187402a4a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/0_LongJournal/SoftwareJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "18b7449b308e15a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/0_LongJournal/AccountJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "57f1ac0322698f93",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_Embedded/RGB_Projects/RGB_MCU/100002_ LED note.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "52eb38eab3deff54",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md",
+                "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -118,7 +34,39 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
+      },
+      {
+        "id": "b498c7289a54253e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6547cddb99487a25",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/Obsidian/410000_Obsidian Plugins.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2d024a0d5a6c430c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.008-eza.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -137,9 +85,9 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:msedge",
+                "query": "tag:window",
                 "matchingCase": false,
-                "explainSearch": true,
+                "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -186,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md"
+                "file": "note_software/Obsidian/410000_Obsidian Plugins.md"
               }
             }
           },
@@ -196,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md",
+                "file": "note_software/Obsidian/410000_Obsidian Plugins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -213,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md",
+                "file": "note_software/Obsidian/410000_Obsidian Plugins.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -260,61 +208,61 @@
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": true,
       "random-note:Open random note": true,
-      "homepage:Open homepage": false,
       "omnisearch:Omnisearch": false,
       "darlal-switcher-plus:Open in Headings Mode": false,
-      "darlal-switcher-plus:Open Symbols for the active editor": false
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "explorer-hider:Disable hiding": false
     }
   },
-  "active": "52eb38eab3deff54",
+  "active": "6547cddb99487a25",
   "lastOpenFiles": [
-    "note_software/0_LongJournal/OSJournal.md",
-    "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md",
-    "note_Embedded/RGB_Projects/note_LED/100000_LED supplier.md",
-    "note_Embedded/RGB_Projects/RGB_MCU/100002_ LED note.md",
-    "note_software/0_LongJournal/AccountJournal.md",
-    "20231128_17bea48fddbe353d_439700582334_72106234260098_published_mp4_264_hd_taobao.mp4",
-    "note_software/20231128_17bea48fddbe353d_439700582334_72106234260098_published_mp4_264_hd_taobao.mp4",
-    "note_software/0_LongJournal/SoftwareJournal.md",
-    "note_Business/000001_Chinese_Electronic.md",
+    "note_IDEAndTools/DeveloperSoftware/CLI/001.008-eza.md",
     "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+    "note_software/Obsidian/410000_Obsidian Plugins.md",
+    "note_software/SysInternals/000.001.000.000-Process Utilities.md",
+    "MainJournal.md",
+    "VID_WeChat_20240326181505.mp4",
+    "VID_WeChat_20240326181549.mp4",
+    "VID_WeChat_20240329104315.mp4",
+    "IMG_ZFB_QR_PMS150G mua.jpg",
+    "dcpp-2-7-2-ref-guide-en-us.pdf",
+    "Home.md",
+    "Untitled.canvas",
+    "Untitled.md",
+    "Pasted image 20240616124949.png",
+    "CanvasTemplate.canvas",
+    "20240105104145166_Air510U定位模块使用手册V1.0.4.pdf",
+    "note_software/0_LongJournal/OSJournal.md",
+    "IMG_c359a3430d7530b61b62f84fa040321.jpg",
+    "IMG_ZFB_QR_bedc89c2eb412e67f942e138890916d.jpg",
+    "IMG_a5befadd5f1d3c5a85a50f71bc42dc8.jpg",
+    "IMG_31109495c474139810a687e5a9c2113 1.jpg",
+    "IMG_31109495c474139810a687e5a9c2113.jpg",
+    "IMG_20240412_110306.jpg",
+    "IMG_20240404_204539.jpg",
+    "IMG_20240327_102520.jpg",
+    "note_software/0_LongJournal/WebJournal.md",
+    "note_algo_lang/note_AHK/003.001_Syntax in ahk.md",
+    "VID_20231128_17bea48fddbe353d_439700582334_72106234260098_published_mp4_264_hd_taobao.mp4",
+    "130001_Editting in Neovim.md",
+    "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
+    "note_Knowledge/note_Places/PlacesJournal.md",
+    "note_Embedded/HardwareJournal.md",
+    "note_Embedded/RGB_Projects/note_LED/100000_LED supplier.md",
+    "note_Business/000001_Chinese_Electronic.md",
+    "note_software/0_LongJournal/SoftwareJournal.md",
+    "note_software/0_LongJournal/AccountJournal.md",
+    "note_Embedded/RGB_Projects/RGB_MCU/100002_ LED note.md",
+    "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md",
+    "note_algo_lang/note_Powershell/001.005-Variable.md",
+    "note_algo_lang/note_Powershell/200000_System Management.md",
+    "note_software/000000_Useful Software.md",
+    "note_algo_lang/note_Powershell/000006_Function.md",
+    "note_software/20231128_17bea48fddbe353d_439700582334_72106234260098_published_mp4_264_hd_taobao.mp4",
     "note_algo_lang/note_C++/topic_graphic/001.001-SDF for basic primitive.md",
     "note_algo_lang/note_C++/topic_graphic/200001_Library Vulkan.md",
-    "Pasted image 20240609143925.png",
-    "note_software/SysInternals/000.001.000.000-Process Utilities.md",
-    "note_software/Emacs/Emacs.md",
-    "note_Knowledge/100000_ Accounts.md",
-    "note_algo_lang/0_LongJournal/OtherKnowledgeJournal.md",
-    "note_Embedded/200000_Electrical Design Software.md",
-    "note_Embedded/note_EDA/003.003-Kicad Utility.md",
-    "note_Knowledge/000001_ Medical knowledge.md",
-    "notes/dailies/2024-06-07.md",
-    "note_Embedded/note_EDA/003-KiCad.md",
-    "note_Embedded/note_EDA/003.002-KiCad Resources.md",
-    "note_Embedded/note_EDA/003.001-KiCad Model.md",
-    "note_IDEAndTools/VisualStudio/000.002_Personalize.md",
-    "note_IDEAndTools/VisualStudio/000.001_Visual Studio.md",
-    "note_Knowledge/AcronymJournal.md",
     "vs-default-keyboard-shortcuts.pdf",
     "vs-default-keyboard-shortcuts.pdf.crdownload",
-    "note_algo_lang/note_Shader/000.001-HLSL.md",
-    "note_algo_lang/note_Shader",
-    "note_software/casualCLI/mousemaster/003.000-Mousemaster.md",
-    "note_software/RecordAndRemote",
-    "Pasted image 20240521130019.png",
-    "note_algo_lang/0_LongJournal/~syncthing~OtherKnowledgeJournal.md.tmp",
-    "note_Knowledge/~syncthing~PhraseJournal.md.tmp",
-    "Pasted image 20240326165218.png",
-    "Pasted image 20240515184319.png",
-    "note_software/casualCLI/mousemaster",
-    "note_Embedded/~syncthing~HardwareJournal.md.tmp",
-    "Pasted image 20240509191954.png",
-    "Pasted image 20240509112651.png",
-    "Pasted image 20240509112559.png",
-    "Pasted image 20240509104926.png",
-    "IMG_20240507_193230.jpg",
-    "Pasted image 20240506231511.png",
-    "CanvasTemplate.canvas",
-    "Untitled.canvas"
+    "note_algo_lang/note_Shader"
   ]
 }

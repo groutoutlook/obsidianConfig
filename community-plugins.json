@@ -1,6 +1,5 @@
 [
   "omnisearch",
-  "homepage",
   "keyshots",
   "hotkey-helper",
   "darlal-switcher-plus",
@@ -11,6 +10,6 @@
   "obsidian-text-format",
   "colored-tags",
   "codestats",
-  "dataview",
-  "obsidian-vimrc-support"
+  "obsidian-vimrc-support",
+  "explorer-hider"
 ]

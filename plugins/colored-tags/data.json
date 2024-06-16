@@ -832,7 +832,23 @@
     "viewer": 792,
     "processing": 793,
     "sourcing": 794,
-    "oem": 795
+    "oem": 795,
+    "engine": 796,
+    "variable": 797,
+    "cpp20": 798,
+    "ranges": 799,
+    "networking": 800,
+    "csbasic": 801,
+    "crud": 802,
+    "rpi": 803,
+    "type": 804,
+    "external": 805,
+    "linkage": 806,
+    "articles": 807,
+    "cs": 808,
+    "polymorphism": 809,
+    "education": 810,
+    "quiz": 811
   },
   "_version": 3
 }
