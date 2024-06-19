@@ -248,6 +248,32 @@
                 }
               },
               {
+                "id": "4322252358e429a6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_software/0_LongJournal/AccountJournal.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "696599293ce13ae8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_algo_lang/0_LongJournal/LangJournal.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
                 "id": "2d024a0d5a6c430c",
                 "type": "leaf",
                 "state": {
@@ -261,7 +287,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           }
         ],
         "direction": "vertical"
@@ -329,7 +355,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.008-eza.md"
+                    "file": "note_algo_lang/0_LongJournal/LangJournal.md"
                   }
                 }
               },
@@ -339,7 +365,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.008-eza.md",
+                    "file": "note_algo_lang/0_LongJournal/LangJournal.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -356,7 +382,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.008-eza.md",
+                    "file": "note_algo_lang/0_LongJournal/LangJournal.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -409,8 +435,8 @@
           "explorer-hider:Disable hiding": false
         }
       },
-      "active": "2d024a0d5a6c430c",
-      "mtime": "2024-06-16T13:13:10+07:00"
+      "active": "696599293ce13ae8",
+      "mtime": "2024-06-17T00:21:40+07:00"
     }
   },
   "active": "obs-nvim"

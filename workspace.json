@@ -46,7 +46,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/Obsidian/410000_Obsidian Plugins.md",
+                "file": "note_software/note_CasualSoftware/004.002.001-Cheatsheet Collections.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -54,19 +54,33 @@
             }
           },
           {
-            "id": "2d024a0d5a6c430c",
+            "id": "f30c780cf9e8aa39",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.008-eza.md",
+                "file": "note_software/note_CasualSoftware/005.001.001-Outlook.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f5d8c1dabfc94269",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/note_CasualSoftware/005.001.002-Thunderbird.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +99,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:window",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_software/Obsidian/410000_Obsidian Plugins.md"
+                "file": "note_software/note_CasualSoftware/005.001.002-Thunderbird.md"
               }
             }
           },
@@ -144,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_software/Obsidian/410000_Obsidian Plugins.md",
+                "file": "note_software/note_CasualSoftware/005.001.002-Thunderbird.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_software/Obsidian/410000_Obsidian Plugins.md",
+                "file": "note_software/note_CasualSoftware/005.001.002-Thunderbird.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,60 +223,58 @@
       "workspaces:Manage workspace layouts": true,
       "random-note:Open random note": true,
       "omnisearch:Omnisearch": false,
-      "darlal-switcher-plus:Open in Headings Mode": false,
-      "darlal-switcher-plus:Open Symbols for the active editor": false,
       "explorer-hider:Disable hiding": false
     }
   },
-  "active": "6547cddb99487a25",
+  "active": "f5d8c1dabfc94269",
   "lastOpenFiles": [
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.008-eza.md",
-    "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+    "note_software/note_CasualSoftware/005.001.001-Outlook.md",
+    "note_software/note_CasualSoftware/005.001.002-Thunderbird.md",
+    "note_algo_lang/note_C++/namespace_std/002.001-Standard Algorithm.md",
+    "Pasted image 20240619130526.png",
+    "note_Knowledge/100000_ Accounts.md",
+    "note_software/note_CasualSoftware/004.002.001-Cheatsheet Collections.md",
+    "note_algo_lang/note_C++/200001_Libraries, Packages and Tools for CPP.md",
     "note_software/Obsidian/410000_Obsidian Plugins.md",
-    "note_software/SysInternals/000.001.000.000-Process Utilities.md",
-    "MainJournal.md",
+    "note_software/note_CasualSoftware/100000_Web Tech.md",
+    "note_software/note_CasualSoftware/100001_Libraries and Tools for Web-based work.md",
+    "note_Items/OtherItemsJournal.md",
+    "note_software/note_CasualSoftware/004.001.001-Documentation References.md",
+    "note_software/note_CasualSoftware/003.001.001-SearchEngine.md",
+    "GoogleSeachOperatorQualifier.pdf",
+    "GoogleSeachOperatorQualifier.pdf.crdownload",
+    "note_software/000004_ Browser.md",
+    "note_software/SysInternals/000.003.000.000-Miscellaneous.md",
+    "note_Business/WorkJournal.md",
+    "note_algo_lang/0_LongJournal/LifeJournal.md",
+    "note_Embedded/ComponentJournal.md",
+    "IMG_918KcyxfMhL._AC_SL1500_.jpg",
+    "IMG_918KcyxfMhL._AC_SL1500_.jpg.crdownload",
+    "IMG_71eFRXHyQvL._AC_SL1500_.jpg",
+    "IMG_71eFRXHyQvL._AC_SL1500_.jpg.crdownload",
+    "_Markdown/note_Items/OtherItemsJournal.md",
+    "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
+    "_Markdown/note_Items",
+    "_Markdown",
+    "note_algo_lang/0_LongJournal/LangJournal.md",
+    "note_software/0_LongJournal/SoftwareJournal.md",
+    "note_software/0_LongJournal/OSJournal.md",
+    "note_IDEAndTools/Neovim/120001_Windows and Tab in Neovim.md",
+    "note_software/note_CasualSoftware/001.001.001-Volume Mixer.md",
+    "Pasted image 20240618115032.png",
+    "note_software/note_CasualSoftware/002.001.001-Youtube Music.md",
+    "note_software/0_LongJournal/AccountJournal.md",
+    "Pasted image 20240618114406.png",
+    "IMG_ZFB_QR_b63d3f7215aa0ace231f9883c06c706.jpg",
+    "IMG_ZFB_QR_20240618101732.jpg",
+    "Pasted image 20240618100805.png",
     "VID_WeChat_20240326181505.mp4",
     "VID_WeChat_20240326181549.mp4",
     "VID_WeChat_20240329104315.mp4",
     "IMG_ZFB_QR_PMS150G mua.jpg",
     "dcpp-2-7-2-ref-guide-en-us.pdf",
-    "Home.md",
     "Untitled.canvas",
-    "Untitled.md",
     "Pasted image 20240616124949.png",
-    "CanvasTemplate.canvas",
-    "20240105104145166_Air510U定位模块使用手册V1.0.4.pdf",
-    "note_software/0_LongJournal/OSJournal.md",
-    "IMG_c359a3430d7530b61b62f84fa040321.jpg",
-    "IMG_ZFB_QR_bedc89c2eb412e67f942e138890916d.jpg",
-    "IMG_a5befadd5f1d3c5a85a50f71bc42dc8.jpg",
-    "IMG_31109495c474139810a687e5a9c2113 1.jpg",
-    "IMG_31109495c474139810a687e5a9c2113.jpg",
-    "IMG_20240412_110306.jpg",
-    "IMG_20240404_204539.jpg",
-    "IMG_20240327_102520.jpg",
-    "note_software/0_LongJournal/WebJournal.md",
-    "note_algo_lang/note_AHK/003.001_Syntax in ahk.md",
-    "VID_20231128_17bea48fddbe353d_439700582334_72106234260098_published_mp4_264_hd_taobao.mp4",
-    "130001_Editting in Neovim.md",
-    "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
-    "note_Knowledge/note_Places/PlacesJournal.md",
-    "note_Embedded/HardwareJournal.md",
-    "note_Embedded/RGB_Projects/note_LED/100000_LED supplier.md",
-    "note_Business/000001_Chinese_Electronic.md",
-    "note_software/0_LongJournal/SoftwareJournal.md",
-    "note_software/0_LongJournal/AccountJournal.md",
-    "note_Embedded/RGB_Projects/RGB_MCU/100002_ LED note.md",
-    "note_Embedded/RGB_Projects/note_LED/001.001-LED reference products.md",
-    "note_algo_lang/note_Powershell/001.005-Variable.md",
-    "note_algo_lang/note_Powershell/200000_System Management.md",
-    "note_software/000000_Useful Software.md",
-    "note_algo_lang/note_Powershell/000006_Function.md",
-    "note_software/20231128_17bea48fddbe353d_439700582334_72106234260098_published_mp4_264_hd_taobao.mp4",
-    "note_algo_lang/note_C++/topic_graphic/001.001-SDF for basic primitive.md",
-    "note_algo_lang/note_C++/topic_graphic/200001_Library Vulkan.md",
-    "vs-default-keyboard-shortcuts.pdf",
-    "vs-default-keyboard-shortcuts.pdf.crdownload",
-    "note_algo_lang/note_Shader"
+    "CanvasTemplate.canvas"
   ]
 }
