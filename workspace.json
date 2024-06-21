@@ -52,8 +52,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e9aaf1a85dea76ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_IDEAndTools/VisualStudio/000.001_Visual Studio.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_software/CasualSoftware/002.001-Youtube Music.md"
+                "file": "note_IDEAndTools/VisualStudio/000.001_Visual Studio.md"
               }
             }
           },
@@ -131,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_software/CasualSoftware/002.001-Youtube Music.md",
+                "file": "note_IDEAndTools/VisualStudio/000.001_Visual Studio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_software/CasualSoftware/002.001-Youtube Music.md",
+                "file": "note_IDEAndTools/VisualStudio/000.001_Visual Studio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,10 +213,11 @@
       "explorer-hider:Disable hiding": false
     }
   },
-  "active": "6547cddb99487a25",
+  "active": "e9aaf1a85dea76ce",
   "lastOpenFiles": [
-    "dcpp-2-7-2-ref-guide-en-us.pdf",
+    "Pasted image 20240621172317.png",
     "note_software/CasualSoftware/002.001-Youtube Music.md",
+    "dcpp-2-7-2-ref-guide-en-us.pdf",
     "note_IDEAndTools/Neovim/001.000_Neovim.md",
     "note_software/CasualSoftware/006.002-Hledger.md",
     "note_software/CasualSoftware/003.001-SearchEngine.md",
@@ -246,7 +261,6 @@
     "GoogleSeachOperatorQualifier.pdf.crdownload",
     "IMG_918KcyxfMhL._AC_SL1500_.jpg",
     "IMG_918KcyxfMhL._AC_SL1500_.jpg.crdownload",
-    "IMG_71eFRXHyQvL._AC_SL1500_.jpg.crdownload",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]
