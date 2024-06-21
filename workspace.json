@@ -78,9 +78,35 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "46abeadf2afcce58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6662dda3ee359bed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -148,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_software/Obsidian/410000_Obsidian Plugins.md"
+                "file": "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md"
               }
             }
           },
@@ -158,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_software/Obsidian/410000_Obsidian Plugins.md",
+                "file": "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +201,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_software/Obsidian/410000_Obsidian Plugins.md",
+                "file": "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -227,8 +253,10 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "244a937a7435b532",
+  "active": "6662dda3ee359bed",
   "lastOpenFiles": [
+    "note_software/0_LongJournal/AccountJournal.md",
+    "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
     "note_software/Obsidian/410000_Obsidian Plugins.md",
     "note_IDEAndTools/VisualStudio/001.001-Visual Studio.md",
     "note_IDEAndTools/VisualStudio/001.002-Personalize.md",
@@ -264,8 +292,6 @@
     "note_software/CasualSoftware/Espanso/001.004.002-Match Basic.md",
     "note_software/CasualSoftware/Espanso/001.004-Espanso.md",
     "note_software/CasualSoftware/Espanso/001.004.001-Espanso CLI.md",
-    "note_software/CasualSoftware/mousemaster/001.003.001-WASD Config.md",
-    "note_software/CasualSoftware/mousemaster/001.003-Mousemaster.md",
     "Chinese_HSK 1 Word List_500_words.pdf",
     "note_Knowledge/note_Chinese",
     "HSK 1 Word List (1).pdf",

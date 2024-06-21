@@ -922,7 +922,10 @@
     "news/journal": 1,
     "ledger": 882,
     "database": 883,
-    "rap": 884
+    "rap": 884,
+    "gitlab": 885,
+    "webportal": 886,
+    "setting": 887
   },
   "_version": 3
 }
