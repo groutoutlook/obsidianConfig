@@ -46,106 +46,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/note_CasualSoftware/004.002.001-Cheatsheet Collections.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f30c780cf9e8aa39",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/note_CasualSoftware/005.001.001-Outlook.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f5d8c1dabfc94269",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/note_CasualSoftware/005.001.002-Thunderbird.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b0bbaa8852a3642a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/0_LongJournal/AccountJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "83bbf1587b3ec3ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_Knowledge/VocabJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8d9553807a694ca5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_Knowledge/note_Chinese/001.002_Basic Chinese Words.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0e5efdf37a2a85e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "95d14a33d071540d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/0_LongJournal/AccountJournal.md",
+                "file": "note_software/CasualSoftware/002.001-Youtube Music.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -164,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#vim",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -213,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md"
+                "file": "note_software/CasualSoftware/002.001-Youtube Music.md"
               }
             }
           },
@@ -223,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
+                "file": "note_software/CasualSoftware/002.001-Youtube Music.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -240,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
+                "file": "note_software/CasualSoftware/002.001-Youtube Music.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -291,54 +199,54 @@
       "explorer-hider:Disable hiding": false
     }
   },
-  "active": "72b649b30222ad91",
+  "active": "6547cddb99487a25",
   "lastOpenFiles": [
-    "note_software/0_LongJournal/AccountJournal.md",
-    "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
-    "note_Knowledge/note_Chinese/001.002_Basic Chinese Words.md",
+    "dcpp-2-7-2-ref-guide-en-us.pdf",
+    "note_software/CasualSoftware/002.001-Youtube Music.md",
+    "note_IDEAndTools/Neovim/001.000_Neovim.md",
+    "note_software/CasualSoftware/006.002-Hledger.md",
+    "note_software/CasualSoftware/003.001-SearchEngine.md",
+    "note_software/CasualSoftware/004.001-Documentation References.md",
+    "note_software/CasualSoftware/004.002-Cheatsheet Collections.md",
+    "note_software/CasualSoftware/005.001-Outlook.md",
+    "note_software/CasualSoftware/005.002-Thunderbird.md",
+    "IMG_0bca520f1ee3b15fa37aeebd819fe379.png",
+    "IMG_2ffabf993959701fb7686bc6e3b40576.png",
+    "IMG_9ed53bf029e389ea7063df301833b551.png",
+    "IMG_18c7d6a25df758a5bae718c99c329eec.png",
+    "IMG_939e6bdd02f3d8ab9ec8c3c1657ad0cb.png",
+    "Datasheet_20240105104145166_Air510U定位模块使用手册V1.0.4.pdf",
+    "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
+    "stm32-gui-silicon-portfolio.pdf",
+    "IMG_ca4951f97ee142231e7573ae315cf9f9.png",
+    "note_software/CasualSoftware/Kanata/001.002-Kanata.md",
+    "note_software/CasualSoftware/Kanata",
+    "note_software/CasualSoftware/006.001-Jrnl.md",
+    "note_software/CasualSoftware/Espanso/001.004.006-Variables in espanso.md",
+    "note_software/CasualSoftware/Espanso/001.004.005-Regex in Espanso.md",
+    "note_software/CasualSoftware/Espanso/001.004.004-Forms.md",
+    "note_software/CasualSoftware/Espanso/001.004.003-Extension in espanso.md",
+    "note_software/CasualSoftware/Espanso/001.004.002-Match Basic.md",
+    "note_software/CasualSoftware/Espanso/001.004-Espanso.md",
+    "note_software/CasualSoftware/Espanso/001.004.001-Espanso CLI.md",
+    "note_software/CasualSoftware/mousemaster/001.003.001-WASD Config.md",
+    "note_software/CasualSoftware/mousemaster/001.003-Mousemaster.md",
+    "note_software/CasualSoftware/Kanata/001.002.002-defcfg options.md",
+    "note_software/CasualSoftware/Kanata/001.002.001-Action in Kanata.md",
+    "note_software/500000_Keybase.md",
+    "note_Knowledge/NewsJournal.md",
+    "note_entertainment/note_discography/VideoJournal.md",
     "Chinese_HSK 1 Word List_500_words.pdf",
     "note_Knowledge/note_Chinese",
-    "note_Knowledge/VocabJournal.md",
     "HSK 1 Word List (1).pdf",
-    "note_software/000001_ Useful Website.md",
-    "note_Business/001.001.001-Payment Info.md",
-    "note_android/adb/000.001.001.000-cmd.md",
     "IMG_ZFB_QR_981b042f2c3e5c2f33f37ca7c9108b3.jpg",
     "IMG_WXZ_QR_1d72a6c95fa763b1ce431541a8516fb.png",
-    "note_Business/note_Business.md",
-    "note_software/note_CasualSoftware/005.001.002-Thunderbird.md",
-    "note_software/note_CasualSoftware/005.001.001-Outlook.md",
-    "note_algo_lang/note_C++/namespace_std/002.001-Standard Algorithm.md",
     "Pasted image 20240619130526.png",
-    "note_Knowledge/100000_ Accounts.md",
-    "note_software/note_CasualSoftware/004.002.001-Cheatsheet Collections.md",
-    "note_algo_lang/note_C++/200001_Libraries, Packages and Tools for CPP.md",
-    "note_software/Obsidian/410000_Obsidian Plugins.md",
-    "note_software/note_CasualSoftware/100000_Web Tech.md",
-    "note_software/note_CasualSoftware/100001_Libraries and Tools for Web-based work.md",
-    "note_Items/OtherItemsJournal.md",
-    "note_software/note_CasualSoftware/004.001.001-Documentation References.md",
-    "note_software/note_CasualSoftware/003.001.001-SearchEngine.md",
     "GoogleSeachOperatorQualifier.pdf",
     "GoogleSeachOperatorQualifier.pdf.crdownload",
-    "note_software/000004_ Browser.md",
-    "note_software/SysInternals/000.003.000.000-Miscellaneous.md",
-    "note_Business/WorkJournal.md",
-    "note_algo_lang/0_LongJournal/LifeJournal.md",
-    "note_Embedded/ComponentJournal.md",
     "IMG_918KcyxfMhL._AC_SL1500_.jpg",
     "IMG_918KcyxfMhL._AC_SL1500_.jpg.crdownload",
-    "IMG_71eFRXHyQvL._AC_SL1500_.jpg",
     "IMG_71eFRXHyQvL._AC_SL1500_.jpg.crdownload",
-    "_Markdown/note_Items/OtherItemsJournal.md",
-    "_Markdown/note_Items",
-    "_Markdown",
-    "Pasted image 20240618115032.png",
-    "Pasted image 20240618114406.png",
-    "IMG_ZFB_QR_b63d3f7215aa0ace231f9883c06c706.jpg",
-    "IMG_ZFB_QR_20240618101732.jpg",
-    "Pasted image 20240618100805.png",
-    "VID_WeChat_20240326181505.mp4",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]

@@ -5,7 +5,7 @@
   "shuffle_rounds_amount": 10,
   "carets_via_double_ctrl": false,
   "quick_switch_via_double_shift": true,
-  "command_palette_via_double_ctrl": false,
+  "command_palette_via_double_ctrl": true,
   "modal_table_last_used_rows": 2,
   "modal_table_last_used_columns": 2,
   "modal_regex_last_used_pattern": "(System)",

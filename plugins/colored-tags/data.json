@@ -918,7 +918,8 @@
     "metaprogramming": 878,
     "payment": 879,
     "storage": 880,
-    "formal": 881
+    "formal": 881,
+    "news/journal": 1
   },
   "_version": 3
 }
