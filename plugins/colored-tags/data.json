@@ -919,7 +919,10 @@
     "payment": 879,
     "storage": 880,
     "formal": 881,
-    "news/journal": 1
+    "news/journal": 1,
+    "ledger": 882,
+    "database": 883,
+    "rap": 884
   },
   "_version": 3
 }

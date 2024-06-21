@@ -316,5 +316,14 @@
       ],
       "key": ";"
     }
+  ],
+  "terminal:open-terminal.external.current": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "X"
+    }
   ]
 }

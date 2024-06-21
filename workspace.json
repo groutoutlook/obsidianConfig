@@ -59,7 +59,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_IDEAndTools/VisualStudio/000.001_Visual Studio.md",
+                "file": "note_IDEAndTools/VisualStudio/001.001-Visual Studio.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "244a937a7435b532",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/Obsidian/410000_Obsidian Plugins.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -67,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -135,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_IDEAndTools/VisualStudio/000.001_Visual Studio.md"
+                "file": "note_software/Obsidian/410000_Obsidian Plugins.md"
               }
             }
           },
@@ -145,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_IDEAndTools/VisualStudio/000.001_Visual Studio.md",
+                "file": "note_software/Obsidian/410000_Obsidian Plugins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_IDEAndTools/VisualStudio/000.001_Visual Studio.md",
+                "file": "note_software/Obsidian/410000_Obsidian Plugins.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,11 +223,18 @@
       "workspaces:Manage workspace layouts": true,
       "random-note:Open random note": true,
       "omnisearch:Omnisearch": false,
-      "explorer-hider:Disable hiding": false
+      "explorer-hider:Disable hiding": false,
+      "terminal:Open terminal": false
     }
   },
-  "active": "e9aaf1a85dea76ce",
+  "active": "244a937a7435b532",
   "lastOpenFiles": [
+    "note_software/Obsidian/410000_Obsidian Plugins.md",
+    "note_IDEAndTools/VisualStudio/001.001-Visual Studio.md",
+    "note_IDEAndTools/VisualStudio/001.002-Personalize.md",
+    "note_linux/000002_Filesystem.md",
+    "note_linux/000001_Linux_Shell_101.md",
+    "note_IDEAndTools/SQLandNoSQL/001.001-SQlite.md",
     "Pasted image 20240621172317.png",
     "note_software/CasualSoftware/002.001-Youtube Music.md",
     "dcpp-2-7-2-ref-guide-en-us.pdf",
@@ -246,11 +266,6 @@
     "note_software/CasualSoftware/Espanso/001.004.001-Espanso CLI.md",
     "note_software/CasualSoftware/mousemaster/001.003.001-WASD Config.md",
     "note_software/CasualSoftware/mousemaster/001.003-Mousemaster.md",
-    "note_software/CasualSoftware/Kanata/001.002.002-defcfg options.md",
-    "note_software/CasualSoftware/Kanata/001.002.001-Action in Kanata.md",
-    "note_software/500000_Keybase.md",
-    "note_Knowledge/NewsJournal.md",
-    "note_entertainment/note_discography/VideoJournal.md",
     "Chinese_HSK 1 Word List_500_words.pdf",
     "note_Knowledge/note_Chinese",
     "HSK 1 Word List (1).pdf",
@@ -259,7 +274,6 @@
     "Pasted image 20240619130526.png",
     "GoogleSeachOperatorQualifier.pdf",
     "GoogleSeachOperatorQualifier.pdf.crdownload",
-    "IMG_918KcyxfMhL._AC_SL1500_.jpg",
     "IMG_918KcyxfMhL._AC_SL1500_.jpg.crdownload",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
