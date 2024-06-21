@@ -78,9 +78,74 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b0bbaa8852a3642a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/0_LongJournal/AccountJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "83bbf1587b3ec3ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_Knowledge/VocabJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8d9553807a694ca5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_Knowledge/note_Chinese/001.002_Basic Chinese Words.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0e5efdf37a2a85e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "95d14a33d071540d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/0_LongJournal/AccountJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -148,7 +213,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_software/note_CasualSoftware/005.001.002-Thunderbird.md"
+                "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md"
               }
             }
           },
@@ -158,7 +223,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_software/note_CasualSoftware/005.001.002-Thunderbird.md",
+                "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +240,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_software/note_CasualSoftware/005.001.002-Thunderbird.md",
+                "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -226,10 +291,23 @@
       "explorer-hider:Disable hiding": false
     }
   },
-  "active": "f5d8c1dabfc94269",
+  "active": "72b649b30222ad91",
   "lastOpenFiles": [
-    "note_software/note_CasualSoftware/005.001.001-Outlook.md",
+    "note_software/0_LongJournal/AccountJournal.md",
+    "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
+    "note_Knowledge/note_Chinese/001.002_Basic Chinese Words.md",
+    "Chinese_HSK 1 Word List_500_words.pdf",
+    "note_Knowledge/note_Chinese",
+    "note_Knowledge/VocabJournal.md",
+    "HSK 1 Word List (1).pdf",
+    "note_software/000001_ Useful Website.md",
+    "note_Business/001.001.001-Payment Info.md",
+    "note_android/adb/000.001.001.000-cmd.md",
+    "IMG_ZFB_QR_981b042f2c3e5c2f33f37ca7c9108b3.jpg",
+    "IMG_WXZ_QR_1d72a6c95fa763b1ce431541a8516fb.png",
+    "note_Business/note_Business.md",
     "note_software/note_CasualSoftware/005.001.002-Thunderbird.md",
+    "note_software/note_CasualSoftware/005.001.001-Outlook.md",
     "note_algo_lang/note_C++/namespace_std/002.001-Standard Algorithm.md",
     "Pasted image 20240619130526.png",
     "note_Knowledge/100000_ Accounts.md",
@@ -253,28 +331,15 @@
     "IMG_71eFRXHyQvL._AC_SL1500_.jpg",
     "IMG_71eFRXHyQvL._AC_SL1500_.jpg.crdownload",
     "_Markdown/note_Items/OtherItemsJournal.md",
-    "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
     "_Markdown/note_Items",
     "_Markdown",
-    "note_algo_lang/0_LongJournal/LangJournal.md",
-    "note_software/0_LongJournal/SoftwareJournal.md",
-    "note_software/0_LongJournal/OSJournal.md",
-    "note_IDEAndTools/Neovim/120001_Windows and Tab in Neovim.md",
-    "note_software/note_CasualSoftware/001.001.001-Volume Mixer.md",
     "Pasted image 20240618115032.png",
-    "note_software/note_CasualSoftware/002.001.001-Youtube Music.md",
-    "note_software/0_LongJournal/AccountJournal.md",
     "Pasted image 20240618114406.png",
     "IMG_ZFB_QR_b63d3f7215aa0ace231f9883c06c706.jpg",
     "IMG_ZFB_QR_20240618101732.jpg",
     "Pasted image 20240618100805.png",
     "VID_WeChat_20240326181505.mp4",
-    "VID_WeChat_20240326181549.mp4",
-    "VID_WeChat_20240329104315.mp4",
-    "IMG_ZFB_QR_PMS150G mua.jpg",
-    "dcpp-2-7-2-ref-guide-en-us.pdf",
     "Untitled.canvas",
-    "Pasted image 20240616124949.png",
     "CanvasTemplate.canvas"
   ]
 }
