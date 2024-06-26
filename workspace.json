@@ -41,19 +41,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6547cddb99487a25",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/CasualSoftware/002.001-Youtube Music.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e9aaf1a85dea76ce",
             "type": "leaf",
             "state": {
@@ -67,12 +54,12 @@
             }
           },
           {
-            "id": "244a937a7435b532",
+            "id": "171010699c29dd15",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/Obsidian/410000_Obsidian Plugins.md",
+                "file": "note_software/0_LongJournal/AccountJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -80,25 +67,12 @@
             }
           },
           {
-            "id": "46abeadf2afcce58",
+            "id": "09ff332675fb7aa1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6662dda3ee359bed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
+                "file": "note_Knowledge/100000_ Accounts.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -106,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -125,7 +99,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#vim",
+                "query": "tag:#plugins",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -174,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md"
+                "file": "note_Knowledge/100000_ Accounts.md"
               }
             }
           },
@@ -184,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
+                "file": "note_Knowledge/100000_ Accounts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -201,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
+                "file": "note_Knowledge/100000_ Accounts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -253,51 +227,51 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "6662dda3ee359bed",
+  "active": "09ff332675fb7aa1",
   "lastOpenFiles": [
     "note_software/0_LongJournal/AccountJournal.md",
-    "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
-    "note_software/Obsidian/410000_Obsidian Plugins.md",
     "note_IDEAndTools/VisualStudio/001.001-Visual Studio.md",
+    "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+    "note_software/CasualSoftware/002.001-Youtube Music.md",
+    "note_software/Obsidian/410000_Obsidian Plugins.md",
+    "note_software/0_LongJournal/WebJournal.md",
+    "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
+    "note_software/0_LongJournal/SoftwareJournal.md",
+    "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
+    "note_software/Obsidian/411000_Keyshots.md",
+    "note_algo_lang/note_C++/topic_graphic/001.001-SDF for basic primitive.md",
+    "note_algo_lang/0_LongJournal/LangJournal.md",
+    "note_IDEAndTools/DeveloperSoftware/Terminal/001.000_Windows Terminal.md",
+    "note_IDEAndTools/DeveloperSoftware/Terminal/001.003-Functionality.md",
+    "note_algo_lang/0_LongJournal/WholesomeJournal.md",
+    "note_Business/000.001.000.000-China Geology.md",
+    "note_Business/WorkJournal.md",
+    "note_Knowledge/QuoteJournal.md",
+    "note_Knowledge/PhraseJournal.md",
+    "note_algo_lang/note_Powershell/002.000.000.000-Exception in Powershell.md",
+    "note_linux/note_linux_distro/230728_arch_linux_101.md",
+    "note_software/Obsidian/400000_Obsidian.md",
+    "note_android/200001_Termux Programming.md",
+    "note_software/610000_Vimium C.md",
+    "Pasted image 20240624142543.png",
     "note_IDEAndTools/VisualStudio/001.002-Personalize.md",
     "note_linux/000002_Filesystem.md",
-    "note_linux/000001_Linux_Shell_101.md",
-    "note_IDEAndTools/SQLandNoSQL/001.001-SQlite.md",
     "Pasted image 20240621172317.png",
-    "note_software/CasualSoftware/002.001-Youtube Music.md",
     "dcpp-2-7-2-ref-guide-en-us.pdf",
-    "note_IDEAndTools/Neovim/001.000_Neovim.md",
-    "note_software/CasualSoftware/006.002-Hledger.md",
-    "note_software/CasualSoftware/003.001-SearchEngine.md",
-    "note_software/CasualSoftware/004.001-Documentation References.md",
-    "note_software/CasualSoftware/004.002-Cheatsheet Collections.md",
-    "note_software/CasualSoftware/005.001-Outlook.md",
-    "note_software/CasualSoftware/005.002-Thunderbird.md",
     "IMG_0bca520f1ee3b15fa37aeebd819fe379.png",
     "IMG_2ffabf993959701fb7686bc6e3b40576.png",
     "IMG_9ed53bf029e389ea7063df301833b551.png",
     "IMG_18c7d6a25df758a5bae718c99c329eec.png",
     "IMG_939e6bdd02f3d8ab9ec8c3c1657ad0cb.png",
     "Datasheet_20240105104145166_Air510U定位模块使用手册V1.0.4.pdf",
-    "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
     "stm32-gui-silicon-portfolio.pdf",
     "IMG_ca4951f97ee142231e7573ae315cf9f9.png",
-    "note_software/CasualSoftware/Kanata/001.002-Kanata.md",
     "note_software/CasualSoftware/Kanata",
-    "note_software/CasualSoftware/006.001-Jrnl.md",
-    "note_software/CasualSoftware/Espanso/001.004.006-Variables in espanso.md",
-    "note_software/CasualSoftware/Espanso/001.004.005-Regex in Espanso.md",
-    "note_software/CasualSoftware/Espanso/001.004.004-Forms.md",
-    "note_software/CasualSoftware/Espanso/001.004.003-Extension in espanso.md",
-    "note_software/CasualSoftware/Espanso/001.004.002-Match Basic.md",
-    "note_software/CasualSoftware/Espanso/001.004-Espanso.md",
-    "note_software/CasualSoftware/Espanso/001.004.001-Espanso CLI.md",
     "Chinese_HSK 1 Word List_500_words.pdf",
     "note_Knowledge/note_Chinese",
     "HSK 1 Word List (1).pdf",
     "IMG_ZFB_QR_981b042f2c3e5c2f33f37ca7c9108b3.jpg",
     "IMG_WXZ_QR_1d72a6c95fa763b1ce431541a8516fb.png",
-    "Pasted image 20240619130526.png",
     "GoogleSeachOperatorQualifier.pdf",
     "GoogleSeachOperatorQualifier.pdf.crdownload",
     "IMG_918KcyxfMhL._AC_SL1500_.jpg.crdownload",
