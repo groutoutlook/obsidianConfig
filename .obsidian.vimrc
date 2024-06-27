@@ -37,7 +37,7 @@ imap vv <Esc>v$
 " Make a newline with a link.
 nmap ;p A<space>[](<Esc>pa)<Esc>%ba
 nmap -;p o-<Esc>;p
-imap ;;p <Esc>;p
+imap ;p <Esc>;p
 imap -;p <Esc>-;p
 " Go to link or open note in new tab(leaf)
 " exmap follow obcommand editor:open-link-in-new-window
@@ -59,7 +59,7 @@ nmap ;q :closeTab
 " NOTE: Paste as plain text? In pure Vim, this is no need.
 " But in Obsidian, there is a plugin which interfere with that.
 nmap <C-v> p
-imap ;p <Esc>pa
+" imap ;p <Esc>pa
 imap ;u <Esc>2ui
 imap ;r <Esc>2<C-r>i
 nmap <C-BS> diwjk
