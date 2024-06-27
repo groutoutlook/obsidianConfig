@@ -953,7 +953,10 @@
     "vivaldi": 909,
     "sdk": 910,
     "preference": 911,
-    "linguistic": 912
+    "linguistic": 912,
+    "fragment": 913,
+    "funding": 914,
+    "romance": 915
   },
   "_version": 3
 }

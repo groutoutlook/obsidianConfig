@@ -105,3 +105,10 @@ div.keyshots-table-modal button:disabled, div.modal-container.keyshots-regex but
 body.keyshots-focus-mode div.side-dock-ribbon, body.keyshots-focus-mode div.sidebar-toggle-button {
   display: none;
 }
+
+div.keyshots-settings .is-disabled {
+  opacity: 0.5;
+}
+div.keyshots-settings .indent {
+  padding-left: 2em;
+}

@@ -22798,6 +22798,8 @@ var DEFAULT_SETTINGS = {
   carets_via_double_ctrl: false,
   quick_switch_via_double_shift: false,
   command_palette_via_double_ctrl: false,
+  callouts_list: [],
+  open_file_command: "",
   modal_table_last_used_rows: 2,
   modal_table_last_used_columns: 2,
   modal_regex_last_used_pattern: "",
@@ -23296,8 +23298,7 @@ function addCaretsViaDoubleKey(plugin, ev) {
   addCarets(view.editor, ev.key === "ArrowUp" ? -1 /* UP */ : 1 /* DOWN */, ev.key === "ArrowUp" ? 0 : view.editor.lineCount());
 }
 function runCommandById(keyshotsPlugin, id, notAvailableCallback) {
-  const plugin = keyshotsPlugin.app.internalPlugins.plugins[id.split(":")[0]];
-  if (plugin && plugin.enabled)
+  if (Object.keys(keyshotsPlugin.app.commands.commands).contains(id))
     keyshotsPlugin.app.commands.executeCommandById(id);
   else
     notAvailableCallback();
@@ -23387,21 +23388,56 @@ function goToFolding(editor, direction) {
   const lines = browseDoc.split("\n");
   if (!isDown())
     lines.reverse();
-  lines.every((v, i, arr) => {
-    var _a;
-    let cursorIndent = 0;
-    if (v.match(FOLDING_REGEX) && i == 0)
-      return true;
-    const indentMatch = v.match(/^((?:\t| {4})*)(-|\d+\.|- \[[x ]]) /);
-    if (indentMatch) {
-      const indentString = indentMatch[1];
-      const indent = indentString.includes(" ") ? indentString.length / 4 : indentString.length;
-      if (!((_a = arr[i + (isDown() ? 1 : -1)]) != null ? _a : "").match(new RegExp(`^(?:\\t| {4}){${indent + 1}}(?=- |\\d+\\. |- \\[[x ]] )`)))
+  const currLine = editor.getLine(cursor.line);
+  const HEAD_REGEX = /^(#{1,6})\s/;
+  const LIST_REGEX = /^([\s\t]*)(?:[0-9]+\.|-(?=\s[^[])|- \[[ x]])\s/;
+  const ALL_FOLDING_REGEX = new RegExp(`${HEAD_REGEX.source}|${LIST_REGEX.source}`);
+  let currLineMatch = currLine.match(HEAD_REGEX);
+  if (currLineMatch) {
+    if (!lines.every((v, i) => {
+      const m = v.match(HEAD_REGEX);
+      if (!m)
         return true;
-      cursorIndent = (indentString.includes(" ") ? indent * 4 : indent) + indentMatch[2].length + 1;
-    } else if (!v.match(FOLDING_REGEX))
+      if (m[1].length < (currLineMatch == null ? void 0 : currLineMatch[1].length))
+        return false;
+      if (m[1] != (currLineMatch == null ? void 0 : currLineMatch[1]))
+        return true;
+      editor.setCursor(cursor.setPos(isDown() ? cursor.line + 1 + i : cursor.line - i, m == null ? void 0 : m[0].length).toEditorPosition());
+      return false;
+    }))
+      return;
+  }
+  currLineMatch = currLine.match(LIST_REGEX);
+  if (currLineMatch) {
+    if (!lines.every((v, i, arr) => {
+      const m = v.match(LIST_REGEX);
+      if (!m)
+        return true;
+      if (m[1].length < (currLineMatch == null ? void 0 : currLineMatch[1].length))
+        return false;
+      if (m[1] != (currLineMatch == null ? void 0 : currLineMatch[1]))
+        return true;
+      const possibleChild = arr[i + direction] ? arr[i + direction].match(LIST_REGEX) : void 0;
+      const indentFactor = currLineMatch[0].startsWith("	") || possibleChild && possibleChild[0].startsWith("	") ? 1 : app.vault.getConfig("tabSize");
+      if (!(possibleChild && possibleChild[1].length == m[1].length + indentFactor))
+        return true;
+      editor.setCursor(cursor.setPos(isDown() ? cursor.line + 1 + i : cursor.line - i, m == null ? void 0 : m[0].length).toEditorPosition());
+      return false;
+    }))
+      return;
+  }
+  lines.every((v, i, arr) => {
+    const m = v.match(ALL_FOLDING_REGEX);
+    if (!m)
       return true;
-    editor.setCursor(cursor.setPos(isDown() ? cursor.line + 1 + i : cursor.line - i, cursorIndent).toEditorPosition());
+    const indent = m[1] ? m[1] : m[2];
+    if (v.match(LIST_REGEX)) {
+      const possibleChild = arr[i + direction] ? arr[i + direction].match(LIST_REGEX) : void 0;
+      const indentFactor = possibleChild && possibleChild[0].startsWith("	") ? 1 : app.vault.getConfig("tabSize");
+      if (!(possibleChild && possibleChild[1].length == indent.length + indentFactor))
+        return true;
+    }
+    editor.setCursor(cursor.setPos(isDown() ? cursor.line + 1 + i : cursor.line - i, m == null ? void 0 : m[0].length).toEditorPosition());
     return false;
   });
 }
@@ -24890,6 +24926,7 @@ var import_obsidian3 = require("obsidian");
 var CallbackSuggestModal = class extends import_obsidian3.SuggestModal {
   constructor(plugin, onSelectCallback) {
     super(plugin.app);
+    this.plugin = plugin;
     this.onSelectCallback = onSelectCallback;
   }
   onChooseSuggestion(item, evt) {
@@ -24929,7 +24966,7 @@ var _CalloutPickerModal = class extends CallbackSuggestModal {
     this.setPlaceholder("Select one of the callouts... (callouts are searchable by it's id or aliases)");
   }
   getSuggestions(query) {
-    return _CalloutPickerModal.CALLOUTS.filter((ids) => ids.filter((id) => id.includes(query.toLowerCase())).length > 0).map((ids) => ids[0]);
+    return _CalloutPickerModal.ROOT_CALLOUTS.concat(this.plugin.settings.callouts_list.filter((v) => v.length > 0 && v.replace(/\s/g, "").length != 0).map((v) => v.split(","))).filter((ids) => ids.filter((id) => id.includes(query.toLowerCase())).length > 0).map((ids) => ids[0]);
   }
   renderSuggestion(value, el) {
     import_obsidian4.MarkdownRenderer.renderMarkdown(`>[!${value}]`, el, "", new import_obsidian4.Component()).then(() => {
@@ -24939,7 +24976,7 @@ var _CalloutPickerModal = class extends CallbackSuggestModal {
   }
 };
 var CalloutPickerModal = _CalloutPickerModal;
-CalloutPickerModal.CALLOUTS = [
+CalloutPickerModal.ROOT_CALLOUTS = [
   ["note"],
   ["abstract", "summary", "tldr"],
   ["info"],
@@ -25660,8 +25697,13 @@ var DOUBLE_KEY_COMMANDS = (plugin) => [
       key: "Shift",
       maxDelay: 400,
       lastReleasedCallback: (interrupted) => {
-        if (!interrupted)
-          runCommandById(plugin, "switcher:open", () => new import_obsidian9.Notice("Quick Switcher plugin is not enabled!"));
+        if (!interrupted) {
+          if (plugin.settings.open_file_command === "") {
+            new import_obsidian9.Notice("You have no selected switch engine to use with double shift command!");
+            return;
+          }
+          runCommandById(plugin, plugin.settings.open_file_command, () => new import_obsidian9.Notice("Selected switch engine is no longer available, please select another one in settings!"));
+        }
       }
     }
   }
@@ -25766,6 +25808,13 @@ var DoubleKeyRegistry = class {
 
 // src/components/settings-tab.ts
 var import_obsidian10 = require("obsidian");
+function getOpenCommands() {
+  const cmds = {};
+  Array.of("switcher", "omnisearch", "darlal-switcher-plus").forEach((pluginId) => {
+    Object.values(app.commands.commands).filter((v) => v.id.startsWith(pluginId)).forEach((v) => cmds[v.id] = v.name);
+  });
+  return cmds;
+}
 var KeyshotsSettingTab = class extends import_obsidian10.PluginSettingTab {
   constructor(app2, plugin) {
     super(app2, plugin);
@@ -25773,6 +25822,7 @@ var KeyshotsSettingTab = class extends import_obsidian10.PluginSettingTab {
   }
   display() {
     const { containerEl } = this;
+    containerEl.classList.add("keyshots-settings");
     containerEl.empty();
     const title = containerEl.createEl("h1", { text: "Keyshots Settings" });
     title.innerHTML = KEYSHOTS_SVG(48) + title.innerHTML;
@@ -25806,17 +25856,37 @@ var KeyshotsSettingTab = class extends import_obsidian10.PluginSettingTab {
       slider.setValue(DEFAULT_SETTINGS.shuffle_rounds_amount);
       await this.plugin.saveSettings();
     }));
+    new import_obsidian10.Setting(containerEl).setName("Custom callout types list").setDesc(new DocumentFragmentBuilder().appendText("Adds new callout types defined by user separated by new line (").createElem("kbd", { text: "Enter" }).appendText("), you can specify aliases as well on same line separated by comma ( ").createElem("kbd", { text: "," }).appendText(" ). These will be used in ").createElem("code", { text: "Better insert callout" }).appendText(" command to expand it's choice with user defined callouts.").toFragment()).addTextArea((cb) => cb.setValue(this.plugin.settings.callouts_list.join("\n")).onChange(async (v) => {
+      this.plugin.settings.callouts_list = v.split("\n");
+      await this.plugin.saveSettings();
+    }));
     containerEl.createEl("h2", { text: "\u{1F527} JetBrains Features" });
     new import_obsidian10.Setting(containerEl).setName(new DocumentFragmentBuilder().appendText("Double ").createElem("kbd", { text: "Ctrl" }).appendText(" caret adding shortcut").toFragment()).setDesc(new DocumentFragmentBuilder().appendText("Everytime when you press ").createElem("kbd", { text: "Ctrl" }).appendText(" twice and second one you'll hold, then when you press ").createElem("kbd", { text: "\u2193" }).appendText(" or ").createElem("kbd", { text: "\u2191" }).appendText(' keys, Obsidian will add carets like will normaly do with "').createElem("b", { text: "Add carets up/down" }).appendText('" command.').toFragment()).addToggle((cb) => cb.setValue(this.plugin.settings.carets_via_double_ctrl).onChange(async (value) => {
       this.plugin.settings.carets_via_double_ctrl = value;
       await this.plugin.saveSettings();
       this.plugin.loadDoubleKeyCommands();
     }));
-    new import_obsidian10.Setting(containerEl).setName(new DocumentFragmentBuilder().appendText("Opening Quick-Switcher via double ").createElem("kbd", { text: "Shift" }).appendText(" shortcut").toFragment()).setDesc(new DocumentFragmentBuilder().appendText("If you have Quick Switcher plugin enabled, hitting ").createElem("kbd", { text: "Shift" }).appendText(" twice will open quick switcher window.").toFragment()).addToggle((cb) => cb.setValue(this.plugin.settings.quick_switch_via_double_shift).onChange(async (value) => {
+    let searchEngineEl = null;
+    new import_obsidian10.Setting(containerEl).setName(new DocumentFragmentBuilder().appendText("Opening switch modal via double ").createElem("kbd", { text: "Shift" }).appendText(" shortcut").toFragment()).setDesc(new DocumentFragmentBuilder().appendText("If you have any of switch engine selected, hitting ").createElem("kbd", { text: "Shift" }).appendText(" twice will select open switch modal window.").toFragment()).addToggle((cb) => cb.setValue(this.plugin.settings.quick_switch_via_double_shift).onChange(async (value) => {
       this.plugin.settings.quick_switch_via_double_shift = value;
       await this.plugin.saveSettings();
+      searchEngineEl == null ? void 0 : searchEngineEl.setDisabled(!value);
       this.plugin.loadDoubleKeyCommands();
     }));
+    searchEngineEl = new import_obsidian10.Setting(containerEl).setName(new DocumentFragmentBuilder().appendText("Switch engine for double ").createElem("kbd", { text: "Shift" }).appendText(" shortcut").toFragment()).setDesc(new DocumentFragmentBuilder().appendText("Here you can select any of supported switch engines.").createElem("br").appendText("Currently supported: Quick switcher, ").createElem("a", { text: "Omnisearch", href: "https://obsidian.md/plugins?id=omnisearch" }).appendText(", ").createElem("a", { text: "Quick Switcher++", href: "https://obsidian.md/plugins?id=darlal-switcher-plus" }).appendText(".").toFragment()).setClass("indent").addDropdown((cb) => {
+      const cmds = getOpenCommands();
+      const currSetting = this.plugin.settings.open_file_command;
+      cb.addOption("", "-- No engine selected --");
+      cb.addOptions(cmds);
+      cb.setValue(Object.keys(cmds).contains(currSetting) ? currSetting : "");
+      cb.onChange(async (value) => {
+        this.plugin.settings.open_file_command = value;
+        await this.plugin.saveSettings();
+      });
+    });
+    if (!this.plugin.settings.quick_switch_via_double_shift) {
+      searchEngineEl.setDisabled(true);
+    }
     new import_obsidian10.Setting(containerEl).setName(new DocumentFragmentBuilder().appendText("Opening Command-Palette via double ").createElem("kbd", { text: "Ctrl" }).appendText(" shortcut").toFragment()).setDesc(new DocumentFragmentBuilder().appendText("If you have Command Palette plugin enabled, hitting ").createElem("kbd", { text: "Ctrl" }).appendText(" twice will open command palette window.").toFragment()).addToggle((cb) => cb.setValue(this.plugin.settings.command_palette_via_double_ctrl).onChange(async (value) => {
       this.plugin.settings.command_palette_via_double_ctrl = value;
       await this.plugin.saveSettings();
