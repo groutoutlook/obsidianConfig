@@ -10,5 +10,6 @@
   "userIgnoreFilters": [
     "*sync-conflict*",
     "sync-conflict"
-  ]
+  ],
+  "showRibbon": false
 }

@@ -4,122 +4,42 @@
     "type": "split",
     "children": [
       {
-        "id": "55225c8e17fa7212",
+        "id": "68ffb2c6e926a4ec",
         "type": "tabs",
         "children": [
           {
-            "id": "2b45be933c700adc",
+            "id": "344f86682bfda1a6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/Obsidian/400000_Obsidian.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "72b649b30222ad91",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bbf94ebfdb99c5ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/Obsidian/410000_Obsidian Plugins.md",
+                "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
-        "id": "b498c7289a54253e",
+        "id": "692aabec644967b3",
         "type": "tabs",
         "children": [
           {
-            "id": "e9aaf1a85dea76ce",
+            "id": "9d48501bdc67b7df",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_IDEAndTools/VisualStudio/001.001-Visual Studio.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "171010699c29dd15",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/0_LongJournal/AccountJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "09ff332675fb7aa1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_Knowledge/100000_ Accounts.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2256bbc9a4b2ecf8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.005-ripgrep.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9839e444bda034e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.003-fd.md",
+                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,9 +58,9 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:task",
+                "query": "tag:#plugins",
                 "matchingCase": false,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -187,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.003-fd.md"
+                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md"
               }
             }
           },
@@ -197,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.003-fd.md",
+                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -214,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.003-fd.md",
+                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -252,6 +172,11 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "qatt:Refresh QATT Tables": false,
+      "qatt:Refresh Views": false,
+      "qatt:Log Metrics": false,
+      "terminal:Open terminal": false,
+      "explorer-hider:Disable hiding": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
       "canvas:Create new canvas": false,
@@ -261,42 +186,43 @@
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": true,
       "random-note:Open random note": true,
-      "omnisearch:Omnisearch": false,
-      "explorer-hider:Disable hiding": false,
-      "terminal:Open terminal": false
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "9839e444bda034e9",
+  "active": "9d48501bdc67b7df",
   "lastOpenFiles": [
+    "note_algo_lang/0_LongJournal/ReadAndListenJournal.md",
+    "note_IDEAndTools/Neovim/001.003_Neovim Personal Change.md",
+    "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md",
+    "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+    "note_algo_lang/0_LongJournal/LifeJournal.md",
+    "note_Knowledge/NewsJournal.md",
+    "note_algo_lang/0_LongJournal/OtherKnowledgeJournal.md",
+    "note_software/Obsidian/410000_Obsidian Plugins.md",
+    "note_software/Obsidian/004.002.004-QueryAll.md",
+    "note_software/0_LongJournal/AccountJournal.md",
+    "note_Knowledge/100000_ Accounts.md",
+    "note_software/CasualSoftware/004.002-Cheatsheet Collections.md",
+    "note_algo_lang/note_Powershell/400005_Archive in Powershell.md",
+    "note_entertainment/note_discography/VideoJournal.md",
+    "note_software/0_LongJournal/WebJournal.md",
+    "note_software/610000_Vimium C.md",
+    "note_software/600009_Website settings.md",
+    "note_Embedded/400002_ Motor Control.md",
+    "note_algo_lang/0_LongJournal/LangJournal.md",
+    "note_Embedded/HardwareJournal.md",
+    "note_software/0_LongJournal/SoftwareJournal.md",
+    "note_IDEAndTools/DeveloperSoftware/CLI/001.003-fd.md",
+    "definitions/OK.md",
+    "note_IDEAndTools/VisualStudio/001.001-Visual Studio.md",
+    "note_IDEAndTools/DeveloperSoftware/CLI/001.005-ripgrep.md",
+    "definitions",
+    "Pasted image 20240629143819.png",
     "justfile",
     "cliff.toml",
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.005-ripgrep.md",
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.003-fd.md",
-    "note_Knowledge/100000_ Accounts.md",
-    "note_software/610000_Vimium C.md",
-    "note_software/Obsidian/410000_Obsidian Plugins.md",
-    "note_IDEAndTools/VisualStudio/001.001-Visual Studio.md",
-    "note_software/0_LongJournal/SoftwareJournal.md",
-    "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md",
     "note_IDEAndTools/Neovim/001.002.002-overseer.nvim.md",
     "Pasted image 20240627185020.png",
-    "note_IDEAndTools/Neovim/001.002.001_Telescope.nvim.md",
-    "note_IDEAndTools/Neovim/101103_Leap.nvim.md",
-    "note_IDEAndTools/Neovim/001.000_Neovim.md",
-    "note_software/Obsidian/413001_Obsidian.vimrc all commands.md",
-    "note_IDEAndTools/DeveloperSoftware/Documentation/002.001-Typst.md",
-    "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
-    "note_IDEAndTools/DeveloperSoftware/Documentation/002.002-Syntax Typst.md",
-    "note_IDEAndTools/DeveloperSoftware/Documentation/002.003-CLI Typst.md",
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.004-Zoxide.md",
     "note_IDEAndTools/DeveloperSoftware/Documentation",
-    "note_software/Obsidian/400000_Obsidian.md",
-    "note_software/0_LongJournal/AccountJournal.md",
-    "note_software/CasualSoftware/002.001-Youtube Music.md",
-    "note_software/0_LongJournal/WebJournal.md",
-    "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
-    "note_software/Obsidian/411000_Keyshots.md",
-    "note_algo_lang/note_C++/topic_graphic/001.001-SDF for basic primitive.md",
     "Pasted image 20240624142543.png",
     "Pasted image 20240621172317.png",
     "dcpp-2-7-2-ref-guide-en-us.pdf",
@@ -311,9 +237,6 @@
     "note_software/CasualSoftware/Kanata",
     "Chinese_HSK 1 Word List_500_words.pdf",
     "note_Knowledge/note_Chinese",
-    "HSK 1 Word List (1).pdf",
-    "IMG_ZFB_QR_981b042f2c3e5c2f33f37ca7c9108b3.jpg",
-    "GoogleSeachOperatorQualifier.pdf",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]
