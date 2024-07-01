@@ -984,7 +984,10 @@
     "journal/til": 1,
     "journal/other": 2,
     "opinion": 938,
-    "journal/blog": 3
+    "journal/blog": 3,
+    "journal/firmware": 4,
+    "journal/embedded": 5,
+    "builtin": 939
   },
   "_version": 3
 }

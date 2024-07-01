@@ -325,5 +325,20 @@
       ],
       "key": "X"
     }
+  ],
+  "workspace:close": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "W"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "F4"
+    }
   ]
 }

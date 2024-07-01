@@ -62,7 +62,6 @@ nmap <C-v> p
 " imap ;p <Esc>pa
 imap ;u <Esc>2ui
 imap ;r <Esc>2<C-r>i
-nmap <C-BS> diwjk
 
 imap ;lt <Esc><C-k> 
 
@@ -111,3 +110,11 @@ imap ;ml :makeLink
 nmap ;ml :makeLink
 "
 
+
+" INFO: unmap keys
+unmap <C-w>
+" imap <c-w> <c-bs>
+imap <c-w> <Esc>dba
+nmap <C-BS> db
+vmap a <Esc>
+vmap i <Esc>

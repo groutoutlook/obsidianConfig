@@ -32,14 +32,41 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+                "file": "note_software/0_LongJournal/SoftwareJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4f57e1f1728a8d62",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/600009_Website settings.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9314792e0e468088",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_IDEAndTools/DeveloperSoftware/VCS/003.005-Git and emoji.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -107,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md"
+                "file": "note_IDEAndTools/DeveloperSoftware/VCS/003.005-Git and emoji.md"
               }
             }
           },
@@ -117,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+                "file": "note_IDEAndTools/DeveloperSoftware/VCS/003.005-Git and emoji.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+                "file": "note_IDEAndTools/DeveloperSoftware/VCS/003.005-Git and emoji.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,37 +216,38 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "d136170a15d383d3",
+  "active": "9314792e0e468088",
   "lastOpenFiles": [
-    "note_software/SysInternals/000.001.000.000-Process Utilities.md",
+    "note_IDEAndTools/DeveloperSoftware/VCS/003.006-Jujutsu.md",
+    "note_IDEAndTools/DeveloperSoftware/VCS/003.005-Git and emoji.md",
+    "note_IDEAndTools/DeveloperSoftware/VCS/003.004-Github.md",
+    "note_IDEAndTools/DeveloperSoftware/VCS/003.003-Git hosting platform.md",
+    "note_IDEAndTools/DeveloperSoftware/VCS/003.002-Software and environment.md",
+    "note_IDEAndTools/DeveloperSoftware/VCS/003.001-Git tools.md",
+    "note_IDEAndTools/DeveloperSoftware/VCS/003-Git.md",
+    "note_software/600009_Website settings.md",
+    "note_IDEAndTools/DeveloperSoftware/Documentation/001-Markdown.md",
+    "note_IDEAndTools/DeveloperSoftware/Documentation/002.001-Typst.md",
+    "note_graph/000001_ Mermaid Syntax.md",
+    "note_software/006.002.001_Vimium C.md",
+    "note_software/CasualSoftware/003.001-SearchEngine.md",
+    "GoogleSeachOperatorQualifier.pdf",
+    "note_software/0_LongJournal/SoftwareJournal.md",
+    "note_software/Obsidian/004.001.003.001-All commands.md",
+    "000004_.md",
+    "note_Embedded/FirmwareJournal.md",
+    "note_Embedded/HardwareJournal.md",
     "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+    "MainJournal.md",
+    "note_Embedded/ComponentJournal.md",
+    "note_Embedded/note_EDA/EDAJournal.md",
+    "note_software/SysInternals/000.001.000.000-Process Utilities.md",
     "note_software/000005_Clipboard manager.md",
     "note_algo_lang/0_LongJournal/WholesomeJournal.md",
-    "note_software/Obsidian/004.001.003.001-All commands.md",
     "note_software/0_LongJournal/AccountJournal.md",
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.005-ripgrep.md",
-    "note_software/Obsidian/004.001.003-Obsidian.vimrc.md",
-    "note_software/Obsidian/004.001.002-Advanced URI.md",
-    "note_software/Obsidian/004.001.004-QueryAll.md",
-    "note_software/Obsidian/004.001.001-Keyshots.md",
-    "note_software/Obsidian/004.001-Obsidian Plugins.md",
-    "note_software/Obsidian/004-Obsidian.md",
-    "note_software/006-Browser.md",
-    "note_software/006.001-Google Chrome.md",
-    "note_software/600009_Website settings.md",
-    "note_software/006.002.001_Vimium C.md",
-    "note_software/600000_Microsoft Edge.md",
     "Pasted image 20240701123306.png",
     "Pasted image 20240701123211.png",
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.003-fd.md",
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.003.001-CLI fd.md",
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.005.001-CLI ripgrep.md",
     "6fe4376dcbd03125b545d1bd3f7e54a8.jpg",
-    "note_algo_lang/0_LongJournal/ReadAndListenJournal.md",
-    "note_IDEAndTools/Neovim/001.003_Neovim Personal Change.md",
-    "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md",
-    "note_algo_lang/0_LongJournal/LifeJournal.md",
-    "note_Knowledge/NewsJournal.md",
     "definitions",
     "Pasted image 20240629143819.png",
     "justfile",
@@ -236,7 +264,6 @@
     "stm32-gui-silicon-portfolio.pdf",
     "note_software/CasualSoftware/Kanata",
     "Chinese_HSK 1 Word List_500_words.pdf",
-    "note_Knowledge/note_Chinese",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]
