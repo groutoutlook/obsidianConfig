@@ -6,6 +6,7 @@
       {
         "id": "68ffb2c6e926a4ec",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "344f86682bfda1a6",
@@ -25,6 +26,7 @@
       {
         "id": "692aabec644967b3",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "d136170a15d383d3",
@@ -40,25 +42,12 @@
             }
           },
           {
-            "id": "4f57e1f1728a8d62",
+            "id": "b369bd26cc32c115",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/600009_Website settings.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9314792e0e468088",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/VCS/003.005-Git and emoji.md",
+                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -66,7 +55,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#plugins",
+                "query": "tag:thread",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -134,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/VCS/003.005-Git and emoji.md"
+                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md"
               }
             }
           },
@@ -144,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/VCS/003.005-Git and emoji.md",
+                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/VCS/003.005-Git and emoji.md",
+                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -216,35 +205,35 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "9314792e0e468088",
+  "active": "b369bd26cc32c115",
   "lastOpenFiles": [
-    "note_IDEAndTools/DeveloperSoftware/VCS/003.006-Jujutsu.md",
+    "note_software/0_LongJournal/SoftwareJournal.md",
+    "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+    "note_software/SysInternals/000.001.000.000-Process Utilities.md",
+    "note_software/600009_Website settings.md",
+    "note_software/Obsidian/004.001.003.001-All commands.md",
     "note_IDEAndTools/DeveloperSoftware/VCS/003.005-Git and emoji.md",
+    "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
+    "note_IDEAndTools/DeveloperSoftware/VCS/003.006-Jujutsu.md",
     "note_IDEAndTools/DeveloperSoftware/VCS/003.004-Github.md",
     "note_IDEAndTools/DeveloperSoftware/VCS/003.003-Git hosting platform.md",
     "note_IDEAndTools/DeveloperSoftware/VCS/003.002-Software and environment.md",
     "note_IDEAndTools/DeveloperSoftware/VCS/003.001-Git tools.md",
     "note_IDEAndTools/DeveloperSoftware/VCS/003-Git.md",
-    "note_software/600009_Website settings.md",
     "note_IDEAndTools/DeveloperSoftware/Documentation/001-Markdown.md",
     "note_IDEAndTools/DeveloperSoftware/Documentation/002.001-Typst.md",
     "note_graph/000001_ Mermaid Syntax.md",
     "note_software/006.002.001_Vimium C.md",
     "note_software/CasualSoftware/003.001-SearchEngine.md",
     "GoogleSeachOperatorQualifier.pdf",
-    "note_software/0_LongJournal/SoftwareJournal.md",
-    "note_software/Obsidian/004.001.003.001-All commands.md",
     "000004_.md",
     "note_Embedded/FirmwareJournal.md",
     "note_Embedded/HardwareJournal.md",
-    "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
     "MainJournal.md",
     "note_Embedded/ComponentJournal.md",
     "note_Embedded/note_EDA/EDAJournal.md",
-    "note_software/SysInternals/000.001.000.000-Process Utilities.md",
     "note_software/000005_Clipboard manager.md",
     "note_algo_lang/0_LongJournal/WholesomeJournal.md",
-    "note_software/0_LongJournal/AccountJournal.md",
     "Pasted image 20240701123306.png",
     "Pasted image 20240701123211.png",
     "6fe4376dcbd03125b545d1bd3f7e54a8.jpg",

@@ -987,7 +987,10 @@
     "journal/blog": 3,
     "journal/firmware": 4,
     "journal/embedded": 5,
-    "builtin": 939
+    "builtin": 939,
+    "method": 940,
+    "test": 941,
+    "app": 942
   },
   "_version": 3
 }

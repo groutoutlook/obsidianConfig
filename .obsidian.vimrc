@@ -19,7 +19,7 @@ set clipboard=unnamed
 unmap <Space>
 unmap ;
 unmap -
-
+unmap t
 
 " map workspace
 exmap loadworkspace obcommand workspaces:save-and-load
@@ -55,6 +55,19 @@ exmap closeAll obcommand workspace:close-window
 nmap ;wq :closeAll
 exmap closeTab obcommand workspace:close
 nmap ;q :closeTab
+imap ;q :closeTab
+exmap q obcommand workspace:close
+" template
+" exmap insertTemplate obcommand insert-template 
+" nmap ;t :insertTemplate
+exmap undoTab obcommand workspace:undo-close-pane
+nmap ;t :undoTab
+imap ;t :undoTab
+
+
+
+
+
 
 " NOTE: Paste as plain text? In pure Vim, this is no need.
 " But in Obsidian, there is a plugin which interfere with that.
@@ -64,10 +77,6 @@ imap ;u <Esc>2ui
 imap ;r <Esc>2<C-r>i
 
 imap ;lt <Esc><C-k> 
-
-" template
-exmap insertTemplate obcommand insert-template 
-nmap ;t :insertTemplate
 
 
 " Insert templates
