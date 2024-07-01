@@ -89,7 +89,7 @@ exmap hsplit obcommand workspace:split-horizontal
 nmap <Space>V :hsplit
 
 
-" folding block
+" INFO: Fold in insert mode?
 exmap foldToggle obcommand editor:toggle-fold
 nmap za :foldToggle
 imap ;za :foldToggle
@@ -105,8 +105,9 @@ imap ;zp :foldProp
 imap <A-p> <Esc>p
 
 
-" Copy current block's URI
+" INFO: Copy current block's URI
 exmap makeLink obcommand obsidian-advanced-uri:copy-uri-block
 imap ;ml :makeLink
 nmap ;ml :makeLink
+"
 
