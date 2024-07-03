@@ -990,7 +990,11 @@
     "builtin": 939,
     "method": 940,
     "test": 941,
-    "app": 942
+    "app": 942,
+    "haskell": 943,
+    "lowcode": 944,
+    "thread": 945,
+    "cdn": 946
   },
   "_version": 3
 }

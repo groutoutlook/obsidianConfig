@@ -4,12 +4,13 @@
   "hotkey-helper",
   "settings-search",
   "obsidian-advanced-uri",
-  "terminal",
   "obsidian-text-format",
   "colored-tags",
   "codestats",
   "obsidian-vimrc-support",
   "explorer-hider",
   "various-complements",
-  "qatt"
+  "qatt",
+  "pdf-plus",
+  "customjs"
 ]

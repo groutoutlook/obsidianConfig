@@ -6,7 +6,7 @@
       {
         "id": "68ffb2c6e926a4ec",
         "type": "tabs",
-        "dimension": 50,
+        "dimension": 50.11111111111111,
         "children": [
           {
             "id": "344f86682bfda1a6",
@@ -20,13 +20,40 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fbc46fb8c2e9747a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/Obsidian/004.001.001-Keyshots.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "694cb17e707279ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/Obsidian/004.001.003.001-All commands.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "692aabec644967b3",
         "type": "tabs",
-        "dimension": 50,
+        "dimension": 49.888888888888886,
         "children": [
           {
             "id": "d136170a15d383d3",
@@ -123,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md"
+                "file": "note_software/Obsidian/004.001.003.001-All commands.md"
               }
             }
           },
@@ -133,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+                "file": "note_software/Obsidian/004.001.003.001-All commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+                "file": "note_software/Obsidian/004.001.003.001-All commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +218,6 @@
       "qatt:Refresh QATT Tables": false,
       "qatt:Refresh Views": false,
       "qatt:Log Metrics": false,
-      "terminal:Open terminal": false,
       "explorer-hider:Disable hiding": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
@@ -202,16 +228,36 @@
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": true,
       "random-note:Open random note": true,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "b369bd26cc32c115",
+  "active": "694cb17e707279ed",
   "lastOpenFiles": [
-    "note_software/0_LongJournal/SoftwareJournal.md",
-    "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+    "note_software/Obsidian/004.001.001-Keyshots.md",
     "note_software/SysInternals/000.001.000.000-Process Utilities.md",
-    "note_software/600009_Website settings.md",
     "note_software/Obsidian/004.001.003.001-All commands.md",
+    "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
+    "note_software/0_LongJournal/SoftwareJournal.md",
+    "note_software/0_LongJournal/WebJournal.md",
+    "note_software/Obsidian/004.001-Obsidian Plugins.md",
+    "note_algo_lang/note_C++/buildsystem/003_CMake.md",
+    "note_algo_lang/note_C++/buildsystem/003.002_Learning Resources CMake.md",
+    "Professional CMake_ A Practical Guide (2023, Crascit Pty Ltd).pdf",
+    "test.js",
+    "test.js.md",
+    "ProfessionalCMake_18th_Edition_GettingStarted.pdf",
+    "Pasted image 20240703132719.png",
+    "note_software/000001_ Useful Website.md",
+    "note_Knowledge/VocabJournal.md",
+    "note_algo_lang/note_C++/buildsystem/003.001-Syntax CMake.md",
+    "note_software/Obsidian/004.001.003-Obsidian.vimrc.md",
+    "note_algo_lang/note_C++/buildsystem/004_ninja.md",
+    "note_algo_lang/note_C++/namespace_std/003.003-Filesystem.md",
+    "note_algo_lang/note_C++/namespace_std/003.003.001-Path.md",
+    "note_software/600009_Website settings.md",
     "note_IDEAndTools/DeveloperSoftware/VCS/003.005-Git and emoji.md",
     "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
     "note_IDEAndTools/DeveloperSoftware/VCS/003.006-Jujutsu.md",
@@ -219,21 +265,7 @@
     "note_IDEAndTools/DeveloperSoftware/VCS/003.003-Git hosting platform.md",
     "note_IDEAndTools/DeveloperSoftware/VCS/003.002-Software and environment.md",
     "note_IDEAndTools/DeveloperSoftware/VCS/003.001-Git tools.md",
-    "note_IDEAndTools/DeveloperSoftware/VCS/003-Git.md",
-    "note_IDEAndTools/DeveloperSoftware/Documentation/001-Markdown.md",
-    "note_IDEAndTools/DeveloperSoftware/Documentation/002.001-Typst.md",
-    "note_graph/000001_ Mermaid Syntax.md",
-    "note_software/006.002.001_Vimium C.md",
-    "note_software/CasualSoftware/003.001-SearchEngine.md",
     "GoogleSeachOperatorQualifier.pdf",
-    "000004_.md",
-    "note_Embedded/FirmwareJournal.md",
-    "note_Embedded/HardwareJournal.md",
-    "MainJournal.md",
-    "note_Embedded/ComponentJournal.md",
-    "note_Embedded/note_EDA/EDAJournal.md",
-    "note_software/000005_Clipboard manager.md",
-    "note_algo_lang/0_LongJournal/WholesomeJournal.md",
     "Pasted image 20240701123306.png",
     "Pasted image 20240701123211.png",
     "6fe4376dcbd03125b545d1bd3f7e54a8.jpg",
@@ -248,11 +280,7 @@
     "dcpp-2-7-2-ref-guide-en-us.pdf",
     "IMG_0bca520f1ee3b15fa37aeebd819fe379.png",
     "IMG_2ffabf993959701fb7686bc6e3b40576.png",
-    "IMG_9ed53bf029e389ea7063df301833b551.png",
     "Datasheet_20240105104145166_Air510U定位模块使用手册V1.0.4.pdf",
-    "stm32-gui-silicon-portfolio.pdf",
-    "note_software/CasualSoftware/Kanata",
-    "Chinese_HSK 1 Word List_500_words.pdf",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]

@@ -19,7 +19,7 @@ set clipboard=unnamed
 unmap <Space>
 unmap ;
 unmap -
-unmap t
+" unmap t
 
 " map workspace
 exmap loadworkspace obcommand workspaces:save-and-load
@@ -121,9 +121,38 @@ nmap ;ml :makeLink
 
 
 " INFO: unmap keys
-unmap <C-w>
+" unmap <C-w>
 " imap <c-w> <c-bs>
 imap <c-w> <Esc>dba
 nmap <C-BS> db
 vmap a <Esc>
 vmap i <Esc>
+
+
+" INFO: PDF++
+" Use j/k, instead of J/K, to go to the next page
+"map j J
+"map k K
+
+" JavaScript commands
+" - Hit Ctrl-h in Normal mode to show a message
+nmap <C-.> :jscommand {alert("Hello, world!")}
+" - Hit Ctrl-h in Visual mode to run a .js file
+vmap <C-.> :jsfile test.js
+
+
+" INFO: Hotkey-helper related.
+
+exmap pluginSettings obcommand hotkey-helper:open-settings
+exmap pluginHotkeys obcommand hotkey-helper:open-hotkeys
+nmap ;,s :pluginSettings
+nmap ;,k :pluginHotkeys
+imap ;,s :pluginSettings
+imap ;,k :pluginHotkeys
+
+" INFO: obcommand debugger
+" Either the copied lines 
+" nmap ;oc :obcommand <c-v>
+" imap ;oc <Esc>:obcommand
+" INFO: or the current line on the [[All commands]] note or elsewhere..
+

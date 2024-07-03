@@ -30,7 +30,8 @@ placeholder:
 
 build: 
     #!{{ shebang }}
-    kill -Name obsidian*
-    start "C:\Users\COHOTECH\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps\Obsidian.lnk"
+    Stop-Process -Name obsidian*
+    Start-Process "C:\Users\COHOTECH\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps\Obsidian.lnk" &
+    Start-Sleep -Milliseconds 1000
 
 
