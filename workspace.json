@@ -4,17 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "68ffb2c6e926a4ec",
+        "id": "55225c8e17fa7212",
         "type": "tabs",
-        "dimension": 50.11111111111111,
         "children": [
           {
-            "id": "344f86682bfda1a6",
+            "id": "e9aaf1a85dea76ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md",
+                "file": "note_Knowledge/journal/EconomyJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "5dcef945c45ebb07",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef3867ade0397ffb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/CasualSoftware/005.001-Outlook.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -22,12 +40,12 @@
             }
           },
           {
-            "id": "fbc46fb8c2e9747a",
+            "id": "23d849018082a0fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/Obsidian/004.001.001-Keyshots.md",
+                "file": "note_Knowledge/journal/PeopleJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -35,12 +53,12 @@
             }
           },
           {
-            "id": "694cb17e707279ed",
+            "id": "c254d8ff846332ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/Obsidian/004.001.003.001-All commands.md",
+                "file": "note_Knowledge/secret/AccountJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -49,40 +67,6 @@
           }
         ],
         "currentTab": 2
-      },
-      {
-        "id": "692aabec644967b3",
-        "type": "tabs",
-        "dimension": 49.888888888888886,
-        "children": [
-          {
-            "id": "d136170a15d383d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/0_LongJournal/SoftwareJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b369bd26cc32c115",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -101,9 +85,9 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:thread",
+                "query": "tag:#economy",
                 "matchingCase": false,
-                "explainSearch": true,
+                "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -150,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_software/Obsidian/004.001.003.001-All commands.md"
+                "file": "note_Knowledge/journal/EconomyJournal.md"
               }
             }
           },
@@ -160,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_software/Obsidian/004.001.003.001-All commands.md",
+                "file": "note_Knowledge/journal/EconomyJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_software/Obsidian/004.001.003.001-All commands.md",
+                "file": "note_Knowledge/journal/EconomyJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,15 +194,13 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5,
-    "collapsed": true
+    "width": 349.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "qatt:Refresh QATT Tables": false,
-      "qatt:Refresh Views": false,
-      "qatt:Log Metrics": false,
-      "explorer-hider:Disable hiding": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
       "canvas:Create new canvas": false,
@@ -229,58 +211,60 @@
       "workspaces:Manage workspace layouts": true,
       "random-note:Open random note": true,
       "omnisearch:Omnisearch": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false
+      "explorer-hider:Disable hiding": false,
+      "qatt:Refresh QATT Tables": false,
+      "qatt:Refresh Views": false,
+      "qatt:Log Metrics": false
     }
   },
-  "active": "694cb17e707279ed",
+  "active": "e9aaf1a85dea76ce",
   "lastOpenFiles": [
-    "note_software/Obsidian/004.001.001-Keyshots.md",
-    "note_software/SysInternals/000.001.000.000-Process Utilities.md",
-    "note_software/Obsidian/004.001.003.001-All commands.md",
-    "note_algo_lang/0_LongJournal/ProgrammingJournal.md",
-    "note_software/0_LongJournal/SoftwareJournal.md",
-    "note_software/0_LongJournal/WebJournal.md",
-    "note_software/Obsidian/004.001-Obsidian Plugins.md",
-    "note_algo_lang/note_C++/buildsystem/003_CMake.md",
-    "note_algo_lang/note_C++/buildsystem/003.002_Learning Resources CMake.md",
-    "Professional CMake_ A Practical Guide (2023, Crascit Pty Ltd).pdf",
-    "test.js",
-    "test.js.md",
-    "ProfessionalCMake_18th_Edition_GettingStarted.pdf",
+    "MainJournal.md",
+    "note_Knowledge/journal/EconomyJournal.md",
+    "note_Knowledge/journal/PeopleJournal.md",
+    "note_Knowledge/journal/OtherKnowledgeJournal.md",
+    "note_Embedded/note_EDA/EDAJournal.md",
+    "note_Knowledge/journal/ReadAndListenJournal.md",
+    "note_entertainment/note_discography/VideoJournal.md",
+    "note_algo_lang/journal/STEMJournal.md",
+    "note_Knowledge/secret/AccountJournal.md",
+    "note_Embedded/FirmwareJournal.md",
+    "note_software/journal/OSJournal.md",
+    "note_Embedded/HardwareJournal.md",
+    "note_Knowledge/journal/WholesomeJournal.md",
+    "note_Knowledge/journal/EventJournal.md",
+    "note_Items/TaobaoJournal.md",
+    "note_Business/WorkJournal.md",
+    "note_IDEAndTools/Asset/Art/ArtToolsJournal.md",
+    "note_Items/1688Journal.md",
+    "note_IDEAndTools/Asset/CAD/CADJournal.md",
+    "note_Knowledge/journal/AcronymJournal.md",
+    "note_Knowledge/journal/PhraseJournal.md",
+    "note_Business/WorkflowJournal.md",
+    "note_algo_lang/journal/ProgrammingJournal.md",
+    "note_Items/AssetJournal.md",
+    "note_Knowledge/journal/VocabJournal.md",
+    "note_Items/OtherItemsJournal.md",
+    "notebook.zim",
+    "note_Knowledge/secret",
+    "note_Knowledge/journal",
+    "Pasted image 20240705203806.png",
+    "Pasted image 20240705203748.png",
+    "asset/books/Marc Gregoire - Professional C++-Wiley (2024).pdf",
+    "asset/books/Cracking the Coding Interview.pdf",
+    "note_IDEAndTools/Asset/CLI",
+    "note_IDEAndTools/Asset/Art",
+    "note_IDEAndTools/Asset/CAD",
+    "note_IDEAndTools/Asset",
+    "asset/books/Elements of Programming Interviews.pdf",
+    "6fe4376dcbd03125b545d1bd3f7e54a8.jpg",
     "Pasted image 20240703132719.png",
-    "note_software/000001_ Useful Website.md",
-    "note_Knowledge/VocabJournal.md",
-    "note_algo_lang/note_C++/buildsystem/003.001-Syntax CMake.md",
-    "note_software/Obsidian/004.001.003-Obsidian.vimrc.md",
-    "note_algo_lang/note_C++/buildsystem/004_ninja.md",
-    "note_algo_lang/note_C++/namespace_std/003.003-Filesystem.md",
-    "note_algo_lang/note_C++/namespace_std/003.003.001-Path.md",
-    "note_software/600009_Website settings.md",
-    "note_IDEAndTools/DeveloperSoftware/VCS/003.005-Git and emoji.md",
-    "note_algo_lang/note_C++/namespace_std/004.001.001-Mutex and condition variable.md",
-    "note_IDEAndTools/DeveloperSoftware/VCS/003.006-Jujutsu.md",
-    "note_IDEAndTools/DeveloperSoftware/VCS/003.004-Github.md",
-    "note_IDEAndTools/DeveloperSoftware/VCS/003.003-Git hosting platform.md",
-    "note_IDEAndTools/DeveloperSoftware/VCS/003.002-Software and environment.md",
-    "note_IDEAndTools/DeveloperSoftware/VCS/003.001-Git tools.md",
-    "GoogleSeachOperatorQualifier.pdf",
     "Pasted image 20240701123306.png",
     "Pasted image 20240701123211.png",
-    "6fe4376dcbd03125b545d1bd3f7e54a8.jpg",
-    "definitions",
     "Pasted image 20240629143819.png",
-    "justfile",
-    "cliff.toml",
     "Pasted image 20240627185020.png",
-    "note_IDEAndTools/DeveloperSoftware/Documentation",
     "Pasted image 20240624142543.png",
     "Pasted image 20240621172317.png",
-    "dcpp-2-7-2-ref-guide-en-us.pdf",
-    "IMG_0bca520f1ee3b15fa37aeebd819fe379.png",
-    "IMG_2ffabf993959701fb7686bc6e3b40576.png",
-    "Datasheet_20240105104145166_Air510U定位模块使用手册V1.0.4.pdf",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]

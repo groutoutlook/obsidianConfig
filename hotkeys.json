@@ -1,12 +1,4 @@
 {
-  "omnisearch:show-modal": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": " "
-    }
-  ],
   "editor:swap-line-up": [
     {
       "modifiers": [
@@ -61,12 +53,6 @@
     }
   ],
   "various-complements:show-suggestions": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": " "
-    },
     {
       "modifiers": [
         "Shift"
@@ -339,6 +325,14 @@
         "Mod"
       ],
       "key": "F4"
+    }
+  ],
+  "omnisearch:show-modal": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": " "
     }
   ]
 }
