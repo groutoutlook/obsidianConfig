@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_Knowledge/journal/EconomyJournal.md",
+                "file": "note_software/journal/SoftwareJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -51,22 +51,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "c254d8ff846332ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_Knowledge/secret/AccountJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#economy",
+                "query": "tag:#asset",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_Knowledge/journal/EconomyJournal.md"
+                "file": "note_software/journal/SoftwareJournal.md"
               }
             }
           },
@@ -144,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_Knowledge/journal/EconomyJournal.md",
+                "file": "note_software/journal/SoftwareJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_Knowledge/journal/EconomyJournal.md",
+                "file": "note_software/journal/SoftwareJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +181,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 349.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,32 +207,33 @@
   },
   "active": "e9aaf1a85dea76ce",
   "lastOpenFiles": [
-    "MainJournal.md",
-    "note_Knowledge/journal/EconomyJournal.md",
+    "Pasted image 20240708141742.png",
     "note_Knowledge/journal/PeopleJournal.md",
+    "note_software/CasualSoftware/005.001-Outlook.md",
+    "note_Knowledge/secret/AccountJournal.md",
+    "note_software/CasualSoftware/Espanso/004.007-Configuration espanso.md",
+    "note_software/CasualSoftware/Espanso/004-Espanso.md",
+    "note_software/journal/SoftwareJournal.md",
+    "Pasted image 20240708141019.png",
+    "note_Knowledge/journal/EconomyJournal.md",
+    "note_software/CasualSoftware/Espanso/004.006-Variables in espanso.md",
+    "note_software/CasualSoftware/Espanso/004.005-Regex in Espanso.md",
+    "note_software/CasualSoftware/Espanso/004.004-Forms.md",
+    "note_software/CasualSoftware/Espanso/004.003-Extension in espanso.md",
+    "note_software/CasualSoftware/Espanso/004.001-Espanso CLI.md",
+    "note_software/CasualSoftware/Espanso/004.002-Match Basic.md",
+    "MainJournal.md",
     "note_Knowledge/journal/OtherKnowledgeJournal.md",
     "note_Embedded/note_EDA/EDAJournal.md",
     "note_Knowledge/journal/ReadAndListenJournal.md",
     "note_entertainment/note_discography/VideoJournal.md",
     "note_algo_lang/journal/STEMJournal.md",
-    "note_Knowledge/secret/AccountJournal.md",
     "note_Embedded/FirmwareJournal.md",
     "note_software/journal/OSJournal.md",
     "note_Embedded/HardwareJournal.md",
     "note_Knowledge/journal/WholesomeJournal.md",
     "note_Knowledge/journal/EventJournal.md",
     "note_Items/TaobaoJournal.md",
-    "note_Business/WorkJournal.md",
-    "note_IDEAndTools/Asset/Art/ArtToolsJournal.md",
-    "note_Items/1688Journal.md",
-    "note_IDEAndTools/Asset/CAD/CADJournal.md",
-    "note_Knowledge/journal/AcronymJournal.md",
-    "note_Knowledge/journal/PhraseJournal.md",
-    "note_Business/WorkflowJournal.md",
-    "note_algo_lang/journal/ProgrammingJournal.md",
-    "note_Items/AssetJournal.md",
-    "note_Knowledge/journal/VocabJournal.md",
-    "note_Items/OtherItemsJournal.md",
     "notebook.zim",
     "note_Knowledge/secret",
     "note_Knowledge/journal",
@@ -264,7 +253,6 @@
     "Pasted image 20240629143819.png",
     "Pasted image 20240627185020.png",
     "Pasted image 20240624142543.png",
-    "Pasted image 20240621172317.png",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]

@@ -1046,7 +1046,9 @@
     "manager/winget": 1,
     "language/functional": 2,
     "communication": 985,
-    "price": 986
+    "price": 986,
+    "viewmode": 987,
+    "programming/asset": 2
   },
   "_version": 3
 }

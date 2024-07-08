@@ -334,5 +334,11 @@
       ],
       "key": " "
     }
-  ]
+  ],
+  "keyshots:duplicate-selection-or-line": [],
+  "keyshots:go-to-next-fold": [],
+  "keyshots:go-to-previous-fold": [],
+  "keyshots:insert-line-above": [],
+  "keyshots:move-line-down": [],
+  "keyshots:move-line-up": []
 }
