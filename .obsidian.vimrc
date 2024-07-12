@@ -52,10 +52,10 @@ imap gxx <Esc>%wgxi
 imap ggx <Esc>%wgxi
 
 exmap closeAll obcommand workspace:close-window
-nmap ;wq :closeAll
 exmap closeTab obcommand workspace:close
 nmap ;q :closeTab
 imap ;q :closeTab
+nmap ;wq :closeTab
 exmap q obcommand workspace:close
 " template
 " exmap insertTemplate obcommand insert-template 

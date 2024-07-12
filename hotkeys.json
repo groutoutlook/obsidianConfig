@@ -33,14 +33,6 @@
     }
   ],
   "editor:delete-paragraph": [],
-  "keyshots:duplicate-line-down": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "D"
-    }
-  ],
   "keyshots:sort-selected-lines": [],
   "keyshots:toggle-keyboard-input": [],
   "file-explorer:reveal-active-file": [
