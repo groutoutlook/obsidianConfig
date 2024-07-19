@@ -1101,7 +1101,18 @@
     "retro": 1011,
     "food/canned": 1,
     "household": 1012,
-    "gpgpu": 1013
+    "gpgpu": 1013,
+    "std/string": 1,
+    "dotnet/fsharp": 1,
+    "classical": 1014,
+    "editting": 1015,
+    "editting/register": 1,
+    "cplusplus": 1016,
+    "set": 1017,
+    "map": 1018,
+    "container/map": 2,
+    "cpp23": 1019,
+    "container/tuple": 3
   },
   "_version": 3
 }

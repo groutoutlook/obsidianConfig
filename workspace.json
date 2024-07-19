@@ -9,12 +9,12 @@
         "dimension": 50.11111111111111,
         "children": [
           {
-            "id": "344f86682bfda1a6",
+            "id": "f551da455197a2eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md",
+                "file": "note_algo_lang/journal/LangJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md"
+                "file": "note_algo_lang/journal/LangJournal.md"
               }
             }
           },
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md",
+                "file": "note_algo_lang/journal/LangJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md",
+                "file": "note_algo_lang/journal/LangJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,18 +193,23 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "344f86682bfda1a6",
+  "active": "f551da455197a2eb",
   "lastOpenFiles": [
     "note_software/CasualSoftware/004.002-Cheatsheet Collections.md",
-    "note_algo_lang/journal/ProgrammingJournal.md",
     "note_algo_lang/journal/LangJournal.md",
+    "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md",
+    "note_IDEAndTools/DeveloperSoftware/VCS/003-Git.md",
+    "note_algo_lang/note_Powershell/000005_Operator in Powershell.md",
+    "note_software/SysInternals/000.001.000.000-Process Utilities.md",
+    "note_IDEAndTools/Neovim/001.002.003-Leap.nvim.md",
+    "note_algo_lang/note_Powershell/000002_Condition and Jump statement.md",
     "note_software/journal/SoftwareJournal.md",
+    "note_algo_lang/journal/ProgrammingJournal.md",
     "note_Business/WorkJournal.md",
     "Home.md",
     "Pasted image 20240713035357.png",
     "note_Knowledge/secret/AccountJournal.md",
     "note_Knowledge/journal/VocabJournal.md",
-    "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md",
     "note_entertainment/note_discography/VideoJournal.md",
     "note_entertainment/note_discography/MusicJournal.md",
     "MainJournal.md",
@@ -224,11 +229,6 @@
     "note_software/CasualSoftware/Espanso/004.005-Regex in Espanso.md",
     "note_software/CasualSoftware/Espanso/004.004-Forms.md",
     "note_software/CasualSoftware/Espanso/004.003-Extension in espanso.md",
-    "note_software/CasualSoftware/Espanso/004.001-Espanso CLI.md",
-    "note_software/CasualSoftware/Espanso/004.002-Match Basic.md",
-    "note_Knowledge/journal/OtherKnowledgeJournal.md",
-    "note_Embedded/note_EDA/EDAJournal.md",
-    "note_Knowledge/journal/ReadAndListenJournal.md",
     "notebook.zim",
     "note_Knowledge/secret",
     "note_Knowledge/journal",
