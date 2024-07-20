@@ -1119,7 +1119,11 @@
     "web/utils": 9,
     "ide/vs": 1,
     "bild": 1020,
-    "bild/cmake": 1
+    "bild/cmake": 1,
+    "lcd": 1021,
+    "justfile": 1022,
+    "renderdoc": 1023,
+    "renderdoc/api": 1
   },
   "_version": 3
 }
