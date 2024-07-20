@@ -13,61 +13,34 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/SysInternals/000.001.000.000-Process Utilities.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "612ee0e8277727d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_IDEAndTools/Neovim/100001_Neovim.md",
+                "file": "note_software/journal/SoftwareJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "692aabec644967b3",
         "type": "tabs",
         "children": [
           {
-            "id": "b57dbb38e82b9d0f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/casualCLI/mousemaster/003.000.000.000-Mousemaster.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a54f711856255c62",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
+                "file": "asset/doc/SDK-Features-without-animations-SG.pdf",
+                "page": 11,
+                "left": 0,
+                "top": 206,
+                "zoom": 0.4479166666666667
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -75,17 +48,121 @@
   "left": {
     "id": "49906d5059fe98f6",
     "type": "mobile-drawer",
-    "children": [],
+    "children": [
+      {
+        "id": "e9188499cfb85cb8",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "03cc3cf645f624d9",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "8a05920d9d9bd596",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "e3dcb8e3ef04d807",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          }
+        }
+      },
+      {
+        "id": "b81532054e5ccc21",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
     "currentTab": 0
   },
   "right": {
     "id": "1dfcc9397c7f283b",
     "type": "mobile-drawer",
-    "children": [],
+    "children": [
+      {
+        "id": "3817cfcd235d1907",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "note_software/journal/SoftwareJournal.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "22c49c069d5b7266",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "note_software/journal/SoftwareJournal.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "afb13d0c84ac60af",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "note_software/journal/SoftwareJournal.md"
+          }
+        }
+      }
+    ],
     "currentTab": 0
   },
   "left-ribbon": {
     "hiddenItems": {
+      "explorer-hider:Disable hiding": false,
+      "qatt:Refresh QATT Tables": false,
+      "qatt:Refresh Views": false,
+      "qatt:Log Metrics": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
       "canvas:Create new canvas": false,
@@ -95,20 +172,19 @@
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": true,
       "random-note:Open random note": true,
-      "homepage:Open homepage": false,
-      "omnisearch:Omnisearch": false,
-      "darlal-switcher-plus:Open in Headings Mode": false,
-      "darlal-switcher-plus:Open Symbols for the active editor": false
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "612ee0e8277727d0",
+  "active": "344f86682bfda1a6",
   "lastOpenFiles": [
+    "note_algo_lang/journal/ProgrammingJournal.md",
+    "note_software/SysInternals/000.001.000.000-Process Utilities.md",
+    "asset/doc/SDK-Features-without-animations-SG.pdf",
     "note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
     "note_software/casualCLI/mousemaster/003.000.000.000-Mousemaster.md",
     "note_Embedded/HardwareJournal.md",
     "610000_Vimium C.md",
     "000.001.001.000-cmd.md",
-    "note_software/SysInternals/000.001.000.000-Process Utilities.md",
     "note_Knowledge/VocabJournal.md",
     "note_software/SysInternals/000.002.000.000-SystemInfo.md",
     "note_software/0_LongJournal/SoftwareJournal.md",
@@ -130,7 +206,6 @@
     "1_Markdown/note_algo_lang/note_Powershell/000015_History in Powershell.md",
     "1_Markdown/note_software/Espanso/300000_Espanso.md",
     "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
-    "1_Markdown/note_Embedded/HardwareJournal.md",
     "CanvasTemplate.canvas",
     "Untitled.canvas",
     "IMG_20240413_141921.jpg",
@@ -149,7 +224,6 @@
     "WeChat_20240329104315.mp4",
     "_Markdown/note_Items",
     "_Markdown",
-    "1_Markdown/note_Embedded/note_Instruments",
-    "keys/First_gpg.txt"
+    "1_Markdown/note_Embedded/note_Instruments"
   ]
 }

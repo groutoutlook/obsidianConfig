@@ -34,13 +34,8 @@
                 "id": "d136170a15d383d3",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "note_software/0_LongJournal/SoftwareJournal.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
+                  "type": "empty",
+                  "state": {}
                 }
               },
               {
@@ -210,7 +205,7 @@
         }
       },
       "active": "a5a06c3d683c7105",
-      "mtime": "2024-07-04T14:12:28+07:00"
+      "mtime": "2024-07-17T23:27:23+07:00"
     },
     "obs-nvim": {
       "main": {
@@ -222,48 +217,12 @@
             "type": "tabs",
             "children": [
               {
-                "id": "2b45be933c700adc",
-                "type": "leaf",
-                "state": {
-                  "type": "empty",
-                  "state": {}
-                }
-              },
-              {
-                "id": "72b649b30222ad91",
-                "type": "leaf",
-                "state": {
-                  "type": "empty",
-                  "state": {}
-                }
-              },
-              {
-                "id": "bbf94ebfdb99c5ab",
+                "id": "098bdf0d8c38f3f6",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "note_algo_lang/0_LongJournal/ReadAndListenJournal.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              }
-            ],
-            "currentTab": 2
-          },
-          {
-            "id": "b498c7289a54253e",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "e9aaf1a85dea76ce",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "note_IDEAndTools/VisualStudio/001.001-Visual Studio.md",
+                    "file": "note_software/journal/SoftwareJournal.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
@@ -271,12 +230,12 @@
                 }
               },
               {
-                "id": "171010699c29dd15",
+                "id": "6d8659f60569d6a1",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "note_software/0_LongJournal/AccountJournal.md",
+                    "file": "note_algo_lang/journal/LangJournal.md",
                     "mode": "source",
                     "backlinks": false,
                     "source": false
@@ -285,6 +244,38 @@
               }
             ],
             "currentTab": 1
+          },
+          {
+            "id": "5dcef945c45ebb07",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "000e46955e1ecfea",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_algo_lang/journal/ProgrammingJournal.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "2a3b3d03732679d3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_software/journal/SoftwareJournal.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ]
           }
         ],
         "direction": "vertical"
@@ -303,7 +294,7 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "tag:plugin",
+                    "query": "",
                     "matchingCase": false,
                     "explainSearch": false,
                     "collapseAll": false,
@@ -352,7 +343,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "note_algo_lang/0_LongJournal/ReadAndListenJournal.md"
+                    "file": "note_algo_lang/journal/ProgrammingJournal.md"
                   }
                 }
               },
@@ -362,7 +353,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "note_algo_lang/0_LongJournal/ReadAndListenJournal.md",
+                    "file": "note_algo_lang/journal/ProgrammingJournal.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -379,7 +370,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "note_algo_lang/0_LongJournal/ReadAndListenJournal.md",
+                    "file": "note_algo_lang/journal/ProgrammingJournal.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -436,9 +427,9 @@
           "qatt:Log Metrics": false
         }
       },
-      "active": "bbf94ebfdb99c5ab",
-      "mtime": "2024-07-04T14:12:25+07:00"
+      "active": "000e46955e1ecfea",
+      "mtime": "2024-07-17T23:27:25+07:00"
     }
   },
-  "active": "obs-nvim"
+  "active": "powershell-windows"
 }

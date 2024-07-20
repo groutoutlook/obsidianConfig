@@ -33,14 +33,6 @@
     }
   ],
   "editor:delete-paragraph": [],
-  "keyshots:duplicate-line-down": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "D"
-    }
-  ],
   "keyshots:sort-selected-lines": [],
   "keyshots:toggle-keyboard-input": [],
   "file-explorer:reveal-active-file": [
@@ -334,5 +326,11 @@
       ],
       "key": " "
     }
-  ]
+  ],
+  "keyshots:duplicate-selection-or-line": [],
+  "keyshots:go-to-next-fold": [],
+  "keyshots:go-to-previous-fold": [],
+  "keyshots:insert-line-above": [],
+  "keyshots:move-line-down": [],
+  "keyshots:move-line-up": []
 }
