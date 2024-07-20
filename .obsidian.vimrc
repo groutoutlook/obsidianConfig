@@ -48,6 +48,7 @@ nmap gx f]wglx
 " Open the link at the end of line.
 nmap ;gx gx
 imap ;gx <Esc>%wgxi
+imap <C-CR> <Esc>%wgxi
 imap gxx <Esc>%wgxi
 imap ggx <Esc>%wgxi
 

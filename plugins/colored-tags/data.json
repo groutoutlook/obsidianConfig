@@ -1112,7 +1112,14 @@
     "map": 1018,
     "container/map": 2,
     "cpp23": 1019,
-    "container/tuple": 3
+    "container/tuple": 3,
+    "debugger/vulkan": 1,
+    "server/architecture": 1,
+    "language/cpp": 4,
+    "web/utils": 9,
+    "ide/vs": 1,
+    "bild": 1020,
+    "bild/cmake": 1
   },
   "_version": 3
 }

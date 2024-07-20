@@ -20,8 +20,35 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "38189feaf381e03e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_algo_lang/journal/ProgrammingJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a1c430b3c16d5a21",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.003.001-CLI fd.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "692aabec644967b3",
@@ -40,8 +67,23 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5251d6a0ff41a105",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "asset/doc/SDK-Features-without-animations-SG.pdf",
+                "page": 11,
+                "left": -17,
+                "top": 99,
+                "zoom": 0.8822916666666667
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_algo_lang/journal/LangJournal.md"
+                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.003.001-CLI fd.md"
               }
             }
           },
@@ -119,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_algo_lang/journal/LangJournal.md",
+                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.003.001-CLI fd.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_algo_lang/journal/LangJournal.md",
+                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.003.001-CLI fd.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,10 +235,23 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "f551da455197a2eb",
+  "active": "a1c430b3c16d5a21",
   "lastOpenFiles": [
-    "note_software/CasualSoftware/004.002-Cheatsheet Collections.md",
+    "note_algo_lang/journal/ProgrammingJournal.md",
+    "note_IDEAndTools/DeveloperSoftware/CLI/001.003.001-CLI fd.md",
+    "note_IDEAndTools/DeveloperSoftware/CLI/001.003-fd.md",
+    "note_algo_lang/note_C++/topic_graphic/001-Vulkan.md",
+    "001.002-Vulkan tools.md",
     "note_algo_lang/journal/LangJournal.md",
+    "note_algo_lang/note_C++/topic_graphic/004.001-SDF for basic primitive.md",
+    "Pasted image 20240720222451.png",
+    "Pasted image 20240720222441.png",
+    "Pasted image 20240720222435.png",
+    "note_Knowledge/secret/AccountJournal.md",
+    "note_software/Obsidian/004.001.003.001-All commands.md",
+    "asset/doc/SDK-Features-without-animations-SG.pdf",
+    "note_software/CasualSoftware/004.002-Cheatsheet Collections.md",
+    "SDK-Features-without-animations-SG.pdf",
     "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md",
     "note_IDEAndTools/DeveloperSoftware/VCS/003-Git.md",
     "note_algo_lang/note_Powershell/000005_Operator in Powershell.md",
@@ -204,11 +259,9 @@
     "note_IDEAndTools/Neovim/001.002.003-Leap.nvim.md",
     "note_algo_lang/note_Powershell/000002_Condition and Jump statement.md",
     "note_software/journal/SoftwareJournal.md",
-    "note_algo_lang/journal/ProgrammingJournal.md",
     "note_Business/WorkJournal.md",
     "Home.md",
     "Pasted image 20240713035357.png",
-    "note_Knowledge/secret/AccountJournal.md",
     "note_Knowledge/journal/VocabJournal.md",
     "note_entertainment/note_discography/VideoJournal.md",
     "note_entertainment/note_discography/MusicJournal.md",
@@ -222,25 +275,14 @@
     "note_software/CasualSoftware/005.001-Outlook.md",
     "note_Knowledge/journal/PeopleJournal.md",
     "Pasted image 20240708141742.png",
-    "note_software/CasualSoftware/Espanso/004.007-Configuration espanso.md",
-    "note_software/CasualSoftware/Espanso/004-Espanso.md",
     "Pasted image 20240708141019.png",
-    "note_software/CasualSoftware/Espanso/004.006-Variables in espanso.md",
-    "note_software/CasualSoftware/Espanso/004.005-Regex in Espanso.md",
-    "note_software/CasualSoftware/Espanso/004.004-Forms.md",
-    "note_software/CasualSoftware/Espanso/004.003-Extension in espanso.md",
     "notebook.zim",
     "note_Knowledge/secret",
     "note_Knowledge/journal",
     "Pasted image 20240705203806.png",
-    "Pasted image 20240705203748.png",
     "asset/books/Marc Gregoire - Professional C++-Wiley (2024).pdf",
     "asset/books/Cracking the Coding Interview.pdf",
     "note_IDEAndTools/Asset/CLI",
-    "note_IDEAndTools/Asset/Art",
-    "note_IDEAndTools/Asset/CAD",
-    "6fe4376dcbd03125b545d1bd3f7e54a8.jpg",
-    "Pasted image 20240703132719.png",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]
