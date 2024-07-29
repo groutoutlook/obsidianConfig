@@ -27,16 +27,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a54f711856255c62",
+            "id": "18d14a840d10c5a0",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "asset/doc/SDK-Features-without-animations-SG.pdf",
-                "page": 11,
-                "left": 0,
-                "top": 206,
-                "zoom": 0.4479166666666667
+                "file": "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
             }
           }
@@ -118,7 +117,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "note_software/journal/SoftwareJournal.md",
+            "file": "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -135,7 +134,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "note_software/journal/SoftwareJournal.md",
+            "file": "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -147,7 +146,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "note_software/journal/SoftwareJournal.md"
+            "file": "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md"
           }
         }
       }
@@ -175,11 +174,12 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "344f86682bfda1a6",
+  "active": "18d14a840d10c5a0",
   "lastOpenFiles": [
+    "note_software/journal/SoftwareJournal.md",
+    "asset/doc/SDK-Features-without-animations-SG.pdf",
     "note_algo_lang/journal/ProgrammingJournal.md",
     "note_software/SysInternals/000.001.000.000-Process Utilities.md",
-    "asset/doc/SDK-Features-without-animations-SG.pdf",
     "note_IDEAndTools/Neovim/110001_Motion in Neovim.md",
     "note_software/casualCLI/mousemaster/003.000.000.000-Mousemaster.md",
     "note_Embedded/HardwareJournal.md",
@@ -204,8 +204,6 @@
     "1_Markdown/note_algo_lang/note_Powershell/000008_Redirect, Pipeline and Content.md",
     "1_Markdown/note_algo_lang/note_Powershell/000012_Command in Powershell.md",
     "1_Markdown/note_algo_lang/note_Powershell/000015_History in Powershell.md",
-    "1_Markdown/note_software/Espanso/300000_Espanso.md",
-    "1_Markdown/note_software/0_LongJournal/SoftwareJournal.md",
     "CanvasTemplate.canvas",
     "Untitled.canvas",
     "IMG_20240413_141921.jpg",
