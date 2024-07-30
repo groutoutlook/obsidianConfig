@@ -1120,12 +1120,6 @@
     "ide/vs": 1,
     "bild": 1020,
     "bild/cmake": 1,
-<<<<<<< Updated upstream
-    "lcd": 1021,
-    "justfile": 1022,
-    "renderdoc": 1023,
-    "renderdoc/api": 1
-=======
     "justfile": 1021,
     "renderdoc": 1022,
     "renderdoc/api": 1,
@@ -1336,8 +1330,36 @@
     "cpp/jit": 5,
     "language/repl": 10,
     "debugger/repl": 5,
-    "javascript/react": 1
->>>>>>> Stashed changes
+    "javascript/react": 1,
+    "powershell/readline": 3,
+    "powershell/format": 4,
+    "stdout": 1087,
+    "debug/repl": 6,
+    "debug/vulkan": 7,
+    "debug/vs": 8,
+    "debug/vs/cpp": 1,
+    "debug/cpp": 9,
+    "escape": 1088,
+    "parser": 1089,
+    "argument/parser": 1,
+    "powershell/type": 5,
+    "language/scripting": 11,
+    "starlark": 1090,
+    "debugger/llvm": 6,
+    "debugger/format": 7,
+    "language/forth": 12,
+    "platform/niche": 2,
+    "debug/format": 10,
+    "visual/map": 5,
+    "visual/flow": 6,
+    "format/uml": 3,
+    "html/css": 1,
+    "web/graph": 14,
+    "doxygen": 1091,
+    "doxygen/cpp": 1,
+    "documentation/doxygen": 1,
+    "image/viewer": 1,
+    "linux/gui": 5
   },
   "_version": 3
 }

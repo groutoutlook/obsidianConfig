@@ -6,15 +6,15 @@
       {
         "id": "68ffb2c6e926a4ec",
         "type": "tabs",
-        "dimension": 50.11111111111111,
+        "dimension": 49.37357630979498,
         "children": [
           {
-            "id": "f551da455197a2eb",
+            "id": "a5aefff2bc35d0bd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_algo_lang/journal/LangJournal.md",
+                "file": "note_algo_lang/note_C++/CompilerAndTools/005.002.004-REPL for C++.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -22,12 +22,12 @@
             }
           },
           {
-            "id": "38189feaf381e03e",
+            "id": "4c8d3054bd119552",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_algo_lang/journal/ProgrammingJournal.md",
+                "file": "note_software/006.002.001-Vimium C.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -35,12 +35,12 @@
             }
           },
           {
-            "id": "a1c430b3c16d5a21",
+            "id": "ac08cbc7ad01e7bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.003.001-CLI fd.md",
+                "file": "004.001-CLI Mermaid.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -53,15 +53,15 @@
       {
         "id": "692aabec644967b3",
         "type": "tabs",
-        "dimension": 49.888888888888886,
+        "dimension": 50.62642369020502,
         "children": [
           {
-            "id": "a5a06c3d683c7105",
+            "id": "904dd3a509308bed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/CasualSoftware/004.002-Cheatsheet Collections.md",
+                "file": "note_algo_lang/note_C++/CompilerAndTools/005.003-MSVC.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -69,16 +69,15 @@
             }
           },
           {
-            "id": "5251d6a0ff41a105",
+            "id": "5125d4f2055f9c6b",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "asset/doc/SDK-Features-without-animations-SG.pdf",
-                "page": 11,
-                "left": -17,
-                "top": 99,
-                "zoom": 0.8822916666666667
+                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.011-numbat.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
               }
             }
           }
@@ -151,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.003.001-CLI fd.md"
+                "file": "004.001-CLI Mermaid.md"
               }
             }
           },
@@ -161,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.003.001-CLI fd.md",
+                "file": "004.001-CLI Mermaid.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.003.001-CLI fd.md",
+                "file": "004.001-CLI Mermaid.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -235,54 +234,54 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "a1c430b3c16d5a21",
+  "active": "ac08cbc7ad01e7bf",
   "lastOpenFiles": [
-    "note_algo_lang/journal/ProgrammingJournal.md",
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.003.001-CLI fd.md",
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.003-fd.md",
-    "note_algo_lang/note_C++/topic_graphic/001-Vulkan.md",
-    "001.002-Vulkan tools.md",
+    "note_software/006.002.001-Vimium C.md",
+    "note_algo_lang/note_C++/CompilerAndTools/005.002.004-REPL for C++.md",
+    "note_entertainment/note_discography/MusicJournal.md",
+    "note_algo_lang/note_Powershell/001.006-Function.md",
+    "001.001-CLI Just.md",
+    "note_IDEAndTools/DeveloperSoftware/CLI/001.011-numbat.md",
+    "note_os_web/SDK/WebProgJournal.md",
+    "note_algo_lang/note_C++/CompilerAndTools/005.003-MSVC.md",
+    "004.001-CLI Mermaid.md",
+    "note_IDEAndTools/Visualization/GraphAndMap/001-Doxygen.md",
+    "note_os_linux/Utils/Terminal/001.003-Nushell.md",
+    "note_IDEAndTools/Visualization/GraphAndMap/002-Graphviz.md",
+    "note_IDEAndTools/Visualization/GraphAndMap/003-UML.md",
+    "note_IDEAndTools/Visualization/GraphAndMap/003.001-Plantuml and Tools.md",
     "note_algo_lang/journal/LangJournal.md",
-    "note_algo_lang/note_C++/topic_graphic/004.001-SDF for basic primitive.md",
+    "note_IDEAndTools/Visualization/GraphAndMap/Mermaid/004.001.001-Example from Mermaid.md",
+    "note_IDEAndTools/Visualization/GraphAndMap/Mermaid/004-Mermaid.md",
+    "note_IDEAndTools/Visualization/GraphAndMap/Mermaid/100001_ Markmap.md",
+    "note_IDEAndTools/Visualization/GraphAndMap/Mermaid/004.001-Syntax Mermaid.md",
+    "note_IDEAndTools/Visualization/GraphAndMap/Mermaid/000000_Graph Entry.md",
+    "note_IDEAndTools/Visualization/GraphAndMap/002.001-CLI Graphviz.md",
+    "note_IDEAndTools/Visualization/GraphAndMap/Untitled",
+    "001.001-CLI Doxygen.md",
+    "note_IDEAndTools/VisualStudio/Debugger/002.001-Expression in Debugger.md",
+    "note_IDEAndTools/Virtualization",
+    "note_IDEAndTools/Visualization/GraphAndMap",
+    "note_algo_lang/note_Powershell/001003_String in powershell.md",
+    "note_algo_lang/note_Powershell/000001_Powershell Core.md",
+    "note_IDEAndTools/VisualStudio/001.001-Visual Studio.md",
+    "note_IDEAndTools/VisualStudio/Debugger",
+    "Pasted image 20240729200545.png",
+    "note_Embedded/PCB_Standard",
+    "note_os_android/Utils/Terminal",
+    "note_os_android/Utils/GUI",
+    "note_os_android/Utils",
+    "note_os_android/SDK",
+    "note_os_android/API",
     "Pasted image 20240720222451.png",
     "Pasted image 20240720222441.png",
     "Pasted image 20240720222435.png",
-    "note_Knowledge/secret/AccountJournal.md",
-    "note_software/Obsidian/004.001.003.001-All commands.md",
-    "asset/doc/SDK-Features-without-animations-SG.pdf",
-    "note_software/CasualSoftware/004.002-Cheatsheet Collections.md",
-    "SDK-Features-without-animations-SG.pdf",
-    "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md",
-    "note_IDEAndTools/DeveloperSoftware/VCS/003-Git.md",
-    "note_algo_lang/note_Powershell/000005_Operator in Powershell.md",
-    "note_software/SysInternals/000.001.000.000-Process Utilities.md",
-    "note_IDEAndTools/Neovim/001.002.003-Leap.nvim.md",
-    "note_algo_lang/note_Powershell/000002_Condition and Jump statement.md",
-    "note_software/journal/SoftwareJournal.md",
-    "note_Business/WorkJournal.md",
-    "Home.md",
     "Pasted image 20240713035357.png",
-    "note_Knowledge/journal/VocabJournal.md",
-    "note_entertainment/note_discography/VideoJournal.md",
-    "note_entertainment/note_discography/MusicJournal.md",
-    "MainJournal.md",
-    "note_Knowledge/journal/EconomyJournal.md",
     "cc254c5c7e8f77ac93e4bc870932cf0.jpg",
     "0fb67e55886c55f08e8565404b38944.jpg",
-    "asset/vid/VID_WeChat_20240710141737.mp4",
     "asset/img/Image_20240710141751.jpg",
-    "asset/vid/WeChat_20240710141737.mp4",
-    "note_software/CasualSoftware/005.001-Outlook.md",
-    "note_Knowledge/journal/PeopleJournal.md",
     "Pasted image 20240708141742.png",
     "Pasted image 20240708141019.png",
-    "notebook.zim",
-    "note_Knowledge/secret",
-    "note_Knowledge/journal",
-    "Pasted image 20240705203806.png",
-    "asset/books/Marc Gregoire - Professional C++-Wiley (2024).pdf",
-    "asset/books/Cracking the Coding Interview.pdf",
-    "note_IDEAndTools/Asset/CLI",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]
