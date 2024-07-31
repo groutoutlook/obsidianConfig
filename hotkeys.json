@@ -332,5 +332,6 @@
   "keyshots:go-to-previous-fold": [],
   "keyshots:insert-line-above": [],
   "keyshots:move-line-down": [],
-  "keyshots:move-line-up": []
+  "keyshots:move-line-up": [],
+  "graph:open": []
 }

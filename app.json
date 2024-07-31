@@ -4,7 +4,7 @@
   "showLineNumber": false,
   "vimMode": true,
   "tabSize": 2,
-  "showInlineTitle": true,
+  "showInlineTitle": false,
   "alwaysUpdateLinks": true,
   "readableLineLength": false,
   "userIgnoreFilters": [
