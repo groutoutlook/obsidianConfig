@@ -1396,7 +1396,17 @@
     "cli/utils": 5,
     "neovim/doc": 3,
     "language/jit": 14,
-    "compiler/jit": 6
+    "compiler/jit": 6,
+    "guide/video": 4,
+    "control/mouse": 3,
+    "library/serialize": 4,
+    "format/yaml": 5,
+    "gui/utils": 5,
+    "remix": 1096,
+    "format/markdown": 6,
+    "vulkan/buffer": 1,
+    "plugin/telescope": 1,
+    "process/utils": 2
   },
   "_version": 3
 }
