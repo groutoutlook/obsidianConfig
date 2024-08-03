@@ -7,6 +7,11 @@ set shell := ["pwsh", "-c"]
 # Set shell for Windows OSs:
 set windows-shell := ["pwsh.exe", "-NoLogo", "-Command"]
 
+# control whether or not to load dotenv. 
+set dotenv-load := true
+# set dotenv-filename	:= ".env"
+# set dotenv-required := true
+
 # If you have PowerShell Core installed and want to use it,
 # use `pwsh.exe` instead of `powershell.exe`
 
@@ -27,11 +32,12 @@ shebang:
 placeholder:
     #!{{ shebang }}
     Write-Host "Havent written build task for this repo." -ForegroundColor Red
+    if($env:pwsh_env) {Write-Host "$env:pwsh_env"}
+    else {Write-Host "Apparently no .env as well" -ForegroundColor Yellow}
 
-build: 
-    #!{{ shebang }}
-    Stop-Process -Name obsidian*
-    Start-Process "C:\Users\COHOTECH\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps\Obsidian.lnk" &
-    Start-Sleep -Milliseconds 1000
+alias j := editjust
+editjust:
+    nvim ./justfile
 
-
+alias b := build
+build: placeholder

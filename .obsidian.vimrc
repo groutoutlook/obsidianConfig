@@ -42,15 +42,16 @@ imap -;p <Esc>-;p
 " Go to link or open note in new tab(leaf)
 " exmap follow obcommand editor:open-link-in-new-window
 exmap follow obcommand editor:open-link-in-new-leaf
-nmap glx :follow
+nmap gl :follow
 
-nmap gx f]wglx
+nmap gx f]wgl
 " Open the link at the end of line.
 nmap ;gx gx
 imap ;gx <Esc>%wgxi
 imap <C-CR> <Esc>%wgxi
-imap gxx <Esc>%wgxi
+imap gx <Esc>%wgxi
 imap ggx <Esc>%wgxi
+imap xxx <Esc>%wgxi
 
 exmap closeAll obcommand workspace:close-window
 exmap closeTab obcommand workspace:close

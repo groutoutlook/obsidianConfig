@@ -22,51 +22,12 @@
             }
           },
           {
-            "id": "8a8363e40423c632",
+            "id": "973d18264449b03c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dc3a798f000ca7b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_algo_lang/note_C++/CompilerAndTools/005.002.004-REPL for C++.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b369545891a10a85",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_entertainment/note_discography/MusicJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "18eda9ca4d4e7593",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/CasualSoftware/mpv/001-mpv.md",
+                "file": "note_IDEAndTools/Neovim/001.002-Neovim Command.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -74,7 +35,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       },
       {
         "id": "692aabec644967b3",
@@ -100,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_IDEAndTools/DeveloperSoftware/CLI/001.011-numbat.md",
+                "file": "note_IDEAndTools/Dev/Terminal/001-Windows Terminal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -176,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_software/CasualSoftware/mpv/001-mpv.md"
+                "file": "note_IDEAndTools/Neovim/001.002-Neovim Command.md"
               }
             }
           },
@@ -186,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_software/CasualSoftware/mpv/001-mpv.md",
+                "file": "note_IDEAndTools/Neovim/001.002-Neovim Command.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -203,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_software/CasualSoftware/mpv/001-mpv.md",
+                "file": "note_IDEAndTools/Neovim/001.002-Neovim Command.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -260,35 +221,37 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "18eda9ca4d4e7593",
+  "active": "973d18264449b03c",
   "lastOpenFiles": [
-    "note_software/CasualSoftware/mpv/001.002-Keybinding mpv.md",
-    "note_software/CasualSoftware/mpv/001-mpv.md",
-    "note_software/CasualSoftware/mpv/001.001-CLI mpv.md",
-    "note_software/CasualSoftware/001.001-Volume Mixer.md",
-    "note_software/CasualSoftware/mpv",
-    "note_software/000004_ CLI Software.md",
+    "note_IDEAndTools/Dev/CLI/001.009.002-CLI yazi.md",
+    "note_IDEAndTools/Dev/VCS/003.003-Git hosting platform.md",
+    "note_Knowledge/journal/QuoteJournal.md",
+    "note_software/CasualSoftware/002.001-Youtube Music.md",
     "note_entertainment/note_discography/MusicJournal.md",
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.011-numbat.md",
-    "note_algo_lang/note_C++/CompilerAndTools/005.002.004-REPL for C++.md",
-    "note_software/journal/SoftwareJournal.md",
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.012-mdcat.md",
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.004.001-CLI Zoxide.md",
-    "note_algo_lang/journal/LangJournal.md",
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.004-Zoxide.md",
-    "note_IDEAndTools/DeveloperSoftware/CLI/001.007-bat.md",
-    "note_algo_lang/note_C++/CompilerAndTools/005.002.004.002-Syntax REPL Clang-repl.md",
-    "note_algo_lang/note_Powershell/001.001.002-Experimental Powershell.md",
-    "note_algo_lang/note_C++/CompilerAndTools/005.002.005-CLI Clang-repl.md",
-    "note_algo_lang/note_C++/CompilerAndTools/005.002.004.002-Syntax REPL Cling.md",
-    "note_algo_lang/note_C++/CompilerAndTools/005.002.004.001-CLI cling.md",
-    "005.002.004.001-CLI cling.md",
+    "note_Knowledge/journal/PhraseJournal.md",
+    "note_Knowledge/journal/PlacesJournal.md",
+    "note_Knowledge/secret/AccountJournal.md",
+    "note_IDEAndTools/Dev/VCS/003.004-Github.md",
+    "note_IDEAndTools/Dev/CLI/001.009-yazi.md",
+    "note_IDEAndTools/Dev/TaskRunner/001.002.001-Variables and Substitution - Just.md",
+    "note_IDEAndTools/Neovim/002-Plugin Neovim.md",
+    "note_IDEAndTools/Neovim/002.002-Toggleterm.nvim.md",
+    "note_algo_lang/note_C++/package/005-conan.md",
+    "note_IDEAndTools/Dev/CLI/001.010_Gitui.md",
+    "note_IDEAndTools/Dev/TaskRunner/001.002-Syntax just.md",
     "note_algo_lang/note_C++/CompilerAndTools/003_CMake.md",
-    "note_IDEAndTools/Neovim/001-Neovim.md",
-    "note_IDEAndTools/Neovim/001.005-Windows and Tab in Neovim.md",
-    "note_IDEAndTools/Neovim/001.004-Neovim Personal Change.md",
+    "note_IDEAndTools/Dev/TaskRunner/001.001-CLI Just.md",
+    "note_algo_lang/note_C++/package/004-vcpkg.md",
+    "Pasted image 20240720222451_1.png",
+    "note_IDEAndTools/Neovim/001.002-Neovim Command.md",
     "note_IDEAndTools/Neovim/001.003-Neovim Lua API.md",
-    "note_software/006.002.002_Commands Vimium C.md",
+    "note_IDEAndTools/Neovim/001.003-CLI Neovim.md",
+    "note_software/journal/SoftwareJournal.md",
+    "note_IDEAndTools/Dev/CLI/001.005.001-CLI ripgrep.md",
+    "note_IDEAndTools/Dev/Documentation/001-Markdown.md",
+    "note_IDEAndTools/Dev/Terminal/001-Windows Terminal.md",
+    "mpv-shot0001.jpg",
+    "note_software/CasualSoftware/mpv",
     "note_IDEAndTools/VisualStudio/Debugger",
     "note_IDEAndTools/Virtualization",
     "note_software/Browser",
@@ -306,8 +269,6 @@
     "cc254c5c7e8f77ac93e4bc870932cf0.jpg",
     "0fb67e55886c55f08e8565404b38944.jpg",
     "asset/img/Image_20240710141751.jpg",
-    "Pasted image 20240708141742.png",
-    "Pasted image 20240708141019.png",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]
