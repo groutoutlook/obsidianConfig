@@ -33,9 +33,61 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8cb26d5d6184c720",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_IDEAndTools/Dev/VCS/003.001-Git tools.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c854c411a580e205",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_IDEAndTools/Dev/CLI/001.010_Gitui.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aa0d6686ee7e815e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_entertainment/note_discography/MusicJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "49723322b75abb25",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/journal/SoftwareJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       },
       {
         "id": "692aabec644967b3",
@@ -137,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_IDEAndTools/Neovim/001.002-Neovim Command.md"
+                "file": "note_software/journal/SoftwareJournal.md"
               }
             }
           },
@@ -147,7 +199,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_IDEAndTools/Neovim/001.002-Neovim Command.md",
+                "file": "note_software/journal/SoftwareJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +216,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_IDEAndTools/Neovim/001.002-Neovim Command.md",
+                "file": "note_software/journal/SoftwareJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -221,13 +273,16 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "973d18264449b03c",
+  "active": "49723322b75abb25",
   "lastOpenFiles": [
+    "note_entertainment/note_discography/MusicJournal.md",
+    "note_IDEAndTools/Dev/CLI/001.010_Gitui.md",
+    "note_IDEAndTools/Dev/VCS/003.001-Git tools.md",
+    "note_IDEAndTools/Neovim/001.002-Neovim Command.md",
     "note_IDEAndTools/Dev/CLI/001.009.002-CLI yazi.md",
     "note_IDEAndTools/Dev/VCS/003.003-Git hosting platform.md",
     "note_Knowledge/journal/QuoteJournal.md",
     "note_software/CasualSoftware/002.001-Youtube Music.md",
-    "note_entertainment/note_discography/MusicJournal.md",
     "note_Knowledge/journal/PhraseJournal.md",
     "note_Knowledge/journal/PlacesJournal.md",
     "note_Knowledge/secret/AccountJournal.md",
@@ -237,19 +292,16 @@
     "note_IDEAndTools/Neovim/002-Plugin Neovim.md",
     "note_IDEAndTools/Neovim/002.002-Toggleterm.nvim.md",
     "note_algo_lang/note_C++/package/005-conan.md",
-    "note_IDEAndTools/Dev/CLI/001.010_Gitui.md",
     "note_IDEAndTools/Dev/TaskRunner/001.002-Syntax just.md",
     "note_algo_lang/note_C++/CompilerAndTools/003_CMake.md",
     "note_IDEAndTools/Dev/TaskRunner/001.001-CLI Just.md",
     "note_algo_lang/note_C++/package/004-vcpkg.md",
     "Pasted image 20240720222451_1.png",
-    "note_IDEAndTools/Neovim/001.002-Neovim Command.md",
     "note_IDEAndTools/Neovim/001.003-Neovim Lua API.md",
     "note_IDEAndTools/Neovim/001.003-CLI Neovim.md",
     "note_software/journal/SoftwareJournal.md",
     "note_IDEAndTools/Dev/CLI/001.005.001-CLI ripgrep.md",
     "note_IDEAndTools/Dev/Documentation/001-Markdown.md",
-    "note_IDEAndTools/Dev/Terminal/001-Windows Terminal.md",
     "mpv-shot0001.jpg",
     "note_software/CasualSoftware/mpv",
     "note_IDEAndTools/VisualStudio/Debugger",

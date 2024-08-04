@@ -55,8 +55,9 @@ imap xxx <Esc>%wgxi
 
 exmap closeAll obcommand workspace:close-window
 exmap closeTab obcommand workspace:close
+nmap qq :closeTab
 nmap ;q :closeTab
-imap ;q :closeTab
+imap qq :closeTab
 nmap ;wq :closeTab
 exmap q obcommand workspace:close
 " template
@@ -64,6 +65,7 @@ exmap q obcommand workspace:close
 " nmap ;t :insertTemplate
 exmap undoTab obcommand workspace:undo-close-pane
 nmap ;t :undoTab
+nmap tt :undoTab
 imap ;t :undoTab
 
 
