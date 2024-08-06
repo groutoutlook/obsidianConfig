@@ -1,0 +1,31 @@
+{
+    "created_time": "2024-08-04T11:56:19Z",
+    "files": [
+        {
+            "attachment_folder": "",
+            "created_time": "2024-08-04T11:56:19Z",
+            "id": "14",
+            "modified_time": "2024-08-04T11:56:19Z",
+            "name": "main.js",
+            "signature": "381437782447320163",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2024-08-04T11:56:19Z",
+            "id": "16",
+            "modified_time": "2024-08-04T11:56:19Z",
+            "name": "styles.css",
+            "signature": "7472373619288403043",
+            "tags": [
+            ]
+        }
+    ],
+    "folders": [
+    ],
+    "id": "15",
+    "modified_time": "2024-08-04T11:56:19Z",
+    "signature": "17805081643651656803",
+    "version": 3
+}

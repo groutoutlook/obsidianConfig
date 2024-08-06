@@ -9,5 +9,6 @@
   "theme": "obsidian",
   "enabledCssSnippets": [
     "generated.explorer-hider"
-  ]
+  ],
+  "interfaceFontFamily": "Ubuntu Nerd Font"
 }

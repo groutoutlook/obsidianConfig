@@ -1,0 +1,59 @@
+{
+    "created_time": "2024-08-04T11:56:19Z",
+    "files": [
+    ],
+    "folders": [
+        {
+            "name": "codestats"
+        },
+        {
+            "name": "colored-tags"
+        },
+        {
+            "name": "customjs"
+        },
+        {
+            "name": "explorer-hider"
+        },
+        {
+            "name": "hotkey-helper"
+        },
+        {
+            "name": "keyshots"
+        },
+        {
+            "name": "obsidian-advanced-uri"
+        },
+        {
+            "name": "obsidian-plantuml"
+        },
+        {
+            "name": "obsidian-text-format"
+        },
+        {
+            "name": "obsidian-vimrc-support"
+        },
+        {
+            "name": "omnisearch"
+        },
+        {
+            "name": "pdf-plus"
+        },
+        {
+            "name": "qatt"
+        },
+        {
+            "name": "settings-search"
+        },
+        {
+            "name": "update-time-on-edit"
+        },
+        {
+            "name": "various-complements"
+        }
+    ],
+    "id": "3",
+    "modified_time": "2024-08-04T11:56:19Z",
+    "signature": "1113941654461443171",
+    "version": 3
+}

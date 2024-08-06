@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_algo_lang/note_C++/CompilerAndTools/003_CMake.md",
+                "file": "note_algo_lang/02-C++/CompilerTools/003_CMake.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -22,12 +22,12 @@
             }
           },
           {
-            "id": "973d18264449b03c",
+            "id": "7c4bb5c2a7df3d8a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_IDEAndTools/Neovim/001.002-Neovim Command.md",
+                "file": "note_algo_lang/02-C++/Standard/001.004-Expression C++.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -35,51 +35,12 @@
             }
           },
           {
-            "id": "8cb26d5d6184c720",
+            "id": "97bf857ef57780d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_IDEAndTools/Dev/VCS/003.001-Git tools.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c854c411a580e205",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_IDEAndTools/Dev/CLI/001.010_Gitui.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aa0d6686ee7e815e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_entertainment/note_discography/MusicJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "49723322b75abb25",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/journal/SoftwareJournal.md",
+                "file": "note_algo_lang/02-C++/Standard/001.004.001-Operator in C++.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -87,7 +48,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       },
       {
         "id": "692aabec644967b3",
@@ -95,12 +56,12 @@
         "dimension": 50.62642369020502,
         "children": [
           {
-            "id": "904dd3a509308bed",
+            "id": "c4fde1f8aea243e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_algo_lang/note_C++/CompilerAndTools/005.003-MSVC.md",
+                "file": "note_IDEAndTools/Dev/TaskRunner/001.002-Syntax just.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -108,12 +69,25 @@
             }
           },
           {
-            "id": "5125d4f2055f9c6b",
+            "id": "a417260f81dfa744",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_IDEAndTools/Dev/Terminal/001-Windows Terminal.md",
+                "file": "note_algo_lang/02-C++/Standard/001-C++.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "66ca3179e80bed03",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "001.001-Basic C++.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -189,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md"
+                "file": "note_algo_lang/02-C++/Standard/001.004.001-Operator in C++.md"
               }
             }
           },
@@ -199,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md",
+                "file": "note_algo_lang/02-C++/Standard/001.004.001-Operator in C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -216,7 +190,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md",
+                "file": "note_algo_lang/02-C++/Standard/001.004.001-Operator in C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -273,47 +247,47 @@
       "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "49723322b75abb25",
+  "active": "97bf857ef57780d6",
   "lastOpenFiles": [
-    "note_entertainment/note_discography/MusicJournal.md",
-    "note_IDEAndTools/Dev/CLI/001.010_Gitui.md",
-    "note_IDEAndTools/Dev/VCS/003.001-Git tools.md",
-    "note_IDEAndTools/Neovim/001.002-Neovim Command.md",
-    "note_IDEAndTools/Dev/CLI/001.009.002-CLI yazi.md",
-    "note_IDEAndTools/Dev/VCS/003.003-Git hosting platform.md",
-    "note_Knowledge/journal/QuoteJournal.md",
-    "note_software/CasualSoftware/002.001-Youtube Music.md",
-    "note_Knowledge/journal/PhraseJournal.md",
-    "note_Knowledge/journal/PlacesJournal.md",
-    "note_Knowledge/secret/AccountJournal.md",
-    "note_IDEAndTools/Dev/VCS/003.004-Github.md",
-    "note_IDEAndTools/Dev/CLI/001.009-yazi.md",
-    "note_IDEAndTools/Dev/TaskRunner/001.002.001-Variables and Substitution - Just.md",
-    "note_IDEAndTools/Neovim/002-Plugin Neovim.md",
-    "note_IDEAndTools/Neovim/002.002-Toggleterm.nvim.md",
-    "note_algo_lang/note_C++/package/005-conan.md",
+    "note_algo_lang/02-C++/Standard/001.004-Expression C++.md",
+    "note_algo_lang/02-C++/CompilerTools/003_CMake.md",
+    "note_algo_lang/02-C++/Standard/001.004.001-Operator in C++.md",
+    "note_algo_lang/02-C++/Standard/001-C++.md",
     "note_IDEAndTools/Dev/TaskRunner/001.002-Syntax just.md",
-    "note_algo_lang/note_C++/CompilerAndTools/003_CMake.md",
+    "001.001-Basic C++.md",
+    "note_algo_lang/journal/ProgrammingJournal.md",
+    "note_algo_lang/02-C++/Graphic/001-Vulkan.md",
+    "note_algo_lang/01-General/Data Structure/001-Regex.md",
+    "note_algo_lang/note_C++/package/ManagerTools.md",
+    "note_algo_lang/02-C++/BookDigest/001-Books C++.md",
+    "note_algo_lang/02-C++/Graphic/001.002-Vulkan tools.md",
+    "note_algo_lang/01-General/Data Structure",
+    "note_algo_lang/01-General/CompSci/Untitled.md",
+    "note_algo_lang/01-General/CompSci",
+    "note_algo_lang/01-General",
+    "note_software/CasualSoftware/Espanso/004.005-Regex in Espanso.md",
+    "Untitled",
+    "note_IDEAndTools/Dev/TaskRunner/001.002.003-Dependency Just.md",
+    "note_algo_lang/journal/GraphicUIJournal.md",
     "note_IDEAndTools/Dev/TaskRunner/001.001-CLI Just.md",
-    "note_algo_lang/note_C++/package/004-vcpkg.md",
+    "note_IDEAndTools/Dev/TaskRunner/001.003-Builtin Function Just.md",
+    "note_IDEAndTools/Dev/TaskRunner/001.002.002-Parameter Just.md",
+    "templates/vx.json",
+    "TagsRoutes/vx.json",
+    "scripts/vx.json",
+    "notes/dailies/vx.json",
+    "notes/vx.json",
+    "note_utils/vx.json",
+    "note_algo_lang/note_FSharp/001-FSharp.md",
+    "note_IDEAndTools/Visualization/GraphAndMap/003.001-Plantuml and Tools.md",
+    "note_algo_lang/note_FSharp/003.001-CLI FSharp.md",
+    "note_algo_lang/journal/CompSciJournal.md",
+    "note_algo_lang/02-C++/CompilerTools/005.003-MSVC.md",
+    "note_os_linux/100000_Terminal_Text_Editor.md",
+    "note_IDEAndTools/Dev/Terminal/001-Windows Terminal.md",
     "Pasted image 20240720222451_1.png",
-    "note_IDEAndTools/Neovim/001.003-Neovim Lua API.md",
-    "note_IDEAndTools/Neovim/001.003-CLI Neovim.md",
-    "note_software/journal/SoftwareJournal.md",
-    "note_IDEAndTools/Dev/CLI/001.005.001-CLI ripgrep.md",
-    "note_IDEAndTools/Dev/Documentation/001-Markdown.md",
     "mpv-shot0001.jpg",
-    "note_software/CasualSoftware/mpv",
-    "note_IDEAndTools/VisualStudio/Debugger",
-    "note_IDEAndTools/Virtualization",
-    "note_software/Browser",
-    "note_IDEAndTools/Visualization/GraphAndMap/Mermaid",
-    "note_IDEAndTools/Visualization/GraphAndMap",
     "Pasted image 20240729200545.png",
-    "note_graph",
-    "note_IDEAndTools/Visualization/GraphAndMap/Untitled",
-    "note_Embedded/PCB_Standard",
-    "note_os_android/Utils/Terminal",
     "Pasted image 20240720222451.png",
     "Pasted image 20240720222441.png",
     "Pasted image 20240720222435.png",
