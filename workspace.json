@@ -35,12 +35,12 @@
             }
           },
           {
-            "id": "97bf857ef57780d6",
+            "id": "3687525f4e099a4e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_algo_lang/02-C++/Standard/001.004.001-Operator in C++.md",
+                "file": "note_IDEAndTools/Dev/VCS/003.004.001-Search GitHub.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -56,12 +56,12 @@
         "dimension": 50.62642369020502,
         "children": [
           {
-            "id": "c4fde1f8aea243e2",
+            "id": "8e87385461e9b204",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_IDEAndTools/Dev/TaskRunner/001.002-Syntax just.md",
+                "file": "note_algo_lang/02-C++/Utils/001-z3.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -69,25 +69,12 @@
             }
           },
           {
-            "id": "a417260f81dfa744",
+            "id": "d43c9611cf63fc83",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_algo_lang/02-C++/Standard/001-C++.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "66ca3179e80bed03",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "001.001-Basic C++.md",
+                "file": "note_algo_lang/03-Powershell/001.004-Operator in Powershell.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -163,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_algo_lang/02-C++/Standard/001.004.001-Operator in C++.md"
+                "file": "note_algo_lang/03-Powershell/001.004-Operator in Powershell.md"
               }
             }
           },
@@ -173,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_algo_lang/02-C++/Standard/001.004.001-Operator in C++.md",
+                "file": "note_algo_lang/03-Powershell/001.004-Operator in Powershell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_algo_lang/02-C++/Standard/001.004.001-Operator in C++.md",
+                "file": "note_algo_lang/03-Powershell/001.004-Operator in Powershell.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -244,47 +231,48 @@
       "omnisearch:Omnisearch": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "tab-selector:Open tab selector": false
     }
   },
-  "active": "97bf857ef57780d6",
+  "active": "d43c9611cf63fc83",
   "lastOpenFiles": [
-    "note_algo_lang/02-C++/Standard/001.004-Expression C++.md",
+    "note_algo_lang/02-C++/Utils/001-z3.md",
+    "note_algo_lang/03-Powershell/001.006.001-Parameters Powershell.md",
+    "note_algo_lang/03-Powershell/001.006-Function.md",
+    "note_IDEAndTools/Dev/VCS/003.004.001-Search GitHub.md",
+    "note_software/Browser/003.001-SearchEngine.md",
+    "note_software/Browser/003.002-StackExchange.md",
+    "note_algo_lang/02-C++/Utils",
+    "note_IDEAndTools/Dev/CLI/001.005-ripgrep.md",
+    "note_IDEAndTools/Dev/CLI/001.005.002-repgrep.md",
+    "note_IDEAndTools/Dev/CLI/001.005.003-igrep.md",
+    "note_software/journal/SoftwareJournal.md",
+    "note_IDEAndTools/Dev/CLI/001.010_Gitui.md",
+    "note_IDEAndTools/Dev/CLI/001.010.001-Keybinding Gitui.md",
     "note_algo_lang/02-C++/CompilerTools/003_CMake.md",
-    "note_algo_lang/02-C++/Standard/001.004.001-Operator in C++.md",
-    "note_algo_lang/02-C++/Standard/001-C++.md",
-    "note_IDEAndTools/Dev/TaskRunner/001.002-Syntax just.md",
-    "001.001-Basic C++.md",
-    "note_algo_lang/journal/ProgrammingJournal.md",
-    "note_algo_lang/02-C++/Graphic/001-Vulkan.md",
-    "note_algo_lang/01-General/Data Structure/001-Regex.md",
-    "note_algo_lang/note_C++/package/ManagerTools.md",
-    "note_algo_lang/02-C++/BookDigest/001-Books C++.md",
-    "note_algo_lang/02-C++/Graphic/001.002-Vulkan tools.md",
+    "note_algo_lang/02-C++/CompilerTools/003.003-Options for CMake.md",
+    "note_algo_lang/02-C++/Standard/001.004-Expression C++.md",
+    "note_IDEAndTools/Dev/Task/002-Taskwarrior.md",
+    "note_IDEAndTools/Dev/VCS/003.004-Github.md",
+    "note_algo_lang/journal/LangJournal.md",
+    "note_IDEAndTools/Dev/CLI/001.005.001-CLI ripgrep.md",
+    "note_software/Browser/006.002-Vimium C.md",
+    "note_software/Browser/006.002.003-Search Engine rules in Vimium C.md",
+    "note_software/Browser/006.002.002-Mode Vimium C.md",
+    "note_software/Obsidian/004.001.003.001-All commands.md",
+    "002.001.001-CLI Scoop.md",
+    "note_IDEAndTools/Dev/CLI/002.001-Scoop.md",
+    "note_IDEAndTools/Neovim/001.001-Motion in Neovim.md",
+    "note_algo_lang/10-UtilsLang/Julia",
+    "note_algo_lang/10-UtilsLang",
     "note_algo_lang/01-General/Data Structure",
-    "note_algo_lang/01-General/CompSci/Untitled.md",
     "note_algo_lang/01-General/CompSci",
     "note_algo_lang/01-General",
-    "note_software/CasualSoftware/Espanso/004.005-Regex in Espanso.md",
     "Untitled",
-    "note_IDEAndTools/Dev/TaskRunner/001.002.003-Dependency Just.md",
-    "note_algo_lang/journal/GraphicUIJournal.md",
-    "note_IDEAndTools/Dev/TaskRunner/001.001-CLI Just.md",
-    "note_IDEAndTools/Dev/TaskRunner/001.003-Builtin Function Just.md",
-    "note_IDEAndTools/Dev/TaskRunner/001.002.002-Parameter Just.md",
     "templates/vx.json",
     "TagsRoutes/vx.json",
     "scripts/vx.json",
-    "notes/dailies/vx.json",
-    "notes/vx.json",
-    "note_utils/vx.json",
-    "note_algo_lang/note_FSharp/001-FSharp.md",
-    "note_IDEAndTools/Visualization/GraphAndMap/003.001-Plantuml and Tools.md",
-    "note_algo_lang/note_FSharp/003.001-CLI FSharp.md",
-    "note_algo_lang/journal/CompSciJournal.md",
-    "note_algo_lang/02-C++/CompilerTools/005.003-MSVC.md",
-    "note_os_linux/100000_Terminal_Text_Editor.md",
-    "note_IDEAndTools/Dev/Terminal/001-Windows Terminal.md",
     "Pasted image 20240720222451_1.png",
     "mpv-shot0001.jpg",
     "Pasted image 20240729200545.png",

@@ -32,7 +32,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md",
+                "file": "note_software/journal/OSJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -64,7 +64,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "",
+            "query": "tag:#termux",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -105,7 +105,7 @@
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 1
   },
   "right": {
     "id": "1dfcc9397c7f283b",
@@ -117,7 +117,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md",
+            "file": "note_software/journal/OSJournal.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md",
+            "file": "note_software/journal/OSJournal.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -146,7 +146,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "note_IDEAndTools/Neovim/001.002_Neovim Plugins.md"
+            "file": "note_software/journal/OSJournal.md"
           }
         }
       }
@@ -155,6 +155,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "tab-selector:Open tab selector": false,
       "explorer-hider:Disable hiding": false,
       "qatt:Refresh QATT Tables": false,
       "qatt:Refresh Views": false,

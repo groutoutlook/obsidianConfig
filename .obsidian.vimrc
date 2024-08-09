@@ -34,11 +34,6 @@ imap ;fs :loadworkspace
 " nmap vv v$
 imap vv <Esc>v$
 
-" Make a newline with a link.
-nmap ;p A<space>[](<Esc>pa)<Esc>%ba
-nmap -;p o-<Esc>;p
-imap ;p <Esc>;p
-imap -;p <Esc>-;p
 " Go to link or open note in new tab(leaf)
 " exmap follow obcommand editor:open-link-in-new-window
 exmap follow obcommand editor:open-link-in-new-leaf
@@ -49,7 +44,7 @@ nmap gx f]wgl
 nmap ;gx gx
 imap ;gx <Esc>%wgxi
 imap <C-CR> <Esc>%wgxi
-imap gx <Esc>%wgxi
+imap gx <Esc>%wgx
 imap ggx <Esc>%wgxi
 imap xxx <Esc>%wgxi
 
@@ -69,14 +64,15 @@ nmap tt :undoTab
 imap ;t :undoTab
 
 
-
-
-
+" obsidian://advanced-uri?vault=Vault_2401&filepath=note_IDEAndTools%252FDev%252FTask%252F001.002-Syntax%2520just.md
+exmap copyURIsimple obcommand workspace:copy-url
+" Or you could -> obsidian-advanced-uri:copy-uri-current-file-simple
+nmap ;p :copyURIsimple
+imap ;p :copyURIsimple
 
 " NOTE: Paste as plain text? In pure Vim, this is no need.
 " But in Obsidian, there is a plugin which interfere with that.
 nmap <C-v> p
-" imap ;p <Esc>pa
 imap ;u <Esc>2ui
 imap ;r <Esc>2<C-r>i
 
@@ -160,3 +156,7 @@ imap ;,k :pluginHotkeys
 " imap ;oc <Esc>:obcommand
 " INFO: or the current line on the [[All commands]] note or elsewhere..
 
+
+
+
+" nmap <c-w><c-w> 

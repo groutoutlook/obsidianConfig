@@ -40,4 +40,8 @@ editjust:
     nvim ./justfile
 
 alias b := build
-build: placeholder
+build: 
+    #!{{ shebang }}
+    Stop-Process -Name obsidian*
+    Start-Process "C:\Users\COHOTECH\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps\Obsidian.lnk" &
+    Start-Sleep -Milliseconds 1000
