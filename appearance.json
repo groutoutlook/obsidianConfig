@@ -1,11 +1,11 @@
 {
   "accentColor": "#ff004c",
-  "cssTheme": "Vanilla AMOLED Color",
+  "cssTheme": "Underwater",
   "showViewHeader": false,
   "nativeMenus": false,
   "textFontFamily": "",
   "monospaceFontFamily": "Iosevka Nerd Font,Iosevka Nerd Font Mono",
-  "baseFontSize": 14,
+  "baseFontSize": 15,
   "theme": "obsidian",
   "enabledCssSnippets": [
     "generated.explorer-hider"

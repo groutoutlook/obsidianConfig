@@ -6,7 +6,6 @@
       {
         "id": "68ffb2c6e926a4ec",
         "type": "tabs",
-        "dimension": 49.37357630979498,
         "children": [
           {
             "id": "a5aefff2bc35d0bd",
@@ -22,12 +21,12 @@
             }
           },
           {
-            "id": "7c4bb5c2a7df3d8a",
+            "id": "4051ad4f5e5a6f4a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_algo_lang/02-C++/Standard/001.004-Expression C++.md",
+                "file": "note_entertainment/note_interest/PersonalJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -35,12 +34,38 @@
             }
           },
           {
-            "id": "3687525f4e099a4e",
+            "id": "4901561c2a9fb09d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_IDEAndTools/Dev/VCS/003.004.001-Search GitHub.md",
+                "file": "note_entertainment/note_discography/MusicJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ff90cc3cf95446c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_Business/001.001.001-Payment Info.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b328ca39bb335b92",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_Items/1688Journal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -48,20 +73,19 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       },
       {
         "id": "692aabec644967b3",
         "type": "tabs",
-        "dimension": 50.62642369020502,
         "children": [
           {
-            "id": "8e87385461e9b204",
+            "id": "8c7ab35a5776049c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_algo_lang/02-C++/Utils/001-z3.md",
+                "file": "note_software/CasualSoftware/004.002-Cheatsheet Collections.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -69,25 +93,12 @@
             }
           },
           {
-            "id": "d43c9611cf63fc83",
+            "id": "615e8fb48e857807",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_algo_lang/03-Powershell/001.004-Operator in Powershell.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "562e3d439d558751",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_os_linux/Utils/CLI/001.002-Utils Networking.md",
+                "file": "note_Knowledge/journal/VocabJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -95,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_os_linux/Utils/CLI/001.002-Utils Networking.md"
+                "file": "note_Items/1688Journal.md"
               }
             }
           },
@@ -173,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_os_linux/Utils/CLI/001.002-Utils Networking.md",
+                "file": "note_Items/1688Journal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,7 +201,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_os_linux/Utils/CLI/001.002-Utils Networking.md",
+                "file": "note_Items/1688Journal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -248,36 +259,48 @@
       "tab-selector:Open tab selector": false
     }
   },
-  "active": "562e3d439d558751",
+  "active": "b328ca39bb335b92",
   "lastOpenFiles": [
-    "note_os_linux/Utils/CLI/001.001-Utils Filesystem.md",
-    "note_os_linux/Utils/CLI/001.002-Utils Networking.md",
-    "note_os_linux/Utils/CLI/001-POSIX.md",
-    "note_software/journal/OSJournal.md",
-    "ices",
-    "note_algo_lang/03-Powershell/001.004-Operator in Powershell.md",
-    "note_algo_lang/02-C++/Utils/001-z3.md",
-    "note_os_linux/800001_Software Linux.md",
-    "note_algo_lang/03-Powershell/001.006.001-Parameters Powershell.md",
-    "note_algo_lang/03-Powershell/001.006-Function.md",
-    "note_IDEAndTools/Dev/VCS/003.004.001-Search GitHub.md",
-    "note_software/Browser/003.001-SearchEngine.md",
-    "note_software/Browser/003.002-StackExchange.md",
-    "note_algo_lang/02-C++/Utils",
-    "note_IDEAndTools/Dev/CLI/001.005-ripgrep.md",
-    "note_IDEAndTools/Dev/CLI/001.005.002-repgrep.md",
-    "note_IDEAndTools/Dev/CLI/001.005.003-igrep.md",
-    "note_software/journal/SoftwareJournal.md",
-    "note_IDEAndTools/Dev/CLI/001.010_Gitui.md",
-    "note_IDEAndTools/Dev/CLI/001.010.001-Keybinding Gitui.md",
+    "Pasted image 20240828183414.png",
+    "Pasted image 20240828183303.png",
+    "note_Business/001.001.001-Payment Info.md",
+    "note_entertainment/note_discography/MusicJournal.md",
+    "note_entertainment/note_interest/PersonalJournal.md",
     "note_algo_lang/02-C++/CompilerTools/003_CMake.md",
-    "note_algo_lang/02-C++/CompilerTools/003.003-Options for CMake.md",
+    "Untitled.canvas",
+    "note_entertainment/note_discography/VideoJournal.md",
+    "note_Knowledge/journal/VocabJournal.md",
+    "note_software/CasualSoftware/mpv/001.002.001-Keybinding mpv.md",
+    "mpv-shot0077.jpg",
+    "mpv-shot0076.jpg",
+    "mpv-shot0075.jpg",
+    "mpv-shot0074.jpg",
+    "mpv-shot0073.jpg",
+    "mpv-shot0072.jpg",
+    "mpv-shot0071.jpg",
+    "mpv-shot0070.jpg",
+    "mpv-shot0069.jpg",
+    "note_software/CasualSoftware/mpv/001.002-Interface mpv.md",
+    "note_software/CasualSoftware/004.002-Cheatsheet Collections.md",
+    "note_software/CasualSoftware/mpv/001-mpv.md",
+    "note_Knowledge/note_Chinese/001.002_Basic Chinese Words.md",
+    "note_Business/000001_Chinese_Electronic.md",
+    "note_entertainment/note_interest",
+    "note_Business/WorkJournal.md",
+    "note_Business/WorkflowJournal.md",
+    "note_entertainment/note_discography/300000_Videos and Music.md",
     "note_algo_lang/02-C++/Standard/001.004-Expression C++.md",
-    "note_IDEAndTools/Dev/Task/002-Taskwarrior.md",
-    "note_IDEAndTools/Dev/VCS/003.004-Github.md",
-    "note_algo_lang/journal/LangJournal.md",
-    "note_IDEAndTools/Dev/CLI/001.005.001-CLI ripgrep.md",
-    "note_software/Browser/006.002-Vimium C.md",
+    "note_IDEAndTools/Dev/VCS/003.004.001-Search GitHub.md",
+    "note_software/Browser/003.002-StackExchange.md",
+    "note_os_linux/Utils/CLI/001-POSIX.md",
+    "note_algo_lang/03-Powershell/001.004-Operator in Powershell.md",
+    "note_os_linux/Utils/CLI/003.002-zle.md",
+    "note_os_linux/Utils/CLI/001.003-Utils Shell.md",
+    "note_os_linux/Utils/CLI/002.001-Nushell.md",
+    "note_os_linux/Utils/CLI/001.002-Utils Networking.md",
+    "note_algo_lang/03-Powershell/000005.001-Comparsion.md",
+    "ices",
+    "note_algo_lang/02-C++/Utils",
     "note_algo_lang/10-UtilsLang/Julia",
     "note_algo_lang/10-UtilsLang",
     "note_algo_lang/01-General/Data Structure",
@@ -285,18 +308,6 @@
     "note_algo_lang/01-General",
     "Untitled",
     "templates/vx.json",
-    "TagsRoutes/vx.json",
-    "Pasted image 20240720222451_1.png",
-    "mpv-shot0001.jpg",
-    "Pasted image 20240729200545.png",
-    "Pasted image 20240720222451.png",
-    "Pasted image 20240720222441.png",
-    "Pasted image 20240720222435.png",
-    "Pasted image 20240713035357.png",
-    "cc254c5c7e8f77ac93e4bc870932cf0.jpg",
-    "0fb67e55886c55f08e8565404b38944.jpg",
-    "asset/img/Image_20240710141751.jpg",
-    "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]
 }

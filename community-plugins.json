@@ -15,5 +15,6 @@
   "customjs",
   "obsidian-plantuml",
   "fast-text-color",
-  "tab-selector"
+  "tab-selector",
+  "vim-yank-highlight"
 ]
