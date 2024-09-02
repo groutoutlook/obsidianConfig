@@ -1676,7 +1676,8 @@
     "novel": 1169,
     "novel/ln": 1,
     "lenticular": 1170,
-    "product/finished": 1
+    "product/finished": 1,
+    "example/graph": 3
   },
   "_version": 3
 }

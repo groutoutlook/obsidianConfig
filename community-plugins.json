@@ -12,9 +12,9 @@
   "various-complements",
   "qatt",
   "pdf-plus",
-  "customjs",
-  "obsidian-plantuml",
   "fast-text-color",
   "tab-selector",
-  "vim-yank-highlight"
+  "vim-yank-highlight",
+  "vim-toggle",
+  "any-block"
 ]

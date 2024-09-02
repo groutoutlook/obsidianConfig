@@ -8,19 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a5aefff2bc35d0bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_algo_lang/02-C++/CompilerTools/003_CMake.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "4051ad4f5e5a6f4a",
             "type": "leaf",
             "state": {
@@ -34,38 +21,12 @@
             }
           },
           {
-            "id": "4901561c2a9fb09d",
+            "id": "519f3ca5669113c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_entertainment/note_discography/MusicJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ff90cc3cf95446c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_Business/001.001.001-Payment Info.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b328ca39bb335b92",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_Items/1688Journal.md",
+                "file": "note_Business/WorkJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -73,7 +34,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       },
       {
         "id": "692aabec644967b3",
@@ -85,28 +46,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/CasualSoftware/004.002-Cheatsheet Collections.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "615e8fb48e857807",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_Knowledge/journal/VocabJournal.md",
+                "file": "note_software/Obsidian/004.001-Obsidian Plugins.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -174,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_Items/1688Journal.md"
+                "file": "note_Business/WorkJournal.md"
               }
             }
           },
@@ -184,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_Items/1688Journal.md",
+                "file": "note_Business/WorkJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -201,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_Items/1688Journal.md",
+                "file": "note_Business/WorkJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +177,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -259,17 +206,25 @@
       "tab-selector:Open tab selector": false
     }
   },
-  "active": "b328ca39bb335b92",
+  "active": "519f3ca5669113c1",
   "lastOpenFiles": [
+    "note_entertainment/note_interest/PersonalJournal.md",
+    "note_Knowledge/journal/LifeJournal.md",
+    "note_software/Obsidian/004.001-Obsidian Plugins.md",
+    "note_algo_lang/02-C++/CompilerTools/003_CMake.md",
+    "Pasted image 20240831112203.png",
+    "note_software/CasualSoftware/004.002-Cheatsheet Collections.md",
+    "note_algo_lang/02-C++/Standard/003.003-Filesystem.md",
+    "note_algo_lang/02-C++/Standard/003.004-Functional.md",
+    "note_entertainment/note_discography/MusicJournal.md",
+    "note_Business/001.001.001-Payment Info.md",
+    "note_Items/1688Journal.md",
+    "note_Knowledge/journal/VocabJournal.md",
+    "note_algo_lang/02-C++/Standard/001-C++.md",
     "Pasted image 20240828183414.png",
     "Pasted image 20240828183303.png",
-    "note_Business/001.001.001-Payment Info.md",
-    "note_entertainment/note_discography/MusicJournal.md",
-    "note_entertainment/note_interest/PersonalJournal.md",
-    "note_algo_lang/02-C++/CompilerTools/003_CMake.md",
     "Untitled.canvas",
     "note_entertainment/note_discography/VideoJournal.md",
-    "note_Knowledge/journal/VocabJournal.md",
     "note_software/CasualSoftware/mpv/001.002.001-Keybinding mpv.md",
     "mpv-shot0077.jpg",
     "mpv-shot0076.jpg",
@@ -278,10 +233,7 @@
     "mpv-shot0073.jpg",
     "mpv-shot0072.jpg",
     "mpv-shot0071.jpg",
-    "mpv-shot0070.jpg",
-    "mpv-shot0069.jpg",
     "note_software/CasualSoftware/mpv/001.002-Interface mpv.md",
-    "note_software/CasualSoftware/004.002-Cheatsheet Collections.md",
     "note_software/CasualSoftware/mpv/001-mpv.md",
     "note_Knowledge/note_Chinese/001.002_Basic Chinese Words.md",
     "note_Business/000001_Chinese_Electronic.md",
@@ -294,11 +246,6 @@
     "note_software/Browser/003.002-StackExchange.md",
     "note_os_linux/Utils/CLI/001-POSIX.md",
     "note_algo_lang/03-Powershell/001.004-Operator in Powershell.md",
-    "note_os_linux/Utils/CLI/003.002-zle.md",
-    "note_os_linux/Utils/CLI/001.003-Utils Shell.md",
-    "note_os_linux/Utils/CLI/002.001-Nushell.md",
-    "note_os_linux/Utils/CLI/001.002-Utils Networking.md",
-    "note_algo_lang/03-Powershell/000005.001-Comparsion.md",
     "ices",
     "note_algo_lang/02-C++/Utils",
     "note_algo_lang/10-UtilsLang/Julia",

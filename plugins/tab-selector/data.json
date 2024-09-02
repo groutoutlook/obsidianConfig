@@ -8,7 +8,7 @@
     "howToNextTab": "useSubModifierKey"
   },
   "openTabSelector": {
-    "showAliases": false,
+    "showAliases": true,
     "replaceToAliases": false,
     "showPaths": false,
     "showPaginationButtons": true,
