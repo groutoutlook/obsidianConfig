@@ -6,14 +6,15 @@
       {
         "id": "68ffb2c6e926a4ec",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
-            "id": "4051ad4f5e5a6f4a",
+            "id": "7fe89fdd8ab1f2b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_entertainment/note_interest/PersonalJournal.md",
+                "file": "note_Knowledge/journal/OtherKnowledgeJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,7 +22,59 @@
             }
           },
           {
-            "id": "519f3ca5669113c1",
+            "id": "c9ccf870e23b145d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/journal/SoftwareJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "55a9a2e1b1590003",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/005-Clipboard manager.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4d2ea1e212cf9b43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/journal/OSJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dab5ab731e8a8982",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_entertainment/note_discography/MusicJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2a10f1e31e963a44",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,13 +85,27 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c64a5fb1786f123e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_entertainment/note_discography/MusicJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       },
       {
         "id": "692aabec644967b3",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "8c7ab35a5776049c",
@@ -121,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_Business/WorkJournal.md"
+                "file": "note_entertainment/note_discography/MusicJournal.md"
               }
             }
           },
@@ -131,7 +198,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_Business/WorkJournal.md",
+                "file": "note_entertainment/note_discography/MusicJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +215,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_Business/WorkJournal.md",
+                "file": "note_entertainment/note_discography/MusicJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +244,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -202,59 +269,58 @@
       "omnisearch:Omnisearch": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
-      "tab-selector:Open tab selector": false
+      "pdf-plus:PDF++: Toggle auto-paste": false
     }
   },
-  "active": "519f3ca5669113c1",
+  "active": "dab5ab731e8a8982",
   "lastOpenFiles": [
-    "note_entertainment/note_interest/PersonalJournal.md",
-    "note_Knowledge/journal/LifeJournal.md",
-    "note_software/Obsidian/004.001-Obsidian Plugins.md",
-    "note_algo_lang/02-C++/CompilerTools/003_CMake.md",
-    "Pasted image 20240831112203.png",
-    "note_software/CasualSoftware/004.002-Cheatsheet Collections.md",
-    "note_algo_lang/02-C++/Standard/003.003-Filesystem.md",
-    "note_algo_lang/02-C++/Standard/003.004-Functional.md",
-    "note_entertainment/note_discography/MusicJournal.md",
-    "note_Business/001.001.001-Payment Info.md",
-    "note_Items/1688Journal.md",
-    "note_Knowledge/journal/VocabJournal.md",
-    "note_algo_lang/02-C++/Standard/001-C++.md",
-    "Pasted image 20240828183414.png",
-    "Pasted image 20240828183303.png",
-    "Untitled.canvas",
-    "note_entertainment/note_discography/VideoJournal.md",
-    "note_software/CasualSoftware/mpv/001.002.001-Keybinding mpv.md",
-    "mpv-shot0077.jpg",
-    "mpv-shot0076.jpg",
-    "mpv-shot0075.jpg",
-    "mpv-shot0074.jpg",
-    "mpv-shot0073.jpg",
-    "mpv-shot0072.jpg",
-    "mpv-shot0071.jpg",
-    "note_software/CasualSoftware/mpv/001.002-Interface mpv.md",
-    "note_software/CasualSoftware/mpv/001-mpv.md",
-    "note_Knowledge/note_Chinese/001.002_Basic Chinese Words.md",
-    "note_Business/000001_Chinese_Electronic.md",
-    "note_entertainment/note_interest",
+    "note_software/journal/OSJournal.md",
+    "note_software/CasualSoftware/CopyQ/005.001-CopyQ.md",
+    "note_software/005-Clipboard manager.md",
     "note_Business/WorkJournal.md",
+    "note_entertainment/note_discography/MusicJournal.md",
+    "73c9afb0f57ff7f64c1f0f5d8943bc5.jpg",
+    "Pasted image 20240910172725.png",
+    "note_software/CasualSoftware/CopyQ/005.002-CLI CopyQ.md",
+    "005.003-Keybinding CopyQ.md",
+    "note_software/CasualSoftware/Image/001-Krita.md",
+    "note_software/CasualSoftware/Image",
+    "note_software/journal/SoftwareJournal.md",
+    "note_software/CasualSoftware/CopyQ",
+    "note_software/004-CLI Software.md",
+    "note_Knowledge/journal/VocabJournal.md",
+    "note_IDEAndTools/Dev/VCS/003.001-Git tools.md",
+    "note_entertainment/note_discography/Lyric/MixedNutsLyrics.md",
+    "note_entertainment/note_discography/Lyric/Magnetic-Lyric.md",
+    "note_entertainment/note_discography/Lyric/HaiYorokonde-Lyric.md",
+    "mpv-shot0002.jpg",
+    "note_Items/1688Journal.md",
     "note_Business/WorkflowJournal.md",
-    "note_entertainment/note_discography/300000_Videos and Music.md",
-    "note_algo_lang/02-C++/Standard/001.004-Expression C++.md",
-    "note_IDEAndTools/Dev/VCS/003.004.001-Search GitHub.md",
-    "note_software/Browser/003.002-StackExchange.md",
-    "note_os_linux/Utils/CLI/001-POSIX.md",
-    "note_algo_lang/03-Powershell/001.004-Operator in Powershell.md",
+    "note_software/CasualSoftware/mpv/001.002.001-Keybinding mpv.md",
+    "mpv-shot0001.jpg",
+    "asset/img/Pasted image 20240909110640.png",
+    "asset/img/Pasted image 20240909105641.png",
+    "asset/img/Pasted image 20240909105501.png",
+    "asset/img/Pasted image 20240906152903.png",
+    "asset/img/Pasted image 20240906103844.png",
+    "asset/img/Pasted image 20240904194338.png",
+    "note_os_windows/Utils/GUI/001.001-Powertoys.md",
+    "note_IDEAndTools/Dev/CLI/001.005.003-igrep.md",
+    "note_Items/TaobaoJournal.md",
+    "note_Embedded/HardwareJournal.md",
+    "note_Knowledge/journal/EventJournal.md",
+    "note_entertainment/note_discography/Lyric/MambaItaliano-Lyric.md",
+    "note_entertainment/note_discography/Lyric/Sway-Lyric.md",
+    "note_entertainment/note_discography/Lyric/PerfectStranger-Lyric.md",
+    "note_entertainment/note_discography/Lyric",
+    "flash_log.txt",
+    "asset/sheet/elec/WS2811.pdf",
+    "WS2811.pdf",
+    "Untitled.canvas",
+    "note_entertainment/note_interest",
     "ices",
     "note_algo_lang/02-C++/Utils",
     "note_algo_lang/10-UtilsLang/Julia",
-    "note_algo_lang/10-UtilsLang",
-    "note_algo_lang/01-General/Data Structure",
-    "note_algo_lang/01-General/CompSci",
-    "note_algo_lang/01-General",
-    "Untitled",
-    "templates/vx.json",
     "CanvasTemplate.canvas"
   ]
 }

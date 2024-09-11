@@ -43,5 +43,5 @@ alias b := build
 build: 
     #!{{ shebang }}
     Stop-Process -Name obsidian*
-    Start-Process "C:\Users\COHOTECH\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Scoop Apps\Obsidian.lnk" &
+    Start-Process "C:\Users\COHOTECH\scoop\apps\obsidian\current\Obsidian.exe"
     Start-Sleep -Milliseconds 1000
