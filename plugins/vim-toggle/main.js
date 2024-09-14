@@ -30,7 +30,8 @@ module.exports = __toCommonJS(main_exports);
 var import_obsidian = require("obsidian");
 var DEFAULT_SETTINGS = {
   notification: true,
-  debug: false
+  debug: false,
+  canvasVim: false
 };
 var VimToggle = class extends import_obsidian.Plugin {
   async onload() {
@@ -39,20 +40,63 @@ var VimToggle = class extends import_obsidian.Plugin {
       id: "toggle-vim",
       name: "Toggle Vim On/Off",
       callback: () => {
-        if (this.app.vault.getConfig("vimMode")) {
-          this.app.vault.setConfig("vimMode", false);
-        } else {
-          this.app.vault.setConfig("vimMode", true);
-        }
-        if (this.settings.notification) {
-          new import_obsidian.Notice(
-            "Vim mode toggled to " + this.app.vault.getConfig("vimMode"),
-            2e3
-          );
-        }
+        this.toggleVimMode();
+      }
+    });
+    this.addCommand({
+      id: "turn-on-vim",
+      name: "Turn On Vim Mode",
+      callback: () => {
+        this.turnOnVimMode();
+      }
+    });
+    this.addCommand({
+      id: "turn-off-vim",
+      name: "Turn Off Vim Mode",
+      callback: () => {
+        this.turnOffVimMode();
       }
     });
     this.addSettingTab(new VimToggleSettingsTab(this.app, this));
+    this.addRibbonIcon("text-cursor-input", "Toggle Vim Mode", () => {
+      this.toggleVimMode();
+    });
+    this.registerEvent(
+      this.app.workspace.on(
+        "file-open",
+        (file) => {
+          if (!file || !this.settings.canvasVim)
+            return;
+          if (file.extension == "canvas") {
+            this.turnOffVimMode();
+          } else {
+            this.turnOnVimMode();
+          }
+        }
+      )
+    );
+  }
+  toggleVimMode() {
+    if (this.getVimMode()) {
+      this.turnOffVimMode();
+    } else {
+      this.turnOnVimMode();
+    }
+    if (this.settings.notification) {
+      new import_obsidian.Notice(
+        "Vim mode toggled to " + this.getVimMode(),
+        2e3
+      );
+    }
+  }
+  turnOffVimMode() {
+    this.app.vault.setConfig("vimMode", false);
+  }
+  turnOnVimMode() {
+    this.app.vault.setConfig("vimMode", true);
+  }
+  getVimMode() {
+    return this.app.vault.getConfig("vimMode");
   }
   onunload() {
     console.log("unloading plugin: " + this.manifest.name);
@@ -87,44 +131,42 @@ var VimToggleSettingsTab = class extends import_obsidian.PluginSettingTab {
         await this.plugin.saveSettings();
       })
     );
+    new import_obsidian.Setting(containerEl).setName("Canvas Off").setDesc(
+      "When switching to a Canvas, turn vim off, and when not in Canvas, turn vim on."
+    ).addToggle(
+      (toggle) => toggle.setValue(this.plugin.settings.canvasVim).onChange(async (value) => {
+        this.plugin.settings.canvasVim = value;
+        await this.plugin.saveSettings();
+      })
+    );
     containerEl.createEl("hr");
     new import_obsidian.Setting(containerEl).setName("Repository").setDesc("Link to the repository of the plugin.").addButton(
-      (button) => button.setButtonText("Open Repository").setCta().onClick(
-        () => {
-          open("https://github.com/conneroisu/vim-toggle-obsidian");
-        }
-      )
+      (button) => button.setButtonText("Open Repository").setCta().onClick(() => {
+        open("https://github.com/conneroisu/vim-toggle-obsidian");
+      })
     );
     new import_obsidian.Setting(containerEl).setName("Report Issue").setDesc("Report an issue or wanted feature with the plugin.").addButton(
-      (button) => button.setButtonText("Report Issue/Feature").setCta().onClick(
-        () => {
-          open("https://github.com/conneroisu/vim-toggle-obsidian/issues/new");
-        }
-      )
+      (button) => button.setButtonText("Report Issue/Feature").setCta().onClick(() => {
+        open("https://github.com/conneroisu/vim-toggle-obsidian/issues/new");
+      })
     );
     new import_obsidian.Setting(containerEl).setName("Create Pull Request").setDesc("Developer? Create a pull request to the Vim Toggle.").addButton(
-      (button) => button.setButtonText("Create Pull Request").setCta().onClick(
-        () => {
-          open("https://github.com/conneroisu/vim-toggle-obsidian/compare");
-        }
-      )
+      (button) => button.setButtonText("Create Pull Request").setCta().onClick(() => {
+        open("https://github.com/conneroisu/vim-toggle-obsidian/compare");
+      })
     );
     containerEl.createEl("hr");
     containerEl.createEl("h2", { text: "About Vim Toggle" });
     containerEl.createEl("p", { text: "This plugin was created by Conner Ohnesorge" });
     new import_obsidian.Setting(containerEl).setName("Portfolio").setDesc("Go to my portfolio website.").addButton(
-      (button) => button.setButtonText("Go to Portfolio").setCta().onClick(
-        () => {
-          open("https://connerrohnesorrge.mixa.site");
-        }
-      )
+      (button) => button.setButtonText("Go to Portfolio").setCta().onClick(() => {
+        open("https://conneroh.com");
+      })
     );
     new import_obsidian.Setting(containerEl).setName("Kofi").setDesc("Buy me a coffee!").addButton(
-      (button) => button.setButtonText("Buy Me A Coffee").setCta().onClick(
-        () => {
-          open("https://ko-fi.com/conneroisu");
-        }
-      )
+      (button) => button.setButtonText("Buy Me A Coffee").setCta().onClick(() => {
+        open("https://ko-fi.com/conneroisu");
+      })
     );
   }
 };
@@ -135,5 +177,5 @@ var VimToggleSettingsTab = class extends import_obsidian.PluginSettingTab {
  * @license MIT
  * Main class of the plugin, Vim Toggle.It allows for a user to toggle
  * the state of the vim editor inside obsidian with a single command
- * helpful for switch from the Vim Editor whilst working on a canvas file.
+ * helpful for switching from the Vim Editor whilst working on a canvas file.
  */

@@ -159,4 +159,10 @@ imap ;,k :pluginHotkeys
 
 
 
-" nmap <c-w><c-w> 
+" nmap <c-w><c-w>
+" INFO: mapping the short ci/yi/ca/ya/ct/yt
+nmap yi9 yi(
+nmap yi; yi"
+
+nmap ci9 ci(
+nmap ci; ci"

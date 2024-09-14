@@ -4,15 +4,12 @@
   "hotkey-helper",
   "settings-search",
   "obsidian-advanced-uri",
-  "obsidian-text-format",
-  "colored-tags",
   "codestats",
   "obsidian-vimrc-support",
   "explorer-hider",
-  "various-complements",
   "qatt",
-  "fast-text-color",
   "vim-yank-highlight",
   "vim-toggle",
-  "pdf-plus"
+  "pdf-plus",
+  "colored-tags"
 ]

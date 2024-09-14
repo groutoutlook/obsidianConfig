@@ -35,9 +35,14 @@ placeholder:
     if($env:pwsh_env) {Write-Host "$env:pwsh_env"}
     else {Write-Host "Apparently no .env as well" -ForegroundColor Yellow}
 
-alias j := editjust
-editjust:
-    nvim ./justfile
+# INFO: basic `run` recipe.
+alias r := run
+default_args := 'args here'
+run args=default_args:
+    # @Write-Host {{default_args}} -ForegroundColor Red
+    just build
+
+
 
 alias b := build
 build: 
