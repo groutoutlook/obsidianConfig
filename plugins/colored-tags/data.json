@@ -1774,7 +1774,8 @@
     "translator": 1208,
     "framework/gui": 16,
     "format/json": 12,
-    "format/json/schema": 1
+    "format/json/schema": 1,
+    "tune": 1209
   },
   "_version": 3
 }

@@ -10,5 +10,6 @@
   "vim-yank-highlight",
   "vim-toggle",
   "colored-tags",
-  "emacs-text-editor"
+  "emacs-text-editor",
+  "snippets-manager"
 ]
