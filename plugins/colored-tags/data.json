@@ -1771,7 +1771,10 @@
     "configuration": 1206,
     "video/editor": 1,
     "ocr": 1207,
-    "translator": 1208
+    "translator": 1208,
+    "framework/gui": 16,
+    "format/json": 12,
+    "format/json/schema": 1
   },
   "_version": 3
 }

@@ -64,11 +64,17 @@ nmap tt :undoTab
 imap ;t :undoTab
 
 
-" obsidian://advanced-uri?vault=Vault_2401&filepath=note_IDEAndTools%252FDev%252FTask%252F001.002-Syntax%2520just.md
+" [](obsidian://advanced-uri?vault=Vault_2401&filepath=note_IDEAndTools%252FDev%252FTask%252F001.002-Syntax%2520just.md)
 exmap copyURIsimple obcommand workspace:copy-url
 " Or you could -> obsidian-advanced-uri:copy-uri-current-file-simple
 nmap ;p :copyURIsimple
 imap ;p :copyURIsimple
+
+" INFO: Copy current block's URI
+exmap copyURIAdvanced obcommand obsidian-advanced-uri:copy-uri-block
+imap ;ap :copyURIAdvanced
+nmap ;ap :copyURIAdvanced
+
 
 " NOTE: Paste as plain text? In pure Vim, this is no need.
 " But in Obsidian, there is a plugin which interfere with that.
@@ -108,22 +114,14 @@ exmap foldProp obcommand editor:toggle-fold-properties
 nmap zp :foldProp
 imap ;zp :foldProp
 
-
 " Maps pasteinto to Alt-p
 imap <A-p> <Esc>p
-
-
-" INFO: Copy current block's URI
-exmap makeLink obcommand obsidian-advanced-uri:copy-uri-block
-imap ;ml :makeLink
-nmap ;ml :makeLink
-"
 
 
 " INFO: unmap keys
 " unmap <C-w>
 " imap <c-w> <c-bs>
-imap <c-w> <Esc>dba
+" imap <c-w> <Esc>dba
 nmap <C-BS> db
 vmap a <Esc>
 vmap i <Esc>
@@ -148,7 +146,7 @@ exmap pluginHotkeys obcommand hotkey-helper:open-hotkeys
 nmap ;,s :pluginSettings
 nmap ;,k :pluginHotkeys
 imap ;,s :pluginSettings
-imap ;,k :pluginHotkeys
+nmap ;,k :pluginHotkeys
 
 " INFO: obcommand debugger
 " Either the copied lines 

@@ -178,22 +178,6 @@
     }
   ],
   "keyshots:toggle-underline": [],
-  "editor:table-row-after": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "ArrowDown"
-    }
-  ],
-  "editor:table-row-before": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "ArrowUp"
-    }
-  ],
   "editor:table-row-down": [
     {
       "modifiers": [
@@ -359,6 +343,38 @@
         "Mod"
       ],
       "key": "."
+    }
+  ],
+  "emacs-text-editor:forward-paragraph": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "emacs-text-editor:backward-paragraph": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "ArrowUp"
+    }
+  ],
+  "emacs-text-editor:backward-kill-word": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "W"
+    }
+  ],
+  "emacs-text-editor:kill-word": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "W"
     }
   ]
 }

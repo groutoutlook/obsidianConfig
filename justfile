@@ -39,7 +39,7 @@ placeholder:
 alias r := run
 default_args := 'args here'
 run args=default_args:
-    # @Write-Host {{default_args}} -ForegroundColor Red
+    @# Write-Host {{default_args}} -ForegroundColor Red
     just build
 
 
@@ -48,5 +48,5 @@ alias b := build
 build: 
     #!{{ shebang }}
     Stop-Process -Name obsidian*
-    Start-Process "C:\Users\COHOTECH\scoop\apps\obsidian\current\Obsidian.exe"
+    (Start-Process "C:\Users\COHOTECH\scoop\apps\obsidian\current\Obsidian.exe") &
     Start-Sleep -Milliseconds 1000

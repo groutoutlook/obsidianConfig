@@ -35,20 +35,19 @@
             }
           },
           {
-            "id": "2fe5dd1ad91de931",
+            "id": "5561b79e8b3659cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/CasualSoftware/Image/003-ShareX.md",
+                "file": "002.005-EmacsInsert.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "692aabec644967b3",
@@ -136,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_software/CasualSoftware/Image/003-ShareX.md"
+                "file": "note_Knowledge/journal/OtherKnowledgeJournal.md"
               }
             }
           },
@@ -146,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_software/CasualSoftware/Image/003-ShareX.md",
+                "file": "note_Knowledge/journal/OtherKnowledgeJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_software/CasualSoftware/Image/003-ShareX.md",
+                "file": "note_Knowledge/journal/OtherKnowledgeJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +203,6 @@
       "qatt:Refresh QATT Tables": false,
       "qatt:Refresh Views": false,
       "qatt:Log Metrics": false,
-      "explorer-hider:Disable hiding": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
       "canvas:Create new canvas": false,
@@ -215,20 +213,29 @@
       "workspaces:Manage workspace layouts": true,
       "random-note:Open random note": true,
       "omnisearch:Omnisearch": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
       "vim-toggle:Toggle Vim Mode": false
     }
   },
-  "active": "2fe5dd1ad91de931",
+  "active": "7fe89fdd8ab1f2b8",
   "lastOpenFiles": [
     "note_software/CasualSoftware/Image/002-Umi-OCR.md",
+    "002.005-EmacsInsert.md",
+    "note_software/Obsidian/004.001.004-Emacs Text Editor.md",
+    "note_software/Obsidian/004.001-Obsidian Plugins.md",
+    "note_IDEAndTools/Neovim/002-Plugin Neovim.md",
+    "note_IDEAndTools/Neovim/002.005-dial.nvim.md",
+    "note_IDEAndTools/Neovim/002.002-Toggleterm.nvim.md",
+    "note_IDEAndTools/Neovim/002.004-Leap.nvim.md",
+    "note_IDEAndTools/Neovim/002.003-overseer.nvim.md",
+    "note_IDEAndTools/Neovim/002.007-ultimate-autopair.nvim.md",
+    "002.007-ultimate-autopair.nvim.md",
+    "note_IDEAndTools/Neovim/002.006-nvim.surround.md",
+    "note_IDEAndTools/Dev/Task/001.002-Syntax just.md",
+    "note_software/CasualSoftware/Image/003-ShareX.md",
+    "note_Knowledge/journal/OtherKnowledgeJournal.md",
     "note_algo_lang/journal/LangJournal.md",
     "note_software/journal/OSJournal.md",
-    "note_software/CasualSoftware/Image/003-ShareX.md",
     "note_software/journal/SoftwareJournal.md",
-    "note_Knowledge/journal/OtherKnowledgeJournal.md",
     "note_Knowledge/journal/VocabJournal.md",
     "note_software/CasualSoftware/Video/001-Shotcut.md",
     "note_software/journal/WebJournal.md",
@@ -242,28 +249,16 @@
     "note_os_web/SDK/WebProgJournal.md",
     "note_entertainment/note_discography/MusicJournal.md",
     "note_Embedded/HardwareJournal.md",
-    "note_entertainment/note_discography/Lyric/MixedNuts-Lyrics.md",
     "asset/img/Pasted image 20240914160632.png",
     "asset/img/Pasted image 20240914160247.png",
     "asset/img/Pasted image 20240910172725.png",
     "Pasted image 20240914160632.png",
     "Pasted image 20240914160247.png",
-    "note_Business/WorkJournal.md",
-    "note_entertainment/note_discography/Lyric/Kickback-Lyrics.md",
-    "note_software/Obsidian/004.001-Obsidian Plugins.md",
     "mpv-shot0001.jpg",
-    "note_software/CasualSoftware/Archived/002.001-Youtube Music.md",
-    "note_software/005-Clipboard manager.md",
-    "note_software/CasualSoftware/CopyQ/005.001-CopyQ.md",
     "73c9afb0f57ff7f64c1f0f5d8943bc5.jpg",
     "Pasted image 20240910172725.png",
-    "note_software/CasualSoftware/CopyQ/005.002-CLI CopyQ.md",
-    "005.003-Keybinding CopyQ.md",
-    "note_software/CasualSoftware/Image/001-Krita.md",
     "note_software/CasualSoftware/Image",
     "note_software/CasualSoftware/CopyQ",
-    "note_software/004-CLI Software.md",
-    "note_IDEAndTools/Dev/VCS/003.001-Git tools.md",
     "mpv-shot0002.jpg",
     "note_entertainment/note_discography/Lyric",
     "flash_log.txt",
