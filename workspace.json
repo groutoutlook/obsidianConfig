@@ -22,12 +22,12 @@
             }
           },
           {
-            "id": "725b4d1083f4ac2b",
+            "id": "8fbbd1b4f0d37454",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/CasualSoftware/Image/002-Umi-OCR.md",
+                "file": "note_software/journal/SoftwareJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -35,19 +35,20 @@
             }
           },
           {
-            "id": "5561b79e8b3659cd",
+            "id": "22049b8e89d646fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "002.005-EmacsInsert.md",
+                "file": "note_software/CasualSoftware/Music/001-Beets.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "692aabec644967b3",
@@ -66,8 +67,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "bd35ffb23419c8b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_Knowledge/journal/VocabJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +101,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "neovim",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -135,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_Knowledge/journal/OtherKnowledgeJournal.md"
+                "file": "note_software/CasualSoftware/Music/001-Beets.md"
               }
             }
           },
@@ -145,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_Knowledge/journal/OtherKnowledgeJournal.md",
+                "file": "note_software/CasualSoftware/Music/001-Beets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_Knowledge/journal/OtherKnowledgeJournal.md",
+                "file": "note_software/CasualSoftware/Music/001-Beets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,8 +210,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5,
-    "collapsed": true
+    "width": 349.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,12 +230,23 @@
       "vim-toggle:Toggle Vim Mode": false
     }
   },
-  "active": "7fe89fdd8ab1f2b8",
+  "active": "22049b8e89d646fa",
   "lastOpenFiles": [
-    "note_software/CasualSoftware/Image/002-Umi-OCR.md",
+    "note_software/CasualSoftware/mpv/001-mpv.md",
+    "note_software/CasualSoftware/Music/001-Beets.md",
+    "note_software/journal/SoftwareJournal.md",
+    "note_Knowledge/journal/VocabJournal.md",
+    "note_software/Browser/003.001-SearchEngine.md",
+    "note_software/journal/WebJournal.md",
+    "note_entertainment/note_discography/MusicJournal.md",
+    "note_Knowledge/journal/OtherKnowledgeJournal.md",
+    "note_software/Obsidian/004.002-Obsidian Utils.md",
+    "note_software/CasualSoftware/Music",
     "002.005-EmacsInsert.md",
-    "note_software/Obsidian/004.001.004-Emacs Text Editor.md",
     "note_software/Obsidian/004.001-Obsidian Plugins.md",
+    "note_algo_lang/journal/LangJournal.md",
+    "note_software/CasualSoftware/Image/002-Umi-OCR.md",
+    "note_software/Obsidian/004.001.004-Emacs Text Editor.md",
     "note_IDEAndTools/Neovim/002-Plugin Neovim.md",
     "note_IDEAndTools/Neovim/002.005-dial.nvim.md",
     "note_IDEAndTools/Neovim/002.002-Toggleterm.nvim.md",
@@ -232,23 +257,13 @@
     "note_IDEAndTools/Neovim/002.006-nvim.surround.md",
     "note_IDEAndTools/Dev/Task/001.002-Syntax just.md",
     "note_software/CasualSoftware/Image/003-ShareX.md",
-    "note_Knowledge/journal/OtherKnowledgeJournal.md",
-    "note_algo_lang/journal/LangJournal.md",
     "note_software/journal/OSJournal.md",
-    "note_software/journal/SoftwareJournal.md",
-    "note_Knowledge/journal/VocabJournal.md",
     "note_software/CasualSoftware/Video/001-Shotcut.md",
-    "note_software/journal/WebJournal.md",
-    "note_software/CasualSoftware/Archived/001.001-Volume Mixer.md",
-    "note_software/CasualSoftware/TerminalCasual/006.001-Jrnl.md",
     "note_software/CasualSoftware/Video",
     "note_software/CasualSoftware/TerminalCasual",
     "note_software/CasualSoftware/Docs",
     "note_software/CasualSoftware/Archived",
     "Pasted image 20240914192020.png",
-    "note_os_web/SDK/WebProgJournal.md",
-    "note_entertainment/note_discography/MusicJournal.md",
-    "note_Embedded/HardwareJournal.md",
     "asset/img/Pasted image 20240914160632.png",
     "asset/img/Pasted image 20240914160247.png",
     "asset/img/Pasted image 20240910172725.png",
@@ -263,7 +278,6 @@
     "note_entertainment/note_discography/Lyric",
     "flash_log.txt",
     "asset/sheet/elec/WS2811.pdf",
-    "WS2811.pdf",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]
