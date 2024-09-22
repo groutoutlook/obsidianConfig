@@ -52,15 +52,14 @@ exmap closeAll obcommand workspace:close-window
 exmap closeTab obcommand workspace:close
 nmap qq :closeTab
 nmap ;q :closeTab
-imap qq :closeTab
+imap ;q :closeTab
 nmap ;wq :closeTab
-exmap q obcommand workspace:close
-" template
-" exmap insertTemplate obcommand insert-template 
-" nmap ;t :insertTemplate
+" exmap q obcommand workspace:close
+
+" INFO: Vimium C mimicking. This is actually restore tab.
 exmap undoTab obcommand workspace:undo-close-pane
 nmap ;t :undoTab
-nmap tt :undoTab
+nmap tt :undoTab 
 imap ;t :undoTab
 
 
@@ -155,8 +154,6 @@ nmap ;,k :pluginHotkeys
 " INFO: or the current line on the [[All commands]] note or elsewhere..
 
 
-
-
 " nmap <c-w><c-w>
 " INFO: mapping the short ci/yi/ca/ya/ct/yt
 nmap yi9 yi(
@@ -164,3 +161,10 @@ nmap yi; yi"
 
 nmap ci9 ci(
 nmap ci; ci"
+
+" INFO: detach from current windows. Purpose is showing note in another places.
+" Same as my current VimiumC settings
+exmap newWindow obcommand workspace:move-to-new-window
+nmap ;w :newWindow
+imap ;w :newWindow
+nmap ;W :newWindow
