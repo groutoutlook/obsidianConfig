@@ -9,7 +9,20 @@
         "dimension": 50,
         "children": [
           {
-            "id": "7fe89fdd8ab1f2b8",
+            "id": "8fbbd1b4f0d37454",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_Items/TaobaoJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0229cff7a39dc794",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,35 +33,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "8fbbd1b4f0d37454",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/journal/SoftwareJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "22049b8e89d646fa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/CasualSoftware/Music/001-Beets.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "692aabec644967b3",
@@ -69,12 +55,12 @@
             }
           },
           {
-            "id": "bd35ffb23419c8b3",
+            "id": "723e12441e4063d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_Knowledge/journal/VocabJournal.md",
+                "file": "note_Business/WorkJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -150,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_software/CasualSoftware/Music/001-Beets.md"
+                "file": "note_Business/WorkJournal.md"
               }
             }
           },
@@ -160,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_software/CasualSoftware/Music/001-Beets.md",
+                "file": "note_Business/WorkJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_software/CasualSoftware/Music/001-Beets.md",
+                "file": "note_Business/WorkJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +196,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 349.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,51 +217,50 @@
       "vim-toggle:Toggle Vim Mode": false
     }
   },
-  "active": "22049b8e89d646fa",
+  "active": "723e12441e4063d4",
   "lastOpenFiles": [
-    "note_software/CasualSoftware/mpv/001-mpv.md",
-    "note_software/CasualSoftware/Music/001-Beets.md",
+    "note_Items/TaobaoJournal.md",
+    "note_Business/WorkJournal.md",
+    "Pasted image 20240921184240.png",
+    "note_IDEAndTools/Dev/CLI/001.006-fzf.md",
     "note_software/journal/SoftwareJournal.md",
+    "note_software/Obsidian/004.001.003-Obsidian.vimrc.md",
+    "note_IDEAndTools/Neovim/002-Plugin Neovim.md",
+    "note_software/Obsidian/004.001-Obsidian Plugins.md",
+    "note_software/Obsidian/004.001.003.001-All commands.md",
+    "note_Knowledge/journal/OtherKnowledgeJournal.md",
+    "note_Items/1688Journal.md",
+    "asset/img/Pasted image 20240914192020.png",
+    "asset/img/73c9afb0f57ff7f64c1f0f5d8943bc5.jpg",
+    "asset/img/144d3a337e50da4b30badb3e9ac0036.png",
+    "Pasted image 20240920161920.png",
+    "004.001.005-Snippets Manager.md",
+    "Pasted image 20240914192020.png",
+    "73c9afb0f57ff7f64c1f0f5d8943bc5.jpg",
+    "note_software/Obsidian/004.001.001-Keyshots.md",
+    "note_entertainment/note_discography/MusicJournal.md",
     "note_Knowledge/journal/VocabJournal.md",
+    "144d3a337e50da4b30badb3e9ac0036 1.png",
+    "144d3a337e50da4b30badb3e9ac0036.png",
+    "templates/PowershellTopic.md",
+    "templates/NeovimKeybinding.md",
+    "templates/CommandInterface.md",
+    "templates/NoteFromScratch.md",
+    "templates/SimpleKeybindTable.md",
+    "note_software/CasualSoftware/Music/001-Beets.md",
+    "note_algo_lang/02-C++/CompilerTools/005.002.004-REPL for C++.md",
+    "note_software/CasualSoftware/mpv/001-mpv.md",
     "note_software/Browser/003.001-SearchEngine.md",
     "note_software/journal/WebJournal.md",
-    "note_entertainment/note_discography/MusicJournal.md",
-    "note_Knowledge/journal/OtherKnowledgeJournal.md",
     "note_software/Obsidian/004.002-Obsidian Utils.md",
     "note_software/CasualSoftware/Music",
-    "002.005-EmacsInsert.md",
-    "note_software/Obsidian/004.001-Obsidian Plugins.md",
-    "note_algo_lang/journal/LangJournal.md",
-    "note_software/CasualSoftware/Image/002-Umi-OCR.md",
-    "note_software/Obsidian/004.001.004-Emacs Text Editor.md",
-    "note_IDEAndTools/Neovim/002-Plugin Neovim.md",
-    "note_IDEAndTools/Neovim/002.005-dial.nvim.md",
-    "note_IDEAndTools/Neovim/002.002-Toggleterm.nvim.md",
-    "note_IDEAndTools/Neovim/002.004-Leap.nvim.md",
-    "note_IDEAndTools/Neovim/002.003-overseer.nvim.md",
-    "note_IDEAndTools/Neovim/002.007-ultimate-autopair.nvim.md",
-    "002.007-ultimate-autopair.nvim.md",
-    "note_IDEAndTools/Neovim/002.006-nvim.surround.md",
-    "note_IDEAndTools/Dev/Task/001.002-Syntax just.md",
-    "note_software/CasualSoftware/Image/003-ShareX.md",
-    "note_software/journal/OSJournal.md",
-    "note_software/CasualSoftware/Video/001-Shotcut.md",
     "note_software/CasualSoftware/Video",
     "note_software/CasualSoftware/TerminalCasual",
     "note_software/CasualSoftware/Docs",
     "note_software/CasualSoftware/Archived",
-    "Pasted image 20240914192020.png",
     "asset/img/Pasted image 20240914160632.png",
-    "asset/img/Pasted image 20240914160247.png",
-    "asset/img/Pasted image 20240910172725.png",
-    "Pasted image 20240914160632.png",
-    "Pasted image 20240914160247.png",
-    "mpv-shot0001.jpg",
-    "73c9afb0f57ff7f64c1f0f5d8943bc5.jpg",
-    "Pasted image 20240910172725.png",
     "note_software/CasualSoftware/Image",
     "note_software/CasualSoftware/CopyQ",
-    "mpv-shot0002.jpg",
     "note_entertainment/note_discography/Lyric",
     "flash_log.txt",
     "asset/sheet/elec/WS2811.pdf",
