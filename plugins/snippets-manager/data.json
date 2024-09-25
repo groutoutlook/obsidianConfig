@@ -1,3 +1,4 @@
 {
-  "snippetPath": "templates"
+  "snippetPath": "templates",
+  "alfredSupport": false
 }

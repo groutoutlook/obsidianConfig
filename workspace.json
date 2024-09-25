@@ -34,7 +34,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "692aabec644967b3",
@@ -55,7 +56,7 @@
             }
           },
           {
-            "id": "723e12441e4063d4",
+            "id": "e3fe13f1b343deae",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -217,18 +218,22 @@
       "vim-toggle:Toggle Vim Mode": false
     }
   },
-  "active": "723e12441e4063d4",
+  "active": "e3fe13f1b343deae",
   "lastOpenFiles": [
-    "note_Items/TaobaoJournal.md",
+    "note_Knowledge/journal/OtherKnowledgeJournal.md",
     "note_Business/WorkJournal.md",
     "Pasted image 20240921184240.png",
-    "note_IDEAndTools/Dev/CLI/001.006-fzf.md",
+    "note_os_windows/Utils/001-Windows.md",
+    "note_entertainment/note_discography/Lyric/MixedNuts-Lyrics.md",
+    "note_software/Obsidian/004.001-Obsidian Plugins.md",
+    "Pasted image 20240924175032.png",
     "note_software/journal/SoftwareJournal.md",
+    "note_os_windows/Utils/GUI/001.001-Powertoys.md",
+    "note_Items/TaobaoJournal.md",
+    "note_IDEAndTools/Dev/CLI/001.006-fzf.md",
     "note_software/Obsidian/004.001.003-Obsidian.vimrc.md",
     "note_IDEAndTools/Neovim/002-Plugin Neovim.md",
-    "note_software/Obsidian/004.001-Obsidian Plugins.md",
     "note_software/Obsidian/004.001.003.001-All commands.md",
-    "note_Knowledge/journal/OtherKnowledgeJournal.md",
     "note_Items/1688Journal.md",
     "asset/img/Pasted image 20240914192020.png",
     "asset/img/73c9afb0f57ff7f64c1f0f5d8943bc5.jpg",
@@ -250,15 +255,11 @@
     "note_software/CasualSoftware/Music/001-Beets.md",
     "note_algo_lang/02-C++/CompilerTools/005.002.004-REPL for C++.md",
     "note_software/CasualSoftware/mpv/001-mpv.md",
-    "note_software/Browser/003.001-SearchEngine.md",
-    "note_software/journal/WebJournal.md",
-    "note_software/Obsidian/004.002-Obsidian Utils.md",
     "note_software/CasualSoftware/Music",
     "note_software/CasualSoftware/Video",
     "note_software/CasualSoftware/TerminalCasual",
     "note_software/CasualSoftware/Docs",
     "note_software/CasualSoftware/Archived",
-    "asset/img/Pasted image 20240914160632.png",
     "note_software/CasualSoftware/Image",
     "note_software/CasualSoftware/CopyQ",
     "note_entertainment/note_discography/Lyric",

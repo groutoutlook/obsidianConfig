@@ -178,6 +178,7 @@ var SETTING_TYPE = {
 };
 var DEFAULT_SETTINGS = {
   [SETTING_TYPE.goToPreviousNextTab]: {
+    enableMultiWIndow: false,
     focusColor: "#00b4e0",
     mainModifierKey: MODIFIER_KEY.ctrl,
     subModifierKey: MODIFIER_KEY.shift,
@@ -186,6 +187,7 @@ var DEFAULT_SETTINGS = {
     howToNextTab: HOW_TO_NEXT_TAB.useSubModifierKey
   },
   [SETTING_TYPE.openTabSelector]: {
+    enableMultiWIndow: false,
     showAliases: false,
     replaceToAliases: false,
     showPaths: false,
@@ -196,9 +198,11 @@ var DEFAULT_SETTINGS = {
     enableClose: true
   },
   [SETTING_TYPE.showTabShortcuts]: {
+    enableMultiWIndow: false,
     characters: "asdfghjkl;qwertyuiopzxcvbnm,./"
   },
   [SETTING_TYPE.searchTab]: {
+    enableMultiWIndow: false,
     showAliases: false,
     includeAliases: false,
     showPaths: false,
@@ -301,6 +305,14 @@ var SettingTab = class extends import_obsidian2.PluginSettingTab {
   setForGoToPrevNextTabCommands(detailsEl) {
     const settingType = SETTING_TYPE.goToPreviousNextTab;
     const settings = this.plugin.settings[settingType];
+    if (import_obsidian2.Platform.isDesktop) {
+      new import_obsidian2.Setting(detailsEl).setName(`Enable multiple window`).setDesc(`When enabled, all window's tabs is selectable. When disabled, only active window's tabs is selectable.`).addToggle(
+        (toggle) => toggle.setValue(settings.enableMultiWIndow).onChange(async (value) => {
+          settings.enableMultiWIndow = value;
+          await this.plugin.saveData(this.plugin.settings);
+        })
+      );
+    }
     new import_obsidian2.Setting(detailsEl).setName("Color of button frame on focus").setDesc("Choose your favorite color.").addColorPicker(
       (colorPicker) => colorPicker.setValue(settings.focusColor).onChange(async (value) => {
         settings.focusColor = value;
@@ -406,6 +418,14 @@ var SettingTab = class extends import_obsidian2.PluginSettingTab {
   setForOpenTabSelectorCommand(detailsEl) {
     const settingType = SETTING_TYPE.openTabSelector;
     const settings = this.plugin.settings[settingType];
+    if (import_obsidian2.Platform.isDesktop) {
+      new import_obsidian2.Setting(detailsEl).setName(`Enable multiple window`).setDesc(`When enabled, all window's tabs is selectable. When disabled, only active window's tabs is selectable.`).addToggle(
+        (toggle) => toggle.setValue(settings.enableMultiWIndow).onChange(async (value) => {
+          settings.enableMultiWIndow = value;
+          await this.plugin.saveData(this.plugin.settings);
+        })
+      );
+    }
     new import_obsidian2.Setting(detailsEl).setName(`Show aliases`).setDesc(`When enabled, show file's aliases on button.`).addToggle(
       (toggle) => toggle.setValue(settings.showAliases).onChange(async (value) => {
         settings.showAliases = value;
@@ -490,6 +510,14 @@ var SettingTab = class extends import_obsidian2.PluginSettingTab {
   setForShowTabShortcutCommand(detailsEl) {
     const settingType = SETTING_TYPE.showTabShortcuts;
     const settings = this.plugin.settings[settingType];
+    if (import_obsidian2.Platform.isDesktop) {
+      new import_obsidian2.Setting(detailsEl).setName(`Enable multiple window`).setDesc(`When enabled, all window's tabs is selectable. When disabled, only active window's tabs is selectable.`).addToggle(
+        (toggle) => toggle.setValue(settings.enableMultiWIndow).onChange(async (value) => {
+          settings.enableMultiWIndow = value;
+          await this.plugin.saveData(this.plugin.settings);
+        })
+      );
+    }
     new import_obsidian2.Setting(detailsEl).setName("Characters used for shortcut hints").setDesc(`Enter non-duplicate alphanumeric characters or symbols.`).addText((text) => {
       let orgCharacters = settings.characters;
       const textComponent = text.setPlaceholder("Enter characters").setValue(settings.characters).onChange(async (value) => {
@@ -522,6 +550,14 @@ var SettingTab = class extends import_obsidian2.PluginSettingTab {
   setForSearchTabCommand(detailsEl) {
     const settingType = SETTING_TYPE.searchTab;
     const settings = this.plugin.settings[settingType];
+    if (import_obsidian2.Platform.isDesktop) {
+      new import_obsidian2.Setting(detailsEl).setName(`Enable multiple window`).setDesc(`When enabled, all window's tabs is selectable. When disabled, only active window's tabs is selectable.`).addToggle(
+        (toggle) => toggle.setValue(settings.enableMultiWIndow).onChange(async (value) => {
+          settings.enableMultiWIndow = value;
+          await this.plugin.saveData(this.plugin.settings);
+        })
+      );
+    }
     new import_obsidian2.Setting(detailsEl).setName(`Show aliases`).setDesc(`When enabled, show file's aliases on list item.`).addToggle(
       (toggle) => toggle.setValue(settings.showAliases).onChange(async (value) => {
         settings.showAliases = value;
@@ -760,11 +796,7 @@ var TabSelectorModal = class extends import_obsidian3.Modal {
       return;
     }
     this.close();
-    this.app.workspace.setActiveLeaf(leaf);
-    const view = this.app.workspace.getActiveViewOfType(import_obsidian3.MarkdownView);
-    if (view) {
-      view.editor.focus();
-    }
+    this.app.workspace.setActiveLeaf(leaf, { focus: true });
   }
   clickCloseLeafButton(leaf, divEl) {
     if (leaf.deleted) {
@@ -1014,11 +1046,7 @@ var TabHistoryModal = class extends import_obsidian4.Modal {
     focusLeafEl.addClass("is-focus");
   }
   switchToFocusedTab(leaf) {
-    this.app.workspace.setActiveLeaf(leaf);
-    const view = this.app.workspace.getActiveViewOfType(import_obsidian4.MarkdownView);
-    if (view) {
-      view.editor.focus();
-    }
+    this.app.workspace.setActiveLeaf(leaf, { focus: true });
     this.close();
   }
   clickCloseLeafButton(leaf, divEl) {
@@ -1048,10 +1076,14 @@ var TabShortcutsModal = class extends import_obsidian5.Modal {
     this.leaves = [];
     this.chars = [];
     this.tabHeaderContainers = [];
+    this.windows = [];
+    this.labelContainerMap = /* @__PURE__ */ new Map();
     this.eventListenerFunc = {
       keyup: () => {
       },
       resize: () => {
+      },
+      click: () => {
       }
     };
     this.settings = settings;
@@ -1065,75 +1097,79 @@ var TabShortcutsModal = class extends import_obsidian5.Modal {
     return this.settings.showTabShortcuts;
   }
   onOpen() {
-    var _a;
     this.modalEl.addClasses(["tab-shortcuts-modal", "tsh-modal"]);
-    this.labelsContainer = createDiv("tab-shortcuts-container");
-    (_a = this.modalEl.parentElement) == null ? void 0 : _a.append(this.labelsContainer);
-    const tabs = this.generateTabs(this.leaves);
-    this.showShortcutElements(tabs);
-    this.tabHeaderContainers.forEach((container) => container == null ? void 0 : container.addClass("tsh-header-container-inner"));
+    this.eventListenerFunc.click = this.handlingClickEvent.bind(this);
     this.eventListenerFunc.keyup = this.handlingKeyupEvent.bind(this);
     this.eventListenerFunc.resize = this.handlingResizeEvent.bind(this);
     window.addEventListener("keyup", this.eventListenerFunc.keyup);
     window.addEventListener("resize", this.eventListenerFunc.resize);
+    this.windows = this.generateWindows(this.leaves);
+    this.showShortcutElements(this.windows);
+    this.tabHeaderContainers.forEach((container) => container == null ? void 0 : container.addClass("tsh-header-container-inner"));
   }
   onClose() {
+    this.windows.forEach(({ window: window2 }) => window2.removeEventListener("click", this.eventListenerFunc.click));
     window.removeEventListener("keyup", this.eventListenerFunc.keyup);
     window.removeEventListener("resize", this.eventListenerFunc.resize);
     this.tabHeaderContainers.forEach((container) => container == null ? void 0 : container.removeClass("tsh-header-container-inner"));
+    this.labelContainerMap.forEach((el) => el.remove());
     this.contentEl.empty();
-    this.labelsContainer.remove();
   }
-  generateTabs(leaves) {
+  generateWindows(leaves) {
     return leaves.reduce((acc, cur) => {
-      var _a;
-      const tab = acc.find((tab2) => {
+      var _a, _b, _c;
+      const win = acc.find((window2) => {
         var _a2;
-        return tab2.id === ((_a2 = cur.parent) == null ? void 0 : _a2.id) || "";
+        return window2.id === ((_a2 = cur.parent) == null ? void 0 : _a2.id) || "";
       });
-      if (tab) {
-        tab.leaves = [...tab.leaves, cur];
+      if (win) {
+        win.leaves = [...win.leaves, cur];
         return acc;
       } else {
-        return [...acc, { id: ((_a = cur.parent) == null ? void 0 : _a.id) || "", leaves: [cur] }];
+        const newWindow = (_b = (_a = cur.containerEl) == null ? void 0 : _a.ownerDocument.defaultView) != null ? _b : window;
+        newWindow.addEventListener("click", this.eventListenerFunc.click);
+        return [...acc, { id: ((_c = cur.parent) == null ? void 0 : _c.id) || "", window: newWindow, leaves: [cur] }];
       }
     }, []);
   }
-  showShortcutElements(tabs) {
-    tabs.forEach((tab) => {
+  showShortcutElements(windows) {
+    windows.forEach((win) => {
       var _a, _b, _c;
-      const tabContainer = (_c = (_b = (_a = tab.leaves[0]) == null ? void 0 : _a.containerEl) == null ? void 0 : _b.parentElement) == null ? void 0 : _c.parentElement;
+      const tabContainer = (_c = (_b = (_a = win.leaves[0]) == null ? void 0 : _a.containerEl) == null ? void 0 : _b.parentElement) == null ? void 0 : _c.parentElement;
       this.tabHeaderContainers.push(tabContainer == null ? void 0 : tabContainer.querySelector(".workspace-tab-header-container-inner"));
       const headers = tabContainer == null ? void 0 : tabContainer.querySelectorAll(".workspace-tab-header-container-inner .workspace-tab-header");
       if (!headers) {
         return;
       }
-      tab.leaves.forEach((leaf, idx) => {
+      const container = createDiv("tab-shortcuts-container");
+      win.window.document.body.append(container);
+      this.labelContainerMap.set(win.id, container);
+      win.leaves.forEach((leaf, idx) => {
         if (!this.chars.length) {
           return;
         }
         const pos = headers[idx].getBoundingClientRect();
         createDiv("tsh-label", (el) => {
+          var _a2;
           el.setText(leaf.name || "");
           el.setCssProps({
             top: `${pos.bottom}px`,
             left: `calc(${pos.left}px + 0.5rem)`
           });
-          this.labelsContainer.appendChild(el);
+          (_a2 = this.labelContainerMap.get(win.id)) == null ? void 0 : _a2.appendChild(el);
         });
       });
     });
+  }
+  handlingClickEvent() {
+    this.close();
   }
   handlingKeyupEvent(ev) {
     if (this.chars.includes(ev.key)) {
       this.close();
       const leaf = this.leaves.find((leaf2) => leaf2.name === ev.key);
       if (leaf) {
-        this.app.workspace.setActiveLeaf(leaf);
-        const view = this.app.workspace.getActiveViewOfType(import_obsidian5.MarkdownView);
-        if (view) {
-          view.editor.focus();
-        }
+        this.app.workspace.setActiveLeaf(leaf, { focus: true });
       }
       ev.preventDefault();
       return;
@@ -1184,11 +1220,7 @@ var TabSearchModal = class extends import_obsidian6.FuzzySuggestModal {
     return this.getItems().filter((item) => this.getReferenceStrings(item).some((refString) => (0, import_obsidian6.prepareFuzzySearch)(query)(refString))).map((item) => ({ item, match: { score: 0, matches: [] } }));
   }
   onChooseItem(leaf) {
-    this.app.workspace.setActiveLeaf(leaf);
-    const view = this.app.workspace.getActiveViewOfType(import_obsidian6.MarkdownView);
-    if (view) {
-      view.editor.focus();
-    }
+    this.app.workspace.setActiveLeaf(leaf, { focus: true });
   }
   renderSuggestion(item, suggestionItemEl) {
     suggestionItemEl.createDiv("tse-item-row", (el) => {
@@ -1282,37 +1314,50 @@ var TabSelector = class extends import_obsidian7.Plugin {
     await this.saveData(this.settings);
   }
   openTabSelectorModal() {
-    const leaves = this.generateLeaves();
+    const enableMultiWIndow = this.settings.openTabSelector.enableMultiWIndow;
+    const leaves = this.generateLeaves(enableMultiWIndow);
     new TabSelectorModal(this.app, this.settings, leaves).open();
   }
   openTabHistoryModal(isPrevCommand) {
-    const leaves = this.generateLeaves();
+    const enableMultiWIndow = this.settings.goToPreviousNextTab.enableMultiWIndow;
+    const leaves = this.generateLeaves(enableMultiWIndow);
     new TabHistoryModal(this.app, this.settings, leaves, isPrevCommand).open();
   }
   showTabShortcutsModal() {
-    const leaves = this.generateLeaves();
+    const enableMultiWIndow = this.settings.showTabShortcuts.enableMultiWIndow;
+    const leaves = this.generateLeaves(enableMultiWIndow);
     new TabShortcutsModal(this.app, this.settings, leaves).open();
   }
   openTabSearchModal() {
-    const leaves = this.generateLeaves();
+    const enableMultiWIndow = this.settings.searchTab.enableMultiWIndow;
+    const leaves = this.generateLeaves(enableMultiWIndow);
     new TabSearchModal(this.app, this.settings, leaves).open();
   }
-  generateLeaves() {
+  generateLeaves(isEnabledMultiWindow) {
     var _a;
     const rootLeafIds = [];
     this.app.workspace.iterateRootLeaves((leaf) => {
       rootLeafIds.push((leaf == null ? void 0 : leaf.id) || "");
     });
     const targetLeaves = [];
-    const { id: rootId, type: rootType } = (_a = this.app.workspace.getMostRecentLeaf()) == null ? void 0 : _a.getRoot();
-    this.app.workspace.iterateAllLeaves((leaf) => {
-      if (rootId !== leaf.getRoot().id) {
-        return;
-      }
-      if (leaf.id && rootLeafIds.includes(leaf.id) || rootType === "floating") {
+    if (import_obsidian7.Platform.isDesktop && isEnabledMultiWindow) {
+      this.app.workspace.iterateAllLeaves((leaf) => {
+        if (leaf.getRoot().containerEl.hasClass("mod-sidedock")) {
+          return;
+        }
         targetLeaves.push(leaf);
-      }
-    });
+      });
+    } else {
+      const { id: rootId, type: rootType } = (_a = this.app.workspace.getMostRecentLeaf()) == null ? void 0 : _a.getRoot();
+      this.app.workspace.iterateAllLeaves((leaf) => {
+        if (rootId !== leaf.getRoot().id) {
+          return;
+        }
+        if (leaf.id && rootLeafIds.includes(leaf.id) || rootType === "floating") {
+          targetLeaves.push(leaf);
+        }
+      });
+    }
     return targetLeaves;
   }
   async migrateSettingValues() {
