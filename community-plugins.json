@@ -6,10 +6,12 @@
   "obsidian-advanced-uri",
   "codestats",
   "obsidian-vimrc-support",
-  "qatt",
   "vim-yank-highlight",
   "vim-toggle",
   "colored-tags",
   "emacs-text-editor",
-  "snippets-manager"
+  "snippets-manager",
+  "links",
+  "actions-uri",
+  "virtual-linker"
 ]

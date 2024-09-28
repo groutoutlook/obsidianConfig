@@ -69,9 +69,87 @@
                     "source": false
                   }
                 }
+              },
+              {
+                "id": "a01f77da181b6630",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_software/Browser/006.002.002-Mode Vimium C.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "3af0f9881df52e6d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_software/Browser/006.002.003-Keybinding Remap Vimium C.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "145e1bf5fbbd999a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_IDEAndTools/Dev/CLI/001.008-CLI eza.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "c759ffd9b92df121",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_IDEAndTools/Dev/CLI/001.003-fd.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "540443804ceb5d1b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_IDEAndTools/Dev/CLI/001.003.001-CLI fd.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "2764cb411d0048ce",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "note_Knowledge/journal/VocabJournal.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
               }
             ],
-            "currentTab": 1
+            "currentTab": 5
           }
         ],
         "direction": "vertical"
@@ -139,7 +217,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "note_Business/WorkJournal.md"
+                    "file": "note_IDEAndTools/Dev/CLI/001.003-fd.md"
                   }
                 }
               },
@@ -149,7 +227,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "note_Business/WorkJournal.md",
+                    "file": "note_IDEAndTools/Dev/CLI/001.003-fd.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -166,7 +244,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "note_Business/WorkJournal.md",
+                    "file": "note_IDEAndTools/Dev/CLI/001.003-fd.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -220,8 +298,8 @@
           "vim-toggle:Toggle Vim Mode": false
         }
       },
-      "active": "e3fe13f1b343deae",
-      "mtime": "2024-09-25T18:58:22+07:00"
+      "active": "c759ffd9b92df121",
+      "mtime": "2024-09-27T11:46:05+07:00"
     },
     "obs-nvim": {
       "main": {
