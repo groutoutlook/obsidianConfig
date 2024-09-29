@@ -12,5 +12,5 @@
     "sync-conflict"
   ],
   "showRibbon": false,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": false
 }

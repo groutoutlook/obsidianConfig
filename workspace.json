@@ -27,20 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_Business/WorkJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0746a5c4769166da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_Business/ConnectionJournal.md",
+                "file": "note_algo_lang/journal/LangJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -48,7 +35,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "692aabec644967b3",
@@ -80,8 +67,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0746a5c4769166da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_Business/ConnectionJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_Knowledge/journal/VocabJournal.md"
+                "file": "note_Business/ConnectionJournal.md"
               }
             }
           },
@@ -159,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_Knowledge/journal/VocabJournal.md",
+                "file": "note_Business/ConnectionJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_Knowledge/journal/VocabJournal.md",
+                "file": "note_Business/ConnectionJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -227,13 +228,14 @@
       "vim-toggle:Toggle Vim Mode": false
     }
   },
-  "active": "2764cb411d0048ce",
+  "active": "0746a5c4769166da",
   "lastOpenFiles": [
     "note_Business/ConnectionJournal.md",
+    "note_algo_lang/journal/LangJournal.md",
+    "note_Business/WorkJournal.md",
+    "note_Knowledge/journal/VocabJournal.md",
     "note_Business/note_Business.md",
     "note_Items/TaobaoJournal.md",
-    "note_Knowledge/journal/VocabJournal.md",
-    "note_Business/WorkJournal.md",
     "note_Knowledge/journal/PeopleJournal.md",
     "asset/img/Pasted image 20240924175032.png",
     "asset/img/EcoPaste_8kRfrZ59Coq-OnVLmDdNC.png",
@@ -263,7 +265,6 @@
     "note_software/Obsidian/004.001.003-Obsidian.vimrc.md",
     "note_IDEAndTools/Neovim/002-Plugin Neovim.md",
     "note_software/Obsidian/004.001.003.001-All commands.md",
-    "note_Items/1688Journal.md",
     "asset/img/Pasted image 20240914192020.png",
     "note_software/CasualSoftware/Music",
     "note_software/CasualSoftware/Video",
