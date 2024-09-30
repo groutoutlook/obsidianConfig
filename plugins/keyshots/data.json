@@ -5,7 +5,7 @@
   "shuffle_rounds_amount": 10,
   "carets_via_double_ctrl": false,
   "quick_switch_via_double_shift": true,
-  "command_palette_via_double_ctrl": true,
+  "command_palette_via_double_ctrl": false,
   "callouts_list": [],
   "open_file_command": "omnisearch:show-modal",
   "modal_table_last_used_rows": 2,

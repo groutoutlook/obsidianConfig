@@ -168,3 +168,10 @@ exmap newWindow obcommand workspace:move-to-new-window
 nmap ;w :newWindow
 imap ;w :newWindow
 nmap ;W :newWindow
+
+
+nmap ;g Gzz
+nmap <Space>z Gzz
+imap ;g <Esc>Gzza
+
+
