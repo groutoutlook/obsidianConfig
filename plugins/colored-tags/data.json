@@ -1903,7 +1903,22 @@
     "debugger/stdio": 9,
     "debugger/stdio/output": 1,
     "branch": 1264,
-    "conditional": 1265
+    "conditional": 1265,
+    "linux/libc": 9,
+    "linker": 1266,
+    "linker/static": 1,
+    "utils/libc": 6,
+    "typedef": 1267,
+    "powertoys/keyman": 1,
+    "virtualization": 1268,
+    "sandbox": 1269,
+    "hyperv": 1270,
+    "system/registry": 2,
+    "keymapping": 1271,
+    "powertoys/launcher": 2,
+    "accessibility": 1272,
+    "christianity": 1273,
+    "tuils": 1274
   },
   "_version": 3
 }

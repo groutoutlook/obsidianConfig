@@ -13,5 +13,7 @@
   "snippets-manager",
   "links",
   "actions-uri",
-  "virtual-linker"
+  "virtual-linker",
+  "json-table",
+  "obsidian-import-json"
 ]
