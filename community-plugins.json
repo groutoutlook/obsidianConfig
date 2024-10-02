@@ -7,13 +7,11 @@
   "codestats",
   "obsidian-vimrc-support",
   "vim-yank-highlight",
-  "vim-toggle",
   "colored-tags",
   "emacs-text-editor",
   "snippets-manager",
   "links",
-  "actions-uri",
-  "virtual-linker",
   "json-table",
-  "obsidian-import-json"
+  "obsidian-import-json",
+  "obsidian-shellcommands"
 ]

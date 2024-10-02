@@ -1928,7 +1928,21 @@
     "asset/lowpoly": 2,
     "art/2d": 1,
     "format/png": 16,
-    "options": 1278
+    "options": 1278,
+    "github/action": 3,
+    "ai": 1279,
+    "ai/copilot": 1,
+    "OnP": 1280,
+    "dashboard": 1281,
+    "advertising": 1282,
+    "demoscene": 1283,
+    "interact": 1284,
+    "format/midi": 17,
+    "driver/windows": 2,
+    "framework/webview": 18,
+    "powertoys/peek": 3,
+    "keybinding/default": 1,
+    "search/fuzzy": 1
   },
   "_version": 3
 }

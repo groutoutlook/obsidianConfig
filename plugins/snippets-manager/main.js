@@ -835,9 +835,7 @@ var SnippetManagerPlugin = class extends import_obsidian4.Plugin {
       return;
     }
     if (fileOrFolder instanceof import_obsidian4.TFolder) {
-      const markdownFiles = fileOrFolder.children.filter(
-        (file) => file instanceof import_obsidian4.TFile && file.extension === "md"
-      );
+      const markdownFiles = this.getAllMarkdownFiles(fileOrFolder);
       const addFilePrefix = markdownFiles.length > 1;
       for (let file of markdownFiles) {
         if (file instanceof import_obsidian4.TFile) {
@@ -861,7 +859,8 @@ var SnippetManagerPlugin = class extends import_obsidian4.Plugin {
     if (modifiedTime && (!this.lastModifiedTimes[filePath] || modifiedTime > this.lastModifiedTimes[filePath])) {
       const content = await this.app.vault.cachedRead(file);
       const contentCache = this.app.metadataCache.getFileCache(file);
-      Object.assign(this.snippets, this.getSnippets(content, contentCache, addFilePrefix ? file.basename : null));
+      const filePrefix = addFilePrefix ? this.getRelativePath(file, this.settings.snippetPath) : null;
+      Object.assign(this.snippets, this.getSnippets(content, contentCache, filePrefix));
       this.lastModifiedTimes[filePath] = modifiedTime;
       this.isSnippetsReloaded = true;
     }
@@ -892,7 +891,7 @@ var SnippetManagerPlugin = class extends import_obsidian4.Plugin {
         );
       }
       sectionContent = this.stripCodeBlockFormatting(sectionContent).trim();
-      const snippetKey = filePrefix ? `${filePrefix}: ${currentHeading.heading}` : currentHeading.heading;
+      const snippetKey = filePrefix && filePrefix !== "" ? `${filePrefix}: ${currentHeading.heading}` : currentHeading.heading;
       snippets[snippetKey] = sectionContent;
     }
     return snippets;
@@ -942,6 +941,24 @@ var SnippetManagerPlugin = class extends import_obsidian4.Plugin {
   }
   async saveSettings() {
     await this.saveData(this.settings);
+  }
+  getRelativePath(file, rootPath) {
+    let relativePath = file.path.slice(rootPath.length);
+    if (relativePath.startsWith("/")) {
+      relativePath = relativePath.slice(1);
+    }
+    return relativePath.replace(/\.md$/, "");
+  }
+  getAllMarkdownFiles(folder) {
+    let markdownFiles = [];
+    folder.children.forEach((child) => {
+      if (child instanceof import_obsidian4.TFile && child.extension === "md") {
+        markdownFiles.push(child);
+      } else if (child instanceof import_obsidian4.TFolder) {
+        markdownFiles = markdownFiles.concat(this.getAllMarkdownFiles(child));
+      }
+    });
+    return markdownFiles;
   }
 };
 

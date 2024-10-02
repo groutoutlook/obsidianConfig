@@ -41,12 +41,12 @@ nmap gl :follow
 
 nmap gx f]wgl
 " Open the link at the end of line.
-nmap ;gx gx
-imap ;gx <Esc>%wgxi
+nmap ;x gx
+imap ;x <Esc>%wgxi
 imap <C-CR> <Esc>%wgxi
 imap gx <Esc>%wgx
-imap ggx <Esc>%wgxi
-imap xxx <Esc>%wgxi
+imap xx <Esc>%wgxi
+
 
 exmap closeAll obcommand workspace:close-window
 exmap closeTab obcommand workspace:close
