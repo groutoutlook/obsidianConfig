@@ -1942,7 +1942,19 @@
     "framework/webview": 18,
     "powertoys/peek": 3,
     "keybinding/default": 1,
-    "search/fuzzy": 1
+    "search/fuzzy": 1,
+    "data": 1285,
+    "decoration": 1286,
+    "statue": 1287,
+    "framework/ui": 19,
+    "imperative": 1288,
+    "navigation": 1289,
+    "accountant": 1290,
+    "clu": 1291,
+    "clu/utils": 1,
+    "business/intelligence": 3,
+    "business/bi": 4,
+    "jazz/remix": 1
   },
   "_version": 3
 }

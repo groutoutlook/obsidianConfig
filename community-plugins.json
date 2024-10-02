@@ -6,12 +6,11 @@
   "obsidian-advanced-uri",
   "codestats",
   "obsidian-vimrc-support",
-  "vim-yank-highlight",
   "colored-tags",
   "emacs-text-editor",
   "snippets-manager",
   "links",
   "json-table",
   "obsidian-import-json",
-  "obsidian-shellcommands"
+  "vim-toggle"
 ]
