@@ -1966,7 +1966,11 @@
     "language/prolog": 28,
     "const": 1294,
     "const/magic": 1,
-    "libc": 1295
+    "libc": 1295,
+    "dedup": 1296,
+    "must": 1297,
+    "must/test": 1,
+    "default/keybinding": 1
   },
   "_version": 3
 }
