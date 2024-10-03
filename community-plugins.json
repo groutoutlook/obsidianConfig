@@ -12,5 +12,6 @@
   "links",
   "json-table",
   "obsidian-import-json",
-  "vim-toggle"
+  "vim-toggle",
+  "aw-watcher-obsidian"
 ]

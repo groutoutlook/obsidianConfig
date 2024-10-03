@@ -4,43 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "68ffb2c6e926a4ec",
-        "type": "tabs",
-        "dimension": 50,
-        "children": [
-          {
-            "id": "8fbbd1b4f0d37454",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_Items/TaobaoJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8e784e50dae84c8f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_algo_lang/journal/LangJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
         "id": "692aabec644967b3",
         "type": "tabs",
-        "dimension": 50,
         "children": [
           {
             "id": "09bf439682e3e19e",
@@ -54,53 +19,20 @@
                 "source": false
               }
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "539b006b7f881d45",
+        "type": "tabs",
+        "children": [
           {
-            "id": "473f14efd70fc9b0",
+            "id": "8e784e50dae84c8f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_IDEAndTools/Neovim/003-Helix.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9401d6b50b4f271e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "003.001-Mode Helix.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5496a21ddc0f049d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_software/journal/OSJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d688beeb761eed81",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_os_windows/Utils/001-Windows.md",
+                "file": "note_software/journal/WebJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -175,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md"
+                "file": "note_software/journal/WebJournal.md"
               }
             }
           },
@@ -185,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md",
+                "file": "note_software/journal/WebJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md",
+                "file": "note_software/journal/WebJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -240,6 +172,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "vim-toggle:Toggle Vim Mode": false,
       "obsidian-import-json:JSON/CSV Importer": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
@@ -250,18 +183,28 @@
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": true,
       "random-note:Open random note": true,
-      "omnisearch:Omnisearch": false,
-      "obsidian-shellcommands:Shell commands: Custom variables": false
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "09bf439682e3e19e",
+  "active": "8e784e50dae84c8f",
   "lastOpenFiles": [
-    "003.001-Mode Helix.md",
     "note_software/journal/SoftwareJournal.md",
+    "note_software/journal/WebJournal.md",
     "note_algo_lang/journal/LangJournal.md",
+    "note_Items/TaobaoJournal.md",
     "note_IDEAndTools/Neovim/003-Helix.md",
+    "note_entertainment/note_discography/MusicJournal.md",
+    "note_Business/ConnectionJournal.md",
+    "note_Business/WorkJournal.md",
+    "mpv-shot0001.jpg",
+    "note_software/journal/OSJournal.mdOe6nAM.bck",
+    "note_algo_lang/journal/ProgrammingJournal.mdIS6UjQ.bck",
     "note_software/journal/OSJournal.md",
     "note_os_windows/Utils/001-Windows.md",
+    "003.001-Mode Helix.md",
+    "note_software/journal/SoftwareJournal.mdP7SwxM.bck",
+    "note_software/journal/SoftwareJournal.mdSnsEdT.bck",
+    "note_os_web/SDK/WebProgJournal.md7gDXhI.bck",
     "note_software/journal/OSJournal.mdLwEbiu.bck",
     "note_software/journal/OSJournal.md1R2AFq.bck",
     "-2",
@@ -269,18 +212,13 @@
     "note_IDEAndTools/Dev/CLI/001.008-CLI eza.md",
     "clieza.md",
     "note_software/journal/WebJournal.mdgLAqcx.bck",
-    "Vault_2401",
-    "note_software/journal/SoftwareJournal.mdTVI3X7.bck",
     "Pastedimage20240929191645.png",
     "note_IDEAndTools/Neovim/001.012_Remote Neovim.md",
     "note_IDEAndTools/Neovim/001.013_Keycodes in neovim.md",
-    "note_software/journal/OSJournal.md88qOZR.bck",
     "note_software/CasualSoftware/Video/001-Shotcut.md",
     "note_algo_lang/03-Powershell/200005_PnP devices.md",
     "note_algo_lang/03-Powershell/000005.001-Comparsion.md",
     "note_Embedded/Normal_LED_Project/100001_ 8_Port ND.md",
-    "asset/sheet/software/GoogleSeachOperatorQualifier.pdf",
-    "asset/sheet/software/GoogleSearchOperatorQualifier.pdf",
     "note_algo_lang/03-Powershell/000005.001-Comparison.md",
     "note_algo_lang/03-Powershell/200005_OnP devices.md",
     "note_software/CasualSoftware/Video/001-Shortcut.md",
@@ -288,11 +226,6 @@
     "note_Knowledge/journal/VocabJournal.md",
     "note_software/CasualSoftware/TerminalCasual/006-Jrnl.md",
     "note_IDEAndTools/Dev/CLI/001.003.001-CLI fd.md",
-    "note_entertainment/note_discography/Lyric/Kickback-Lyrics.md",
-    "note_software/Obsidian/004.001.003.001-All commands.md",
-    "note_Items/TaobaoJournal.md",
-    "note_entertainment/note_discography/MusicJournal.md",
-    "note_entertainment/note_discography/Lyric/DoraemonNoUtaLyrics.md",
     "Pasted image 20240929191645.png",
     "asset/img/Pasted image 20240924175032.png",
     "asset/img/EcoPaste_8kRfrZ59Coq-OnVLmDdNC.png",
@@ -301,7 +234,6 @@
     "asset/img/Pasted image 20240921184240.png",
     "asset/img/Pasted image 20240920161920.png",
     "Pasted image 20240927134957.png",
-    "Pasted image 20240921184240.png",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]
