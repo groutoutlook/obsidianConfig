@@ -1970,7 +1970,22 @@
     "dedup": 1296,
     "must": 1297,
     "must/test": 1,
-    "default/keybinding": 1
+    "default/keybinding": 1,
+    "replace": 1298,
+    "subscription": 1299,
+    "update": 1300,
+    "pcb/3dprint": 2,
+    "manufacture": 1301,
+    "prototype": 1302,
+    "reverse": 1303,
+    "reverse/hex": 1,
+    "linq": 1304,
+    "nerd": 1305,
+    "debugger/sanitizer": 10,
+    "debugger/sanitizer/asan": 1,
+    "utils/valgrind": 7,
+    "render": 1306,
+    "render/html": 2
   },
   "_version": 3
 }

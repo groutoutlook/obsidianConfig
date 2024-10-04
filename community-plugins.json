@@ -13,5 +13,6 @@
   "json-table",
   "obsidian-import-json",
   "vim-toggle",
-  "aw-watcher-obsidian"
+  "aw-watcher-obsidian",
+  "remember-cursor-position"
 ]

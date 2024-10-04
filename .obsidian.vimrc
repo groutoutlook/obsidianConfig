@@ -170,8 +170,8 @@ imap ;w :newWindow
 nmap ;W :newWindow
 
 
-nmap ;g Gzz
 nmap <Space>z Gzz
-imap ;g <Esc>Gzza
+nmap ;z Gzz
+imap ;z <Esc>Gzza
 
 

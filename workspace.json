@@ -21,12 +21,25 @@
             }
           },
           {
-            "id": "8da3fbd9488c18a2",
+            "id": "ca9b70ebfade4510",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "note_software/Browser/006.003-Multi Find.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ed12ed2f0c0e8924",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_algo_lang/journal/ProgrammingJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -45,7 +58,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/journal/WebJournal.md",
+                "file": "note_algo_lang/journal/ProgrammingJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "240ba4486fb150bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_algo_lang/journal/LangJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -120,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md"
+                "file": "note_algo_lang/journal/ProgrammingJournal.md"
               }
             }
           },
@@ -130,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md",
+                "file": "note_algo_lang/journal/ProgrammingJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md",
+                "file": "note_algo_lang/journal/ProgrammingJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,19 +225,24 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "09bf439682e3e19e",
+  "active": "8e784e50dae84c8f",
   "lastOpenFiles": [
-    "note_software/Browser/006.003-Multi Find.md",
+    "Pasted image 20241004152005.png",
+    "note_software/journal/WebJournal.md",
     "note_software/journal/SoftwareJournal.md",
+    "note_algo_lang/journal/LangJournal.md",
+    "note_algo_lang/journal/ProgrammingJournal.md",
+    "note_software/Browser/006.003-Multi Find.md",
+    "note_entertainment/note_discography/MusicJournal.md",
+    "note_entertainment/note_discography/Lyric/Kickback-Lyrics.md",
+    "note_software/CasualSoftware/Archived/002.001-Youtube Music.md",
+    "note_algo_lang/journal/LangJournal.mda7nGa8.bck",
     "Pasted image 20241003171358.png",
     "Pasted image 20241003171343.png",
     "note_software/Browser/006.002-Vimium C.md",
-    "note_software/journal/WebJournal.md",
     "note_software/journal/SoftwareJournal.mdyR20MB.bck",
-    "note_algo_lang/journal/LangJournal.md",
     "note_Items/TaobaoJournal.md",
     "note_IDEAndTools/Neovim/003-Helix.md",
-    "note_entertainment/note_discography/MusicJournal.md",
     "note_Business/ConnectionJournal.md",
     "note_Business/WorkJournal.md",
     "mpv-shot0001.jpg",
@@ -226,7 +257,6 @@
     "note_software/journal/OSJournal.mdLwEbiu.bck",
     "note_software/journal/OSJournal.md1R2AFq.bck",
     "-2",
-    "note_software/journal/OSJournal.mdTA14w1.bck",
     "note_IDEAndTools/Dev/CLI/001.008-CLI eza.md",
     "clieza.md",
     "Pastedimage20240929191645.png",
@@ -237,9 +267,6 @@
     "note_algo_lang/03-Powershell/000005.001-Comparsion.md",
     "note_Embedded/Normal_LED_Project/100001_ 8_Port ND.md",
     "note_algo_lang/03-Powershell/000005.001-Comparison.md",
-    "note_algo_lang/03-Powershell/200005_OnP devices.md",
-    "note_software/CasualSoftware/Video/001-Shortcut.md",
-    "note_Embedded/Normal_LED_Project/100001_ 8_Port AND.md",
     "Pasted image 20240929191645.png",
     "asset/img/Pasted image 20240924175032.png",
     "asset/img/EcoPaste_8kRfrZ59Coq-OnVLmDdNC.png",
