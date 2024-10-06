@@ -21,6 +21,19 @@
             }
           },
           {
+            "id": "adfd125a60a71192",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/journal/OSJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "ca9b70ebfade4510",
             "type": "leaf",
             "state": {
@@ -46,7 +59,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "539b006b7f881d45",
@@ -77,8 +91,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ee6915022c331dc5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_entertainment/note_discography/MusicJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -146,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_algo_lang/journal/ProgrammingJournal.md"
+                "file": "note_entertainment/note_discography/MusicJournal.md"
               }
             }
           },
@@ -156,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_algo_lang/journal/ProgrammingJournal.md",
+                "file": "note_entertainment/note_discography/MusicJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +201,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_algo_lang/journal/ProgrammingJournal.md",
+                "file": "note_entertainment/note_discography/MusicJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -225,17 +253,21 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "8e784e50dae84c8f",
+  "active": "ee6915022c331dc5",
   "lastOpenFiles": [
+    "note_Knowledge/journal/OtherKnowledgeJournal.mdr1aZP5.bck",
+    "note_software/journal/OSJournal.md",
+    "note_software/journal/SoftwareJournal.md",
+    "note_entertainment/note_discography/Lyric/MixedNuts-Lyrics.md",
+    "note_entertainment/note_discography/Lyric/Kickback-Lyrics.md",
+    "note_entertainment/note_discography/MusicJournal.md",
+    "note_algo_lang/journal/ProgrammingJournal.md",
+    "note_software/journal/WebJournal.mddOxZ8i.bck",
     "note_algo_lang/journal/LangJournal.mdQixay9.bck",
     "Pasted image 20241004152005.png",
     "note_software/journal/WebJournal.md",
-    "note_software/journal/SoftwareJournal.md",
     "note_algo_lang/journal/LangJournal.md",
-    "note_algo_lang/journal/ProgrammingJournal.md",
     "note_software/Browser/006.003-Multi Find.md",
-    "note_entertainment/note_discography/MusicJournal.md",
-    "note_entertainment/note_discography/Lyric/Kickback-Lyrics.md",
     "note_software/CasualSoftware/Archived/002.001-Youtube Music.md",
     "note_algo_lang/journal/LangJournal.mda7nGa8.bck",
     "Pasted image 20241003171358.png",
@@ -249,15 +281,12 @@
     "mpv-shot0001.jpg",
     "note_software/journal/OSJournal.mdOe6nAM.bck",
     "note_algo_lang/journal/ProgrammingJournal.mdIS6UjQ.bck",
-    "note_software/journal/OSJournal.md",
     "note_os_windows/Utils/001-Windows.md",
     "003.001-Mode Helix.md",
     "note_software/journal/SoftwareJournal.mdP7SwxM.bck",
     "note_software/journal/SoftwareJournal.mdSnsEdT.bck",
     "note_os_web/SDK/WebProgJournal.md7gDXhI.bck",
     "note_software/journal/OSJournal.mdLwEbiu.bck",
-    "note_software/journal/OSJournal.md1R2AFq.bck",
-    "-2",
     "note_IDEAndTools/Dev/CLI/001.008-CLI eza.md",
     "clieza.md",
     "Pastedimage20240929191645.png",
@@ -267,7 +296,6 @@
     "note_algo_lang/03-Powershell/200005_PnP devices.md",
     "note_algo_lang/03-Powershell/000005.001-Comparsion.md",
     "note_Embedded/Normal_LED_Project/100001_ 8_Port ND.md",
-    "note_algo_lang/03-Powershell/000005.001-Comparison.md",
     "Pasted image 20240929191645.png",
     "asset/img/Pasted image 20240924175032.png",
     "asset/img/EcoPaste_8kRfrZ59Coq-OnVLmDdNC.png",

@@ -1989,7 +1989,18 @@
     "driver/web": 3,
     "vulkan/pushconstant": 3,
     "library/json": 10,
-    "library/json/api": 1
+    "library/json/api": 1,
+    "powershell/sdk": 9,
+    "ffi": 1307,
+    "history/compsci": 1,
+    "muzak": 1308,
+    "muzak/mealtime": 1,
+    "protocol/mqtt": 8,
+    "scripting/bash": 3,
+    "format/dxf": 18,
+    "web/vn": 23,
+    "format/csv": 19,
+    "properties": 1309
   },
   "_version": 3
 }
