@@ -4435,13 +4435,14 @@ var WrapNoteInFolderCommand = class extends CommandBase {
     if (!currentNotePath || !currentNoteParentPath) {
       return;
     }
-    const matchNoteName = currentNotePath.match(/(.*\/)(.*)\.md/);
+    const matchNoteName = currentNotePath.match(/(.*\/)?(.*)\.md/);
     if (!matchNoteName) {
       return;
     }
     const currentNoteName = matchNoteName[2];
     (async () => {
-      const newParentFolder = `${currentNoteParentPath}/${currentNoteName}`;
+      const hasSeparator = currentNoteParentPath[currentNoteParentPath.length - 1] === "/" || currentNoteParentPath[currentNoteParentPath.length - 1] == "\\";
+      const newParentFolder = `${currentNoteParentPath}${hasSeparator ? "" : "/"}${currentNoteName}`;
       await this.obsidianProxy.Vault.createFolder(newParentFolder);
       await this.obsidianProxy.Vault.rename(currentNotePath, `${newParentFolder}/${currentNoteName}.md`);
     })();

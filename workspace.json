@@ -34,12 +34,12 @@
             }
           },
           {
-            "id": "ca9b70ebfade4510",
+            "id": "22a2966047d74e74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/Browser/006.003-Multi Find.md",
+                "file": "note_entertainment/note_discography/MusicJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -47,12 +47,25 @@
             }
           },
           {
-            "id": "ed12ed2f0c0e8924",
+            "id": "fb318b0cc73617da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_algo_lang/journal/ProgrammingJournal.md",
+                "file": "note_os_android/Utils/GUI/scrcpy/001-Scrcpy.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "82a446d829f4aa1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "001.001-scrcpy cli options.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -60,7 +73,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "539b006b7f881d45",
@@ -91,22 +104,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "ee6915022c331dc5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_entertainment/note_discography/MusicJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -253,54 +252,54 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "ee6915022c331dc5",
+  "active": "22a2966047d74e74",
   "lastOpenFiles": [
-    "note_Knowledge/journal/OtherKnowledgeJournal.mdr1aZP5.bck",
-    "note_software/journal/OSJournal.md",
-    "note_software/journal/SoftwareJournal.md",
-    "note_entertainment/note_discography/Lyric/MixedNuts-Lyrics.md",
-    "note_entertainment/note_discography/Lyric/Kickback-Lyrics.md",
+    "note_Embedded/RGB_Projects/RGB_MCU/000004_CMS32.md",
     "note_entertainment/note_discography/MusicJournal.md",
+    "note_software/journal/OSJournal.mdo1QMeW.bck",
+    "001.001-scrcpy cli options.md",
+    "note_os_android/Utils/GUI/scrcpy/001-Scrcpy.md",
+    "note_os_android/Utils/GUI/scrcpy",
+    "note_software/journal/WebJournal.md",
+    "note_os_android/Utils/Terminal/adb/000.001.000.000-am.md",
+    "note_os_android/000.000-ADB For Android.md",
+    "am .md",
+    "note_algo_lang/journal/LangJournal.mdFM7J5y.bck",
     "note_algo_lang/journal/ProgrammingJournal.md",
+    "duck.ai_2024-10-13_19-30-18.md",
+    "duck.ai_2024-10-13_19-30-18.txt",
+    "note_software/journal/OSJournal.md",
+    "note_Knowledge/secret/001-Accounts.md",
+    "note_algo_lang/journal/LangJournal.md",
+    "note_Knowledge/secret/AccountJournal.md",
+    "note_Embedded/FirmwareJournal.mdWngbx1.bck",
+    "note_algo_lang/journal/GraphicUIJournal.mdBxugDG.bck",
+    "note_software/Browser/006.003-Multi Find.md",
+    "note_entertainment/note_discography/Lyric/MixedNuts-Lyrics.md",
+    "note_Business/WorkJournal.md",
+    "asset/img/Pasted image 20240921184240.png",
+    "note_Knowledge/journal/OtherKnowledgeJournal.mdr1aZP5.bck",
+    "note_software/journal/SoftwareJournal.md",
+    "note_entertainment/note_discography/Lyric/Kickback-Lyrics.md",
     "note_software/journal/WebJournal.mddOxZ8i.bck",
     "note_algo_lang/journal/LangJournal.mdQixay9.bck",
     "Pasted image 20241004152005.png",
-    "note_software/journal/WebJournal.md",
-    "note_algo_lang/journal/LangJournal.md",
-    "note_software/Browser/006.003-Multi Find.md",
     "note_software/CasualSoftware/Archived/002.001-Youtube Music.md",
     "note_algo_lang/journal/LangJournal.mda7nGa8.bck",
     "Pasted image 20241003171358.png",
     "Pasted image 20241003171343.png",
     "note_software/Browser/006.002-Vimium C.md",
-    "note_software/journal/SoftwareJournal.mdyR20MB.bck",
     "note_Items/TaobaoJournal.md",
     "note_IDEAndTools/Neovim/003-Helix.md",
     "note_Business/ConnectionJournal.md",
-    "note_Business/WorkJournal.md",
     "mpv-shot0001.jpg",
-    "note_software/journal/OSJournal.mdOe6nAM.bck",
-    "note_algo_lang/journal/ProgrammingJournal.mdIS6UjQ.bck",
     "note_os_windows/Utils/001-Windows.md",
     "003.001-Mode Helix.md",
-    "note_software/journal/SoftwareJournal.mdP7SwxM.bck",
-    "note_software/journal/SoftwareJournal.mdSnsEdT.bck",
-    "note_os_web/SDK/WebProgJournal.md7gDXhI.bck",
-    "note_software/journal/OSJournal.mdLwEbiu.bck",
-    "note_IDEAndTools/Dev/CLI/001.008-CLI eza.md",
-    "clieza.md",
     "Pastedimage20240929191645.png",
-    "note_IDEAndTools/Neovim/001.012_Remote Neovim.md",
-    "note_IDEAndTools/Neovim/001.013_Keycodes in neovim.md",
-    "note_software/CasualSoftware/Video/001-Shotcut.md",
-    "note_algo_lang/03-Powershell/200005_PnP devices.md",
-    "note_algo_lang/03-Powershell/000005.001-Comparsion.md",
-    "note_Embedded/Normal_LED_Project/100001_ 8_Port ND.md",
     "Pasted image 20240929191645.png",
     "asset/img/Pasted image 20240924175032.png",
     "asset/img/EcoPaste_8kRfrZ59Coq-OnVLmDdNC.png",
     "Pasted image 20240927160428.png",
-    "asset/img/Pasted image 20240927134957.png",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]

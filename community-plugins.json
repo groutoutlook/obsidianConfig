@@ -10,9 +10,6 @@
   "emacs-text-editor",
   "snippets-manager",
   "links",
-  "json-table",
-  "obsidian-import-json",
   "vim-toggle",
-  "aw-watcher-obsidian",
-  "remember-cursor-position"
+  "rich-foot"
 ]
