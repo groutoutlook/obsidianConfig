@@ -34,7 +34,7 @@
             }
           },
           {
-            "id": "22a2966047d74e74",
+            "id": "524a1e4b00bd1eff",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -45,53 +45,13 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "fb318b0cc73617da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_os_android/Utils/GUI/scrcpy/001-Scrcpy.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "82a446d829f4aa1c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "001.001-scrcpy cli options.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "539b006b7f881d45",
         "type": "tabs",
         "children": [
-          {
-            "id": "8e784e50dae84c8f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_algo_lang/journal/ProgrammingJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
           {
             "id": "240ba4486fb150bf",
             "type": "leaf",
@@ -173,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_entertainment/note_discography/MusicJournal.md"
+                "file": "note_software/journal/SoftwareJournal.md"
               }
             }
           },
@@ -183,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_entertainment/note_discography/MusicJournal.md",
+                "file": "note_software/journal/SoftwareJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_entertainment/note_discography/MusicJournal.md",
+                "file": "note_software/journal/SoftwareJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -239,7 +199,6 @@
   "left-ribbon": {
     "hiddenItems": {
       "vim-toggle:Toggle Vim Mode": false,
-      "obsidian-import-json:JSON/CSV Importer": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
       "canvas:Create new canvas": false,
@@ -252,25 +211,32 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "22a2966047d74e74",
+  "active": "09bf439682e3e19e",
   "lastOpenFiles": [
-    "note_Embedded/RGB_Projects/RGB_MCU/000004_CMS32.md",
     "note_entertainment/note_discography/MusicJournal.md",
-    "note_software/journal/OSJournal.mdo1QMeW.bck",
+    "note_software/journal/OSJournal.md",
+    "note_algo_lang/journal/LangJournal.md",
+    "note_entertainment/note_discography/003.001-Videos and Music (USUK).md",
+    "note_algo_lang/03-Powershell/000000_PowerShell_Instant_note_Sort_later.md",
+    "note_entertainment/note_discography/003-Videos and Music.md",
     "001.001-scrcpy cli options.md",
     "note_os_android/Utils/GUI/scrcpy/001-Scrcpy.md",
+    "note_os_linux/001.005-Systemd.md",
+    "note_os_linux/001.003.001-Text utils.md",
+    "note_os_linux/000003_1_Advanced text processing.md",
+    "note_os_linux/001.003-Text processing.md",
+    "note_algo_lang/journal/ProgrammingJournal.md",
+    "note_Embedded/RGB_Projects/RGB_MCU/000004_CMS32.md",
+    "note_software/journal/OSJournal.mdo1QMeW.bck",
     "note_os_android/Utils/GUI/scrcpy",
     "note_software/journal/WebJournal.md",
     "note_os_android/Utils/Terminal/adb/000.001.000.000-am.md",
     "note_os_android/000.000-ADB For Android.md",
     "am .md",
     "note_algo_lang/journal/LangJournal.mdFM7J5y.bck",
-    "note_algo_lang/journal/ProgrammingJournal.md",
     "duck.ai_2024-10-13_19-30-18.md",
     "duck.ai_2024-10-13_19-30-18.txt",
-    "note_software/journal/OSJournal.md",
     "note_Knowledge/secret/001-Accounts.md",
-    "note_algo_lang/journal/LangJournal.md",
     "note_Knowledge/secret/AccountJournal.md",
     "note_Embedded/FirmwareJournal.mdWngbx1.bck",
     "note_algo_lang/journal/GraphicUIJournal.mdBxugDG.bck",
@@ -284,17 +250,10 @@
     "note_software/journal/WebJournal.mddOxZ8i.bck",
     "note_algo_lang/journal/LangJournal.mdQixay9.bck",
     "Pasted image 20241004152005.png",
-    "note_software/CasualSoftware/Archived/002.001-Youtube Music.md",
     "note_algo_lang/journal/LangJournal.mda7nGa8.bck",
     "Pasted image 20241003171358.png",
     "Pasted image 20241003171343.png",
-    "note_software/Browser/006.002-Vimium C.md",
-    "note_Items/TaobaoJournal.md",
-    "note_IDEAndTools/Neovim/003-Helix.md",
-    "note_Business/ConnectionJournal.md",
     "mpv-shot0001.jpg",
-    "note_os_windows/Utils/001-Windows.md",
-    "003.001-Mode Helix.md",
     "Pastedimage20240929191645.png",
     "Pasted image 20240929191645.png",
     "asset/img/Pasted image 20240924175032.png",
