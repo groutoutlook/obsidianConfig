@@ -6,6 +6,7 @@
       {
         "id": "692aabec644967b3",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "09bf439682e3e19e",
@@ -17,7 +18,9 @@
                 "mode": "source",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "SoftwareJournal"
             }
           },
           {
@@ -30,7 +33,9 @@
                 "mode": "source",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "OSJournal"
             }
           },
           {
@@ -43,7 +48,9 @@
                 "mode": "source",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "MusicJournal"
             }
           }
         ]
@@ -51,6 +58,7 @@
       {
         "id": "539b006b7f881d45",
         "type": "tabs",
+        "dimension": 50,
         "children": [
           {
             "id": "240ba4486fb150bf",
@@ -62,7 +70,9 @@
                 "mode": "source",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "LangJournal"
             }
           }
         ]
@@ -90,7 +100,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -98,7 +110,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -124,7 +138,9 @@
               "state": {
                 "sortOrder": "alphabetical",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -133,8 +149,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md"
-              }
+                "file": "note_algo_lang/journal/LangJournal.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of LangJournal"
             }
           },
           {
@@ -143,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md",
+                "file": "note_algo_lang/journal/LangJournal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +169,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for LangJournal"
             }
           },
           {
@@ -160,10 +180,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md",
+                "file": "note_algo_lang/journal/LangJournal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from LangJournal"
             }
           },
           {
@@ -175,7 +197,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -185,7 +209,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           }
         ],
@@ -211,8 +237,17 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "09bf439682e3e19e",
+  "active": "240ba4486fb150bf",
   "lastOpenFiles": [
+    "note_algo_lang/journal/LangJournal.md0v4KUv.bck",
+    "note_algo_lang/journal/LangJournal.mdgK7euc.bck",
+    "note_software/journal/SoftwareJournal.md",
+    "note_algo_lang/journal/LibraryJournal.md",
+    "note_os_web/SDK/WebAPIJournal.md",
+    "note_algo_lang/journal/LangJournal.mdHIcF9i.bck",
+    "note_algo_lang/journal/LangJournal.mdASM8ge.bck",
+    "note_algo_lang/journal/LangJournal.mdNUg7Gt.bck",
+    "note_algo_lang/journal/LangJournal.mdudFEoz.bck",
     "note_entertainment/note_discography/MusicJournal.md",
     "note_software/journal/OSJournal.md",
     "note_algo_lang/journal/LangJournal.md",
@@ -239,18 +274,9 @@
     "note_Knowledge/secret/001-Accounts.md",
     "note_Knowledge/secret/AccountJournal.md",
     "note_Embedded/FirmwareJournal.mdWngbx1.bck",
-    "note_algo_lang/journal/GraphicUIJournal.mdBxugDG.bck",
     "note_software/Browser/006.003-Multi Find.md",
-    "note_entertainment/note_discography/Lyric/MixedNuts-Lyrics.md",
-    "note_Business/WorkJournal.md",
     "asset/img/Pasted image 20240921184240.png",
-    "note_Knowledge/journal/OtherKnowledgeJournal.mdr1aZP5.bck",
-    "note_software/journal/SoftwareJournal.md",
-    "note_entertainment/note_discography/Lyric/Kickback-Lyrics.md",
-    "note_software/journal/WebJournal.mddOxZ8i.bck",
-    "note_algo_lang/journal/LangJournal.mdQixay9.bck",
     "Pasted image 20241004152005.png",
-    "note_algo_lang/journal/LangJournal.mda7nGa8.bck",
     "Pasted image 20241003171358.png",
     "Pasted image 20241003171343.png",
     "mpv-shot0001.jpg",
