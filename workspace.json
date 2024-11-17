@@ -4,78 +4,95 @@
     "type": "split",
     "children": [
       {
+        "id": "68ffb2c6e926a4ec",
+        "type": "tabs",
+        "dimension": 50,
+        "children": [
+          {
+            "id": "8fbbd1b4f0d37454",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_Items/TaobaoJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TaobaoJournal"
+            }
+          },
+          {
+            "id": "0229cff7a39dc794",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_Knowledge/journal/OtherKnowledgeJournal.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "OtherKnowledgeJournal"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
         "id": "692aabec644967b3",
         "type": "tabs",
         "dimension": 50,
         "children": [
           {
-            "id": "09bf439682e3e19e",
+            "id": "8c7ab35a5776049c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md",
+                "file": "note_software/Obsidian/004.001-Obsidian Plugins.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SoftwareJournal"
+              "title": "004.001-Obsidian Plugins"
             }
           },
           {
-            "id": "adfd125a60a71192",
+            "id": "a325d91801490f1b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/journal/OSJournal.md",
+                "file": "note_Embedded/FirmwareJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OSJournal"
+              "title": "FirmwareJournal"
             }
           },
           {
-            "id": "524a1e4b00bd1eff",
+            "id": "2764cb411d0048ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_entertainment/note_discography/MusicJournal.md",
+                "file": "note_Knowledge/journal/VocabJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MusicJournal"
+              "title": "VocabJournal"
             }
           }
-        ]
-      },
-      {
-        "id": "539b006b7f881d45",
-        "type": "tabs",
-        "dimension": 50,
-        "children": [
-          {
-            "id": "240ba4486fb150bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_algo_lang/journal/LangJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "LangJournal"
-            }
-          }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -149,10 +166,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note_algo_lang/journal/LangJournal.md"
+                "file": "note_software/Obsidian/004.001-Obsidian Plugins.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of LangJournal"
+              "title": "Outline of 004.001-Obsidian Plugins"
             }
           },
           {
@@ -161,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note_algo_lang/journal/LangJournal.md",
+                "file": "note_software/Obsidian/004.001-Obsidian Plugins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +188,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for LangJournal"
+              "title": "Backlinks for 004.001-Obsidian Plugins"
             }
           },
           {
@@ -180,12 +197,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note_algo_lang/journal/LangJournal.md",
+                "file": "note_software/Obsidian/004.001-Obsidian Plugins.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from LangJournal"
+              "title": "Outgoing links from 004.001-Obsidian Plugins"
             }
           },
           {
@@ -224,7 +241,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "vim-toggle:Toggle Vim Mode": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
       "canvas:Create new canvas": false,
@@ -234,23 +250,39 @@
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": true,
       "random-note:Open random note": true,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "vim-toggle:Toggle Vim Mode": false
     }
   },
-  "active": "240ba4486fb150bf",
+  "active": "0229cff7a39dc794",
   "lastOpenFiles": [
+    "note_Embedded/FirmwareJournal.md",
+    "note_entertainment/note_discography/MusicJournal.md",
+    "note_Business/WorkJournal.md",
+    "note_algo_lang/journal/LangJournal.mdbnk9UW.bck",
+    "Pasted image 20241111094144.png",
+    "note_IDEAndTools/Dev/CLI/001.003-fd.md",
+    "note_IDEAndTools/Dev/CLI/001.003.001-CLI fd.md",
+    "note_software/Obsidian/004.001-Obsidian Plugins.md",
+    "note_Business/MoneyJournal.md",
+    "note_software/Browser/006.002.002-Mode Vimium C.md",
+    "note_software/Browser/006.002.003-Keybinding Remap Vimium C.md",
+    "note_IDEAndTools/Dev/CLI/001.008-CLI eza.md",
+    "note_software/journal/OSJournal.md",
+    "note_software/journal/SoftwareJournal.md",
+    "note_algo_lang/journal/LangJournal.md",
+    "note_algo_lang/journal/ProgrammingJournal.mdeUWDXF.bck",
+    "note_algo_lang/journal/ProgrammingJournal.md",
+    "note_algo_lang/journal/LangJournal.mdfpNacA.bck",
+    "note_software/journal/SoftwareJournal.mdnI6zIK.bck",
+    "note_software/journal/SoftwareJournal.mdbGYPKd.bck",
     "note_algo_lang/journal/LangJournal.md0v4KUv.bck",
     "note_algo_lang/journal/LangJournal.mdgK7euc.bck",
-    "note_software/journal/SoftwareJournal.md",
     "note_algo_lang/journal/LibraryJournal.md",
     "note_os_web/SDK/WebAPIJournal.md",
     "note_algo_lang/journal/LangJournal.mdHIcF9i.bck",
     "note_algo_lang/journal/LangJournal.mdASM8ge.bck",
     "note_algo_lang/journal/LangJournal.mdNUg7Gt.bck",
-    "note_algo_lang/journal/LangJournal.mdudFEoz.bck",
-    "note_entertainment/note_discography/MusicJournal.md",
-    "note_software/journal/OSJournal.md",
-    "note_algo_lang/journal/LangJournal.md",
     "note_entertainment/note_discography/003.001-Videos and Music (USUK).md",
     "note_algo_lang/03-Powershell/000000_PowerShell_Instant_note_Sort_later.md",
     "note_entertainment/note_discography/003-Videos and Music.md",
@@ -260,21 +292,7 @@
     "note_os_linux/001.003.001-Text utils.md",
     "note_os_linux/000003_1_Advanced text processing.md",
     "note_os_linux/001.003-Text processing.md",
-    "note_algo_lang/journal/ProgrammingJournal.md",
     "note_Embedded/RGB_Projects/RGB_MCU/000004_CMS32.md",
-    "note_software/journal/OSJournal.mdo1QMeW.bck",
-    "note_os_android/Utils/GUI/scrcpy",
-    "note_software/journal/WebJournal.md",
-    "note_os_android/Utils/Terminal/adb/000.001.000.000-am.md",
-    "note_os_android/000.000-ADB For Android.md",
-    "am .md",
-    "note_algo_lang/journal/LangJournal.mdFM7J5y.bck",
-    "duck.ai_2024-10-13_19-30-18.md",
-    "duck.ai_2024-10-13_19-30-18.txt",
-    "note_Knowledge/secret/001-Accounts.md",
-    "note_Knowledge/secret/AccountJournal.md",
-    "note_Embedded/FirmwareJournal.mdWngbx1.bck",
-    "note_software/Browser/006.003-Multi Find.md",
     "asset/img/Pasted image 20240921184240.png",
     "Pasted image 20241004152005.png",
     "Pasted image 20241003171358.png",
@@ -284,7 +302,6 @@
     "Pasted image 20240929191645.png",
     "asset/img/Pasted image 20240924175032.png",
     "asset/img/EcoPaste_8kRfrZ59Coq-OnVLmDdNC.png",
-    "Pasted image 20240927160428.png",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]
