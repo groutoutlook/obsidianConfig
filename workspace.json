@@ -29,13 +29,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_Knowledge/journal/OtherKnowledgeJournal.md",
+                "file": "note_algo_lang/journal/LangJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OtherKnowledgeJournal"
+              "title": "LangJournal"
             }
           }
         ],
@@ -74,21 +74,6 @@
               },
               "icon": "lucide-file",
               "title": "FirmwareJournal"
-            }
-          },
-          {
-            "id": "2764cb411d0048ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "note_Knowledge/journal/VocabJournal.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "VocabJournal"
             }
           }
         ],
@@ -250,17 +235,40 @@
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": true,
       "random-note:Open random note": true,
-      "omnisearch:Omnisearch": false,
-      "vim-toggle:Toggle Vim Mode": false
+      "omnisearch:Omnisearch": false
     }
   },
   "active": "0229cff7a39dc794",
   "lastOpenFiles": [
+    "note_Knowledge/journal/OtherKnowledgeJournal.md",
     "note_Embedded/FirmwareJournal.md",
+    "note_algo_lang/journal/LangJournal.mdYNTwM7.bck",
+    "note_Knowledge/journal/OtherKnowledgeJournal.mdP8iALc.bck",
+    "note_Knowledge/journal/OtherKnowledgeJournal.mdxRjD1g.bck",
+    "note_algo_lang/journal/LangJournal.mdeLFzVQ.bck",
+    "note_algo_lang/journal/LibraryJournal.mdmnq8Mi.bck",
+    "note_algo_lang/journal/LangJournal.mdvw6Ek5.bck",
+    "note_Knowledge/journal/VocabJournal.md",
+    "note_Embedded/HardwareJournal.md",
+    "note_algo_lang/journal/ProgrammingJournal.md",
     "note_entertainment/note_discography/MusicJournal.md",
+    "note_software/journal/OSJournal.md3lG9xF.bck",
+    "asset/img/Pastedimage20240929191645.png",
+    "asset/img/Pasted image 20241122174749.png",
+    "asset/img/Pasted image 20241122174552.png",
+    "asset/img/Pasted image 20241122174541.png",
+    "asset/img/Pasted image 20241122174352.png",
+    "asset/img/Pasted image 20241122174327.png",
+    "asset/img/Pasted image 20241111094144.png",
+    "asset/img/Pasted image 20241004152005.png",
+    "asset/img/Pasted image 20241003171358.png",
+    "asset/img/Pasted image 20241003171343.png",
+    "note_Embedded/PCB_Standard/PCBJournal.md",
+    "note_Knowledge/journal/WholesomeJournal.md",
+    "note_algo_lang/journal/LibraryJournal.mdECZc91.bck",
+    "note_algo_lang/journal/LibraryJournal.md4R3JRA.bck",
     "note_Business/WorkJournal.md",
     "note_algo_lang/journal/LangJournal.mdbnk9UW.bck",
-    "Pasted image 20241111094144.png",
     "note_IDEAndTools/Dev/CLI/001.003-fd.md",
     "note_IDEAndTools/Dev/CLI/001.003.001-CLI fd.md",
     "note_software/Obsidian/004.001-Obsidian Plugins.md",
@@ -271,37 +279,12 @@
     "note_software/journal/OSJournal.md",
     "note_software/journal/SoftwareJournal.md",
     "note_algo_lang/journal/LangJournal.md",
-    "note_algo_lang/journal/ProgrammingJournal.mdeUWDXF.bck",
-    "note_algo_lang/journal/ProgrammingJournal.md",
-    "note_algo_lang/journal/LangJournal.mdfpNacA.bck",
-    "note_software/journal/SoftwareJournal.mdnI6zIK.bck",
-    "note_software/journal/SoftwareJournal.mdbGYPKd.bck",
-    "note_algo_lang/journal/LangJournal.md0v4KUv.bck",
-    "note_algo_lang/journal/LangJournal.mdgK7euc.bck",
     "note_algo_lang/journal/LibraryJournal.md",
     "note_os_web/SDK/WebAPIJournal.md",
-    "note_algo_lang/journal/LangJournal.mdHIcF9i.bck",
-    "note_algo_lang/journal/LangJournal.mdASM8ge.bck",
-    "note_algo_lang/journal/LangJournal.mdNUg7Gt.bck",
     "note_entertainment/note_discography/003.001-Videos and Music (USUK).md",
     "note_algo_lang/03-Powershell/000000_PowerShell_Instant_note_Sort_later.md",
     "note_entertainment/note_discography/003-Videos and Music.md",
     "001.001-scrcpy cli options.md",
-    "note_os_android/Utils/GUI/scrcpy/001-Scrcpy.md",
-    "note_os_linux/001.005-Systemd.md",
-    "note_os_linux/001.003.001-Text utils.md",
-    "note_os_linux/000003_1_Advanced text processing.md",
-    "note_os_linux/001.003-Text processing.md",
-    "note_Embedded/RGB_Projects/RGB_MCU/000004_CMS32.md",
-    "asset/img/Pasted image 20240921184240.png",
-    "Pasted image 20241004152005.png",
-    "Pasted image 20241003171358.png",
-    "Pasted image 20241003171343.png",
-    "mpv-shot0001.jpg",
-    "Pastedimage20240929191645.png",
-    "Pasted image 20240929191645.png",
-    "asset/img/Pasted image 20240924175032.png",
-    "asset/img/EcoPaste_8kRfrZ59Coq-OnVLmDdNC.png",
     "Untitled.canvas",
     "CanvasTemplate.canvas"
   ]
