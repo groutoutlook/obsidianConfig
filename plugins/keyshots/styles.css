@@ -34,6 +34,7 @@ div.keyshots-table-modal .divider table td {
 div.keyshots-table-modal .divider table td:nth-child(1) {
   opacity: 0.5;
   cursor: initial;
+  pointer-events: none;
 }
 div.keyshots-table-modal .divider table td::before {
   border: 0.1px solid #888;
@@ -48,7 +49,7 @@ div.keyshots-table-modal .divider table td::before {
   transform: translate(-50%, -50%);
 }
 div.keyshots-table-modal .divider table td.hovered::before {
-  background: #313131;
+  background: var(--color-base-30);
 }
 
 div.modal-container.keyshots-regex > div.modal {

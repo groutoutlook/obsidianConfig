@@ -29,13 +29,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_algo_lang/journal/LangJournal.md",
+                "file": "note_algo_lang/journal/ProgrammingJournal.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LangJournal"
+              "title": "ProgrammingJournal"
             }
           }
         ],
@@ -240,6 +240,7 @@
   },
   "active": "0229cff7a39dc794",
   "lastOpenFiles": [
+    "note_algo_lang/journal/LangJournal.md",
     "note_Knowledge/journal/OtherKnowledgeJournal.md",
     "note_Embedded/FirmwareJournal.md",
     "note_algo_lang/journal/LangJournal.mdYNTwM7.bck",
@@ -278,7 +279,6 @@
     "note_IDEAndTools/Dev/CLI/001.008-CLI eza.md",
     "note_software/journal/OSJournal.md",
     "note_software/journal/SoftwareJournal.md",
-    "note_algo_lang/journal/LangJournal.md",
     "note_algo_lang/journal/LibraryJournal.md",
     "note_os_web/SDK/WebAPIJournal.md",
     "note_entertainment/note_discography/003.001-Videos and Music (USUK).md",

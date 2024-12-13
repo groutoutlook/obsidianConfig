@@ -277,6 +277,7 @@ var RegExPatterns = class {
 RegExPatterns.Email = /([a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)/;
 //static readonly AbsoluteUri = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&\/=]*)/;
 RegExPatterns.AbsoluteUri = /^[a-z][a-z+-\.]+:\/\/.+/;
+RegExPatterns.RelativePath = /^(?![A-Z]:\\)(?!\.{1,2}(\/|\\))(?!\/\w)([.\w\-\/\\]+)$/;
 RegExPatterns.Wikilink = /(!?)\[\[([^\[\]|]*)(\|([^\[\]]*))?\]\]/;
 // static readonly Markdownlink = /(!?)\[([^\]\[]*)\]\(([^)(]*)\)/;
 //TODO: revise
@@ -2653,8 +2654,7 @@ var VaultImp = class {
         return null;
       }
       const backlinksLinkData = {};
-      for (const sourceFile in backlinks) {
-        const linkCaches = backlinks[sourceFile];
+      for (const [sourceFile, linkCaches] of backlinks) {
         const linkDataArray = new Array();
         for (const linkCache of linkCaches) {
           const linkData = LinkData.parse(linkCache.original);
@@ -2683,6 +2683,12 @@ var VaultImp = class {
   }
   getConfig(setting) {
     return this.app.vault.getConfig(setting);
+  }
+  getFiles() {
+    return this.app.vault.getFiles();
+  }
+  getMarkdownFiles() {
+    return this.app.vault.getMarkdownFiles();
   }
 };
 
@@ -2804,6 +2810,33 @@ var ObsidianLinksSettingTab = class extends import_obsidian6.PluginSettingTab {
   constructor(app2, plugin) {
     super(app2, plugin);
     this.plugin = plugin;
+    this.repoUrl = "https://github.com/mii-key/obsidian-links";
+  }
+  getFullDocUrl(fragment) {
+    return this.repoUrl + "?tab=readme-ov-file#" + fragment;
+  }
+  getFullInsiderDocUrl(filename) {
+    return this.repoUrl + "/blob/master/docs/insider/" + filename;
+  }
+  setSettingHelpLink(setting, helpUrl) {
+    const nameEl = setting.settingEl.querySelector(".setting-item-name");
+    if (!nameEl) {
+      return;
+    }
+    this.setElementHelpLink(nameEl, helpUrl);
+  }
+  setElementHelpLink(element, helpUrl) {
+    if (!element) {
+      return;
+    }
+    const linkEl = createEl("a", {
+      href: helpUrl
+    });
+    const iconEl = element.createSpan();
+    iconEl.addClass("settings-help-icon");
+    (0, import_obsidian6.setIcon)(iconEl, "circle-help");
+    linkEl.appendChild(iconEl);
+    element.appendChild(linkEl);
   }
   display() {
     const { containerEl } = this;
@@ -2832,7 +2865,8 @@ var ObsidianLinksSettingTab = class extends import_obsidian6.PluginSettingTab {
       }
     };
     toggleskipFrontmatterInNoteWideCommandsSetting(this.plugin.settings.ffSkipFrontmatterInNoteWideCommands);
-    containerEl.createEl("h4", { text: "Set link text" });
+    const setListTextEl = containerEl.createEl("h4", { text: "Set link text" });
+    this.setElementHelpLink(setListTextEl, this.getFullDocUrl("set-link-text"));
     new import_obsidian6.Setting(containerEl).setName("Title separator").setDesc("String used as headings separator in 'Set link text' command.").addText((text) => text.setValue(this.plugin.settings.titleSeparator).onChange(async (value) => {
       this.plugin.settings.titleSeparator = value;
       await this.plugin.saveSettings();
@@ -3071,23 +3105,13 @@ var ObsidianLinksSettingTab = class extends import_obsidian6.PluginSettingTab {
       insiderDescription.createEl("span", {
         text: " and influence the direction of development."
       });
-      new import_obsidian6.Setting(containerEl).setName("Convert links in folder").setDesc("Convert links in a folder").setClass("setting-item--feature-convert-links-in-folder").addToggle((toggle) => {
+      const settingConvertLinksInFolder = new import_obsidian6.Setting(containerEl).setName("Convert links in folder").setDesc("Convert links in a folder").setClass("setting-item--feature-convert-links-in-folder").addToggle((toggle) => {
         toggle.setValue(this.plugin.settings.ffConvertLinksInFolder).onChange(async (value) => {
           this.plugin.settings.ffConvertLinksInFolder = value;
           await this.plugin.saveSettings();
         });
       });
-      const featureConvertLinksInFolderSettingDesc = containerEl.querySelector(".setting-item--feature-convert-links-in-folder .setting-item-description");
-      if (featureConvertLinksInFolderSettingDesc) {
-        featureConvertLinksInFolderSettingDesc.appendText(" see ");
-        featureConvertLinksInFolderSettingDesc.appendChild(
-          createEl("a", {
-            href: "https://github.com/mii-key/obsidian-links/blob/master/docs/insider/convert-links-in-folder.md",
-            text: "docs"
-          })
-        );
-        featureConvertLinksInFolderSettingDesc.appendText(".");
-      }
+      this.setSettingHelpLink(settingConvertLinksInFolder, this.getFullInsiderDocUrl("convert-links-in-folder.md"));
       new import_obsidian6.Setting(containerEl).setName("Obsidian URL support").setDesc("Add support for Obsidian URL").setClass("setting-item-featureObsidianUrl").addToggle((toggle) => {
         toggle.setValue(this.plugin.settings.ffObsidianUrlSupport).onChange(async (value) => {
           this.plugin.settings.ffObsidianUrlSupport = value;
@@ -3118,7 +3142,7 @@ var ObsidianLinksSettingTab = class extends import_obsidian6.PluginSettingTab {
         ffSkipFrontmatterSettingDesc.appendChild(
           createEl("a", {
             href: "https://github.com/mii-key/obsidian-links/blob/master/docs/insider/skip-frontmatter.md",
-            text: "docs"
+            text: "docs "
           })
         );
         ffSkipFrontmatterSettingDesc.appendText(".");
@@ -3229,12 +3253,26 @@ var DeleteLinkCommand = class extends CommandBase {
     if (checking && !this.isEnabled()) {
       return false;
     }
+    const selection = editor.getSelection();
     const text = editor.getValue();
     const cursorOffsetStart = editor.posToOffset(editor.getCursor("from"));
     const cursorOffsetEnd = editor.posToOffset(editor.getCursor("to"));
     const links = findLinks(text, 65535 /* All */, cursorOffsetStart, cursorOffsetEnd);
-    console.log(links == null ? void 0 : links.length);
     if (checking) {
+      console.log("'Delete link' command: Availability check.");
+      if (selection) {
+        console.log("'Delete link' command: Selected text is not supported.");
+        return false;
+      }
+      if ((links == null ? void 0 : links.length) == 0) {
+        console.log("'Delete link' command: No links found.");
+        return false;
+      }
+      if ((links == null ? void 0 : links.length) > 1) {
+        console.log("'Delete link' command: Multiple links are not supported.");
+        return false;
+      }
+      console.log("'Delete link' command: available.");
       return (links == null ? void 0 : links.length) == 1;
     }
     if ((links == null ? void 0 : links.length) == 1) {
@@ -3250,12 +3288,22 @@ var DeleteLinkCommand = class extends CommandBase {
         if (hashIdx == 0) {
           return;
         }
-        const filePath = hashIdx > 0 ? destination.substring(0, hashIdx) : destination;
+        let filePath = hashIdx > 0 ? destination.substring(0, hashIdx) : destination;
         let file = this.obsidianProxy.Vault.getAbstractFileByPath(filePath);
         if (!file) {
           const path = (0, import_parse_filepath2.default)(filePath);
-          if (path.ext === "") {
-            file = this.obsidianProxy.Vault.getAbstractFileByPath(filePath + ".md");
+          let pathExt = path.ext;
+          if (pathExt === "") {
+            pathExt = ".md";
+            filePath += pathExt;
+            file = this.obsidianProxy.Vault.getAbstractFileByPath(filePath);
+          }
+          if (!file) {
+            const vaultFiles = pathExt === ".md" ? this.obsidianProxy.Vault.getMarkdownFiles() : this.obsidianProxy.Vault.getFiles();
+            const targetFile = vaultFiles.find((x) => x.path.endsWith(filePath));
+            if (targetFile) {
+              file = targetFile;
+            }
           }
         }
         if (!file) {
@@ -5437,3 +5485,5 @@ map-cache/index.js:
    * Licensed under the MIT License.
    *)
 */
+
+/* nosourcemap */

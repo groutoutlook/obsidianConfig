@@ -22706,6 +22706,7 @@ var DEFAULT_MAP = {
   open_all_foldable_callouts: HotKey("O", "Shift", "Alt"),
   open_dev_tools: HotKey("F12"),
   open_keyshots_settings_tab: HotKey(",", "Mod", "Alt"),
+  reopen_current_note: HotKey("Q", "Alt"),
   replace_by_regex: HotKey("H", "Mod", "Alt"),
   reverse_selected_lines: HotKey("R", "Alt"),
   search_by_regex: HotKey("S", "Mod", "Alt"),
@@ -22904,9 +22905,11 @@ var EditorSelectionManipulator = class {
   asNormalized() {
     return this.clone().normalize();
   }
-  expand() {
-    this.anchor.ch = this.isNormalized() ? 0 : this.editor.getLine(this.anchor.line).length;
-    this.head.ch = this.isNormalized() ? this.editor.getLine(this.head.line).length : 0;
+  expand(addLine = false) {
+    this.normalize();
+    if (this.anchor.ch === 0 && this.head.ch === this.editor.getLine(this.head.line).length && addLine)
+      this.moveLines(0, 1);
+    this.setChars(0, this.editor.getLine(this.head.line).length);
     return this;
   }
   asEditorRange() {
@@ -23213,7 +23216,7 @@ function selectAllWordInstances(editor, case_sensitive) {
   editor.setSelections(selections);
 }
 function expandSelections(editor) {
-  SelectionsProcessing.selectionsProcessor(editor, void 0, (sel) => sel.expand());
+  SelectionsProcessing.selectionsProcessor(editor, void 0, (sel) => sel.expand(true));
 }
 async function toggleCaseSensitivity(plugin) {
   plugin.settings.case_sensitive = !plugin.settings.case_sensitive;
@@ -25193,7 +25196,7 @@ var RegexModal = class extends CallbackModal {
   updatePreview() {
     this.previewEl.empty();
     if (this.preview) {
-      import_obsidian7.MarkdownRenderer.renderMarkdown(this.previewProcessor(this.editorContent), this.previewEl, "", new import_obsidian7.Component()).then();
+      import_obsidian7.MarkdownRenderer.renderMarkdown(this.previewProcessor(this.editorContent.replace(/(^---\n(?:[\s\S]*?|))excalidraw-plugin:.+\n((?:[\s\S]*?\n|)---$)/m, "$1$2")), this.previewEl, "", new import_obsidian7.Component()).then();
       this.previewEl.classList.replace("raw", "markdown-rendered");
     } else {
       const content = this.previewEl.createEl("div");
@@ -25647,6 +25650,22 @@ var COMMANDS = (plugin, map) => [
   },
   {
     category: "Other" /* OTHER */,
+    id: "reopen-current-note",
+    name: "Reopen current note",
+    hotkeys: map.reopen_current_note,
+    checkCallback: (checking) => {
+      const file = app.workspace.getActiveFile();
+      if (file) {
+        if (!checking)
+          app.workspace.getLeaf(false).rebuildView();
+        else
+          return true;
+      }
+      return false;
+    }
+  },
+  {
+    category: "Other" /* OTHER */,
     id: "toggle-focus-mode",
     name: "Toggle focus mode",
     hotkeys: map.toggle_focus_mode,
@@ -25981,3 +26000,5 @@ var KeyshotsPlugin = class extends import_obsidian11.Plugin {
  * @internal
  * @license Modernizr 3.0.0pre (Custom Build) | MIT
  */
+
+/* nosourcemap */

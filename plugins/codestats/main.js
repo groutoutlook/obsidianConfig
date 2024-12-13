@@ -166,3 +166,5 @@ var CodeStatsPlugin = class extends import_obsidian3.Plugin {
     void this.updateStats();
   }
 };
+
+/* nosourcemap */
