@@ -2114,7 +2114,8 @@
     "microcontroller/lowend": 1,
     "crosplatform": 1355,
     "taobao/tmall": 1,
-    "cloud/serverless": 4
+    "cloud/serverless": 4,
+    "triac": 1356
   },
   "_version": 3
 }

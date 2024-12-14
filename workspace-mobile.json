@@ -13,11 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/journal/SoftwareJournal.md",
+                "file": "note_entertainment/note_discography/Lyric/Kickback-Lyrics.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Kickback-Lyrics"
             }
           }
         ]
@@ -36,7 +38,9 @@
                 "mode": "source",
                 "backlinks": false,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "OSJournal"
             }
           }
         ]
@@ -55,7 +59,9 @@
           "type": "file-explorer",
           "state": {
             "sortOrder": "alphabetical"
-          }
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
         }
       },
       {
@@ -70,7 +76,9 @@
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical"
-          }
+          },
+          "icon": "lucide-search",
+          "title": "Search"
         }
       },
       {
@@ -81,7 +89,9 @@
           "state": {
             "sortOrder": "frequency",
             "useHierarchy": true
-          }
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
         }
       },
       {
@@ -93,7 +103,9 @@
             "sortOrder": "frequency",
             "showSearch": false,
             "searchQuery": ""
-          }
+          },
+          "icon": "lucide-archive",
+          "title": "All properties"
         }
       },
       {
@@ -101,7 +113,9 @@
         "type": "leaf",
         "state": {
           "type": "bookmarks",
-          "state": {}
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
         }
       }
     ],
@@ -117,7 +131,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "note_software/journal/SoftwareJournal.md",
+            "file": "note_entertainment/note_discography/Lyric/Kickback-Lyrics.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -125,7 +139,9 @@
             "searchQuery": "",
             "backlinkCollapsed": false,
             "unlinkedCollapsed": true
-          }
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
         }
       },
       {
@@ -134,10 +150,12 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "note_software/journal/SoftwareJournal.md",
+            "file": "note_entertainment/note_discography/Lyric/Kickback-Lyrics.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
-          }
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
         }
       },
       {
@@ -146,8 +164,10 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "note_software/journal/SoftwareJournal.md"
-          }
+            "file": "note_entertainment/note_discography/Lyric/Kickback-Lyrics.md"
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
         }
       }
     ],
@@ -155,6 +175,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "omnisearch:Omnisearch": false,
       "switcher:Open quick switcher": true,
       "graph:Open graph view": true,
       "canvas:Create new canvas": false,
@@ -168,8 +189,8 @@
   },
   "active": "344f86682bfda1a6",
   "lastOpenFiles": [
-    "note_software/journal/OSJournal.md",
     "note_software/journal/SoftwareJournal.md",
+    "note_software/journal/OSJournal.md",
     "asset/doc/SDK-Features-without-animations-SG.pdf",
     "note_algo_lang/journal/ProgrammingJournal.md",
     "note_software/SysInternals/000.001.000.000-Process Utilities.md",
