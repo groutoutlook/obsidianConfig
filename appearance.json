@@ -10,5 +10,6 @@
   "enabledCssSnippets": [
     "generated.explorer-hider"
   ],
-  "interfaceFontFamily": "Ubuntu Nerd Font"
+  "interfaceFontFamily": "Ubuntu Nerd Font",
+  "showRibbon": false
 }
