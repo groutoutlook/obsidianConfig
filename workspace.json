@@ -52,13 +52,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_entertainment/note_discography/MusicJournal.md",
+                "file": "note_algo_lang/journal/LangJournal.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "MusicJournal"
+              "title": "LangJournal"
             }
           },
           {
@@ -235,11 +235,16 @@
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": true,
       "random-note:Open random note": true,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "tldraw:Create new tldrawing": false
     }
   },
   "active": "e05f4dbcb770b0d1",
   "lastOpenFiles": [
+    "note_Items/TaobaoJournal.mdD1uFbd.bck",
+    "tldraw/Tldraw 2025-03-25 3.56PM.md",
+    "note_algo_lang/journal/LangJournal.md",
+    "tldraw",
     "note_Knowledge/journal/LifeJournal.md",
     "note_Knowledge/secret/AccountJournal.mdIGJbWj.bck",
     "note_Knowledge/journal/VocabJournal.mdXuwrzp.bck",
@@ -258,7 +263,6 @@
     "note_software/journal/SoftwareJournal.mdslEfze.bck",
     "note_Knowledge/journal/OtherKnowledgeJournal.mdYrXveN.bck",
     "note_algo_lang/journal/LangJournal.md5OGxb5.bck",
-    "note_software/journal/WebJournal.mdrWPl65.bck",
     "SourGrape-Lyric.md",
     "mpv-shot0002.jpg",
     "mpv-shot0001.jpg",
@@ -278,9 +282,6 @@
     "asset/img/Pasted image 20250110212915.webp",
     "asset/img/Pasted image 20250110212828.webp",
     "asset/img/Pasted image 20250110212314.webp",
-    "note_algo_lang/journal/LangJournal.md",
-    "note_entertainment/note_discography/Lyric/V.I.P-S.I.D-Lyric.md",
-    "note_entertainment/note_discography/Lyric/Sway-Lyric.md",
     "Pasted image 20250110212915.webp",
     "Pasted image 20250110212828.webp",
     "data/image/092ed5af6877b01fc1dcf380a27f8faa_t.jpg",
