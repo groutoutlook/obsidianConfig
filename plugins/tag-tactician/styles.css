@@ -13,6 +13,27 @@
     padding: 0 2px;
 }
 
+/* Filter input with clear button */
+.filter-input-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.filter-input-container .filter-input {
+    width: 100%;
+    padding-right: 28px; /* Make room for the clear button */
+}
+
+.filter-input-container .search-input-clear-button {
+    margin: 0;
+}
+
+.filter-input-container .search-input-clear-button:hover {
+    color: var(--text-normal);
+}
+
 /* =============================================
  * Bulk Tag Editor Modal
  * ============================================= */
@@ -22,6 +43,13 @@
 
 .tt-bulk-tag-modal .warning {
     color: var(--text-error);
+}
+
+.tt-bulk-tag-modal .add-tags-container,
+.tt-bulk-tag-modal .remove-tags-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Table container and structure */
@@ -55,9 +83,11 @@
 
 /* Column styles */
 .tt-bulk-tag-modal .cb-col {
+    display: table-cell
     width: 24px;
     text-align: center;
-    padding: 0 !important;
+    padding: 8px;
+    vertical-align: middle;
 }
 
 .tt-bulk-tag-modal .file-name-col {
@@ -100,10 +130,6 @@
     padding: 10px;
 }
 
-.related-notes-container .related-notes-header {
-    margin-bottom: 12px;
-}
-
 .related-notes-container .related-notes-title-row {
     display: flex;
     justify-content: space-between;
@@ -126,9 +152,18 @@
     background-color: var(--background-primary-alt);
 }
 
+.related-notes-container .related-note-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .related-notes-container .related-note-score {
     font-size: 0.8em;
     color: var(--text-muted);
+    margin-left: 8px;
+    white-space: nowrap;
 }
 
 .related-notes-container .related-note-item-content {
@@ -140,8 +175,10 @@
 .related-notes-container .related-note-link {
     font-weight: 500;
     text-decoration: none;
-    display: block;
-    margin-bottom: 2px;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .related-notes-container .related-note-tags {
@@ -163,10 +200,6 @@
  * ============================================= */
 .tag-navigation-container {
     padding: 10px;
-}
-
-.tag-navigation-container .tag-navigation-header {
-    margin-bottom: 12px;
 }
 
 .tag-navigation-container .tag-navigation-title-row {
@@ -314,4 +347,27 @@
 
 .tag-navigation-container .tag-group:first-of-type .tag-group-header {
     margin-top: 0;
+}
+
+/* Styles for tag suggestions */
+.suggestion-container {
+    position: absolute;
+    z-index: 1000;
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px var(--background-modifier-box-shadow);
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.suggestion-item {
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover,
+.suggestion-item.is-selected {
+    background-color: var(--background-secondary);
 }

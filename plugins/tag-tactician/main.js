@@ -28,26 +28,134 @@ __export(main_exports, {
   default: () => TagTacticianPlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian8 = require("obsidian");
+var import_obsidian9 = require("obsidian");
 
 // src/batch/EditTagsModal.ts
+var import_obsidian2 = require("obsidian");
+
+// src/batch/TagSuggest.ts
 var import_obsidian = require("obsidian");
-var EditTagsModal = class extends import_obsidian.Modal {
+var TagSuggestBase = class extends import_obsidian.AbstractInputSuggest {
+  constructor(app, inputEl) {
+    super(app, inputEl);
+    this.onTagSelected = null;
+    this.inputEl = inputEl;
+    this.inputEl.addEventListener("input", () => {
+      if (this.onTagSelected) {
+        this.onTagSelected(this.inputEl.value);
+      }
+    });
+  }
+  /**
+   * Set a callback to be triggered when a tag is selected or input value changes
+   */
+  setTagSelectedCallback(callback) {
+    this.onTagSelected = callback;
+  }
+  renderSuggestion(tag, el) {
+    console.log(tag);
+    const div = el.createEl("div", { cls: "tag-autocomplete-item", text: tag });
+  }
+  selectSuggestion(tag) {
+    var _a;
+    const inputEl = this.inputEl;
+    const currentValue = (_a = inputEl.value) != null ? _a : "";
+    const currentTags = currentValue.split(/[, ]+/).filter((t) => t);
+    if (currentTags.length > 0) {
+      currentTags[currentTags.length - 1] = tag;
+    } else {
+      currentTags.push(tag);
+    }
+    inputEl.value = currentTags.join(", ") + ", ";
+    const newCursorPosition = inputEl.value.length;
+    inputEl.setSelectionRange(newCursorPosition, newCursorPosition);
+    inputEl.trigger("input");
+    if (this.onTagSelected) {
+      this.onTagSelected(inputEl.value);
+    }
+    this.close();
+  }
+};
+var ExistingTagSuggest = class extends TagSuggestBase {
+  async getSuggestions(inputStr) {
+    const allTags = this.getVaultTags();
+    return this.filterTags(allTags, inputStr);
+  }
+  getVaultTags() {
+    const allTags = /* @__PURE__ */ new Set();
+    const mdFiles = this.app.vault.getMarkdownFiles();
+    for (const file of mdFiles) {
+      const frontmatter = this.app.metadataCache.getFileCache(file).frontmatter;
+      let currentTags = (0, import_obsidian.parseFrontMatterTags)(frontmatter);
+      currentTags = currentTags === null ? currentTags = [] : currentTags;
+      currentTags.map((t) => t.startsWith("#") ? t.slice(1) : t).forEach((t) => allTags.add(t));
+    }
+    return Array.from(allTags).sort();
+  }
+  filterTags(tags, inputStr) {
+    const currentTags = inputStr.split(/[, ]+/);
+    const lastTag = currentTags[currentTags.length - 1].toLowerCase();
+    console.log("lastTag:", lastTag);
+    console.log("tags:", tags);
+    if (lastTag.length === 0) {
+      return [];
+    }
+    const filteredTags = tags.filter((tag) => tag.toLowerCase().includes(lastTag)).slice(0, 10);
+    console.log("filtered tags:", filteredTags);
+    return filteredTags;
+  }
+};
+var FileTagSuggest = class extends TagSuggestBase {
+  constructor(app, inputEl, files) {
+    super(app, inputEl);
+    this.files = files;
+  }
+  async getSuggestions(inputStr) {
+    const fileTags = this.getTagsFromFiles();
+    return this.filterTags(fileTags, inputStr);
+  }
+  getTagsFromFiles() {
+    const allTags = /* @__PURE__ */ new Set();
+    const metadataCache = this.app.metadataCache;
+    this.files.forEach((file) => {
+      const frontmatter = this.app.metadataCache.getFileCache(file).frontmatter;
+      let currentTags = (0, import_obsidian.parseFrontMatterTags)(frontmatter);
+      currentTags = currentTags === null ? currentTags = [] : currentTags;
+      currentTags.map((t) => t.startsWith("#") ? t.slice(1) : t).forEach((t) => allTags.add(t));
+    });
+    return Array.from(allTags).sort();
+  }
+  filterTags(tags, inputStr) {
+    const currentTags = inputStr.split(/[, ]+/);
+    const lastTag = currentTags[currentTags.length - 1].toLowerCase();
+    console.log("lastTag:", lastTag);
+    console.log("tags:", tags);
+    if (lastTag.length === 0) {
+      return [];
+    }
+    const filteredTags = tags.filter((tag) => tag.toLowerCase().includes(lastTag)).slice(0, 10);
+    console.log("filtered tags:", filteredTags);
+    return filteredTags;
+  }
+};
+
+// src/batch/EditTagsModal.ts
+var EditTagsModal = class extends import_obsidian2.Modal {
   constructor(app, files, onSubmit) {
     super(app);
     // valid markdown files
     this.nonMarkdownFiles = [];
     this.invalidYamlFiles = [];
-    // The user’s add/remove arrays, extracted from text inputs
+    // The user's add/remove arrays, extracted from text inputs
     this.tagsToAdd = [];
     this.tagsToRemove = [];
-    // Holds each file’s current + proposed tags, along with references to UI elements
+    // Holds each file's current + proposed tags, along with references to UI elements
     this.fileTagData = [];
     this.mdFiles = files.filter(
-      (f) => f instanceof import_obsidian.TFile && f.extension === "md"
+      (f) => f instanceof import_obsidian2.TFile && f.extension === "md"
     );
     this.nonMarkdownFiles = files.filter(
-      (f) => !(f instanceof import_obsidian.TFile && f.extension === "md")
+      (f) => !(f instanceof import_obsidian2.TFile && f.extension === "md")
     );
     this.onSubmit = onSubmit;
   }
@@ -76,21 +184,21 @@ var EditTagsModal = class extends import_obsidian.Modal {
         ul.createEl("li", { text: f.name });
       });
     }
-    new import_obsidian.Setting(contentEl).setName("Tags to add (comma or space separated)").addText((text) => {
-      text.setPlaceholder("foo, bar/1");
-      text.onChange((val) => {
-        this.tagsToAdd = parseTagInput(val);
+    new import_obsidian2.Setting(contentEl).setName("Add Tags").setDesc("Tags to add to files, separated by commas.").addText((input) => {
+      input.setPlaceholder("Tags to add (comma separated)").onChange(async (value) => {
+        this.tagsToAdd = this.parseTagInput(value);
         this.updateProposedTags();
       });
+      new ExistingTagSuggest(this.app, input.inputEl);
     });
-    new import_obsidian.Setting(contentEl).setName("Tags to remove (comma or space separated)").addText((text) => {
-      text.setPlaceholder("bar/2, oldTag");
-      text.onChange((val) => {
-        this.tagsToRemove = parseTagInput(val);
+    new import_obsidian2.Setting(contentEl).setName("Remove Tags").setDesc("Tags to remove from files, separated by commas.").addText((input) => {
+      input.setPlaceholder("Tags to remove (comma separated)").onChange(async (value) => {
+        this.tagsToRemove = this.parseTagInput(value);
         this.updateProposedTags();
       });
+      new FileTagSuggest(this.app, input.inputEl, this.mdFiles);
     });
-    new import_obsidian.Setting(contentEl).setName("File selection").setDesc("Check or uncheck all files at once.").addButton(
+    new import_obsidian2.Setting(contentEl).setName("File selection").setDesc("Check or uncheck all files at once.").addButton(
       (btn) => btn.setButtonText("Select all").onClick(() => {
         for (const tagData of this.fileTagData) {
           tagData.accepted = true;
@@ -131,21 +239,14 @@ var EditTagsModal = class extends import_obsidian.Modal {
     for (const tagData of this.fileTagData) {
       this.renderFileRow(tableContainer, tagData);
     }
-    new import_obsidian.Setting(contentEl).addButton(
-      (btn) => btn.setButtonText("Apply changes").setCta().onClick(() => {
-        const updates = this.fileTagData.filter((td) => td.accepted).map((td) => ({
-          file: td.file,
-          finalTags: td.proposedTags
-        }));
-        if (updates.length === 0) {
-          new import_obsidian.Notice("No files selected for update.");
-          this.close();
-          return;
-        }
-        this.close();
-        this.onSubmit(updates);
-      })
-    );
+    const buttonContainer = contentEl.createDiv({ cls: "modal-button-container" });
+    buttonContainer.createEl("button", {
+      text: "Apply Changes",
+      cls: "mod-cta"
+    }).addEventListener("click", () => this.applyChanges());
+    buttonContainer.createEl("button", {
+      text: "Cancel"
+    }).addEventListener("click", () => this.close());
   }
   onClose() {
     this.contentEl.empty();
@@ -158,7 +259,7 @@ var EditTagsModal = class extends import_obsidian.Modal {
     this.invalidYamlFiles = [];
     for (const file of this.mdFiles) {
       const frontmatter = this.app.metadataCache.getFileCache(file).frontmatter;
-      let currentTags = (0, import_obsidian.parseFrontMatterTags)(frontmatter);
+      let currentTags = (0, import_obsidian2.parseFrontMatterTags)(frontmatter);
       currentTags = currentTags === null ? currentTags = [] : currentTags;
       currentTags = currentTags.map((t) => t.startsWith("#") ? t.slice(1) : t);
       const proposedTags = [...currentTags].sort();
@@ -195,7 +296,7 @@ var EditTagsModal = class extends import_obsidian.Modal {
   }
   /**
    * Recalculates the proposedTags for each file after user modifies
-   * “tags to add” or “tags to remove.” Also updates the UI text.
+   * "tags to add" or "tags to remove." Also updates the UI text.
    */
   updateProposedTags() {
     for (const tagData of this.fileTagData) {
@@ -208,10 +309,11 @@ var EditTagsModal = class extends import_obsidian.Modal {
       newTagSet = newTagSet.filter((t) => !this.tagsToRemove.includes(t));
       newTagSet.sort();
       tagData.proposedTags = newTagSet;
-      if (tagData.proposedEl) {
+      if (tagData.proposedEl !== void 0) {
         tagData.proposedEl.empty();
         newTagSet.forEach((t) => {
-          tagData.proposedEl.createEl("a", {
+          var _a;
+          (_a = tagData.proposedEl) == null ? void 0 : _a.createEl("a", {
             cls: "tag",
             text: t,
             attr: { disabled: true }
@@ -220,20 +322,26 @@ var EditTagsModal = class extends import_obsidian.Modal {
       }
     }
   }
-};
-function parseTagInput(input) {
-  if (!input || !input.trim()) {
-    return [];
+  applyChanges() {
+    const updates = this.fileTagData.filter((td) => td.accepted).map((td) => ({
+      file: td.file,
+      finalTags: td.proposedTags
+    }));
+    if (updates.length === 0) {
+      new import_obsidian2.Notice("No files selected for update.");
+      this.close();
+      return;
+    }
+    this.close();
+    this.onSubmit(updates);
   }
-  return Array.from(
-    new Set(
-      input.split(/[, ]+/).map((part) => part.trim()).filter((part) => !!part)
-    )
-  );
-}
+  parseTagInput(input) {
+    return input.split(/[,\s]+/).filter((tag) => tag.trim().length > 0).map((tag) => tag.trim());
+  }
+};
 
 // src/batch/FileTagProcessor.ts
-var import_obsidian2 = require("obsidian");
+var import_obsidian3 = require("obsidian");
 
 // node_modules/js-yaml/dist/js-yaml.mjs
 function isNothing(subject) {
@@ -2899,10 +3007,10 @@ async function applyTagUpdates(app, updates, settings) {
     if (file.extension !== "md")
       continue;
     await app.vault.process(file, (oldContent) => {
-      const frontMatterInfo = (0, import_obsidian2.getFrontMatterInfo)(oldContent);
+      const frontMatterInfo = (0, import_obsidian3.getFrontMatterInfo)(oldContent);
       let newContent;
       if (frontMatterInfo.exists) {
-        const fmData = (0, import_obsidian2.parseYaml)(frontMatterInfo.frontmatter);
+        const fmData = (0, import_obsidian3.parseYaml)(frontMatterInfo.frontmatter);
         fmData.tags = finalTags.length > 0 ? finalTags : void 0;
         const newYaml = dumpYaml(fmData, settings.tagListStyle);
         newContent = oldContent.slice(0, frontMatterInfo.from) + `${newYaml}
@@ -2936,8 +3044,8 @@ function dumpYaml(fmData, style) {
 }
 
 // src/settings/TagTacticianSettingTab.ts
-var import_obsidian3 = require("obsidian");
-var TagTacticianSettingTab = class extends import_obsidian3.PluginSettingTab {
+var import_obsidian4 = require("obsidian");
+var TagTacticianSettingTab = class extends import_obsidian4.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.plugin = plugin;
@@ -2945,66 +3053,66 @@ var TagTacticianSettingTab = class extends import_obsidian3.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    new import_obsidian3.Setting(containerEl).setName("Bulk tag operations").setHeading();
-    new import_obsidian3.Setting(containerEl).setName("Show warning for non-markdown files").setDesc("If enabled, the modal will display a warning for non-markdown files.").addToggle(
+    new import_obsidian4.Setting(containerEl).setName("Bulk tag operations").setHeading();
+    new import_obsidian4.Setting(containerEl).setName("Show warning for non-markdown files").setDesc("If enabled, the modal will display a warning for non-markdown files.").addToggle(
       (toggle) => toggle.setValue(this.plugin.settings.showNonMarkdownWarning).onChange(async (val) => {
         this.plugin.settings.showNonMarkdownWarning = val;
         await this.plugin.saveSettings();
       })
     );
-    new import_obsidian3.Setting(containerEl).setName("Tag list style").setDesc("Choose how frontmatter tags are serialized: hyphen block style or bracket inline style.").addDropdown((dropdown) => {
+    new import_obsidian4.Setting(containerEl).setName("Tag list style").setDesc("Choose how frontmatter tags are serialized: hyphen block style or bracket inline style.").addDropdown((dropdown) => {
       dropdown.addOption("hyphens", "Hyphens (block style)").addOption("brackets", "Square brackets (inline style)").setValue(this.plugin.settings.tagListStyle).onChange(async (value) => {
         this.plugin.settings.tagListStyle = value;
         await this.plugin.saveSettings();
       });
     });
-    new import_obsidian3.Setting(containerEl).setName("Related notes view").setHeading();
-    new import_obsidian3.Setting(containerEl).setName("Show tags by default").setDesc("If enabled, the Related Notes sidebar will initially show tags.").addToggle((toggle) => {
+    new import_obsidian4.Setting(containerEl).setName("Related notes view").setHeading();
+    new import_obsidian4.Setting(containerEl).setName("Show tags by default").setDesc("If enabled, the Related Notes sidebar will initially show tags.").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.defaultShowTags).onChange(async (val) => {
         this.plugin.settings.defaultShowTags = val;
         await this.plugin.saveSettings();
       });
     });
-    new import_obsidian3.Setting(containerEl).setName("Show score by default").setDesc("If enabled, the Related Notes sidebar will initially show note scores.").addToggle((toggle) => {
+    new import_obsidian4.Setting(containerEl).setName("Show score by default").setDesc("If enabled, the Related Notes sidebar will initially show note scores.").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.defaultShowScore).onChange(async (val) => {
         this.plugin.settings.defaultShowScore = val;
         await this.plugin.saveSettings();
       });
     });
-    new import_obsidian3.Setting(containerEl).setName("Hide results with score below").setDesc("Hide notes in the Related Notes sidebar with a score below this threshold.").addText((text) => {
+    new import_obsidian4.Setting(containerEl).setName("Hide results with score below").setDesc("Hide notes in the Related Notes sidebar with a score below this threshold.").addText((text) => {
       text.setPlaceholder("1").setValue(this.plugin.settings.minimumRelatedNotesScore.toString()).onChange(async (val) => {
         this.plugin.settings.minimumRelatedNotesScore = Number(val);
         await this.plugin.saveSettings();
       });
     });
-    new import_obsidian3.Setting(containerEl).setName("Related notes score weighting").setHeading();
+    new import_obsidian4.Setting(containerEl).setName("Related notes score weighting").setHeading();
     containerEl.createEl("p", { text: "Higher values increase importance." });
-    new import_obsidian3.Setting(containerEl).setName("Tag similarity weight").setDesc("The weight of tag similarity in the Related Notes score.").addText((text) => {
+    new import_obsidian4.Setting(containerEl).setName("Tag similarity weight").setDesc("The weight of tag similarity in the Related Notes score.").addText((text) => {
       text.setPlaceholder("1.0").setValue(this.plugin.settings.weightTagSimilarity.toString()).onChange(async (val) => {
         this.plugin.settings.weightTagSimilarity = Number(val);
         await this.plugin.saveSettings();
       });
     });
-    new import_obsidian3.Setting(containerEl).setName("Title similarity weight").setDesc("The weight of file name similarity in the Related Notes score.").addText((text) => {
+    new import_obsidian4.Setting(containerEl).setName("Title similarity weight").setDesc("The weight of file name similarity in the Related Notes score.").addText((text) => {
       text.setPlaceholder("1.0").setValue(this.plugin.settings.weightTitleSimilarity.toString()).onChange(async (val) => {
         this.plugin.settings.weightTitleSimilarity = Number(val);
         await this.plugin.saveSettings();
       });
     });
-    new import_obsidian3.Setting(containerEl).setName("Path similarity weight").setDesc("The weight of file path similarity in the Related Notes score.").addText((text) => {
+    new import_obsidian4.Setting(containerEl).setName("Path similarity weight").setDesc("The weight of file path similarity in the Related Notes score.").addText((text) => {
       text.setPlaceholder("1.0").setValue(this.plugin.settings.weightPathSimilarity.toString()).onChange(async (val) => {
         this.plugin.settings.weightPathSimilarity = Number(val);
         await this.plugin.saveSettings();
       });
     });
-    new import_obsidian3.Setting(containerEl).setName("Link interconnections weight").setDesc("The weight of notes having links to each other in the Related Notes score.").addText((text) => {
+    new import_obsidian4.Setting(containerEl).setName("Link interconnections weight").setDesc("The weight of notes having links to each other in the Related Notes score.").addText((text) => {
       text.setPlaceholder("1.0").setValue(this.plugin.settings.weightLinkInterconnections.toString()).onChange(async (val) => {
         this.plugin.settings.weightLinkInterconnections = Number(val);
         await this.plugin.saveSettings();
       });
     });
-    new import_obsidian3.Setting(containerEl).setName("Tag navigation view").setHeading();
-    new import_obsidian3.Setting(containerEl).setName("Default navigation sorting").setDesc("Choose how tags and notes should be sorted.").addDropdown((dropdown) => {
+    new import_obsidian4.Setting(containerEl).setName("Tag navigation view").setHeading();
+    new import_obsidian4.Setting(containerEl).setName("Default navigation sorting").setDesc("Choose how tags and notes should be sorted.").addDropdown((dropdown) => {
       dropdown.addOption("alphabetically-descending", "Alphabetically").addOption("file-count-descending", "By note count").addOption("created-time-descending", "Newest notes first").addOption("created-time-ascending", "Oldest notes first").addOption("modified-time-descending", "Recently modified first").addOption("modified-time-ascending", "Least recently modified first").setValue(this.plugin.settings.nbtDefaultSort).onChange(async (value) => {
         this.plugin.settings.nbtDefaultSort = value;
         await this.plugin.saveSettings();
@@ -3028,7 +3136,7 @@ var DEFAULT_SETTINGS = {
 };
 
 // src/relatedView/TagIndexer.ts
-var import_obsidian4 = require("obsidian");
+var import_obsidian5 = require("obsidian");
 var TagIndexer = class {
   constructor(plugin) {
     this.noteTagsMap = /* @__PURE__ */ new Map();
@@ -3081,7 +3189,7 @@ var TagIndexer = class {
   computeRelatedNotes(currentNotePath) {
     var _a, _b;
     const file = this.plugin.app.vault.getAbstractFileByPath(currentNotePath);
-    if (!(file instanceof import_obsidian4.TFile))
+    if (!(file instanceof import_obsidian5.TFile))
       return [];
     const currCache = this.plugin.app.metadataCache.getFileCache(file);
     if (!currCache)
@@ -3217,9 +3325,9 @@ function levenshteinSimilarity(s1, s2) {
 }
 
 // src/relatedView/RelatedNotesView.ts
-var import_obsidian5 = require("obsidian");
+var import_obsidian6 = require("obsidian");
 var RELATED_NOTES_VIEW_TYPE = "related-notes-view";
-var RelatedNotesView = class extends import_obsidian5.ItemView {
+var RelatedNotesView = class extends import_obsidian6.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     /** User-entered filter text for live filtering notes. */
@@ -3255,10 +3363,10 @@ var RelatedNotesView = class extends import_obsidian5.ItemView {
     const titleRow = header.createEl("div", { cls: "related-notes-title-row" });
     titleRow.createEl("h4", { text: "Related Notes" });
     const optionsBtn = titleRow.createEl("button", { cls: "clickable-icon" });
-    (0, import_obsidian5.setIcon)(optionsBtn, "gear");
+    (0, import_obsidian6.setIcon)(optionsBtn, "gear");
     optionsBtn.style.marginLeft = "1rem";
     optionsBtn.onclick = (evt) => {
-      const menu = new import_obsidian5.Menu(this.app);
+      const menu = new import_obsidian6.Menu(this.app);
       menu.addItem((item) => {
         item.setTitle((this.showTags ? "\u2713 " : "") + "Show Tags").onClick(() => {
           this.showTags = !this.showTags;
@@ -3280,16 +3388,33 @@ var RelatedNotesView = class extends import_obsidian5.ItemView {
       menu.showAtMouseEvent(evt);
     };
     const controls = header.createEl("div", { cls: "related-notes-controls" });
-    const filterInput = controls.createEl("input", {
+    const filterWrapper = controls.createEl("div", { cls: "filter-input-container" });
+    const filterInput = filterWrapper.createEl("input", {
       type: "search",
       placeholder: "Filter by name or tag...",
       cls: "filter-input"
     });
     filterInput.value = this.filterQuery;
-    filterInput.style.minWidth = "120px";
+    const clearButton = filterWrapper.createEl("span", {
+      cls: "search-input-clear-button",
+      attr: {
+        "aria-label": "Clear filter"
+      }
+    });
+    clearButton.style.display = this.filterQuery ? "flex" : "none";
     filterInput.oninput = () => {
       this.filterQuery = filterInput.value.trim().toLowerCase();
+      clearButton.style.display = this.filterQuery ? "flex" : "none";
       this.refreshList();
+    };
+    clearButton.onclick = (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      filterInput.value = "";
+      this.filterQuery = "";
+      clearButton.style.display = "none";
+      this.refreshList();
+      filterInput.focus();
     };
     const listContainer = container.createEl("div", { cls: "related-notes-list-container" });
     this.renderNoteList(listContainer);
@@ -3309,6 +3434,7 @@ var RelatedNotesView = class extends import_obsidian5.ItemView {
    * applying any filters and toggles.
    */
   renderNoteList(container) {
+    var _a, _b;
     const results = this.plugin.computeRelatedNotes();
     if (!results.length) {
       container.createEl("p", { text: "No related notes found." });
@@ -3323,15 +3449,78 @@ var RelatedNotesView = class extends import_obsidian5.ItemView {
     for (const { notePath, score } of topResults) {
       const noteFile = this.app.vault.getAbstractFileByPath(notePath);
       const item = container.createEl("div", { cls: "related-note-item" });
-      if (this.showScore) {
-        const scoreEl = item.createEl("span", { cls: "related-note-score" });
-        scoreEl.setText(`${score.toPrecision(2)}`);
-        scoreEl.title = "Score: " + score;
-      }
       const itemContent = item.createEl("div", { cls: "related-note-item-content" });
+      const titleRow = itemContent.createEl("div", { cls: "related-note-title-row" });
       const noteTitle = notePath.split(/[\\/]/).pop();
-      const link = itemContent.createEl("a", { cls: "related-note-link" });
+      const link = titleRow.createEl("a", { cls: "related-note-link" });
       link.innerHTML = this.highlightMatches(noteTitle, this.filterQuery);
+      if (this.showScore) {
+        const scoreEl = titleRow.createEl("span", { cls: "related-note-score" });
+        scoreEl.setText(`${score.toPrecision(2)}`);
+        if (noteFile instanceof import_obsidian6.TFile) {
+          const currentFile = this.app.workspace.getActiveFile();
+          if (currentFile) {
+            const currFullTags = gatherTagsFromCache(this.app.metadataCache.getFileCache(currentFile));
+            const currSegments = gatherAllPrefixSegmentsForNote(currFullTags);
+            const candTags = gatherTagsFromCache(this.app.metadataCache.getFileCache(noteFile));
+            const candSegments = gatherAllPrefixSegmentsForNote(candTags);
+            let prefixOverlapScore = 0;
+            const overlappingTags = [];
+            for (const seg of candSegments) {
+              if (currSegments.has(seg)) {
+                prefixOverlapScore += 1;
+                overlappingTags.push(seg);
+              }
+            }
+            const currentTitle = currentFile.basename.toLowerCase();
+            const candidateTitle = noteFile.basename.toLowerCase();
+            const titleSimScore = levenshteinSimilarity(currentTitle, candidateTitle);
+            let pathSimScore = 0;
+            if (noteFile.parent.path !== "/" && currentFile.parent.path !== "/") {
+              pathSimScore = levenshteinSimilarity(currentFile.path, notePath);
+            }
+            let linkScore = 0;
+            const candCache = this.app.metadataCache.getFileCache(noteFile);
+            const currCache = this.app.metadataCache.getFileCache(currentFile);
+            if (candCache && currCache) {
+              if ((_a = candCache.links) == null ? void 0 : _a.map((l) => l.link).includes(currentFile.basename)) {
+                linkScore++;
+              }
+              if ((_b = currCache.links) == null ? void 0 : _b.map((l) => l.link).includes(noteFile.basename)) {
+                linkScore++;
+              }
+            }
+            const tagWeight = this.plugin.settings.weightTagSimilarity;
+            const titleWeight = this.plugin.settings.weightTitleSimilarity;
+            const pathWeight = this.plugin.settings.weightPathSimilarity;
+            const linkWeight = this.plugin.settings.weightLinkInterconnections;
+            const weightedTagScore = tagWeight * prefixOverlapScore;
+            const weightedTitleScore = titleWeight * titleSimScore;
+            const weightedPathScore = pathWeight * pathSimScore;
+            const weightedLinkScore = linkWeight * linkScore;
+            let tooltipText = "Score Breakdown:\n";
+            tooltipText += `\u2022 Tag similarity: ${weightedTagScore.toFixed(2)} (${prefixOverlapScore} tag overlaps \xD7 ${tagWeight} weight)
+`;
+            if (overlappingTags.length > 0) {
+              tooltipText += `  Overlapping tags: ${overlappingTags.join(", ")}
+`;
+            }
+            tooltipText += `\u2022 Title similarity: ${weightedTitleScore.toFixed(2)} (${titleSimScore.toFixed(2)} similarity \xD7 ${titleWeight} weight)
+`;
+            tooltipText += `\u2022 Path similarity: ${weightedPathScore.toFixed(2)} (${pathSimScore.toFixed(2)} similarity \xD7 ${pathWeight} weight)
+`;
+            tooltipText += `\u2022 Link interconnections: ${weightedLinkScore.toFixed(2)} (${linkScore} links \xD7 ${linkWeight} weight)
+`;
+            tooltipText += `
+Total score: ${score.toPrecision(3)}`;
+            scoreEl.title = tooltipText;
+          } else {
+            scoreEl.title = "Score: " + score;
+          }
+        } else {
+          scoreEl.title = "Score: " + score;
+        }
+      }
       link.title = notePath;
       link.addEventListener("mouseover", (event) => {
         this.app.workspace.trigger("hover-link", {
@@ -3346,7 +3535,7 @@ var RelatedNotesView = class extends import_obsidian5.ItemView {
       link.addEventListener("click", (evt) => {
         evt.preventDefault();
         evt.stopPropagation();
-        if (noteFile instanceof import_obsidian5.TFile) {
+        if (noteFile instanceof import_obsidian6.TFile) {
           this.app.workspace.getLeaf().openFile(noteFile);
         } else {
           console.error(`noteFile at ${notePath} is not a TFile?`);
@@ -3355,7 +3544,9 @@ var RelatedNotesView = class extends import_obsidian5.ItemView {
       link.addEventListener("auxclick", (evt) => {
         evt.preventDefault();
         evt.stopPropagation();
-        this.app.workspace.openLinkText(notePath, "", true);
+        if (noteFile instanceof import_obsidian6.TFile) {
+          this.app.workspace.openLinkText(notePath, "", true, { active: false, eState: { focus: false } });
+        }
       });
       if (this.showTags) {
         const noteTags = gatherTagsFromCache(this.app.metadataCache.getFileCache(noteFile));
@@ -3420,10 +3611,10 @@ var RelatedNotesView = class extends import_obsidian5.ItemView {
 };
 
 // src/navByTag/NavByTagView.ts
-var import_obsidian7 = require("obsidian");
+var import_obsidian8 = require("obsidian");
 
 // src/navByTag/TagNavigationRenderer.ts
-var import_obsidian6 = require("obsidian");
+var import_obsidian7 = require("obsidian");
 var TagNavigationRenderer = class {
   /**
    * Create a new tag navigation renderer
@@ -3516,7 +3707,7 @@ var TagNavigationRenderer = class {
         break;
     }
     const iconSpan = buttonEl.createSpan();
-    (0, import_obsidian6.setIcon)(iconSpan, sortIcon);
+    (0, import_obsidian7.setIcon)(iconSpan, sortIcon);
     const labelSpan = buttonEl.createSpan({
       text: sortLabel,
       cls: "sort-btn-label"
@@ -3526,7 +3717,7 @@ var TagNavigationRenderer = class {
    * Show the sort menu at the given button
    */
   showSortMenu(sortBtn, onSortChange) {
-    const menu = new import_obsidian6.Menu();
+    const menu = new import_obsidian7.Menu();
     menu.addItem((item) => {
       item.setTitle("Sort alphabetically").setIcon(this.sortMode === "alphabetically-descending" ? "checkmark" : "").onClick(() => {
         this.sortMode = "alphabetically-descending";
@@ -3573,14 +3764,47 @@ var TagNavigationRenderer = class {
    */
   renderExpandButton(buttonEl) {
     if (this.expandAll) {
-      (0, import_obsidian6.setIcon)(buttonEl, "chevrons-down-up");
+      (0, import_obsidian7.setIcon)(buttonEl, "chevrons-down-up");
       buttonEl.setAttribute("aria-label", "Collapse all tags");
       buttonEl.title = "Currently showing expanded tags\nClick to collapse all tag groups";
     } else {
-      (0, import_obsidian6.setIcon)(buttonEl, "chevrons-up-down");
+      (0, import_obsidian7.setIcon)(buttonEl, "chevrons-up-down");
       buttonEl.setAttribute("aria-label", "Expand all tags");
       buttonEl.title = "Currently showing collapsed tags\nClick to expand all tag groups";
     }
+  }
+  /**
+   * Create a filter input with a clear button
+   */
+  createFilterInput(container, initialValue, placeholder, onChange) {
+    const filterWrapper = container.createEl("div", { cls: "filter-input-container" });
+    const filterInput = filterWrapper.createEl("input", {
+      type: "search",
+      placeholder,
+      cls: "filter-input"
+    });
+    filterInput.value = initialValue;
+    const clearButton = filterWrapper.createEl("span", {
+      cls: "search-input-clear-button",
+      attr: {
+        "aria-label": "Clear filter"
+      }
+    });
+    clearButton.style.display = initialValue ? "flex" : "none";
+    filterInput.oninput = () => {
+      const value = filterInput.value.trim();
+      clearButton.style.display = value ? "flex" : "none";
+      onChange(value);
+    };
+    clearButton.onclick = (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      filterInput.value = "";
+      clearButton.style.display = "none";
+      onChange("");
+      filterInput.focus();
+    };
+    return filterInput;
   }
   /**
    * Build a hierarchical structure of tags and their associated notes.
@@ -3745,9 +3969,9 @@ var TagNavigationRenderer = class {
       }
       const groupHeader = groupContainer.createEl("summary", { cls: "tag-group-header" });
       const icon = groupHeader.createEl("span", { cls: "tag-group-icon" });
-      (0, import_obsidian6.setIcon)(icon, groupContainer.open ? "chevron-down" : "chevron-right");
+      (0, import_obsidian7.setIcon)(icon, groupContainer.open ? "chevron-down" : "chevron-right");
       groupContainer.addEventListener("toggle", () => {
-        (0, import_obsidian6.setIcon)(icon, groupContainer.open ? "chevron-down" : "chevron-right");
+        (0, import_obsidian7.setIcon)(icon, groupContainer.open ? "chevron-down" : "chevron-right");
       });
       const tagName = groupHeader.createEl("span");
       tagName.innerHTML = this.highlightMatches(key, this.filterQuery);
@@ -3841,7 +4065,7 @@ Notes in subtags: ${childFileCount}`;
 
 // src/navByTag/NavByTagView.ts
 var TAG_NAVIGATION_VIEW_TYPE = "tag-navigation-view";
-var NavByTagView = class extends import_obsidian7.ItemView {
+var NavByTagView = class extends import_obsidian8.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.listContainerEl = null;
@@ -3893,17 +4117,16 @@ var NavByTagView = class extends import_obsidian7.ItemView {
       this.renderer.renderExpandButton(expandAllBtn);
       this.renderList();
     };
-    const filterInput = header.createEl("input", {
-      type: "search",
-      placeholder: "Filter tags...",
-      cls: "tag-nav-filter-input"
-    });
-    filterInput.value = this.filterQuery;
-    filterInput.oninput = () => {
-      this.filterQuery = filterInput.value.trim().toLowerCase();
-      this.renderer.setFilterQuery(this.filterQuery);
-      this.renderList();
-    };
+    this.renderer.createFilterInput(
+      header,
+      this.filterQuery,
+      "Filter tags...",
+      (value) => {
+        this.filterQuery = value.toLowerCase();
+        this.renderer.setFilterQuery(this.filterQuery);
+        this.renderList();
+      }
+    );
     this.listContainerEl = container.createEl("div", { cls: "tag-navigation-list-container" });
     this.renderList();
   }
@@ -3924,7 +4147,7 @@ var NavByTagView = class extends import_obsidian7.ItemView {
 };
 
 // main.ts
-var TagTacticianPlugin = class extends import_obsidian8.Plugin {
+var TagTacticianPlugin = class extends import_obsidian9.Plugin {
   constructor() {
     super(...arguments);
     this.activeFilePath = null;
@@ -3993,7 +4216,7 @@ var TagTacticianPlugin = class extends import_obsidian8.Plugin {
             updates,
             this.settings
           );
-          new import_obsidian8.Notice(`Updated frontmatter tags in ${modifiedCount} file(s).`);
+          new import_obsidian9.Notice(`Updated frontmatter tags in ${modifiedCount} file(s).`);
         }).open();
       });
     });
@@ -4018,7 +4241,7 @@ var TagTacticianPlugin = class extends import_obsidian8.Plugin {
         window.clearTimeout(timer);
         timer = window.setTimeout(() => {
           var _a;
-          const mdView = this.app.workspace.getActiveViewOfType(import_obsidian8.MarkdownView);
+          const mdView = this.app.workspace.getActiveViewOfType(import_obsidian9.MarkdownView);
           if (!mdView)
             return;
           const file = mdView.file;
@@ -4114,9 +4337,9 @@ var TagTacticianPlugin = class extends import_obsidian8.Plugin {
 function expandFolders(selection) {
   const results = [];
   for (const item of selection) {
-    if (item instanceof import_obsidian8.TFolder) {
-      import_obsidian8.Vault.recurseChildren(item, (child) => {
-        if (child instanceof import_obsidian8.TFile) {
+    if (item instanceof import_obsidian9.TFolder) {
+      import_obsidian9.Vault.recurseChildren(item, (child) => {
+        if (child instanceof import_obsidian9.TFile) {
           results.push(child);
         }
       });

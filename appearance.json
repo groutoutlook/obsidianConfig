@@ -11,5 +11,5 @@
     "generated.explorer-hider"
   ],
   "interfaceFontFamily": "Ubuntu Nerd Font",
-  "showRibbon": false
+  "showRibbon": true
 }
