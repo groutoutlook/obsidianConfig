@@ -2391,7 +2391,20 @@
     "quantum": 1485,
     "indicator": 1486,
     "LED/ARGB": 3,
-    "clock/lcd": 2
+    "clock/lcd": 2,
+    "linux/sbc": 11,
+    "decoration": 1487,
+    "LED/OEM": 4,
+    "pcb/process": 4,
+    "web/services": 26,
+    "it": 1488,
+    "smt": 1489,
+    "jargon": 1490,
+    "excel": 1491,
+    "geography/spain": 4,
+    "spain": 1492,
+    "msvc": 1493,
+    "forwarder": 1494
   },
   "_version": 3
 }

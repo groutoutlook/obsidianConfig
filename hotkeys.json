@@ -208,15 +208,6 @@
   "file-explorer:move-file": [
     {
       "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "M"
-    }
-  ],
-  "workspaces:open-modal": [
-    {
-      "modifiers": [
         "Mod",
         "Shift"
       ],
@@ -375,6 +366,31 @@
         "Alt"
       ],
       "key": "W"
+    }
+  ],
+  "mrj-jump-to-link:activate-jump-to-anywhere": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "X"
+    }
+  ],
+  "mrj-jump-to-link:activate-lightspeed-jump": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "X"
+    }
+  ],
+  "mrj-jump-to-link:activate-jump-to-link": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "'"
     }
   ]
 }

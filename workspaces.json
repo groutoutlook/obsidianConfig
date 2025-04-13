@@ -11,29 +11,33 @@
             "dimension": 50,
             "children": [
               {
-                "id": "8fbbd1b4f0d37454",
+                "id": "046100c14474aa5d",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "note_Items/TaobaoJournal.md",
+                    "file": "note_Business/IdeaJournal.md",
                     "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "IdeaJournal"
                 }
               },
               {
-                "id": "0229cff7a39dc794",
+                "id": "554fd9858dbe2dc8",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "note_Knowledge/journal/OtherKnowledgeJournal.md",
+                    "file": "note_Knowledge/journal/LifeJournal.md",
                     "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "LifeJournal"
                 }
               }
             ],
@@ -45,111 +49,37 @@
             "dimension": 50,
             "children": [
               {
-                "id": "8c7ab35a5776049c",
+                "id": "e05f4dbcb770b0d1",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "note_software/Obsidian/004.001-Obsidian Plugins.md",
+                    "file": "note_algo_lang/journal/LangJournal.md",
                     "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "LangJournal"
                 }
               },
               {
-                "id": "e3fe13f1b343deae",
+                "id": "3642077fbf2ada4a",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "note_Business/WorkJournal.md",
+                    "file": "note_software/journal/WebJournal.md",
                     "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "a01f77da181b6630",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "note_software/Browser/006.002.002-Mode Vimium C.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "3af0f9881df52e6d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "note_software/Browser/006.002.003-Keybinding Remap Vimium C.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "145e1bf5fbbd999a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "note_IDEAndTools/Dev/CLI/001.008-CLI eza.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "c759ffd9b92df121",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "note_IDEAndTools/Dev/CLI/001.003-fd.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "540443804ceb5d1b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "note_IDEAndTools/Dev/CLI/001.003.001-CLI fd.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "2764cb411d0048ce",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "note_Knowledge/journal/VocabJournal.md",
-                    "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "WebJournal"
                 }
               }
             ],
-            "currentTab": 5
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -168,13 +98,15 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "neovim",
+                    "query": "duck.ai",
                     "matchingCase": false,
-                    "explainSearch": true,
+                    "explainSearch": false,
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical"
-                  }
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
                 }
               },
               {
@@ -182,7 +114,9 @@
                 "type": "leaf",
                 "state": {
                   "type": "bookmarks",
-                  "state": {}
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
                 }
               }
             ]
@@ -208,7 +142,9 @@
                   "state": {
                     "sortOrder": "alphabetical",
                     "useHierarchy": true
-                  }
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
                 }
               },
               {
@@ -217,8 +153,10 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "note_IDEAndTools/Dev/CLI/001.003-fd.md"
-                  }
+                    "file": "note_software/Obsidian/004.001-Obsidian Plugins.md"
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of 004.001-Obsidian Plugins"
                 }
               },
               {
@@ -227,7 +165,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "note_IDEAndTools/Dev/CLI/001.003-fd.md",
+                    "file": "note_software/Obsidian/004.001-Obsidian Plugins.md",
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -235,7 +173,9 @@
                     "searchQuery": "",
                     "backlinkCollapsed": false,
                     "unlinkedCollapsed": true
-                  }
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for 004.001-Obsidian Plugins"
                 }
               },
               {
@@ -244,10 +184,12 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "note_IDEAndTools/Dev/CLI/001.003-fd.md",
+                    "file": "note_software/Obsidian/004.001-Obsidian Plugins.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
-                  }
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from 004.001-Obsidian Plugins"
                 }
               },
               {
@@ -259,7 +201,9 @@
                     "sortOrder": "frequency",
                     "showSearch": false,
                     "searchQuery": ""
-                  }
+                  },
+                  "icon": "lucide-archive",
+                  "title": "All properties"
                 }
               },
               {
@@ -268,8 +212,21 @@
                 "state": {
                   "type": "file-explorer",
                   "state": {
-                    "sortOrder": "alphabetical"
-                  }
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "4374a5fc573ee169",
+                "type": "leaf",
+                "state": {
+                  "type": "media-companion-sidecar-view",
+                  "state": {},
+                  "icon": "image",
+                  "title": "Sidecar"
                 }
               }
             ],
@@ -282,9 +239,6 @@
       },
       "left-ribbon": {
         "hiddenItems": {
-          "qatt:Refresh QATT Tables": false,
-          "qatt:Refresh Views": false,
-          "qatt:Log Metrics": false,
           "switcher:Open quick switcher": true,
           "graph:Open graph view": true,
           "canvas:Create new canvas": false,
@@ -295,11 +249,12 @@
           "workspaces:Manage workspace layouts": true,
           "random-note:Open random note": true,
           "omnisearch:Omnisearch": false,
-          "vim-toggle:Toggle Vim Mode": false
+          "tldraw:Create new tldrawing": false,
+          "media-companion:Open gallery": false
         }
       },
-      "active": "c759ffd9b92df121",
-      "mtime": "2024-09-27T11:46:05+07:00"
+      "active": "554fd9858dbe2dc8",
+      "mtime": "2025-04-08T11:52:58+07:00"
     },
     "obs-nvim": {
       "main": {
@@ -318,9 +273,11 @@
                   "state": {
                     "file": "note_software/journal/SoftwareJournal.md",
                     "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "SoftwareJournal"
                 }
               },
               {
@@ -331,9 +288,11 @@
                   "state": {
                     "file": "note_algo_lang/journal/LangJournal.md",
                     "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "LangJournal"
                 }
               }
             ],
@@ -351,9 +310,11 @@
                   "state": {
                     "file": "note_algo_lang/journal/ProgrammingJournal.md",
                     "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "ProgrammingJournal"
                 }
               },
               {
@@ -364,9 +325,11 @@
                   "state": {
                     "file": "note_software/journal/SoftwareJournal.md",
                     "mode": "source",
-                    "backlinks": false,
-                    "source": false
-                  }
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "SoftwareJournal"
                 }
               }
             ]
@@ -394,7 +357,9 @@
                     "collapseAll": false,
                     "extraContext": false,
                     "sortOrder": "alphabetical"
-                  }
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
                 }
               },
               {
@@ -402,7 +367,9 @@
                 "type": "leaf",
                 "state": {
                   "type": "bookmarks",
-                  "state": {}
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
                 }
               }
             ]
@@ -427,8 +394,12 @@
                   "type": "tag",
                   "state": {
                     "sortOrder": "alphabetical",
-                    "useHierarchy": true
-                  }
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
                 }
               },
               {
@@ -437,8 +408,13 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "note_algo_lang/journal/ProgrammingJournal.md"
-                  }
+                    "file": "note_algo_lang/journal/ProgrammingJournal.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of ProgrammingJournal"
                 }
               },
               {
@@ -455,7 +431,9 @@
                     "searchQuery": "",
                     "backlinkCollapsed": false,
                     "unlinkedCollapsed": true
-                  }
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for ProgrammingJournal"
                 }
               },
               {
@@ -467,7 +445,9 @@
                     "file": "note_algo_lang/journal/ProgrammingJournal.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
-                  }
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from ProgrammingJournal"
                 }
               },
               {
@@ -479,7 +459,9 @@
                     "sortOrder": "frequency",
                     "showSearch": false,
                     "searchQuery": ""
-                  }
+                  },
+                  "icon": "lucide-archive",
+                  "title": "All properties"
                 }
               },
               {
@@ -488,8 +470,11 @@
                 "state": {
                   "type": "file-explorer",
                   "state": {
-                    "sortOrder": "alphabetical"
-                  }
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
                 }
               }
             ],
@@ -502,9 +487,8 @@
       },
       "left-ribbon": {
         "hiddenItems": {
-          "pdf-plus:PDF++: Toggle auto-copy": false,
-          "pdf-plus:PDF++: Toggle auto-focus": false,
-          "pdf-plus:PDF++: Toggle auto-paste": false,
+          "tldraw:Create new tldrawing": false,
+          "media-companion:Open gallery": false,
           "switcher:Open quick switcher": true,
           "graph:Open graph view": true,
           "canvas:Create new canvas": false,
@@ -514,15 +498,11 @@
           "markdown-importer:Open format converter": false,
           "workspaces:Manage workspace layouts": true,
           "random-note:Open random note": true,
-          "omnisearch:Omnisearch": false,
-          "explorer-hider:Disable hiding": false,
-          "qatt:Refresh QATT Tables": false,
-          "qatt:Refresh Views": false,
-          "qatt:Log Metrics": false
+          "omnisearch:Omnisearch": false
         }
       },
       "active": "000e46955e1ecfea",
-      "mtime": "2024-07-17T23:27:25+07:00"
+      "mtime": "2025-04-08T11:52:47+07:00"
     }
   },
   "active": "powershell-windows"
