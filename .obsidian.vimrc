@@ -52,8 +52,9 @@ exmap closeAll obcommand workspace:close-window
 exmap closeTab obcommand workspace:close
 nmap qq :closeTab<CR>
 nmap ;q :closeTab<CR>
-imap ;q :closeTab<CR>
 nmap ;wq :closeTab<CR>
+imap ;q <Esc>:closeTab<CR>
+imap ;wq <Esc>:closeTab<CR>
 " exmap q obcommand workspace:close
 
 " INFO: Vimium C mimicking. This is actually restore tab.
