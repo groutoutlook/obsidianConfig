@@ -295,6 +295,26 @@
   box-shadow: none;
   border-radius: 0;
 }
+.MC-order-container .dropdown:hover {
+  box-shadow: none;
+}
+.MC-order-container .dropdown:focus {
+  box-shadow: none;
+}
+
+/* fakecss:/home/runner/work/obsidian-media-companion/obsidian-media-companion/src/components/search/DateRange.esbuild-svelte-fake-css */
+.MC-date-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 8px;
+}
+.MC-date-row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
 
 /* fakecss:/home/runner/work/obsidian-media-companion/obsidian-media-companion/src/components/Gallery.esbuild-svelte-fake-css */
 .MC-collapse-button {

@@ -392,5 +392,14 @@
       ],
       "key": "'"
     }
+  ],
+  "media-companion:open-gallery": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "M"
+    }
   ]
 }

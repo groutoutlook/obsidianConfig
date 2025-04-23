@@ -2992,12 +2992,13 @@ var ObsidianLinksSettingTab = class extends import_obsidian6.PluginSettingTab {
       }
     };
     toggleCopyLinkToObjectContextMenuSetting(this.plugin.settings.ffCopyLinkToObject);
-    new import_obsidian6.Setting(containerEl).setName("Unlink").setDesc("").addToggle((toggle) => {
+    const settingUnlink = new import_obsidian6.Setting(containerEl).setName("Unlink").setDesc("").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.contexMenu.unlink).onChange(async (value) => {
         this.plugin.settings.contexMenu.unlink = value;
         await this.plugin.saveSettings();
       });
     });
+    this.setSettingHelpLink(settingUnlink, this.getFullDocUrl("unlink"));
     new import_obsidian6.Setting(containerEl).setName("Convert to wikilink").setDesc("").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.contexMenu.convertToWikilink).onChange(async (value) => {
         this.plugin.settings.contexMenu.convertToWikilink = value;

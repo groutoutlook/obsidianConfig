@@ -424,9 +424,9 @@ var require_utils = __commonJS({
               }
               return;
             }
-            var instance9 = new WidgetClass(elem, options);
+            var instance10 = new WidgetClass(elem, options);
             if (jQuery) {
-              jQuery.data(elem, namespace, instance9);
+              jQuery.data(elem, namespace, instance10);
             }
           });
         });
@@ -1768,8 +1768,8 @@ var require_imagesloaded = __commonJS({
           if (!jQuery) return;
           $ = jQuery;
           $.fn.imagesLoaded = function(options, onAlways) {
-            let instance9 = new ImagesLoaded(this, options, onAlways);
-            return instance9.jqDeferred.promise($(this));
+            let instance10 = new ImagesLoaded(this, options, onAlways);
+            return instance10.jqDeferred.promise($(this));
           };
         };
         ImagesLoaded.makeJQueryPlugin();
@@ -2335,7 +2335,7 @@ function make_dirty(component, i) {
   }
   component.$$.dirty[i / 31 | 0] |= 1 << i % 31;
 }
-function init(component, options, instance9, create_fragment9, not_equal, props, append_styles = null, dirty = [-1]) {
+function init(component, options, instance10, create_fragment10, not_equal, props, append_styles = null, dirty = [-1]) {
   const parent_component = current_component;
   set_current_component(component);
   const $$ = component.$$ = {
@@ -2361,7 +2361,7 @@ function init(component, options, instance9, create_fragment9, not_equal, props,
   };
   append_styles && append_styles($$.root);
   let ready = false;
-  $$.ctx = instance9 ? instance9(component, options.props || {}, (i, ret, ...rest) => {
+  $$.ctx = instance10 ? instance10(component, options.props || {}, (i, ret, ...rest) => {
     const value = rest.length ? rest[0] : ret;
     if ($$.ctx && not_equal($$.ctx[i], $$.ctx[i] = value)) {
       if (!$$.skip_bound && $$.bound[i]) $$.bound[i](value);
@@ -2372,7 +2372,7 @@ function init(component, options, instance9, create_fragment9, not_equal, props,
   $$.update();
   ready = true;
   run_all($$.before_update);
-  $$.fragment = create_fragment9 ? create_fragment9($$.ctx) : false;
+  $$.fragment = create_fragment10 ? create_fragment10($$.ctx) : false;
   if (options.target) {
     if (options.hydrate) {
       start_hydrating();
@@ -3808,6 +3808,9 @@ var _Query = class _Query {
     }
     if (this.query.fileTypes.included.length > 0 && !this.query.fileTypes.included.contains(item.file.extension)) return false;
     if (this.query.fileTypes.excluded.contains(item.file.extension)) return false;
+    const DAY_LENGTH = 864e5;
+    if (this.query.date.startCtime && this.query.date.endCtime && this.query.date.startCtime.getTime() < this.query.date.endCtime.getTime() + DAY_LENGTH && (item.file.stat.ctime < this.query.date.startCtime.getTime() || item.file.stat.ctime > this.query.date.endCtime.getTime() + DAY_LENGTH)) return false;
+    if (this.query.date.startMtime && this.query.date.endMtime && this.query.date.startMtime.getTime() < this.query.date.endMtime.getTime() + DAY_LENGTH && (item.file.stat.mtime < this.query.date.startMtime.getTime() || item.file.stat.mtime > this.query.date.endMtime.getTime() + DAY_LENGTH)) return false;
     if (mediaTypes.contains("image" /* Image */)) {
       const image = item;
       const size = await image.getCachedSize();
@@ -3941,6 +3944,12 @@ _Query.defaultQuery = {
     maxWidth: null,
     minHeight: null,
     maxHeight: null
+  },
+  date: {
+    startCtime: null,
+    endCtime: null,
+    startMtime: null,
+    endMtime: null
   },
   orderBy: "name" /* name */,
   orderIncreasing: true
@@ -5886,6 +5895,7 @@ function create_default_slot4(ctx) {
       }
       t = space();
       button = element("button");
+      attr(select, "class", "dropdown");
       if (
         /*option*/
         ctx[0] === void 0
@@ -6099,10 +6109,393 @@ var Order = class extends SvelteComponent {
 };
 var Order_default = Order;
 
+// src/components/search/DateRange.svelte
+function create_default_slot5(ctx) {
+  let div6;
+  let div2;
+  let div0;
+  let label0;
+  let t1;
+  let input0;
+  let t2;
+  let div1;
+  let label1;
+  let t4;
+  let input1;
+  let t5;
+  let div5;
+  let div3;
+  let label2;
+  let t7;
+  let input2;
+  let t8;
+  let div4;
+  let label3;
+  let t10;
+  let input3;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      div6 = element("div");
+      div2 = element("div");
+      div0 = element("div");
+      label0 = element("label");
+      label0.textContent = "Modified: From";
+      t1 = space();
+      input0 = element("input");
+      t2 = space();
+      div1 = element("div");
+      label1 = element("label");
+      label1.textContent = "To";
+      t4 = space();
+      input1 = element("input");
+      t5 = space();
+      div5 = element("div");
+      div3 = element("div");
+      label2 = element("label");
+      label2.textContent = "Creation: From";
+      t7 = space();
+      input2 = element("input");
+      t8 = space();
+      div4 = element("div");
+      label3 = element("label");
+      label3.textContent = "To";
+      t10 = space();
+      input3 = element("input");
+      attr(label0, "for", "smtime");
+      attr(input0, "id", "smtime");
+      attr(input0, "type", "date");
+      attr(div0, "class", "MC-input-group");
+      attr(label1, "for", "emtime");
+      attr(input1, "id", "emtime");
+      attr(input1, "type", "date");
+      attr(div1, "class", "MC-input-group");
+      attr(div2, "class", "MC-date-row");
+      attr(label2, "for", "sctime");
+      attr(input2, "id", "sctimes");
+      attr(input2, "type", "date");
+      attr(div3, "class", "MC-input-group");
+      attr(label3, "for", "ectime");
+      attr(input3, "id", "ectime");
+      attr(input3, "type", "date");
+      attr(div4, "class", "MC-input-group");
+      attr(div5, "class", "MC-dimension-row");
+      attr(div6, "class", "MC-date-inputs");
+    },
+    m(target, anchor) {
+      insert(target, div6, anchor);
+      append(div6, div2);
+      append(div2, div0);
+      append(div0, label0);
+      append(div0, t1);
+      append(div0, input0);
+      set_input_value(
+        input0,
+        /*smtime*/
+        ctx[0]
+      );
+      append(div2, t2);
+      append(div2, div1);
+      append(div1, label1);
+      append(div1, t4);
+      append(div1, input1);
+      set_input_value(
+        input1,
+        /*emtime*/
+        ctx[1]
+      );
+      append(div6, t5);
+      append(div6, div5);
+      append(div5, div3);
+      append(div3, label2);
+      append(div3, t7);
+      append(div3, input2);
+      set_input_value(
+        input2,
+        /*sctime*/
+        ctx[2]
+      );
+      append(div5, t8);
+      append(div5, div4);
+      append(div4, label3);
+      append(div4, t10);
+      append(div4, input3);
+      set_input_value(
+        input3,
+        /*ectime*/
+        ctx[3]
+      );
+      if (!mounted) {
+        dispose = [
+          listen(
+            input0,
+            "input",
+            /*input0_input_handler*/
+            ctx[9]
+          ),
+          listen(input0, "keyup", function() {
+            if (is_function(
+              /*updated*/
+              ctx[6]
+            )) ctx[6].apply(this, arguments);
+          }),
+          listen(input0, "change", function() {
+            if (is_function(
+              /*updated*/
+              ctx[6]
+            )) ctx[6].apply(this, arguments);
+          }),
+          listen(
+            input1,
+            "input",
+            /*input1_input_handler*/
+            ctx[10]
+          ),
+          listen(input1, "keyup", function() {
+            if (is_function(
+              /*updated*/
+              ctx[6]
+            )) ctx[6].apply(this, arguments);
+          }),
+          listen(input1, "change", function() {
+            if (is_function(
+              /*updated*/
+              ctx[6]
+            )) ctx[6].apply(this, arguments);
+          }),
+          listen(
+            input2,
+            "input",
+            /*input2_input_handler*/
+            ctx[11]
+          ),
+          listen(input2, "keyup", function() {
+            if (is_function(
+              /*updated*/
+              ctx[6]
+            )) ctx[6].apply(this, arguments);
+          }),
+          listen(input2, "change", function() {
+            if (is_function(
+              /*updated*/
+              ctx[6]
+            )) ctx[6].apply(this, arguments);
+          }),
+          listen(
+            input3,
+            "input",
+            /*input3_input_handler*/
+            ctx[12]
+          ),
+          listen(input3, "keyup", function() {
+            if (is_function(
+              /*updated*/
+              ctx[6]
+            )) ctx[6].apply(this, arguments);
+          }),
+          listen(input3, "change", function() {
+            if (is_function(
+              /*updated*/
+              ctx[6]
+            )) ctx[6].apply(this, arguments);
+          })
+        ];
+        mounted = true;
+      }
+    },
+    p(new_ctx, dirty) {
+      ctx = new_ctx;
+      if (dirty & /*smtime*/
+      1) {
+        set_input_value(
+          input0,
+          /*smtime*/
+          ctx[0]
+        );
+      }
+      if (dirty & /*emtime*/
+      2) {
+        set_input_value(
+          input1,
+          /*emtime*/
+          ctx[1]
+        );
+      }
+      if (dirty & /*sctime*/
+      4) {
+        set_input_value(
+          input2,
+          /*sctime*/
+          ctx[2]
+        );
+      }
+      if (dirty & /*ectime*/
+      8) {
+        set_input_value(
+          input3,
+          /*ectime*/
+          ctx[3]
+        );
+      }
+    },
+    d(detaching) {
+      if (detaching) {
+        detach(div6);
+      }
+      mounted = false;
+      run_all(dispose);
+    }
+  };
+}
+function create_fragment7(ctx) {
+  let popup;
+  let current;
+  popup = new Popup_default({
+    props: {
+      icon: (
+        /*icon*/
+        ctx[4]
+      ),
+      text: (
+        /*text*/
+        ctx[5]
+      ),
+      active: (
+        /*active*/
+        ctx[7]
+      ),
+      reset: (
+        /*reset*/
+        ctx[8]
+      ),
+      $$slots: { default: [create_default_slot5] },
+      $$scope: { ctx }
+    }
+  });
+  return {
+    c() {
+      create_component(popup.$$.fragment);
+    },
+    m(target, anchor) {
+      mount_component(popup, target, anchor);
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      const popup_changes = {};
+      if (dirty & /*icon*/
+      16) popup_changes.icon = /*icon*/
+      ctx2[4];
+      if (dirty & /*text*/
+      32) popup_changes.text = /*text*/
+      ctx2[5];
+      if (dirty & /*active*/
+      128) popup_changes.active = /*active*/
+      ctx2[7];
+      if (dirty & /*$$scope, ectime, updated, sctime, emtime, smtime*/
+      8271) {
+        popup_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      popup.$set(popup_changes);
+    },
+    i(local) {
+      if (current) return;
+      transition_in(popup.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(popup.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(popup, detaching);
+    }
+  };
+}
+function instance7($$self, $$props, $$invalidate) {
+  let active2;
+  let { icon = "calendar" } = $$props;
+  let { text: text2 = "Date" } = $$props;
+  let { updated = () => {
+  } } = $$props;
+  let { smtime = null } = $$props;
+  let { emtime = null } = $$props;
+  let { sctime = null } = $$props;
+  let { ectime = null } = $$props;
+  function reset() {
+    $$invalidate(0, smtime = null);
+    $$invalidate(1, emtime = null);
+    $$invalidate(2, sctime = null);
+    $$invalidate(3, ectime = null);
+    updated();
+  }
+  function input0_input_handler() {
+    smtime = this.value;
+    $$invalidate(0, smtime);
+  }
+  function input1_input_handler() {
+    emtime = this.value;
+    $$invalidate(1, emtime);
+  }
+  function input2_input_handler() {
+    sctime = this.value;
+    $$invalidate(2, sctime);
+  }
+  function input3_input_handler() {
+    ectime = this.value;
+    $$invalidate(3, ectime);
+  }
+  $$self.$$set = ($$props2) => {
+    if ("icon" in $$props2) $$invalidate(4, icon = $$props2.icon);
+    if ("text" in $$props2) $$invalidate(5, text2 = $$props2.text);
+    if ("updated" in $$props2) $$invalidate(6, updated = $$props2.updated);
+    if ("smtime" in $$props2) $$invalidate(0, smtime = $$props2.smtime);
+    if ("emtime" in $$props2) $$invalidate(1, emtime = $$props2.emtime);
+    if ("sctime" in $$props2) $$invalidate(2, sctime = $$props2.sctime);
+    if ("ectime" in $$props2) $$invalidate(3, ectime = $$props2.ectime);
+  };
+  $$self.$$.update = () => {
+    if ($$self.$$.dirty & /*smtime, emtime, sctime, ectime*/
+    15) {
+      $: $$invalidate(7, active2 = (smtime && emtime) != null || (sctime && ectime) != null);
+    }
+  };
+  return [
+    smtime,
+    emtime,
+    sctime,
+    ectime,
+    icon,
+    text2,
+    updated,
+    active2,
+    reset,
+    input0_input_handler,
+    input1_input_handler,
+    input2_input_handler,
+    input3_input_handler
+  ];
+}
+var DateRange = class extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance7, create_fragment7, safe_not_equal, {
+      icon: 4,
+      text: 5,
+      updated: 6,
+      smtime: 0,
+      emtime: 1,
+      sctime: 2,
+      ectime: 3
+    });
+  }
+};
+var DateRange_default = DateRange;
+
 // src/components/Gallery.svelte
 function get_each_context3(ctx, list, i) {
   const child_ctx = ctx.slice();
-  child_ctx[74] = list[i];
+  child_ctx[82] = list[i];
   return child_ctx;
 }
 function create_catch_block(ctx) {
@@ -6141,21 +6534,27 @@ function create_then_block(ctx) {
   let updating_minY;
   let updating_maxY;
   let t4;
+  let daterange;
+  let updating_smtime;
+  let updating_emtime;
+  let updating_sctime;
+  let updating_ectime;
   let t5;
   let t6;
-  let hr;
   let t7;
+  let hr;
+  let t8;
   let div5;
   let div4;
   let div3;
-  let t8;
+  let t9;
   let current;
   function colourpicker_color_binding(value) {
-    ctx[27](value);
+    ctx[31](value);
   }
   let colourpicker_props = { updated: (
     /*onSearchChange*/
-    ctx[26]
+    ctx[30]
   ) };
   if (
     /*color*/
@@ -6167,10 +6566,10 @@ function create_then_block(ctx) {
   colourpicker = new ColourPicker_default({ props: colourpicker_props });
   binding_callbacks.push(() => bind(colourpicker, "color", colourpicker_color_binding));
   function includeselect0_included_binding(value) {
-    ctx[28](value);
+    ctx[32](value);
   }
   function includeselect0_excluded_binding(value) {
-    ctx[29](value);
+    ctx[33](value);
   }
   let includeselect0_props = {
     options: (
@@ -6181,7 +6580,7 @@ function create_then_block(ctx) {
     text: "Paths",
     updated: (
       /*onSearchChange*/
-      ctx[26]
+      ctx[30]
     )
   };
   if (
@@ -6202,10 +6601,10 @@ function create_then_block(ctx) {
   binding_callbacks.push(() => bind(includeselect0, "included", includeselect0_included_binding));
   binding_callbacks.push(() => bind(includeselect0, "excluded", includeselect0_excluded_binding));
   function includeselect1_included_binding(value) {
-    ctx[30](value);
+    ctx[34](value);
   }
   function includeselect1_excluded_binding(value) {
-    ctx[31](value);
+    ctx[35](value);
   }
   let includeselect1_props = {
     options: (
@@ -6216,7 +6615,7 @@ function create_then_block(ctx) {
     text: "Tags",
     updated: (
       /*onSearchChange*/
-      ctx[26]
+      ctx[30]
     )
   };
   if (
@@ -6237,10 +6636,10 @@ function create_then_block(ctx) {
   binding_callbacks.push(() => bind(includeselect1, "included", includeselect1_included_binding));
   binding_callbacks.push(() => bind(includeselect1, "excluded", includeselect1_excluded_binding));
   function includeselect2_included_binding(value) {
-    ctx[32](value);
+    ctx[36](value);
   }
   function includeselect2_excluded_binding(value) {
-    ctx[33](value);
+    ctx[37](value);
   }
   let includeselect2_props = {
     options: (
@@ -6251,7 +6650,7 @@ function create_then_block(ctx) {
     text: "Extension",
     updated: (
       /*onSearchChange*/
-      ctx[26]
+      ctx[30]
     )
   };
   if (
@@ -6272,23 +6671,23 @@ function create_then_block(ctx) {
   binding_callbacks.push(() => bind(includeselect2, "included", includeselect2_included_binding));
   binding_callbacks.push(() => bind(includeselect2, "excluded", includeselect2_excluded_binding));
   function resolution_shape_binding(value) {
-    ctx[34](value);
+    ctx[38](value);
   }
   function resolution_minX_binding(value) {
-    ctx[35](value);
+    ctx[39](value);
   }
   function resolution_maxX_binding(value) {
-    ctx[36](value);
+    ctx[40](value);
   }
   function resolution_minY_binding(value) {
-    ctx[37](value);
+    ctx[41](value);
   }
   function resolution_maxY_binding(value) {
-    ctx[38](value);
+    ctx[42](value);
   }
   let resolution_props = { updated: (
     /*onSearchChange*/
-    ctx[26]
+    ctx[30]
   ) };
   if (
     /*shape*/
@@ -6331,11 +6730,60 @@ function create_then_block(ctx) {
   binding_callbacks.push(() => bind(resolution, "maxX", resolution_maxX_binding));
   binding_callbacks.push(() => bind(resolution, "minY", resolution_minY_binding));
   binding_callbacks.push(() => bind(resolution, "maxY", resolution_maxY_binding));
+  function daterange_smtime_binding(value) {
+    ctx[43](value);
+  }
+  function daterange_emtime_binding(value) {
+    ctx[44](value);
+  }
+  function daterange_sctime_binding(value) {
+    ctx[45](value);
+  }
+  function daterange_ectime_binding(value) {
+    ctx[46](value);
+  }
+  let daterange_props = { updated: (
+    /*onSearchChange*/
+    ctx[30]
+  ) };
+  if (
+    /*smtime*/
+    ctx[15] !== void 0
+  ) {
+    daterange_props.smtime = /*smtime*/
+    ctx[15];
+  }
+  if (
+    /*emtime*/
+    ctx[16] !== void 0
+  ) {
+    daterange_props.emtime = /*emtime*/
+    ctx[16];
+  }
+  if (
+    /*sctime*/
+    ctx[17] !== void 0
+  ) {
+    daterange_props.sctime = /*sctime*/
+    ctx[17];
+  }
+  if (
+    /*ectime*/
+    ctx[18] !== void 0
+  ) {
+    daterange_props.ectime = /*ectime*/
+    ctx[18];
+  }
+  daterange = new DateRange_default({ props: daterange_props });
+  binding_callbacks.push(() => bind(daterange, "smtime", daterange_smtime_binding));
+  binding_callbacks.push(() => bind(daterange, "emtime", daterange_emtime_binding));
+  binding_callbacks.push(() => bind(daterange, "sctime", daterange_sctime_binding));
+  binding_callbacks.push(() => bind(daterange, "ectime", daterange_ectime_binding));
   let if_block0 = import_obsidian5.Platform.isMobile && create_if_block_1(ctx);
   let if_block1 = !import_obsidian5.Platform.isMobile && create_if_block2(ctx);
   let each_value = ensure_array_like(
     /*items*/
-    ctx[20]
+    ctx[24]
   );
   let each_blocks = [];
   for (let i = 0; i < each_value.length; i += 1) {
@@ -6359,16 +6807,18 @@ function create_then_block(ctx) {
       t3 = space();
       create_component(resolution.$$.fragment);
       t4 = space();
-      if (if_block0) if_block0.c();
+      create_component(daterange.$$.fragment);
       t5 = space();
-      if (if_block1) if_block1.c();
+      if (if_block0) if_block0.c();
       t6 = space();
-      hr = element("hr");
+      if (if_block1) if_block1.c();
       t7 = space();
+      hr = element("hr");
+      t8 = space();
       div5 = element("div");
       div4 = element("div");
       div3 = element("div");
-      t8 = space();
+      t9 = space();
       for (let i = 0; i < each_blocks.length; i += 1) {
         each_blocks[i].c();
       }
@@ -6381,7 +6831,7 @@ function create_then_block(ctx) {
         div3,
         "width",
         /*elementSize*/
-        ctx[15] + "px"
+        ctx[19] + "px"
       );
       attr(div4, "class", "MC-gallery-masonry");
       attr(div5, "class", "MC-gallery-container");
@@ -6400,23 +6850,25 @@ function create_then_block(ctx) {
       append(div0, t3);
       mount_component(resolution, div0, null);
       append(div0, t4);
+      mount_component(daterange, div0, null);
+      append(div0, t5);
       if (if_block0) if_block0.m(div0, null);
-      append(div1, t5);
+      append(div1, t6);
       if (if_block1) if_block1.m(div1, null);
-      insert(target, t6, anchor);
-      insert(target, hr, anchor);
       insert(target, t7, anchor);
+      insert(target, hr, anchor);
+      insert(target, t8, anchor);
       insert(target, div5, anchor);
       append(div5, div4);
       append(div4, div3);
-      append(div4, t8);
+      append(div4, t9);
       for (let i = 0; i < each_blocks.length; i += 1) {
         if (each_blocks[i]) {
           each_blocks[i].m(div4, null);
         }
       }
-      ctx[49](div4);
-      ctx[50](div5);
+      ctx[57](div4);
+      ctx[58](div5);
       current = true;
     },
     p(ctx2, dirty) {
@@ -6523,22 +6975,52 @@ function create_then_block(ctx) {
         add_flush_callback(() => updating_maxY = false);
       }
       resolution.$set(resolution_changes);
+      const daterange_changes = {};
+      if (!updating_smtime && dirty[0] & /*smtime*/
+      32768) {
+        updating_smtime = true;
+        daterange_changes.smtime = /*smtime*/
+        ctx2[15];
+        add_flush_callback(() => updating_smtime = false);
+      }
+      if (!updating_emtime && dirty[0] & /*emtime*/
+      65536) {
+        updating_emtime = true;
+        daterange_changes.emtime = /*emtime*/
+        ctx2[16];
+        add_flush_callback(() => updating_emtime = false);
+      }
+      if (!updating_sctime && dirty[0] & /*sctime*/
+      131072) {
+        updating_sctime = true;
+        daterange_changes.sctime = /*sctime*/
+        ctx2[17];
+        add_flush_callback(() => updating_sctime = false);
+      }
+      if (!updating_ectime && dirty[0] & /*ectime*/
+      262144) {
+        updating_ectime = true;
+        daterange_changes.ectime = /*ectime*/
+        ctx2[18];
+        add_flush_callback(() => updating_ectime = false);
+      }
+      daterange.$set(daterange_changes);
       if (import_obsidian5.Platform.isMobile) if_block0.p(ctx2, dirty);
       if (!import_obsidian5.Platform.isMobile) if_block1.p(ctx2, dirty);
       if (!current || dirty[0] & /*elementSize*/
-      32768) {
+      524288) {
         set_style(
           div3,
           "width",
           /*elementSize*/
-          ctx2[15] + "px"
+          ctx2[19] + "px"
         );
       }
       if (dirty[0] & /*elementSize, onFileClicked, items, reloadMasonry*/
-      51412992) {
+      822607872) {
         each_value = ensure_array_like(
           /*items*/
-          ctx2[20]
+          ctx2[24]
         );
         let i;
         for (i = 0; i < each_value.length; i += 1) {
@@ -6567,6 +7049,7 @@ function create_then_block(ctx) {
       transition_in(includeselect1.$$.fragment, local);
       transition_in(includeselect2.$$.fragment, local);
       transition_in(resolution.$$.fragment, local);
+      transition_in(daterange.$$.fragment, local);
       transition_in(if_block0);
       transition_in(if_block1);
       for (let i = 0; i < each_value.length; i += 1) {
@@ -6580,6 +7063,7 @@ function create_then_block(ctx) {
       transition_out(includeselect1.$$.fragment, local);
       transition_out(includeselect2.$$.fragment, local);
       transition_out(resolution.$$.fragment, local);
+      transition_out(daterange.$$.fragment, local);
       transition_out(if_block0);
       transition_out(if_block1);
       each_blocks = each_blocks.filter(Boolean);
@@ -6591,9 +7075,9 @@ function create_then_block(ctx) {
     d(detaching) {
       if (detaching) {
         detach(div2);
-        detach(t6);
-        detach(hr);
         detach(t7);
+        detach(hr);
+        detach(t8);
         detach(div5);
       }
       destroy_component(colourpicker);
@@ -6601,11 +7085,12 @@ function create_then_block(ctx) {
       destroy_component(includeselect1);
       destroy_component(includeselect2);
       destroy_component(resolution);
+      destroy_component(daterange);
       if (if_block0) if_block0.d();
       if (if_block1) if_block1.d();
       destroy_each(each_blocks, detaching);
-      ctx[49](null);
-      ctx[50](null);
+      ctx[57](null);
+      ctx[58](null);
     }
   };
 }
@@ -6615,28 +7100,28 @@ function create_if_block_1(ctx) {
   let updating_orderIncreasing;
   let current;
   function order_option_binding(value) {
-    ctx[39](value);
+    ctx[47](value);
   }
   function order_orderIncreasing_binding(value) {
-    ctx[40](value);
+    ctx[48](value);
   }
   let order_props = { updated: (
     /*onSearchChange*/
-    ctx[26]
+    ctx[30]
   ) };
   if (
     /*orderBy*/
-    ctx[16] !== void 0
+    ctx[20] !== void 0
   ) {
     order_props.option = /*orderBy*/
-    ctx[16];
+    ctx[20];
   }
   if (
     /*orderIncreasing*/
-    ctx[17] !== void 0
+    ctx[21] !== void 0
   ) {
     order_props.orderIncreasing = /*orderIncreasing*/
-    ctx[17];
+    ctx[21];
   }
   order = new Order_default({ props: order_props });
   binding_callbacks.push(() => bind(order, "option", order_option_binding));
@@ -6652,17 +7137,17 @@ function create_if_block_1(ctx) {
     p(ctx2, dirty) {
       const order_changes = {};
       if (!updating_option && dirty[0] & /*orderBy*/
-      65536) {
+      1048576) {
         updating_option = true;
         order_changes.option = /*orderBy*/
-        ctx2[16];
+        ctx2[20];
         add_flush_callback(() => updating_option = false);
       }
       if (!updating_orderIncreasing && dirty[0] & /*orderIncreasing*/
-      131072) {
+      2097152) {
         updating_orderIncreasing = true;
         order_changes.orderIncreasing = /*orderIncreasing*/
-        ctx2[17];
+        ctx2[21];
         add_flush_callback(() => updating_orderIncreasing = false);
       }
       order.$set(order_changes);
@@ -6698,28 +7183,28 @@ function create_if_block2(ctx) {
   let mounted;
   let dispose;
   function order_option_binding_1(value) {
-    ctx[45](value);
+    ctx[53](value);
   }
   function order_orderIncreasing_binding_1(value) {
-    ctx[46](value);
+    ctx[54](value);
   }
   let order_props = { updated: (
     /*onSearchChange*/
-    ctx[26]
+    ctx[30]
   ) };
   if (
     /*orderBy*/
-    ctx[16] !== void 0
+    ctx[20] !== void 0
   ) {
     order_props.option = /*orderBy*/
-    ctx[16];
+    ctx[20];
   }
   if (
     /*orderIncreasing*/
-    ctx[17] !== void 0
+    ctx[21] !== void 0
   ) {
     order_props.orderIncreasing = /*orderIncreasing*/
-    ctx[17];
+    ctx[21];
   }
   order = new Order_default({ props: order_props });
   binding_callbacks.push(() => bind(order, "option", order_option_binding_1));
@@ -6750,17 +7235,17 @@ function create_if_block2(ctx) {
     m(target, anchor) {
       insert(target, div3, anchor);
       append(div3, div0);
-      ctx[41](div0);
+      ctx[49](div0);
       append(div3, t0);
       append(div3, input);
       set_input_value(
         input,
         /*elementSize*/
-        ctx[15]
+        ctx[19]
       );
       append(div3, t1);
       append(div3, div1);
-      ctx[44](div1);
+      ctx[52](div1);
       append(div3, t2);
       append(div3, div2);
       append(div3, t3);
@@ -6772,19 +7257,19 @@ function create_if_block2(ctx) {
             input,
             "change",
             /*input_change_input_handler*/
-            ctx[42]
+            ctx[50]
           ),
           listen(
             input,
             "input",
             /*input_change_input_handler*/
-            ctx[42]
+            ctx[50]
           ),
           listen(
             input,
             "input",
             /*input_handler*/
-            ctx[43]
+            ctx[51]
           )
         ];
         mounted = true;
@@ -6792,26 +7277,26 @@ function create_if_block2(ctx) {
     },
     p(ctx2, dirty) {
       if (dirty[0] & /*elementSize*/
-      32768) {
+      524288) {
         set_input_value(
           input,
           /*elementSize*/
-          ctx2[15]
+          ctx2[19]
         );
       }
       const order_changes = {};
       if (!updating_option && dirty[0] & /*orderBy*/
-      65536) {
+      1048576) {
         updating_option = true;
         order_changes.option = /*orderBy*/
-        ctx2[16];
+        ctx2[20];
         add_flush_callback(() => updating_option = false);
       }
       if (!updating_orderIncreasing && dirty[0] & /*orderIncreasing*/
-      131072) {
+      2097152) {
         updating_orderIncreasing = true;
         order_changes.orderIncreasing = /*orderIncreasing*/
-        ctx2[17];
+        ctx2[21];
         add_flush_callback(() => updating_orderIncreasing = false);
       }
       order.$set(order_changes);
@@ -6829,8 +7314,8 @@ function create_if_block2(ctx) {
       if (detaching) {
         detach(div3);
       }
-      ctx[41](null);
-      ctx[44](null);
+      ctx[49](null);
+      ctx[52](null);
       destroy_component(order);
       mounted = false;
       run_all(dispose);
@@ -6848,20 +7333,20 @@ function create_each_block3(ctx) {
     props: {
       file: (
         /*item*/
-        ctx[74].file.file
+        ctx[82].file.file
       ),
       recomputeDimensions: (
         /*func*/
-        ctx[47]
+        ctx[55]
       )
     }
   });
   function click_handler() {
     return (
       /*click_handler*/
-      ctx[48](
+      ctx[56](
         /*item*/
-        ctx[74]
+        ctx[82]
       )
     );
   }
@@ -6875,7 +7360,7 @@ function create_each_block3(ctx) {
         button,
         "width",
         /*elementSize*/
-        ctx[15] + "px"
+        ctx[19] + "px"
       );
     },
     m(target, anchor) {
@@ -6892,16 +7377,16 @@ function create_each_block3(ctx) {
       ctx = new_ctx;
       const mediafileembed_changes = {};
       if (dirty[0] & /*items*/
-      1048576) mediafileembed_changes.file = /*item*/
-      ctx[74].file.file;
+      16777216) mediafileembed_changes.file = /*item*/
+      ctx[82].file.file;
       mediafileembed.$set(mediafileembed_changes);
       if (!current || dirty[0] & /*elementSize*/
-      32768) {
+      524288) {
         set_style(
           button,
           "width",
           /*elementSize*/
-          ctx[15] + "px"
+          ctx[19] + "px"
         );
       }
     },
@@ -6945,7 +7430,7 @@ function create_pending_block(ctx) {
     }
   };
 }
-function create_fragment7(ctx) {
+function create_fragment8(ctx) {
   let div;
   let promise;
   let current;
@@ -6960,7 +7445,7 @@ function create_fragment7(ctx) {
     blocks: [, , ,]
   };
   handle_promise(promise = /*plugin*/
-  ctx[23].cache.initialize(), info);
+  ctx[27].cache.initialize(), info);
   return {
     c() {
       div = element("div");
@@ -7008,7 +7493,7 @@ function getTouchDistance(e) {
   const dy = e.touches[0].clientY - e.touches[1].clientY;
   return Math.sqrt(dx * dx + dy * dy);
 }
-function instance7($$self, $$props, $$invalidate) {
+function instance8($$self, $$props, $$invalidate) {
   let plugin2 = get_store_value(pluginStore_default.plugin);
   let app2 = get_store_value(appStore_default.app);
   let possiblePaths = [];
@@ -7026,6 +7511,10 @@ function instance7($$self, $$props, $$invalidate) {
   let maxX = null;
   let minY = null;
   let maxY = null;
+  let smtime = null;
+  let emtime = null;
+  let sctime = null;
+  let ectime = null;
   let elementSize = 200;
   let orderBy = "name" /* name */;
   let orderIncreasing = true;
@@ -7063,19 +7552,19 @@ function instance7($$self, $$props, $$invalidate) {
           allItems[allFilesIndex] = e.detail.file;
         }
         if (itemsIndex === -1) {
-          $$invalidate(20, items = [getDisplayItem(e.detail.file), ...items]);
+          $$invalidate(24, items = [getDisplayItem(e.detail.file), ...items]);
         } else {
-          $$invalidate(20, items[itemsIndex] = getDisplayItem(e.detail.file), items);
+          $$invalidate(24, items[itemsIndex] = getDisplayItem(e.detail.file), items);
         }
       } else {
         if (allFilesIndex !== -1) {
           allItems = allItems.splice(allFilesIndex, 1);
         }
         if (itemsIndex !== -1) {
-          $$invalidate(20, items = items.splice(itemsIndex, 1));
+          $$invalidate(24, items = items.splice(itemsIndex, 1));
         }
       }
-      $$invalidate(20, items = [...items]);
+      $$invalidate(24, items = [...items]);
       reloadMasonry();
     });
   }
@@ -7085,7 +7574,7 @@ function instance7($$self, $$props, $$invalidate) {
       query.testFile(e.detail).then((res) => {
         if (res) {
           allItems = [e.detail, ...allItems];
-          $$invalidate(20, items = [getDisplayItem(e.detail), ...items]);
+          $$invalidate(24, items = [getDisplayItem(e.detail), ...items]);
           reloadMasonry();
         }
       });
@@ -7094,8 +7583,8 @@ function instance7($$self, $$props, $$invalidate) {
   function onFileRemoved(e) {
     updateSearchPossibilities();
     allItems = allItems.filter((item) => item !== e.detail);
-    $$invalidate(20, items = items.filter((item) => item.file !== e.detail));
-    $$invalidate(20, items = [...items]);
+    $$invalidate(24, items = items.filter((item) => item.file !== e.detail));
+    $$invalidate(24, items = [...items]);
     reloadMasonry();
   }
   function onFileChanged(e) {
@@ -7108,17 +7597,17 @@ function instance7($$self, $$props, $$invalidate) {
           allItems = [e.detail, ...allItems];
         }
         if (itemsIndex === -1) {
-          $$invalidate(20, items = [getDisplayItem(e.detail), ...items]);
+          $$invalidate(24, items = [getDisplayItem(e.detail), ...items]);
         }
       } else {
         if (allFilesIndex !== -1) {
           allItems = allItems.splice(allFilesIndex, 1);
         }
         if (itemsIndex !== -1) {
-          $$invalidate(20, items = items.splice(itemsIndex, 1));
+          $$invalidate(24, items = items.splice(itemsIndex, 1));
         }
       }
-      $$invalidate(20, items = [...items]);
+      $$invalidate(24, items = [...items]);
       reloadMasonry();
     });
   }
@@ -7142,7 +7631,7 @@ function instance7($$self, $$props, $$invalidate) {
       let formattedGroup = nextGroup.map((item) => {
         return getDisplayItem(item);
       });
-      $$invalidate(20, items = [...items, ...formattedGroup]);
+      $$invalidate(24, items = [...items, ...formattedGroup]);
       yield tick();
       reloadMasonry();
       currentGroup++;
@@ -7193,7 +7682,7 @@ function instance7($$self, $$props, $$invalidate) {
       const currentDistance = getTouchDistance(e);
       if (pinchInitialDistance > 0) {
         const scale = currentDistance / pinchInitialDistance;
-        $$invalidate(15, elementSize = Math.min(maxElementSize, Math.max(minElementSize, Math.round(pinchInitialSize * scale))));
+        $$invalidate(19, elementSize = Math.min(maxElementSize, Math.max(minElementSize, Math.round(pinchInitialSize * scale))));
         reloadMasonry();
         e.preventDefault();
       }
@@ -7246,7 +7735,7 @@ function instance7($$self, $$props, $$invalidate) {
   }
   let searchDebounce = (0, import_obsidian6.debounce)(
     () => __awaiter(void 0, void 0, void 0, function* () {
-      $$invalidate(20, items = []);
+      $$invalidate(24, items = []);
       currentGroup = 0;
       query = new Query(
         plugin2.cache,
@@ -7271,6 +7760,12 @@ function instance7($$self, $$props, $$invalidate) {
             maxWidth: maxX,
             minHeight: minY,
             maxHeight: maxY
+          },
+          date: {
+            startCtime: sctime ? new Date(sctime) : null,
+            endCtime: ectime ? new Date(ectime) : null,
+            startMtime: smtime ? new Date(smtime) : null,
+            endMtime: emtime ? new Date(emtime) : null
           },
           orderBy,
           orderIncreasing
@@ -7334,51 +7829,67 @@ function instance7($$self, $$props, $$invalidate) {
     maxY = value;
     $$invalidate(14, maxY);
   }
+  function daterange_smtime_binding(value) {
+    smtime = value;
+    $$invalidate(15, smtime);
+  }
+  function daterange_emtime_binding(value) {
+    emtime = value;
+    $$invalidate(16, emtime);
+  }
+  function daterange_sctime_binding(value) {
+    sctime = value;
+    $$invalidate(17, sctime);
+  }
+  function daterange_ectime_binding(value) {
+    ectime = value;
+    $$invalidate(18, ectime);
+  }
   function order_option_binding(value) {
     orderBy = value;
-    $$invalidate(16, orderBy);
+    $$invalidate(20, orderBy);
   }
   function order_orderIncreasing_binding(value) {
     orderIncreasing = value;
-    $$invalidate(17, orderIncreasing);
+    $$invalidate(21, orderIncreasing);
   }
   function div0_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
       sizerMinus = $$value;
-      $$invalidate(21, sizerMinus);
+      $$invalidate(25, sizerMinus);
     });
   }
   function input_change_input_handler() {
     elementSize = to_number(this.value);
-    $$invalidate(15, elementSize);
+    $$invalidate(19, elementSize);
   }
   const input_handler = () => reloadMasonry();
   function div1_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
       sizerPlus = $$value;
-      $$invalidate(22, sizerPlus);
+      $$invalidate(26, sizerPlus);
     });
   }
   function order_option_binding_1(value) {
     orderBy = value;
-    $$invalidate(16, orderBy);
+    $$invalidate(20, orderBy);
   }
   function order_orderIncreasing_binding_1(value) {
     orderIncreasing = value;
-    $$invalidate(17, orderIncreasing);
+    $$invalidate(21, orderIncreasing);
   }
   const func2 = () => reloadMasonry();
   const click_handler = (item) => onFileClicked(item.file);
   function div4_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
       masonryContainer = $$value;
-      $$invalidate(18, masonryContainer);
+      $$invalidate(22, masonryContainer);
     });
   }
   function div5_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
       scrollContainer = $$value;
-      $$invalidate(19, scrollContainer);
+      $$invalidate(23, scrollContainer);
     });
   }
   return [
@@ -7397,6 +7908,10 @@ function instance7($$self, $$props, $$invalidate) {
     maxX,
     minY,
     maxY,
+    smtime,
+    emtime,
+    sctime,
+    ectime,
     elementSize,
     orderBy,
     orderIncreasing,
@@ -7421,6 +7936,10 @@ function instance7($$self, $$props, $$invalidate) {
     resolution_maxX_binding,
     resolution_minY_binding,
     resolution_maxY_binding,
+    daterange_smtime_binding,
+    daterange_emtime_binding,
+    daterange_sctime_binding,
+    daterange_ectime_binding,
     order_option_binding,
     order_orderIncreasing_binding,
     div0_binding,
@@ -7438,7 +7957,7 @@ function instance7($$self, $$props, $$invalidate) {
 var Gallery = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance7, create_fragment7, safe_not_equal, {}, null, [-1, -1, -1]);
+    init(this, options, instance8, create_fragment8, safe_not_equal, {}, null, [-1, -1, -1]);
   }
 };
 var Gallery_default = Gallery;
@@ -7705,7 +8224,7 @@ function create_if_block3(ctx) {
     }
   };
 }
-function create_fragment8(ctx) {
+function create_fragment9(ctx) {
   let div2;
   let current_block_type_index;
   let if_block0;
@@ -7902,7 +8421,7 @@ function create_fragment8(ctx) {
     }
   };
 }
-function instance8($$self, $$props, $$invalidate) {
+function instance9($$self, $$props, $$invalidate) {
   let file2 = null;
   let app2 = get_store_value(appStore_default.app);
   let plugin2 = get_store_value(pluginStore_default.plugin);
@@ -8097,7 +8616,7 @@ function instance8($$self, $$props, $$invalidate) {
 var Sidecar2 = class extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance8, create_fragment8, safe_not_equal, {});
+    init(this, options, instance9, create_fragment9, safe_not_equal, {});
   }
 };
 var Sidecar_default = Sidecar2;
@@ -8144,9 +8663,8 @@ var MediaCompanion = class extends import_obsidian12.Plugin {
       this.registerEvents();
       this.app.metadataTypeManager.properties[MediaFile.last_updated_tag.toLowerCase()].type = "datetime";
     });
-    this.addRibbonIcon("image", "Open gallery", (_) => {
-      this.createGallery();
-    });
+    this.addRibbonIcon("image", "Open gallery", (_) => this.createGallery());
+    this.registerCommands();
     this.addSettingTab(new MediaCompanionSettingTab(this.app, this));
   }
   registerEvents() {
@@ -8176,6 +8694,13 @@ var MediaCompanion = class extends import_obsidian12.Plugin {
   registerViews() {
     this.registerView(VIEW_TYPE_GALLERY, (leaf) => new GalleryView(leaf, this));
     this.registerView(VIEW_TYPE_SIDECAR, (leaf) => new SidecarView(leaf));
+  }
+  registerCommands() {
+    this.addCommand({
+      id: "open-gallery",
+      name: "Open gallery",
+      callback: () => this.createGallery()
+    });
   }
   async createSidecar(focus = true) {
     const leaves = this.app.workspace.getLeavesOfType(VIEW_TYPE_SIDECAR);
