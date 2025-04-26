@@ -11,5 +11,6 @@
     "*sync-conflict*",
     "sync-conflict"
   ],
-  "showUnsupportedFiles": false
+  "showUnsupportedFiles": false,
+  "uriCallbacks": true
 }

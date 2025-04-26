@@ -1,7 +1,7 @@
 {
   "letters": "12345qwerasdfzxcv",
   "jumpToAnywhereRegex": "\\b\\w{3,}\\b",
-  "lightspeedCaseSensitive": false,
+  "lightspeedCaseSensitive": true,
   "jumpToLinkIfOneLinkOnly": true,
-  "lightspeedJumpToStartOfWord": true
+  "lightspeedJumpToStartOfWord": false
 }

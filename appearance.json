@@ -2,10 +2,10 @@
   "accentColor": "#ff004c",
   "cssTheme": "",
   "showViewHeader": false,
-  "nativeMenus": false,
+  "nativeMenus": true,
   "textFontFamily": "",
   "monospaceFontFamily": "Iosevka Nerd Font,Iosevka Nerd Font Mono",
-  "baseFontSize": 15,
+  "baseFontSize": 16,
   "theme": "obsidian",
   "enabledCssSnippets": [
     "generated.explorer-hider"

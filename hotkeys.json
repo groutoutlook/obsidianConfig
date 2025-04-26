@@ -391,6 +391,13 @@
         "Alt"
       ],
       "key": "'"
+    },
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Z"
     }
   ],
   "media-companion:open-gallery": [
