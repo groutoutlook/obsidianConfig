@@ -2489,7 +2489,25 @@
     "stirng": 1532,
     "warning": 1533,
     "variables": 1534,
-    "enviroment": 1535
+    "enviroment": 1535,
+    "enumeration": 1536,
+    "utils/doxygen": 11,
+    "format/xcf": 30,
+    "math/expression": 1,
+    "parser/operator": 1,
+    "registry": 1537,
+    "template/arguments": 1,
+    "generic/arguments": 1,
+    "graphic/vector": 16,
+    "type/variant": 5,
+    "data": 1538,
+    "protocol/email": 19,
+    "forwader": 1539,
+    "cost": 1540,
+    "cost/delivery": 1,
+    "web/scraper": 29,
+    "selecting": 1541,
+    "person": 1542
   },
   "_version": 3
 }
