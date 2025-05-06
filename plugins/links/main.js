@@ -2999,12 +2999,13 @@ var ObsidianLinksSettingTab = class extends import_obsidian6.PluginSettingTab {
       });
     });
     this.setSettingHelpLink(settingUnlink, this.getFullDocUrl("unlink"));
-    new import_obsidian6.Setting(containerEl).setName("Convert to wikilink").setDesc("").addToggle((toggle) => {
+    const settingConvertToWikilink = new import_obsidian6.Setting(containerEl).setName("Convert to wikilink").setDesc("").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.contexMenu.convertToWikilink).onChange(async (value) => {
         this.plugin.settings.contexMenu.convertToWikilink = value;
         await this.plugin.saveSettings();
       });
     });
+    this.setSettingHelpLink(settingConvertToWikilink, this.getFullDocUrl("convert-to-wiki-link"));
     new import_obsidian6.Setting(containerEl).setName("Convert to autolink").setDesc("").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.contexMenu.convertToAutolink).onChange(async (value) => {
         this.plugin.settings.contexMenu.convertToAutolink = value;

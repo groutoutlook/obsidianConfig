@@ -27,56 +27,76 @@ __export(main_exports, {
   default: () => CodeStatsPlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian3 = require("obsidian");
-
-// src/getISOTimestamp.ts
-function getISOTimestamp(date) {
-  const offset = -date.getTimezoneOffset();
-  const prefix = offset >= 0 ? "+" : "-";
-  function pad(num) {
-    const norm = Math.abs(Math.floor(num));
-    return (norm < 10 ? "0" : "") + norm;
-  }
-  return date.getFullYear() + "-" + pad(date.getMonth() + 1) + "-" + pad(date.getDate()) + "T" + pad(date.getHours()) + ":" + pad(date.getMinutes()) + ":" + pad(date.getSeconds()) + prefix + pad(offset / 60) + pad(offset % 60);
-}
-
-// src/ApiKeyModal.ts
 var import_obsidian = require("obsidian");
+var DEFAULT_SETTINGS = {
+  apiKey: ""
+};
+var IGNORED_KEYS = /* @__PURE__ */ new Set([
+  "Meta",
+  "Alt",
+  "Shift",
+  "Control",
+  "CapsLock",
+  "Tab",
+  "Escape",
+  "ArrowUp",
+  "ArrowDown",
+  "ArrowLeft",
+  "ArrowRight",
+  "Home",
+  "End",
+  "PageUp",
+  "PageDown",
+  "Insert",
+  "Delete",
+  "ContextMenu",
+  "ScrollLock",
+  "Pause",
+  "NumLock",
+  "F1",
+  "F2",
+  "F3",
+  "F4",
+  "F5",
+  "F6",
+  "F7",
+  "F8",
+  "F9",
+  "F10",
+  "F11",
+  "F12"
+]);
 var ApiKeyModal = class extends import_obsidian.Modal {
   constructor(app, plugin) {
     super(app);
-    this.opened = false;
     this.plugin = plugin;
   }
   onOpen() {
-    if (this.opened) {
-      return;
-    }
-    this.opened = true;
     const { contentEl } = this;
-    contentEl.classList.add("codestats-modal");
-    contentEl.createEl("p", { text: "Enter Code::Stats API key" });
-    const input = contentEl.createEl("input", {
-      type: "text",
-      placeholder: "Enter your API key here",
-      value: this.plugin.settings.API_KEY
-    });
-    contentEl.createEl("button", { text: "Save" }).addEventListener("click", () => {
-      this.plugin.settings.API_KEY = input.value;
-      this.plugin.saveSettings();
-      this.close();
-    });
+    contentEl.empty();
+    contentEl.createEl("h2", { text: "Enter Code::Stats API Key" });
+    const settings = {
+      apiKey: this.plugin.settings.apiKey
+    };
+    new import_obsidian.Setting(contentEl).setName("API Key").setDesc("Get your API key from your Code::Stats profile page.").addText((text) => text.setPlaceholder("Enter your API key").setValue(settings.apiKey).onChange(async (value) => {
+      settings.apiKey = value.trim();
+    }));
+    new import_obsidian.Setting(contentEl).addButton((button) => button.setButtonText("Save").setCta().onClick(async () => {
+      if (settings.apiKey) {
+        await this.plugin.saveSettings(settings);
+        new import_obsidian.Notice("Code::Stats API Key saved.");
+        this.close();
+      } else {
+        new import_obsidian.Notice("API Key cannot be empty.");
+      }
+    }));
   }
   onClose() {
     const { contentEl } = this;
     contentEl.empty();
-    this.opened = false;
   }
 };
-
-// src/SettingsTab.ts
-var import_obsidian2 = require("obsidian");
-var SettingsTab = class extends import_obsidian2.PluginSettingTab {
+var CodeStatsSettingTab = class extends import_obsidian.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.plugin = plugin;
@@ -84,86 +104,161 @@ var SettingsTab = class extends import_obsidian2.PluginSettingTab {
   display() {
     const { containerEl } = this;
     containerEl.empty();
-    containerEl.createEl("h2", { text: "Code::Stats plugin settings" });
-    new import_obsidian2.Setting(containerEl).setName("Code::stats API key").setDesc("It can be found or created on https://codestats.net/my/machines page").addText((text) => text.setPlaceholder("Enter your API key here").setValue(this.plugin.settings.API_KEY).onChange(async (value) => {
-      this.plugin.settings.API_KEY = value;
-      await this.plugin.saveSettings();
-    }));
+    containerEl.createEl("h2", { text: "Code::Stats Settings" });
+    const settings = {
+      apiKey: this.plugin.settings.apiKey
+    };
+    new import_obsidian.Setting(containerEl).setName("Code::stats API key").setDesc("It can be found or created on https://codestats.net/my/machines page").addText((text) => text.setPlaceholder("Enter your API key").setValue(settings.apiKey).onChange((0, import_obsidian.debounce)(async (value) => {
+      settings.apiKey = value.trim();
+      await this.plugin.saveSettings(settings);
+    }, 600)));
   }
 };
-
-// src/main.ts
-var DEFAULT_SETTINGS = {
-  API_KEY: "",
-  API_URL: "https://codestats.net/api"
-};
-var keysSet = /* @__PURE__ */ new Set(["Meta", "Alt", "Shift", "Control", "CapsLock"]);
-var CodeStatsPlugin = class extends import_obsidian3.Plugin {
+var CodeStatsPlugin = class extends import_obsidian.Plugin {
   constructor() {
     super(...arguments);
-    this.counter = 0;
-    this.modal = null;
+    this.pulseIntervalId = null;
+    this.xpCounter = 0;
+    this.statusBarItemEl = null;
+    // --- Core Logic ---
+    this.handleKeyPress = (evt) => {
+      if (evt.ctrlKey || evt.metaKey || evt.altKey || evt.shiftKey) {
+        return;
+      }
+      if (IGNORED_KEYS.has(evt.key)) {
+        return;
+      }
+      const view = this.app.workspace.getActiveViewOfType(import_obsidian.MarkdownView);
+      const editor = view == null ? void 0 : view.editor;
+      if (!editor || !editor.hasFocus() || !editor.getCursor()) {
+        return;
+      }
+      this.xpCounter += 1;
+    };
+    this.saveSettings = async (settings) => {
+      await this.saveData(settings);
+      this.resetInterval();
+    };
+    // --- API Interaction ---
+    this.sendPulse = async () => {
+      if (this.xpCounter === 0) {
+        return;
+      }
+      if (!this.settings.apiKey) {
+        return;
+      }
+      const xpToSend = this.xpCounter;
+      this.xpCounter = 0;
+      const url = "https://codestats.net/api/my/pulses";
+      const payload = {
+        coded_at: this.getISOTimestamp(),
+        xps: [{
+          language: "Markdown",
+          xp: xpToSend
+        }]
+      };
+      try {
+        const response = await (0, import_obsidian.requestUrl)({
+          url,
+          method: "POST",
+          headers: {
+            "X-API-Token": this.settings.apiKey,
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify(payload),
+          throw: false
+          // Handle status codes manually
+        });
+        if (response.status >= 300) {
+          console.error(`Code::Stats Pulse Error: ${response.status}. Response: ${response.text}`);
+          if (response.status === 401) {
+            new import_obsidian.Notice("Code::Stats: Invalid API Key. Please update it in settings.");
+          } else {
+            new import_obsidian.Notice(`Code::Stats Pulse Error: ${response.status}`);
+          }
+          this.xpCounter += xpToSend;
+        } else {
+          console.log(`Code::Stats Pulse Success: ${response.status}. Response: ${response.text}`);
+        }
+      } catch (error) {
+        console.error("Code::Stats Pulse Network Error:", error);
+        new import_obsidian.Notice("Code::Stats: Network error during pulse. Check console.");
+        this.xpCounter += xpToSend;
+      } finally {
+        this.updateStatusBar();
+      }
+    };
+    // --- Interval Management ---
+    this.resetInterval = () => {
+      if (this.pulseIntervalId !== null) {
+        window.clearInterval(this.pulseIntervalId);
+        this.pulseIntervalId = null;
+      }
+      const intervalMillis = 10 * 1e3;
+      this.pulseIntervalId = window.setInterval(this.sendPulse, intervalMillis);
+      this.registerInterval(this.pulseIntervalId);
+      this.updateStatusBar();
+    };
+    this.getISOTimestamp = () => {
+      const date = /* @__PURE__ */ new Date();
+      const offset = -date.getTimezoneOffset();
+      const prefix = offset >= 0 ? "+" : "-";
+      function pad(num) {
+        const norm = Math.abs(Math.floor(num));
+        return (norm < 10 ? "0" : "") + norm;
+      }
+      return date.getFullYear() + "-" + pad(date.getMonth() + 1) + "-" + pad(date.getDate()) + "T" + pad(date.getHours()) + ":" + pad(date.getMinutes()) + ":" + pad(date.getSeconds()) + prefix + pad(offset / 60) + pad(offset % 60);
+    };
+    // --- UI Updates ---
+    this.updateStatusBar = () => {
+      if (!this.statusBarItemEl) {
+        this.statusBarItemEl = this.addStatusBarItem();
+      }
+      let text;
+      let title;
+      if (!this.settings.apiKey) {
+        text = "C:S [!]";
+        title = "Code::Stats: API Key needed";
+      } else {
+        text = "C:S";
+        title = "Code::Stats: Connected";
+      }
+      this.statusBarItemEl.setText(text);
+      this.statusBarItemEl.setAttribute("aria-label", title);
+      this.statusBarItemEl.setAttribute("title", title);
+    };
   }
   async onload() {
     await this.loadSettings();
-    this.modal = new ApiKeyModal(this.app, this);
+    this.addSettingTab(new CodeStatsSettingTab(this.app, this));
+    this.apiKeyModal = new ApiKeyModal(this.app, this);
     this.addCommand({
-      id: "open-codestats-key-modal",
-      name: "Enter Code::Stats API key",
+      id: "codestats-open-key-modal",
+      name: "Code::Stats: Enter API key",
       callback: () => {
-        var _a;
-        (_a = this.modal) == null ? void 0 : _a.open();
+        this.apiKeyModal.open();
       }
     });
-    const statusBarItemEl = this.addStatusBarItem();
-    statusBarItemEl.setText("C::S");
-    this.addSettingTab(new SettingsTab(this.app, this));
-    this.registerDomEvent(document, "keyup", (evt) => {
-      if (keysSet.has(evt.key) || evt.key.indexOf("Arrow") !== -1) {
-        return;
-      }
-      this.counter += 1;
-    });
-    this.registerInterval(window.setInterval(() => {
-      if (this.counter > 0) {
-        void this.updateStats();
-      }
-    }, 1e4));
-  }
-  async loadSettings() {
-    this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
-  }
-  async saveSettings() {
-    await this.saveData(this.settings);
-  }
-  async updateStats() {
-    var _a;
-    if (!this.settings.API_KEY) {
-      (_a = this.modal) == null ? void 0 : _a.open();
+    this.registerDomEvent(document, "keyup", this.handleKeyPress);
+    if (!this.settings.apiKey) {
+      new import_obsidian.Notice("Code::Stats API Key needed. Please configure it in settings or use the command.");
       return;
     }
-    try {
-      void (0, import_obsidian3.requestUrl)({
-        url: this.settings.API_URL + "/my/pulses",
-        method: "POST",
-        headers: {
-          "X-API-Token": this.settings.API_KEY,
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          coded_at: getISOTimestamp(new Date()),
-          xps: [{
-            language: "Markdown",
-            xp: this.counter
-          }]
-        })
-      });
-    } finally {
-      this.counter = 0;
-    }
+    this.resetInterval();
   }
   onunload() {
-    void this.updateStats();
+    if (this.xpCounter > 0 && this.settings.apiKey) {
+      void this.sendPulse();
+    }
+    if (this.pulseIntervalId !== null) {
+      window.clearInterval(this.pulseIntervalId);
+      this.pulseIntervalId = null;
+    }
+  }
+  // --- Settings Management ---
+  async loadSettings() {
+    this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
   }
 };
 
