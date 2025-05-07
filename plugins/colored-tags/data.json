@@ -2522,7 +2522,9 @@
     "rad": 1550,
     "search/files": 6,
     "build/meson": 15,
-    "examples": 1551
+    "examples": 1551,
+    "typesetiing": 1552,
+    "doumentation": 1553
   },
   "_version": 3
 }
