@@ -3714,9 +3714,11 @@ Processing may take a while if many new files have been added`);
       * @returns Whether or not it is a sidecar file managed by the plugin
       */
   isSidecar(file2) {
-    if (file2.extension !== "md") return false;
-    if (!file2.path.endsWith(Sidecar.EXTENSION)) return false;
-    const mediaPath = file2.path.substring(0, file2.path.length - 11);
+    return this.isSidecarFromPath(file2.path);
+  }
+  isSidecarFromPath(path) {
+    if (!path.endsWith(Sidecar.EXTENSION)) return false;
+    const mediaPath = path.substring(0, path.length - Sidecar.EXTENSION.length);
     const mediaFile = this.getFile(mediaPath);
     return mediaFile !== void 0;
   }
@@ -8075,9 +8077,9 @@ var MutationHandler = class extends EventTarget {
       */
   onMoved(file2, oldpath) {
     if (!(file2 instanceof import_obsidian8.TFile)) return;
-    const isSidecar = this.cache.isSidecar(file2);
+    const isSidecar = this.cache.isSidecarFromPath(oldpath);
     if (isSidecar) {
-      const mediaPath = file2.path.substring(0, file2.path.length - 11);
+      const mediaPath = oldpath.substring(0, oldpath.length - Sidecar.EXTENSION.length);
       const mediaFile = this.app.vault.getFileByPath(mediaPath);
       if (mediaFile) {
         this.onFileCreated(mediaFile);
@@ -8466,9 +8468,13 @@ function instance9($$self, $$props, $$invalidate) {
     1e3,
     true
   );
-  let fileEditDebounce = (0, import_obsidian10.debounce)(() => {
-    saveFile();
-  });
+  let fileEditDebounce = (0, import_obsidian10.debounce)(
+    () => {
+      saveFile();
+    },
+    200,
+    true
+  );
   let fileContent = "";
   let fileContentLastEdited = 0;
   plugin2.mutationHandler.addEventListener("file-moved", onExternalRename);
@@ -8486,8 +8492,15 @@ function instance9($$self, $$props, $$invalidate) {
         app2.vault.read(e.detail.sidecar.file).then((content) => {
           if (editorView) {
             if (content === editorView.data) return;
+            editorObserver.disconnect();
             editorView.set(content, true);
+            editorObserver.observe(editorContainer, {
+              childList: true,
+              subtree: true,
+              characterData: true
+            });
             fileContent = content;
+            fileEditDebounce.cancel();
           }
         });
       }

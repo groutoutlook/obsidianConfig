@@ -2524,7 +2524,27 @@
     "build/meson": 15,
     "examples": 1551,
     "typesetiing": 1552,
-    "doumentation": 1553
+    "doumentation": 1553,
+    "libman": 1554,
+    "libman/vcpkg": 1,
+    "libman/cpm": 2,
+    "format/qrcode": 31,
+    "complier": 1555,
+    "auth": 1556,
+    "delimiter": 1557,
+    "scripting/tee": 6,
+    "winfows": 1558,
+    "pacman": 1559,
+    "pacman/winget": 1,
+    "asic": 1560,
+    "signal/waveform": 2,
+    "nixos": 1561,
+    "email": 1562,
+    "intro": 1563,
+    "board/sdr": 30,
+    "web/api/webusb": 1,
+    "firmware/cpp": 2,
+    "politic/usa": 3
   },
   "_version": 3
 }
