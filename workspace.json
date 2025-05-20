@@ -29,13 +29,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note_software/journal/WebJournal.md",
+                "file": "note_Embedded/note_EDA/EDAJournal.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "WebJournal"
+              "title": "EDAJournal"
             }
           }
         ],
@@ -74,6 +74,21 @@
               },
               "icon": "lucide-file",
               "title": "SoftwareJournal"
+            }
+          },
+          {
+            "id": "b1164570b0437a26",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "note_software/journal/GuiSoftwareJournal.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "GuiSoftwareJournal"
             }
           }
         ],
@@ -251,24 +266,27 @@
       "media-companion:Open gallery": false
     }
   },
-  "active": "c3994320a6b835ad",
+  "active": "26b6ac8fb7b8be32",
   "lastOpenFiles": [
-    "note_software/journal/SoftwareJournal.md3BiZ3q.bck",
-    "note_software/journal/GuiSoftwareJournal.md",
-    "note_Knowledge/journal/ReadAndListenJournal.mdXEIXQl.bck",
-    "note_software/journal/OSJournal.md0Yen0M.bck",
-    "note_Business/IdeaJournal.mdKm2iur.bck",
-    "note_algo_lang/journal/GraphicUIJournal.mdImqCwj.bck",
-    "note_software/journal/OSJournal.mdQMERCZ.bck",
-    "note_Knowledge/journal/ReadAndListenJournal.mdh7N36k.bck",
-    "note_Knowledge/journal/ReadAndListenJournal.mdhOCXT7.bck",
-    "note_software/journal/SoftwareJournal.mdJoAdqB.bck",
+    "note_Embedded/note_EDA/EDAJournal.md",
+    "note_algo_lang/journal/GraphicUIJournal.mdocSTSU.bck",
+    "note_software/journal/SoftwareJournal.mdN3rxUx.bck",
     "note_software/journal/SoftwareJournal.md",
-    "note_software/journal/SoftwareJournal.md6PmncY.bck",
-    "note_software/journal/SoftwareJournal.mdI9tKjN.bck",
+    "note_software/journal/GuiSoftwareJournal.md",
     "note_software/journal/WebJournal.md",
-    "note_algo_lang/journal/LangJournal.md",
     "note_algo_lang/journal/ProgrammingJournal.md",
+    "note_Business/IdeaJournal.mdY8I0ze.bck",
+    "note_software/journal/SoftwareJournal.mdIX2vae.bck",
+    "note_algo_lang/journal/LangJournal.md6rJooP.bck",
+    "note_algo_lang/journal/LangJournal.mdZTXnqI.bck",
+    "note_algo_lang/journal/ProgrammingJournal.mdvYpf5s.bck",
+    "note_algo_lang/journal/LibraryJournal.mdegOQgB.bck",
+    "note_algo_lang/journal/LangJournal.md7l06hP.bck",
+    "justfilesRORj8.bck",
+    "note_IDEAndTools/Dev/CLI/001.003.001-CLI.fd.md",
+    "note_IDEAndTools/Dev/CLI/001.007-bat.md",
+    "note_algo_lang/01-C++/CompileBuildTools/005.002.004.002-Syntax REPL Clang-repl.md",
+    "note_algo_lang/journal/LangJournal.md",
     "note_IDEAndTools/Dev/Task/001.002.003-Builtin Function Just.md",
     "note_IDEAndTools/Dev/VCS/003.004.003-Format.Output.md",
     "note_IDEAndTools/Dev/VCS/003.004.002-Pull.Request.md",
@@ -285,10 +303,6 @@
     "note_software/004-CLI.Software.md",
     "note_software/002.001.001-CLI.Scoop.md",
     "note_software/001.001-CLI.Doxygen.md",
-    "note_software/CasualSoftware/TerminalCasual/006.001-CLI.jrnl.md",
-    "note_software/CasualSoftware/mpv/001.001-CLI.mpv.md",
-    "note_software/CasualSoftware/CopyQ/005.002-CLI.CopyQ.md",
-    "note_IDEAndTools/Visualization/GraphAndMap/002.001-CLI.Graphviz.md",
     "asset/img/Pasted image 20250418102431.png",
     "Pasted image 20250418102431.png",
     "mpv-shot0002.jpg",

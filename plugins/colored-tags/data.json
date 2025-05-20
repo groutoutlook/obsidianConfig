@@ -2595,7 +2595,27 @@
     "oscilloscope": 1583,
     "workspace": 1584,
     "proton": 1585,
-    "bat": 1586
+    "bat": 1586,
+    "pacman/scoop": 4,
+    "editor/lsp": 9,
+    "format/editor": 32,
+    "library/graphic": 20,
+    "dsl": 1587,
+    "powertoys/kbm": 6,
+    "parser/config": 2,
+    "pacman/vcpkg": 5,
+    "powertoys/aot": 7,
+    "completion": 1588,
+    "bigdata": 1589,
+    "github/bot": 4,
+    "service/vpn": 5,
+    "daemon": 1590,
+    "bossanova": 1591,
+    "powertoys/run": 8,
+    "texture/cubemap": 1,
+    "inspect": 1592,
+    "pcb/editor": 6,
+    "editor/pcb": 10
   },
   "_version": 3
 }
